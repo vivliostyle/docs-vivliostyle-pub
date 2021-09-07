@@ -7,9 +7,11 @@
 
 ## GitHubアカウントの取得とVivliostyle Pubへのログイン
 
-- [Vivliostyle Viewer](/ja/vivliostyle-viewer)
-- [Vivliostyle CLI](/ja/vivliostyle-cli)
-- [Create Book](/ja/create-book)
+- [①事前の準備（GitHubアカウント／リポジトリを作成していない方）](/ja/get-an-account-and-login/get-an-account-and-login.md)
+- [②Vivliostyle Pubへのログイン](/ja/get-an-account-and-login/get-an-account-and-login.md)
+
+
+
 
 ## ファイル操作
 

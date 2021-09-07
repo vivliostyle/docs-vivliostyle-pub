@@ -4,7 +4,7 @@
 
 ### 初期画面
 
-[所定のURL](https://vivliostyle-pub-develop.vercel.app/)にアクセスすると、以下の初期画面が表示されます。❶「Login」ボタンを押して、GitHubアカウントでログインしてください。→[GitHubアカウントの取得とVivliostyle Pubへのログイン]()
+[所定のURL](https://vivliostyle-pub-develop.vercel.app/)にアクセスすると、以下の初期画面が表示されます。❶「Login」ボタンを押して、GitHubアカウントでログインしてください。（→[GitHubアカウントの取得とVivliostyle Pubへのログイン]()）
 
 ![初期画面](/images/quick-start-guide/fig-1.png)
 
@@ -15,8 +15,8 @@
 ![リポジトリとブランチの選択](/images/quick-start-guide/fig-2.png)
 
 - ❶……リポジトリ（太字）とブランチ（細字）の選択
-- ❷……GitHubアプリのインストール（初期設定の際に使用）
-- ❸……GitHubアクセス・トークンのリフレッシュ（リポジトリ名が表示されない際に使用）
+- ❷……GitHubアプリのインストール（→[GitHubアカウントの取得とVivliostyle Pubへのログイン]()）
+- ❸……GitHubアクセス・トークンのリフレッシュ（→[GitHubアカウントの取得とVivliostyle Pubへのログイン]()）
 - ❹……ログアウト
 
 リポジトリかプランチ（❶）をクリックすると、自動的に編集画面に遷移します。
