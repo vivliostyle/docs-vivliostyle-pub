@@ -1,10 +1,10 @@
 # クイックスタートガイド／必要環境
 
-##  クイックスタートガイド {#quick-start-guide}
+##  クイックスタートガイド 
 
 ### 初期画面
 
-[所定のURL](https://vivliostyle-pub-develop.vercel.app/)にアクセスすると、以下の初期画面が表示されます。❶「Login」ボタンを押して、GitHubアカウントでログインしてください。（→[GitHubアカウントの取得とVivliostyle Pubへのログイン]()）
+[所定のURL](https://vivliostyle-pub-develop.vercel.app/)にアクセスすると、以下の初期画面が表示されます。❶「Login」ボタンを押して、GitHubアカウントでログインしてください。（→[GitHubアカウントの取得とVivliostyle Pubへのログイン](/ja/get-an-account-and-login/get-an-account-and-login#%E2%91%A0%E4%BA%8B%E5%89%8D%E3%81%AE%E6%BA%96%E5%82%99%EF%BC%88github%E3%82%A2%E3%82%AB%E3%82%A6%E3%83%B3%E3%83%88%EF%BC%8F%E3%83%AA%E3%83%9D%E3%82%B8%E3%83%88%E3%83%AA%E3%82%92%E4%BD%9C%E6%88%90%E3%81%97%E3%81%A6%E3%81%84%E3%81%AA%E3%81%84%E6%96%B9%EF%BC%89)）
 
 ![初期画面](/images/quick-start-guide/fig-1.png)
 
@@ -15,8 +15,8 @@
 ![リポジトリとブランチの選択](/images/quick-start-guide/fig-2.png)
 
 - ❶……リポジトリ（太字）とブランチ（細字）の選択
-- ❷……GitHubアプリのインストール（→[GitHubアカウントの取得とVivliostyle Pubへのログイン]()）
-- ❸……GitHubアクセス・トークンのリフレッシュ（→[GitHubアカウントの取得とVivliostyle Pubへのログイン]()）
+- ❷……GitHubアプリのインストール（→[GitHubアカウントの取得とVivliostyle Pubへのログイン](/ja/get-an-account-and-login/get-an-account-and-login#%E2%91%A1vivliostyle-pub%E3%81%B8%E3%81%AE%E3%83%AD%E3%82%B0%E3%82%A4%E3%83%B3)）
+- ❸……GitHubアクセス・トークンのリフレッシュ（→[GitHubアカウントの取得とVivliostyle Pubへのログイン](/ja/get-an-account-and-login/get-an-account-and-login#%E2%91%A1vivliostyle-pub%E3%81%B8%E3%81%AE%E3%83%AD%E3%82%B0%E3%82%A4%E3%83%B3)）
 - ❹……ログアウト
 
 リポジトリかプランチ（❶）をクリックすると、自動的に編集画面に遷移します。
@@ -45,7 +45,7 @@
 - ⓲……ページ移動スライドバー
 
 
-## 必要環境 {#required-environment}
+## 必要環境 
 
 - Chromeブラウザ（バージョン〓以上）が動作する環境であること
 - GitHubアカウントを既に取得していること
