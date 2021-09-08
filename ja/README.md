@@ -2,13 +2,13 @@
 
 ## クイックスタートガイド／必要環境
 
-- [クイックスタートガイド](/ja/quick-start-guide/quick-start-guide-&-required-environment.md#quick-start-guide)
+- [クイックスタートガイド](/ja/quick-start-guide/quick-start-guide-and-required-environment.md#quick-start-guide)
 - [必要環境](/ja/quick-start-guide/quick-start-guide-&-required-environment.md#required-environment)
 
 ## GitHubアカウントの取得とVivliostyle Pubへのログイン
 
-- [①事前の準備（GitHubアカウント／リポジトリを作成していない方）](/ja/get-an-account-and-login/get-an-account-and-login.md)
-- [②Vivliostyle Pubへのログイン](/ja/get-an-account-and-login/get-an-account-and-login.md)
+- [①事前の準備（GitHubアカウント／リポジトリを作成していない方）](/ja/get-an-account-and-login/get-an-account.md)
+- [②Vivliostyle Pubへのログイン](/ja/get-an-account-and-login/login.md)
 
 ## ファイル操作
 
