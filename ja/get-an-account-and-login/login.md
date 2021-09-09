@@ -6,7 +6,7 @@
 
 1. ブラウザ（Chrome）から以下のURLにアクセスして “Login” をクリック
 
-https://vivliostyle-pub-develop-proto.vercel.app/
+https://vivliostyle-pub-develop.vercel.app/
 
 ![ ](/images/get-an-account-and-login/login/fig-1.png)
 

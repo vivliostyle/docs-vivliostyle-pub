@@ -1,7 +1,7 @@
 # GitHubアカウントの取得とVivliostyle Pubへのログイン
 
 - Vivliostyle Pubベータ版を使うにあたり、GitHubアカウントを取得するための詳細な手順をご説明します。
-- 既にGitHubアカウントを持っている人は[②Vivliostyle Pubへのログイン](/ja/get-an-account-and-login/login.md)に、アカウントを持っているがリポジトリを作成していない人は[①b 事前の準備（GitHubアカウントは取得しているが、リポジトリは作成していない方）](/ja/get-an-account-and-login/get-an-account#%E2%91%A0b-%E4%BA%8B%E5%89%8D%E3%81%AE%E6%BA%96%E5%82%99%EF%BC%88github%E3%82%A2%E3%82%AB%E3%82%A6%E3%83%B3%E3%83%88%E3%81%AF%E5%8F%96%E5%BE%97%E3%81%97%E3%81%A6%E3%81%84%E3%82%8B%E3%81%8C%E3%80%81%E3%83%AA%E3%83%9D%E3%82%B8%E3%83%88%E3%83%AA%E3%81%AF%E4%BD%9C%E6%88%90%E3%81%97%E3%81%A6%E3%81%84%E3%81%AA%E3%81%84%E6%96%B9%EF%BC%89)にジャンプしてください
+- 既にGitHubアカウントを持っている人は[②Vivliostyle Pubへのログイン](/ja/get-an-account-and-login/login.md)に進み、アカウントを持っているがリポジトリは作成してない人は[①b 事前の準備（GitHubアカウントは取得しているが、リポジトリは作成していない方）](/ja/get-an-account-and-login/get-an-account#%E2%91%A0b-%E4%BA%8B%E5%89%8D%E3%81%AE%E6%BA%96%E5%82%99%EF%BC%88github%E3%82%A2%E3%82%AB%E3%82%A6%E3%83%B3%E3%83%88%E3%81%AF%E5%8F%96%E5%BE%97%E3%81%97%E3%81%A6%E3%81%84%E3%82%8B%E3%81%8C%E3%80%81%E3%83%AA%E3%83%9D%E3%82%B8%E3%83%88%E3%83%AA%E3%81%AF%E4%BD%9C%E6%88%90%E3%81%97%E3%81%A6%E3%81%84%E3%81%AA%E3%81%84%E6%96%B9%EF%BC%89)にジャンプしてください
 - GitHubのスクリーンショットは2021年9月時点のものです。将来変更される可能性があることをご了解ください
 
 ## ①a 事前の準備（GitHubアカウント／リポジトリを作成していない方）
@@ -52,7 +52,7 @@
 
 ## ①b 事前の準備（GitHubアカウントは取得しているが、リポジトリは作成していない方）
 
-1. 自分のGitHubアカウントのトップページ（https://github.com/[username]）にアクセスし、「Repository」タブをクリック
+1. 自分のGitHubアカウントのトップページ（URLは https://github.com/ の後にあなたのユーザー名を加えたものです）にアクセスし、「Repository」タブをクリック
 
 ![ ](/images/get-an-account-and-login/get-an-account/fig-12.png)
 
