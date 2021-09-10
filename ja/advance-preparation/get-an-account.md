@@ -1,9 +1,8 @@
 # 事前準備
 
 - Vivliostyle Pubベータ版を使う準備として、GitHubアカウントを取得するための詳細な手順をご説明します。
-- 既にGitHubアカウントを持っている人は[Vivliostyle Pubへのログイン](/ja/advance-preparation/login.md)に進みんでください。アカウントを持っているがリポジトリは作成してない人は、[「GitHubでのリポジトリの作成方法」](/ja/advance-preparation/get-an-account#)にジャンプしてください
+- 既にGitHubアカウントを持っている人は[Vivliostyle Pubへのログイン](/ja/advance-preparation/login.md)に進みんでください。アカウントを持っているがリポジトリは作成してない人は、[「リポジトリの作成方法」](/ja/advance-preparation/get-an-account#)にジャンプしてください
 - GitHubのスクリーンショットは2021年9月時点のものです。将来変更される可能性があることをご了解ください
-
 
 ## GitHubアカウントの取得方法
 

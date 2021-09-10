@@ -15,8 +15,8 @@
 ![リポジトリとブランチの選択](/images/readme-first/fig-2.png)
 
 - ❶……リポジトリ（太字）とブランチ（細字）の選択
-- ❷……GitHubアプリのインストール（→[GitHubアカウントの取得とVivliostyle Pubへのログイン](/ja/get-an-account-and-login/get-an-account-and-login#%E2%91%A1vivliostyle-pub%E3%81%B8%E3%81%AE%E3%83%AD%E3%82%B0%E3%82%A4%E3%83%B3)）
-- ❸……GitHubアクセス・トークンのリフレッシュ（→[GitHubアカウントの取得とVivliostyle Pubへのログイン](/ja/get-an-account-and-login/get-an-account-and-login#%E2%91%A1vivliostyle-pub%E3%81%B8%E3%81%AE%E3%83%AD%E3%82%B0%E3%82%A4%E3%83%B3)）
+- ❷……GitHubアプリのインストール（→[最初のログインで必要な作業](/ja/advance-preparation/login.md)）
+- ❸……GitHubアクセス・トークンのリフレッシュ（→[最初のログインで必要な作業](/ja/advance-preparation/login.md)）
 - ❹……ログアウト
 
 リポジトリかプランチ（❶）をクリックすると、自動的に編集画面に遷移します。
@@ -30,7 +30,7 @@
 - ❸……ファイルの保存（ファイル変更前はグレイアウト、変更後にアクティブ）
 - ❹……エディタ・ペイン
 - ❺……ログアウト・ボタン
-- ❻……Actionメニュー（→[スタイルの変更とカスタマイズ]()、[ファイルの出力]()）
+- ❻……Actionメニュー（→[スタイルの切り替え](/ja/switching-styles/switching-styles.md)、[PDFの出力](/ja/output-files/output-pdf.md)）
 - ❼……[目次パネル表示ボタン](https://docs.vivliostyle.org/#/ja/vivliostyle-viewer#%E7%9B%AE%E6%AC%A1%E3%83%91%E3%83%8D%E3%83%AB)
 - ❽……ファイルの先頭に移動
 - ❾……ファイルの末尾に移動
