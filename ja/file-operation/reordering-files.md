@@ -37,7 +37,7 @@
 エディタ画面への行き方や編集方法は下記ページの「4」以降を参照してください
 
 
-- [新規ファイルの追加](ja/file-operation/adding-a-new-file.md)
+- [新規ファイルの追加](/ja/file-operation/adding-a-new-file.md)
 
 
 5. Vivliostyle Pubを再読み込みさせて、ファイルの選択ペインのファイルの順番（赤丸）が降順に変更されたか確認します

@@ -17,7 +17,7 @@
 4. 今、名前を変更した`index4.md`を、`vivliostyle.config.js`に追記登録します（赤矢印）。エディタ画面への行き方や編集方法は下記ページの「4」以降を参照してください
 
 
-- [新規ファイルの追加](ja/file-operation/adding-a-new-file.md)
+- [新規ファイルの追加](/ja/file-operation/adding-a-new-file.md)
 
 ![ ](images/file-operation/renaming-an-existing-file/fig-4.png)
 

@@ -43,7 +43,7 @@
 
 エディタ画面への行き方や編集方法は下記ページの「4」以降を参照してください
 
-- [新規ファイルの追加](ja/file-operation/adding-a-new-file.md)
+- [新規ファイルの追加](/ja/file-operation/adding-a-new-file.md)
 
 
 7. Vivliostyle Pubを再読み込みさせて、ファイルの選択ペインから`index2.md`が削除されているか確認します（赤丸）
