@@ -1,8 +1,8 @@
-# GitHubアカウントの取得とVivliostyle Pubへのログイン
+# 事前準備
 
 初回のみ、アカウントの接続、GitHubアプリのインストール、及びその認証が必要です。2回目以降は不要です。
 
-## ②Vivliostyle Pubへのログイン
+## Vivliostyle Pubへのログイン
 
 1. ブラウザ（Chrome）から以下のURLにアクセスして “Login” をクリック
 

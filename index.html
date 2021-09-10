@@ -1,216 +1,203 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
-    <title>Vivliostyle Docs</title>
-    <link rel="icon" href="images/vivliostyle-icon.png" />
-    <link rel="stylesheet" href="https://unpkg.com/docute@4/dist/docute.css" />
-  </head>
-  <body>
-    <div id="docute"></div>
-    <script src="https://cdn.jsdelivr.net/npm/vue-js-toggle-button@1.3.2/dist/index.min.js"></script>
-    <script src="https://unpkg.com/docute@4/dist/docute.js"></script>
-    <script>
-      if (location.hash.indexOf('%23')) {
-        // fix %-encoded '#' in hash
-        location.hash = location.hash.replace('%23', '#');
-      }
 
-      Vue.use(window['vue-js-toggle-button'].default);
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <title>Vivliostyle Pub Docs</title>
+  <link rel="icon" href="images/vivliostyle-icon.png" />
+  <link rel="stylesheet" href="https://unpkg.com/docute@4/dist/docute.css" />
+</head>
 
-      new Docute({
-        title: 'Vivliostyle Docs',
-        target: '#docute',
-        plugins: [],
-        nav: [
-          {
-            title: 'Home',
-            link: '/',
-          },
-          {
-            title: 'Vivliostyle',
-            link: 'https://vivliostyle.org',
-          },
-          {
-            title: 'GitHub',
-            link: 'https://github.com/vivliostyle',
-          },
-        ],
-        sidebar: [
-          {
-            title: '📖 User Guides',
-            children: [
-              { title: 'Vivliostyle Viewer', link: '/vivliostyle-viewer' },
-              { title: 'Vivliostyle CLI', link: '/vivliostyle-cli' },
-              { title: 'Create Book', link: '/create-book' },
-            ],
-          },
-          {
-            title: '🛠 Contribution Guides',
-            children: [
-              { title: 'Vivliostyle.js', link: '/contribution-guide' },
-              { title: 'Vivliostyle CLI', link: 'https://github.com/vivliostyle/vivliostyle-cli/blob/main/CONTRIBUTING.md' },
-              { title: 'Vivliostyle Themes', link: 'https://github.com/vivliostyle/themes/blob/master/CONTRIBUTING.md' },
-              { title: 'VFM', link: 'https://github.com/vivliostyle/vfm/blob/master/CONTRIBUTING.md' },
-            ],
-          },
-          {
-            title: '📚 References',
-            children: [
-              {
-                title: '🧴 Supported CSS Features',
-                link: '/supported-css-features',
-              },
-              { title: '🪐 Core API Reference', link: '/api' },
-              {
-                title: '⌨️ Vivliostyle CLI',
-                link:
-                  'https://github.com/vivliostyle/vivliostyle-cli/blob/main/README.md#readme',
-              },
-              {
-                title: '⚡️ Create Book',
-                link: 'https://github.com/vivliostyle/create-book#readme',
-              },
-              {
-                title: '⬇️ VFM',
-                link: 'https://vivliostyle.github.io/vfm/#/vfm',
-              },
-              {
-                title: '💅 Vivliostyle Themes',
-                link: 'https://github.com/vivliostyle/themes#readme',
-              },
-              {
-                title: '🦮 Theme Design Guideline',
-                link:
-                  'https://github.com/vivliostyle/themes/tree/master/DESIGN.md#readme',
-              },
-            ],
-          },
-          {
-            title: 'Releases',
-            children: [
-              {
-                title: '🚀 Vivliostyle.js Releases',
-                link: 'https://vivliostyle.github.io/',
-              },
-            ],
-          },
-          {
-            title: 'Community',
-            children: [
-              {
-                title: '🌟 Vivliostyle Community',
-                link: 'https://vivliostyle.org/community/',
-              },
-              {
-                title: '🕶 Awesome Vivliostyle',
-                link:
-                  'https://github.com/vivliostyle/awesome-vivliostyle#readme',
-              },
-            ],
-          },
-        ],
-        overrides: {
-          '/': {
-            language: 'English',
-          },
-          '/ja/': {
-            language: 'Japanese',
-            nav: [
-              {
-                title: 'ホーム',
-                link: '/ja/',
-              },
-              {
-                title: 'Vivliostyle',
-                link: 'https://vivliostyle.org/ja/',
-              },
-              {
-                title: 'GitHub',
-                link: 'https://github.com/vivliostyle',
-              },
-            ],
-            sidebar: [
-              {
-                title: '📖 ユーザーガイド',
-                children: [
-                  { title: 'Vivliostyle Viewer', link: '/ja/vivliostyle-viewer' },
-                  { title: 'Vivliostyle CLI', link: '/ja/vivliostyle-cli' },
-                  { title: 'Create Book', link: '/ja/create-book' },
-                ],
-              },
-              {
-                title: '🛠 コントリビューションガイド',
-                children: [
-                  { title: 'Vivliostyle.js', link: '/ja/contribution-guide' },
-                  { title: 'Vivliostyle CLI', link: 'https://github.com/vivliostyle/vivliostyle-cli/blob/main/CONTRIBUTING.md' },
-                  { title: 'Vivliostyle Themes', link: 'https://github.com/vivliostyle/themes/blob/master/CONTRIBUTING.md' },
-                  { title: 'VFM', link: 'https://github.com/vivliostyle/vfm/blob/master/CONTRIBUTING.md' },
-                ],
-              },
-              {
-                title: '📚 リファレンス',
-                children: [
-                  {
-                    title: '🧴 サポートする CSS 機能',
-                    link: '/ja/supported-css-features',
-                  },
-                  { title: '🪐 Core API リファレンス', link: '/ja/api' },
-                  {
-                    title: '⌨️ Vivliostyle CLI',
-                    link:
-                      'https://github.com/vivliostyle/vivliostyle-cli/blob/main/README.md#readme',
-                  },
-                  {
-                    title: '⚡️ Create Book',
-                    link: 'https://github.com/vivliostyle/create-book#readme',
-                  },
-                  {
-                    title: '⬇️ VFM',
-                    link: 'https://vivliostyle.github.io/vfm/#/vfm',
-                  },
-                  {
-                    title: '💅 Vivliostyle Themes',
-                    link: 'https://github.com/vivliostyle/themes#readme',
-                  },
-                  {
-                    title: '🦮 Theme Design Guideline',
-                    link:
-                      'https://github.com/vivliostyle/themes/tree/master/DESIGN.md#readme',
-                  },
-                ],
-              },
-              {
-                title: 'リリース',
-                children: [
-                  {
-                    title: '🚀 Vivliostyle.js Releases',
-                    link: 'https://vivliostyle.github.io/',
-                  },
-                ],
-              },
-              {
-                title: 'コミュニティ',
-                children: [
-                  {
-                    title: '🌟 Vivliostyle コミュニティ',
-                    link: 'https://vivliostyle.org/ja/community/',
-                  },
-                  {
-                    title: '🕶 Awesome Vivliostyle',
-                    link:
-                      'https://github.com/vivliostyle/awesome-vivliostyle#readme',
-                  },
-                ],
-              },
-            ],
-          },
+<body>
+  <div id="docute"></div>
+  <script src="https://cdn.jsdelivr.net/npm/vue-js-toggle-button@1.3.2/dist/index.min.js"></script>
+  <script src="https://unpkg.com/docute@4/dist/docute.js"></script>
+  <script>
+    if (location.hash.indexOf('%23')) {
+      // fix %-encoded '#' in hash
+      location.hash = location.hash.replace('%23', '#');
+    }
+
+    Vue.use(window['vue-js-toggle-button'].default);
+
+    new Docute({
+      title: 'Vivliostyle Pub Docs',
+      target: '#docute',
+      plugins: [],
+      nav: [
+        {
+          title: 'Home',
+          link: '/',
         },
-      });
-    </script>
-  </body>
+        {
+          title: 'Vivliostyle',
+          link: 'https://vivliostyle.org',
+        },
+        {
+          title: 'GitHub',
+          link: 'https://github.com/vivliostyle/vivliostyle-pub',
+        },
+      ],
+      sidebar: [
+        {
+          title: '📖 User Guides',
+          children: [
+            { title: 'Vivliostyle Viewer', link: '/vivliostyle-viewer' },
+            { title: 'Vivliostyle CLI', link: '/vivliostyle-cli' },
+            { title: 'Create Book', link: '/create-book' },
+          ],
+        },
+        {
+          title: '🛠 Contribution Guides',
+          children: [
+            { title: 'Vivliostyle.js', link: '/contribution-guide' },
+            { title: 'Vivliostyle CLI', link: 'https://github.com/vivliostyle/vivliostyle-cli/blob/main/CONTRIBUTING.md' },
+            { title: 'Vivliostyle Themes', link: 'https://github.com/vivliostyle/themes/blob/master/CONTRIBUTING.md' },
+            { title: 'VFM', link: 'https://github.com/vivliostyle/vfm/blob/master/CONTRIBUTING.md' },
+          ],
+        },
+        {
+          title: '📚 References',
+          children: [
+            {
+              title: '🧴 Supported CSS Features',
+              link: '/supported-css-features',
+            },
+            { title: '🪐 Core API Reference', link: '/api' },
+            {
+              title: '⌨️ Vivliostyle CLI',
+              link:
+                'https://github.com/vivliostyle/vivliostyle-cli/blob/main/README.md#readme',
+            },
+            {
+              title: '⚡️ Create Book',
+              link: 'https://github.com/vivliostyle/create-book#readme',
+            },
+            {
+              title: '⬇️ VFM',
+              link: 'https://vivliostyle.github.io/vfm/#/vfm',
+            },
+            {
+              title: '💅 Vivliostyle Themes',
+              link: 'https://github.com/vivliostyle/themes#readme',
+            },
+            {
+              title: '🦮 Theme Design Guideline',
+              link:
+                'https://github.com/vivliostyle/themes/tree/master/DESIGN.md#readme',
+            },
+          ],
+        },
+        {
+          title: 'Releases',
+          children: [
+            {
+              title: '🚀 Vivliostyle.js Releases',
+              link: 'https://vivliostyle.github.io/',
+            },
+          ],
+        },
+        {
+          title: 'Community',
+          children: [
+            {
+              title: '🌟 Vivliostyle Community',
+              link: 'https://vivliostyle.org/community/',
+            },
+            {
+              title: '🕶 Awesome Vivliostyle',
+              link:
+                'https://github.com/vivliostyle/awesome-vivliostyle#readme',
+            },
+          ],
+        },
+      ],
+      overrides: {
+        '/': {
+          language: 'English',
+        },
+        '/ja/': {
+          language: 'Japanese',
+          nav: [
+            {
+              title: 'ホーム',
+              link: '/ja/',
+            },
+            {
+              title: 'Vivliostyle',
+              link: 'https://vivliostyle.org/ja/',
+            },
+            {
+              title: 'GitHub',
+              link: 'https://github.com/vivliostyle/vivliostyle-pub',
+            },
+          ],
+          sidebar: [
+            {
+              title: '⏩ クイックスタートガイド／必要環境',
+              children: [
+                { title: 'クイックスタートガイド', link: '/ja/quick-start-guide/quick-start-guide-and-required-environment' },
+              ],
+            },
+            {
+              title: '🔑 GitHubアカウントの取得とVivliostyle Pubへのログイン',
+              children: [
+                { title: '事前の準備', link: '/ja/get-an-account-and-login/get-an-account' },
+                { title: 'Vivliostyle Pubへのログイン', link: '/ja/get-an-account-and-login/login' },
+              ],
+            },
+            {
+              title: '🗄️ ファイル操作',
+              children: [
+                {
+                  title: '新規ファイルの追加',
+                  link: '/ja/file-operation/adding-a-new-file',
+                },
+                { title: '既存ファイルの追加', link: '/ja/file-operation/adding-existing-files' },
+                {
+                  title: '既存ファイル名の変更',
+                  link:
+                    '/ja/file-operation/renaming-an-existing-file',
+                },
+                {
+                  title: '複数ファイルの並べ替え',
+                  link: '/ja/file-operation/reordering-files',
+                },
+                {
+                  title: '既存ファイルの削除',
+                  link: '/ja/file-operation/delete-existing-file',
+                },
+              ],
+            },
+            {
+              title: 'リリース',
+              children: [
+                {
+                  title: '🚀 Vivliostyle.js Releases',
+                  link: 'https://vivliostyle.github.io/',
+                },
+              ],
+            },
+            {
+              title: 'コミュニティ',
+              children: [
+                {
+                  title: '🌟 Vivliostyle コミュニティ',
+                  link: 'https://vivliostyle.org/ja/community/',
+                },
+                {
+                  title: '🕶 Awesome Vivliostyle',
+                  link:
+                    'https://github.com/vivliostyle/awesome-vivliostyle#readme',
+                },
+              ],
+            },
+          ],
+        },
+      },
+    });
+  </script>
+</body>
+
 </html>
