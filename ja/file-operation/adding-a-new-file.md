@@ -24,7 +24,7 @@
 
 ![ ](images/file-operation/adding-a-new-file/fig-4.png)
 
-5. エディタ画面で設定ファイル`vivliostyle.config.js`を新規作成します。2つ以上のファイルをVivliostyle Pubで扱うためにはこのファイルが必須になります（単一ファイルの場合は不要）。
+5. エディタ画面で設定ファイル`vivliostyle.config.js`を新規作成します。2つ以上のファイルをVivliostyle Pubで扱うためにはこのファイルが必須になります。
 
 ファイル名を❶に記入し、作成が終わったら❷を押します。
 
