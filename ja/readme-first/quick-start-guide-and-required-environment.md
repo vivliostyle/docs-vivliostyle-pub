@@ -4,7 +4,7 @@
 
 ### 初期画面
 
-[所定のURL](https://vivliostyle-pub-develop.vercel.app/)にアクセスすると、以下の初期画面が表示されます。❶「Login」ボタンを押して、GitHubアカウントでログインしてください。（→[GitHubアカウントの取得とVivliostyle Pubへのログイン](/ja/get-an-account-and-login/get-an-account-and-login#%E2%91%A0%E4%BA%8B%E5%89%8D%E3%81%AE%E6%BA%96%E5%82%99%EF%BC%88github%E3%82%A2%E3%82%AB%E3%82%A6%E3%83%B3%E3%83%88%EF%BC%8F%E3%83%AA%E3%83%9D%E3%82%B8%E3%83%88%E3%83%AA%E3%82%92%E4%BD%9C%E6%88%90%E3%81%97%E3%81%A6%E3%81%84%E3%81%AA%E3%81%84%E6%96%B9%EF%BC%89)）
+[所定のURL](https://vivliostyle-pub-develop.vercel.app/)にアクセスすると、以下の初期画面が表示されます。❶「Login」ボタンを押して、GitHubアカウントでログインしてください。（→[GitHubアカウントの取得方法](/ja/advance-preparation/get-an-account#github%E3%82%A2%E3%82%AB%E3%82%A6%E3%83%B3%E3%83%88%E3%81%AE%E5%8F%96%E5%BE%97%E6%96%B9%E6%B3%95)）
 
 ![初期画面](/images/readme-first/fig-1.png)
 
