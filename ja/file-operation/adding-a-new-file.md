@@ -1,6 +1,6 @@
 # 新規ファイルの追加
 
-1. Vivliostyle Pubで表示させるファイルを、GitHubリポジトリに作成します。リポジトリ内にファイルがない場合、描きのような画面が表示されます。赤丸で囲んだ “creating a new file”（新規ファイル作成）をクリックしてください
+1. Vivliostyle Pubで表示させるファイルを、GitHubリポジトリに作成します。リポジトリ内にファイルがない場合、下記のような画面が表示されます。赤丸で囲んだ “creating a new file”（新規ファイル作成）をクリックしてください
 
 ![ ](images/file-operation/adding-a-new-file/fig-1.png)
 
