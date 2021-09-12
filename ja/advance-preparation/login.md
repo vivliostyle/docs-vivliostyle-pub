@@ -21,11 +21,11 @@ https://vivliostyle-pub-develop.vercel.app/
 
 ![ ](images/advance-preparation/login/fig-4.png)
 
-5. この画面が表示されたら、ぶじにインストールが完了したことが分かります
+5. この画面が表示されたら、無事にインストールが完了しました。Vivliostyle Pubのウィンドウに切り替えてください（自動では切り替わりません）
 
 ![ ](images/advance-preparation/login/fig-5.png)
 
-6. Vivliostyle Pubのウィンドウに切り替え、今度は “Refresh GitHub Access Token” をクリック
+6. 今度は “Refresh GitHub Access Token” をクリック
 
 ![ ](images/advance-preparation/login/fig-6.png)
 
@@ -33,8 +33,8 @@ https://vivliostyle-pub-develop.vercel.app/
 
 ![ ](images/advance-preparation/login/fig-7.png)
 
-8. 自動的にVivliostyle Pubの画面に戻ります。これで準備は完了です。リポジトリ名をクリックして文書を編集してください
+8. 自動的にVivliostyle Pubの画面に戻ります。
 
 ![ ](images/advance-preparation/login/fig-8.png)
 
-Have a happy writing!
+これでリポジトリの準備は完了です。次にリポジトリに書類を追加しましょう。[新規ファイルの追加](/ja/file-operation/adding-a-new-file.md)へ進んでください

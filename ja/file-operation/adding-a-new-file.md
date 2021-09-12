@@ -1,36 +1,46 @@
 # 新規ファイルの追加
 
-1. リポジトリのトップページ「Code」タブの「Add file」（ファイル追加）ボタンをクリックすると、メニュー項目が表示されます（赤丸）。その中から「Create new file」（新規ファイル作成）を選択します。
+1. Vivliostyle Pubで表示させるファイルを、GitHubリポジトリに作成します。リポジトリ内にファイルがない場合、描きのような画面が表示されます。赤丸で囲んだ “creating a new file”（新規ファイル作成）をクリックしてください
 
 ![ ](images/file-operation/adding-a-new-file/fig-1.png)
 
-2. エディタ画面に遷移します。
+2. エディタ画面に遷移します。なにか文字を書いてください。この段階では内容は仮のもので大丈夫です。終わったら “Commit Changes” ボタン（❺）を押下して、内容を確定してください
 
 ![ ](images/file-operation/adding-a-new-file/fig-2.png)
 
-- ❶ファイル名……新規追加するファイル名を英数字でここに入力してください
-- ❷Previewタブ……Markdown形式をHTML形式で描画したプレビューが確認できます。ただし、[GitHub Flavored Markdown - GFM記法](https://docs.github.com/ja/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)による描画です。Vivliostyle PubがもとづくVFM記法はこの拡張版なので、描画できないものもあることにご注意ください（→[VFM (Vivliostyle Flavored Markdown) の記法]()）
-- ❸Edit new fileタブ……ファイルの内容を入力・編集できます
-- ❹Commit名……新規ファイル名を入力すると、ここにそのファイル名が自動的に入力されます
-- ❺Commitの説明……追加するファイルの内容、意図など説明をここに書きます（オプション）
-- ❻Cancel Changes……変更を破棄して終了します
-- ❼Commit new file……ファイルの編集が終わったらこのボタンを押して、終了してください
 
-3. 「index2.md」が追加されました
+- ❶ファイル名……新規追加するファイル名を英数字でここに入力してください
+- ❷Edit new fileタブ……ファイルの内容を入力・編集できます
+- ❸Commit名……新規ファイル名を入力すると、ここにそのファイル名が自動的に入力されます（オプション）
+- ❹Commitの説明……追加するファイルの内容、意図など説明をここに書きます（オプション）
+- ❺Commit new file……ファイルの編集が終わったらこのボタンを押して、終了してください
+- ❻Cancel Changes……変更を破棄して終了します
+
+
+3. ちなみに、エディタ画面の「Preview」タブをクリックすると、Markdown形式をHTML形式で描画したプレビューが確認できます。ただし、[GitHub Flavored Markdown - GFM記法](https://docs.github.com/ja/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)による描画なので、Vivliostyle Pubのプレビューと異なる部分もあります。参考に留めてください（→[VFM (Vivliostyle Flavored Markdown) の記法]()）
 
 ![ ](images/file-operation/adding-a-new-file/fig-3.png)
 
-4. 再度、リポジトリのトップページからAdd file」（ファイル追加）ボタンをクリックし、「Create new file」（新規ファイル作成）を選択します。
+
+4. リポジトリのトップページ「Code」タブに戻ると、さっき追加した`chapter-1.md`が追加されていることが確認できます。この画面から新規にファイルを追加することもできます。「Add file」（ファイル追加）ボタンをクリックするとメニュー項目が表示されます（赤丸）。その中から「Create new file」（新規ファイル作成）を選択します
 
 ![ ](images/file-operation/adding-a-new-file/fig-4.png)
 
-5. エディタ画面で設定ファイル`vivliostyle.config.js`を新規作成します。2つ以上のファイルをVivliostyle Pubで扱うためにはこのファイルが必須になります。
 
-ファイル名を❶に記入し、作成が終わったら❷を押します。
+5. 前記「2」と同じエディタ画面に遷移します。❶のカラムにファイル名を記入、仮のファイル内容を書き、終わったら “Commit Changes” ボタン（❷）を押下して確定してください
 
 ![ ](images/file-operation/adding-a-new-file/fig-5.png)
 
-内容の雛形は下記のとおりです。コピーしてお使いください。`----`の部分を書き換えていきます。
+6. 最後に設定ファイル`vivliostyle.config.js`を新規作成します。再度、リポジトリのトップページからAdd file」（ファイル追加）ボタンをクリックし、「Create new file」（新規ファイル作成）を選択します
+
+![ ](images/file-operation/adding-a-new-file/fig-6.png)
+
+
+7. エディタ画面に遷移するので、ファイル名のカラム（❶）に`vivliostyle.config.js`と入力し、下記の雛形を参考にしてファイルを完成させてください。終わったら “Commit Changes” ボタン（❷）を押下して、内容を確定します
+
+![ ](images/file-operation/adding-a-new-file/fig-7.png)
+
+`vivliostyle.config.js`の雛形は下記のとおりです。コピーしてお使いください。`----`の部分を書き換えていきます。
 
 ```
 module.exports = {
@@ -42,12 +52,12 @@ module.exports = {
   ]
 }
 ```
-`title: `（書名）と`author:`（作者）は必須ではありませんが、ファイル名は必須です。`entry: [`の次の行から、Vivliostyle Pubで表示させたいファイル名をシングルクォート`'　'`で囲み、行末をカンマ`,`で区切って記入していってください。
+`title: `（書名）と`author:`（作者）はオプションですが、ファイル名は必須です。`entry: [`の次の行から、Vivliostyle Pubで表示させたいファイル名をシングルクォート`'　'`で囲み、行末をカンマ`,`で区切って記入していってください。2つ以上のファイルを追加する場合も、この部分にファイルを追記していきます（→[既存ファイルの追加](/ja/file-operation/adding-existing-files.md)）。なお、Vivliostyle Pubでもここで記述した順番で表示されます（→[複数ファイルの並べ替え](/ja/file-operation/reordering-files.md)）
 
-6. `vivliostyle.config.js`が追加されました。
+8. `vivliostyle.config.js`が追加されました
 
-![ ](images/file-operation/adding-a-new-file/fig-6.png)
+![ ](images/file-operation/adding-a-new-file/fig-8.png)
 
-7. Vivliostyle Pubを再読み込みさせて、追加したファイル（赤矢印）が表示されるか確認します。
+9. Vivliostyle Pubを再読み込みさせて、追加した`chapter-2.md`（赤矢印）が表示されるか確認します
 
-![ ](images/file-operation/adding-a-new-file/fig-7.png)
+![ ](images/file-operation/adding-a-new-file/fig-9.png)

@@ -13,11 +13,11 @@
 
 ![ ](images/advance-preparation/get-an-account/fig-2.png)
 
-3. 入力したアドレス宛てに送られてくる標題 “🚀 Your GitHub launch code” のメールを確認し、そこにある6桁の認証コードを画面に入力してください
+3. 入力したアドレス宛てに送られてくる、“🚀 Your GitHub launch code” という標題のメールを確認し、そこにある6桁の認証コードを画面に入力してください
 
 ![ ](images/advance-preparation/get-an-account/fig-3.png)
 
-4. ここからはGitHubアカウントに付帯する情報の選択です。“How many team member will be working with you?”（何人のチームメンバーがあなたと一緒に働きますか？）、Are you a student or teacher?（あなたは学生ですか、教師ですか？）いずれも選択しなくても問題ありません。その後、「Continue」をクリック
+4. ここからはGitHubによるアンケートです。“How many team member will be working with you?”（何人のチームメンバーがあなたと一緒に働きますか？）、Are you a student or teacher?（あなたは学生ですか、教師ですか？）いずれも選択しなくて問題ありません。その後、「Continue」をクリック
 
 ![ ](images/advance-preparation/get-an-account/fig-4.png)
 
@@ -26,11 +26,11 @@
 ![ ](images/advance-preparation/get-an-account/fig-5.png)
 
 
-6. GitHubアカウントのプランを選択。Free（無料）、Teamの2つのプランのうち、自分に合ったプランを選択し（初心者なら “Free” で十分でしょう）、ボタンをクリックしてください
+6. GitHubアカウントのプランを選択。Free（無料）、Teamの2つのプランのうち、自分に合ったプランを選択し（初めて利用するなら “Free” で十分です）、ボタンをクリックしてください
 
 ![ ](images/advance-preparation/get-an-account/fig-6.png)
 
-7. 表示されるダッシュボード画面で、“Create repository” をクリック。
+7. 表示されるダッシュボード画面で、“Create repository” をクリック
 
 ![ ](images/advance-preparation/get-an-account/fig-7.png)
 
@@ -38,14 +38,6 @@
 
 ![ ](images/advance-preparation/get-an-account/fig-8.png)
 
-9. Vivliostyle Pubで表示させるファイルを、あらかじめGitHubリポジトリに作成しておきます。“creating a new file”（新規ファイル作成）をクリックしてください
+9. この画面が表示されたら、リポジトリでの準備作業は終了です。[最初のログインで必要な作業](/ja/advance-preparation/login.md)に進んでください
 
 ![ ](images/advance-preparation/get-an-account/fig-9.png)
-
-10. 表示されるエディタ画面で、なんでも文字を入力してください（赤矢印）。文字は仮のもので、本格的な執筆はVivliostyle Pubログイン後にしましょう。入力後 “Commit new file” （新規ファイルのコミット）をクリック。
-
-11. お疲れさまでした。この画面が表示されたら準備完了です！　[②Vivliostyle Pubへのログイン](/ja/advance-preparation/login.md)に進んでください。
-
-![ ](images/advance-preparation/get-an-account/fig-11.png)
-
-#

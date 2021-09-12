@@ -12,30 +12,30 @@
 
 ![ ](images/file-operation/reordering-files/fig-3.png)
 
-4. エディタ画面に遷移するので、Edit new fileタブで編集してください。必要に応じて記入してください。記入しておくと履歴を参照したいときに便利です
+4. エディタ画面に遷移します。ファイル名を任意の順番に書き換えてください。ここでは昇順から降順に書き換えています
 
 ![ ](images/file-operation/reordering-files/fig-4.png)
 
 **変更前**
 
 ```
-    'index.md',
-    'index2.md',
-    'index4.md',
+    `chapter-1.md`
+    `chapter-2.md`
+    `chapter-100.md`,
 ```
 
 **変更後**
 
 ```
-    'index4.md',
-    'index2.md',
-    'index.md',
+    `chapter-100.md`,
+    `chapter-2.md`
+    `chapter-1.md`
 ```
 
-エディタ画面への行き方や編集方法は下記ページの「4」以降を参照してください
-
+詳細なエディタ画面の操作方法は下記ページの「2」「3」を、`vivliostyle.config.js`の編集方法は同ページの「7」を参照してください
 
 - [新規ファイルの追加](/ja/file-operation/adding-a-new-file.md)
+
 
 
 5. Vivliostyle Pubを再読み込みさせて、ファイルの選択ペインのファイルの順番（赤丸）が降順に変更されたか確認します
