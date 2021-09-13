@@ -26,18 +26,18 @@
 ![ ](images/advance-preparation/get-an-account/fig-5.png)
 
 
-6. GitHubアカウントのプランを選択。Free（無料）、Teamの2つのプランのうち、自分に合ったプランを選択し（初めて利用するなら “Free” で十分です）、ボタンをクリックしてください
+6. GitHubアカウントのプランを選択。Free（無料）、Teamの2つのプランのうち、自分に合ったプランを選択し（初めて利用するなら “Free” で十分です）、決定ボタンをクリックしてください
 
 ![ ](images/advance-preparation/get-an-account/fig-6.png)
 
-7. 表示されるダッシュボード画面で、“Create repository” をクリック
+7. つづいて表示されるダッシュボード画面で、“Create repository” をクリック
 
 ![ ](images/advance-preparation/get-an-account/fig-7.png)
 
-8. 作成書類を非公開にしたい場合は「Private」に、公開したい場合は「Public」にチェックをいれてください（赤矢印）。次に “Repository name”（リポジトリ名）を英数字で入力。利用可能なリポジトリ名なら緑色のチェックマークが表示され “Create repository” ボタンがアクティブになるのでクリック
+8. 作成書類を非公開にしたい場合は「Private」に、公開したい場合は「Public」にチェックをいれてください（赤矢印）。次に “Repository name”（リポジトリ名）を英数字で入力。リポジトリ名が利用可能なら、緑色の✓マークが表示され “Create repository” ボタンがアクティブになるのでクリックしてください
 
 ![ ](images/advance-preparation/get-an-account/fig-8.png)
 
-9. この画面が表示されたら、リポジトリでの準備作業は終了です。[最初のログインで必要な作業](/ja/advance-preparation/login.md)に進んでください
+9. この画面が表示されたら、リポジトリは無事に作成できました。[最初のログインで必要な作業](/ja/advance-preparation/login.md)に進んでください
 
 ![ ](images/advance-preparation/get-an-account/fig-9.png)

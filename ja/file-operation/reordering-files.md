@@ -19,17 +19,17 @@
 **変更前**
 
 ```
-    `chapter-1.md`
-    `chapter-2.md`
-    `chapter-100.md`,
+    'chapter-1.md',
+    'chapter-2.md',
+    'chapter-100.md',
 ```
 
 **変更後**
 
 ```
-    `chapter-100.md`,
-    `chapter-2.md`
-    `chapter-1.md`
+    'chapter-100.md',
+    'chapter-2.md',
+    'chapter-1.md',
 ```
 
 詳細なエディタ画面の操作方法は下記ページの「2」「3」を、`vivliostyle.config.js`の編集方法は同ページの「7」を参照してください

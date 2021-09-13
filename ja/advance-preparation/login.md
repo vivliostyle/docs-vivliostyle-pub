@@ -21,7 +21,7 @@ https://vivliostyle-pub-develop.vercel.app/
 
 ![ ](images/advance-preparation/login/fig-4.png)
 
-5. この画面が表示されたら、無事にインストールが完了しました。Vivliostyle Pubのウィンドウに切り替えてください（自動では切り替わりません）
+5. この画面が表示されたら、無事にインストールが完了しました。先ほど開いたVivliostyle Pubに切り替えてください（自動では切り替わりません）
 
 ![ ](images/advance-preparation/login/fig-5.png)
 
@@ -37,4 +37,4 @@ https://vivliostyle-pub-develop.vercel.app/
 
 ![ ](images/advance-preparation/login/fig-8.png)
 
-これでリポジトリの準備は完了です。次にリポジトリに書類を追加しましょう。[新規ファイルの追加](/ja/file-operation/adding-a-new-file.md)へ進んでください
+これで事前準備は完了です。次に実際にリポジトリに書類を追加し、Vivliostyle Pubに表示させてみましょう。[新規ファイルの追加](/ja/file-operation/adding-a-new-file.md)へ進んでください
