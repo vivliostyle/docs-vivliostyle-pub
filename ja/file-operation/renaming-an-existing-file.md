@@ -8,7 +8,7 @@
 
 ![ ](images/file-operation/renaming-an-existing-file/fig-2.png)
 
-3. エディタ画面に遷移します。ファイル名のコラム（赤丸❶）が編集可能になっています。英数字でファイル名を記入してください。その際、**拡張子は必ず`.md`を指定してください。**ここでは`chapter-100.md`に変更します。終わったら “Commit Changes” ボタン（赤丸❷）を押下して変更を確定してください
+3. エディタ画面に遷移します。ファイル名のコラム（赤丸❶）が編集可能になっています。ファイル名を記入してください。その際、**拡張子は必ず`.md`を指定してください。**ここでは`chapter-100.md`に変更します。終わったら “Commit Changes” ボタン（赤丸❷）を押下して変更を確定してください
 
 ![ ](images/file-operation/renaming-an-existing-file/fig-3.png)
 
