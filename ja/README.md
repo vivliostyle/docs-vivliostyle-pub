@@ -1,11 +1,11 @@
 # Vivliostyle Pub プロトタイプ版ユーザガイド
     
-## 最初にお読みください
+## 🚀 最初にお読みください
 
 - [必要環境](/ja/readme-first/quick-start-guide-and-required-environment.md#%E5%BF%85%E8%A6%81%E7%92%B0%E5%A2%83)
 - [クイックスタートガイド](/ja/readme-first/quick-start-guide-and-required-environment.md#%E3%82%AF%E3%82%A4%E3%83%83%E3%82%AF%E3%82%B9%E3%82%BF%E3%83%BC%E3%83%88%E3%82%AC%E3%82%A4%E3%83%89)
 
-## 事前準備
+## 🧰 事前準備
 
 - [GitHubアカウントの取得方法](/ja/advance-preparation/get-an-account.md)
 - [リポジトリの作成方法](/ja/advance-preparation/how-to-create-a-repository.md)
@@ -21,9 +21,9 @@
 
 ## 🪜 ディレクトリ操作
 
-- [新規ディレクトリの作成 ]()
-- [既存ディレクトリのリネーム]()
-- [既存ディレクトリの削除]()
+- [新規ディレクトリの作成 ](/ja/directory-operations/create-a-new-directory.md)
+- [既存ディレクトリ名の変更](/ja/directory-operations/rename-an-existing-directory.md)
+- [既存ディレクトリの削除](/ja/directory-operations/delete-an-existing-directory.md)
 
 ## ✍️ 文書の作成と編集
 
