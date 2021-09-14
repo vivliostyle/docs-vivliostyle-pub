@@ -25,17 +25,16 @@
 - [既存ディレクトリ名の変更](/ja/directory-operations/rename-an-existing-directory.md)
 - [既存ディレクトリの削除](/ja/directory-operations/delete-an-existing-directory.md)
 
-## ✍️ 文書の作成と編集
+## ✍️ 文書の作成と保存
 
-- [VFM (Vivliostyle Flavored Markdown) の記法]()
-- [文書の保存]()
-- [文書の別名保存]()（→[既存ファイルの別名保存]()）
-- [画像の挿入]()
+- [文書作成の記法](/ja/create-and-save-documents/notation-for-document creation.md)
+- [文書の保存](/ja/create-and-save-documents/save-document.md)
+
+## Actionsメニューの機能
+
+- [スタイルの切替](/ja/functions-of-the-actions-menu/switching-styles.md)
+- [PDFの出力](/ja/functions-of-the-actions-menu/output-pdf.md)
+- [EPUBの出力](/ja/functions-of-the-actions-menu/output-epub.md)
 
 ## 👥 複数ユーザによる文書作成
 
-## 👘  スタイルの切り替えとファイルの出力
-
-- [スタイルの切替](/ja/style-switching-and-file-output/switching-styles.md)
-- [PDFの出力](/ja/style-switching-and-file-output/output-pdf.md)
-- [EPUBの出力](/ja/style-switching-and-file-output/output-epub.md)
