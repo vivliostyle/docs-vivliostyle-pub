@@ -42,7 +42,7 @@
 
 `vivliostyle.config.js`の雛形は下記のとおりです。コピーしてお使いください。`----`の部分を書き換えていきます。
 
-```
+```js
 module.exports = {
   title: '---',
   author: '----',

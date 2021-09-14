@@ -36,7 +36,7 @@
 
 **変更前**
 
-```
+```js
     `chapter-100.md`,
     `chapter-2.md`,
     `chapter-1.md`,
@@ -44,7 +44,7 @@
 
 **変更後**
 
-```
+```js
     `chapter-2.md`,
     `chapter-1.md`,
 ```

@@ -43,7 +43,7 @@
 ![ ](images/directory-operations/create-a-new-directory/fig-9.png)
 
 **変更前**
-```
+```js
 module.exports = {
   title: '私の本',
   author: '尾久綿次郎',
@@ -55,7 +55,7 @@ module.exports = {
 ```
 
 **変更後**
-```
+```js
 module.exports = {
   title: '私の本',
   author: '尾久綿次郎',

@@ -48,12 +48,12 @@
 ![ ](images/directory-operations/rename-an-existing-directory/fig-8.png)
 
 **変更前**
-```
+```js
 'chapter-3/section-1.md',
 ```
 
 **変更後**
-```
+```js
 'chapter-100/section-1.md',
 ```
 詳細なエディタ画面の操作方法は下記ページの「2」「3」を参照してください
