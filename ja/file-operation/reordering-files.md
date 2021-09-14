@@ -4,7 +4,7 @@
 
 ![ ](images/file-operation/reordering-files/fig-1.png)
 
-2. リポジトリのトップページ「Code」タブを表示していることを確認し、`vivliostyle.config.js`（赤丸）をクリックしてください
+2. リポジトリのトップページで「Code」タブが選択されていることを確認し、`vivliostyle.config.js`（赤丸）をクリックしてください
 
 ![ ](images/file-operation/reordering-files/fig-2.png)
 

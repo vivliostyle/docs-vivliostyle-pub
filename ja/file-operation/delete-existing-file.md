@@ -4,7 +4,7 @@
 
 ![ ](images/file-operation/delete-existing-file/fig-1.png)
 
-2. リポジトリのトップページ「Code」タブを表示していることを確認し、リネームするファイルをクリックしてください。ここでは`chapter-100.md`を削除してみましょう（赤丸）
+2. リポジトリのトップページで「Code」タブが選択されていることを確認し、リネームするファイルをクリックしてください。ここでは`chapter-100.md`を削除してみましょう（赤丸）
 
 ![ ](images/file-operation/delete-existing-file/fig-2.png)
 

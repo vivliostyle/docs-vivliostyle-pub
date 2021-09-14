@@ -1,6 +1,6 @@
 # 既存ファイルの追加
 
-1. リポジトリのトップページ「Code」タブを表示していることを確認します。
+1. リポジトリのトップページで「Code」タブが選択されていることを確認します
 
 ![ ](images/file-operation/adding-existing-files/fig-1.png)
 
