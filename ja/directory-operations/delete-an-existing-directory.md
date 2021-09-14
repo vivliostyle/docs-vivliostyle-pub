@@ -22,21 +22,23 @@
 
 ![ ](images/directory-operations/delete-an-existing-directory/fig-5a.png)
 
-6. `chapter-100`の部分をそっくりバックスペースキーで削除しましょう。削除が終わったら“Commit Changes” ボタン（赤丸）を押下して変更を確定すると、ファイル操作画面に戻ります。画面左上のリポジトリ名をクリックしてください
+6. `chapter-100`の部分をそっくりバックスペースキーで削除しましょう。
 
 ![ ](images/directory-operations/delete-an-existing-directory/fig-6a.png)
 
+7. 削除が終わったら“Commit Changes” ボタン（赤丸）を押下して変更を確定すると、ファイル操作画面に戻ります。画面左上のリポジトリ名をクリックしてください
+
 ![ ](images/directory-operations/delete-an-existing-directory/fig-7.png)
 
-7. リポジトリのトップページに戻りました。今おこなったディレクトリの削除を`vivliostyle.config.js`に反映させましょう。赤丸をクリックします
+8. リポジトリのトップページに戻りました。今おこなったディレクトリの削除を`vivliostyle.config.js`に反映させましょう。赤丸をクリックします
 
 ![ ](images/directory-operations/delete-an-existing-directory/fig-8.png)
 
-8. `vivliostyle.config.js`のファイル操作画面に遷移します。画面右側の鉛筆アイコン（赤丸）をクリックしてください
+9. `vivliostyle.config.js`のファイル操作画面に遷移します。画面右側の鉛筆アイコン（赤丸）をクリックしてください
 
 ![ ](images/directory-operations/delete-an-existing-directory/fig-9.png)
 
-9. エディタ画面に遷移しました。削除したディレクトリ名`chapter-100/`の部分を削除しましょう（赤矢印）
+10. エディタ画面に遷移しました。削除したディレクトリ名`chapter-100/`の部分を削除しましょう（赤矢印）
 
 ![ ](images/directory-operations/delete-an-existing-directory/fig-10.png)
 
@@ -49,10 +51,10 @@
 - [新規ファイルの追加](/ja/file-operation/adding-a-new-file.md)
 
 
-10. 削除し終わったら、“Commit Changes” ボタン（赤丸）を押下して、変更を確定してください。
+11. 削除し終わったら、“Commit Changes” ボタン（赤丸）を押下して、変更を確定してください。
 
 ![ ](images/directory-operations/delete-an-existing-directory/fig-11.png)
 
-11. Vivliostyle Pubを再読み込みさせて、追加した`chapter-100/`（赤矢印）が削除されているか確認します
+12. Vivliostyle Pubを再読み込みさせて、追加した`chapter-100/`（赤矢印）が削除されているか確認します
 
 ![ ](images/directory-operations/delete-an-existing-directory/fig-12.png)
