@@ -28,9 +28,10 @@
 ## ✍️ 文書の作成と保存
 
 - [文書作成の記法](/ja/create-and-save-documents/notation-for-document-creation.md)
+- [画像の指定とキャプション](/ja/create-and-save-documents/Image-specification-and-caption.md)
 - [文書の保存](/ja/create-and-save-documents/save-document.md)
 
-## Actionsメニューの機能
+## 👘 Actionsメニューの機能
 
 - [スタイルの切替](/ja/functions-of-the-actions-menu/switching-styles.md)
 - [PDFの出力](/ja/functions-of-the-actions-menu/output-pdf.md)
