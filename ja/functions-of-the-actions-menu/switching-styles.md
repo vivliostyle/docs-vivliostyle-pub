@@ -2,8 +2,10 @@
 
 1. Vivliostyle Pub 画面右上の “Action” メニューを押下すると複数のスタイル名が表示されます。ここでは「縦書き小説」を選択しましょう
 
-![ ](images/style-switching-and-file-output/switching-styles/fig-1.png)
+![ ](images/functions-of-the-actions-menu/switching-styles/fig-1.png)
+
+/Users/ogwata/Dropbox/dev/docs-vivliostyle-pub/
 
 2. 「縦書き小説」のスタイルに変更されました。
 
-![ ](images/style-switching-and-file-output/switching-styles/fig-2.png)
+![ ](images/functions-of-the-actions-menu/switching-styles/fig-2.png)
