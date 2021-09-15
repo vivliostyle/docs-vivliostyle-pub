@@ -8,7 +8,7 @@
 
 ![ ](images/create-and-save-documents/save-document/fig-2.png)
 
-3. 文書を変更して少したつと、`Save document`のボタン（赤丸）がアクティブになっています。押下して書類を保存しましょう。
+3. 文書を変更して少したつと、自動的に`Save document`のボタン（赤丸）がアクティブになっています。押下して書類を保存しましょう。
 
 ![ ](images/create-and-save-documents/save-document/fig-3.png)
 
