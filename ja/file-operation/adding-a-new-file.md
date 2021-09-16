@@ -4,7 +4,7 @@
 
 ![ ](images/file-operation/adding-a-new-file/fig-1.png)
 
-2. エディタ画面に遷移します。なにか文字を書いてください。この段階では内容は仮のもので大丈夫です。終わったら “Commit Changes” （コミットの変更）ボタン（❺）を押下して、内容を確定してください
+2. エディタ画面に遷移します。なにか文字を書いてください。この段階では内容は仮のもので大丈夫です。終わったら “Commit Changes” （コミットの変更）ボタン（⑤）を押下して、内容を確定してください
 
 ![ ](images/file-operation/adding-a-new-file/fig-2.png)
 
