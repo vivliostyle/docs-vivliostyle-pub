@@ -8,7 +8,7 @@
 
 ![ ](images/create-and-save-documents/Image-specification-and-caption/fig-2.png)
 
-3. Commit画面に遷移します。内容を確認し、“Commit Changes” ボタン（赤丸）を押下して、追加を確定してください。
+3. Commit画面に遷移します。内容を確認し、“Commit Changes” （コミットの変更）ボタン（赤丸）を押下して、追加を確定してください。
 
 ![ ](images/create-and-save-documents/Image-specification-and-caption/fig-3.png)
 

@@ -13,7 +13,7 @@ https://vivliostyle-pub-develop.vercel.app/
 
 ![ ](images/advance-preparation/login/fig-2.png)
 
-3. Vivliostyle Pubの画面に戻るので、今度は “Install GitHub Apps” をクリック
+3. Vivliostyle Pubの画面に戻るので、今度は “Install GitHub Apps” （GitHubアプリをインストール）をクリック
 
 ![ ](images/advance-preparation/login/fig-3.png)
 

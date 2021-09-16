@@ -31,7 +31,7 @@
 
 ![ ](images/directory-operations/rename-an-existing-directory/fig-4-5.png)
 
-8. “Commit Changes” ボタン（「4」赤丸❷）を押下して、変更を確定してください。以下のような`section-1.md`のファイル操作画面に戻ります。画面左上のリポジトリ名（赤丸）をクリックしてください
+8. “Commit Changes” （コミットの変更）ボタン（「4」赤丸❷）を押下して、変更を確定してください。以下のような`section-1.md`のファイル操作画面に戻ります。画面左上のリポジトリ名（赤丸）をクリックしてください
 
 ![ ](images/directory-operations/rename-an-existing-directory/fig-5.png)
 
@@ -43,7 +43,7 @@
 
 ![ ](images/directory-operations/rename-an-existing-directory/fig-7.png)
 
-11. エディタ画面に遷移しました。以前のディレクトリ名`chapter-3`を、変更したディレクトリ名`chapter-100`に書き換えましょう（赤矢印）
+11. エディタ画面に遷移しました。以前のディレクトリ名`chapter-3`を、変更したディレクトリ名`chapter-100`に書き換えましょう（赤矢印）。終わったら、“Commit Changes” （コミットの変更）ボタンを押下して、変更を確定してください
 
 ![ ](images/directory-operations/rename-an-existing-directory/fig-8.png)
 

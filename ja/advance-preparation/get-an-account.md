@@ -9,7 +9,7 @@
 
 ![ ](images/advance-preparation/get-an-account/fig-1.png)
 
-2. メールアドレス、パスワード、ユーザネーム、GitHubからのお知らせメールを受け取るか(y)否か(n)を記入し、セキュリティ検証テストを受けた後、「Create account」をクリック
+2. メールアドレス、パスワード、ユーザネーム、GitHubからのお知らせメールを受け取るか(y)否か(n)を記入し、セキュリティ検証テストを受けた後、「Create account」（アカウント作成）をクリック
 
 ![ ](images/advance-preparation/get-an-account/fig-2.png)
 
@@ -17,11 +17,11 @@
 
 ![ ](images/advance-preparation/get-an-account/fig-3.png)
 
-4. ここからはGitHubによるアンケートです。“How many team member will be working with you?”（何人のチームメンバーがあなたと一緒に働きますか？）、Are you a student or teacher?（あなたは学生ですか、教師ですか？）いずれも選択しなくて問題ありません。その後、「Continue」をクリック
+4. ここからはGitHubによるアンケートです。“How many team member will be working with you?”（何人のチームメンバーがあなたと一緒に働きますか？）、Are you a student or teacher?（あなたは学生ですか、教師ですか？）いずれも選択しなくて問題ありません。その後、「Continue」（続ける）をクリック
 
 ![ ](images/advance-preparation/get-an-account/fig-4.png)
 
-5. “What specific features are you interested in using?”（具体的にどのような機能を使いたいとお考えですか？）これも選択しなくても問題ありません。その後、「Continue」をクリック
+5. “What specific features are you interested in using?”（具体的にどのような機能を使いたいとお考えですか？）これも選択しなくても問題ありません。その後、「Continue」（続ける）をクリック
 
 ![ ](images/advance-preparation/get-an-account/fig-5.png)
 
@@ -30,7 +30,7 @@
 
 ![ ](images/advance-preparation/get-an-account/fig-6.png)
 
-7. つづいて表示されるダッシュボード画面で、“Create repository” をクリック
+7. つづいて表示されるダッシュボード画面で、“Create repository” （リポジトリの作成）をクリック
 
 ![ ](images/advance-preparation/get-an-account/fig-7.png)
 

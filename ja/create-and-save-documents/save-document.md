@@ -4,11 +4,11 @@
 
 ![ ](images/create-and-save-documents/save-document/fig-1.png)
 
-2. 編集が終わりました。プレビューを確認すると、ルビが適切に組まれています。編集直後は`Save document`のボタン（赤丸）がグレイアウトになっていることに注意してください。
+2. 編集が終わりました。プレビューを確認すると、ルビが適切に組まれています。編集直後は`Save document`（書類の保存）のボタン（赤丸）がグレイアウトになっていることに注意してください。
 
 ![ ](images/create-and-save-documents/save-document/fig-2.png)
 
-3. 文書を変更して少したつと、自動的に`Save document`のボタン（赤丸）がアクティブになっています。押下して書類を保存しましょう。
+3. 文書を変更して少したつと、自動的に`Save document`（書類の保存）のボタン（赤丸）がアクティブになっています。押下して書類を保存しましょう。
 
 ![ ](images/create-and-save-documents/save-document/fig-3.png)
 

@@ -4,7 +4,7 @@
 
 ![ ](images/directory-operations/delete-an-existing-directory/fig-1.png)
 
-2. ディレクトリ内のファイル一覧画面に遷移しました。ディレクトリ名の削除は、リポジトリからファイルまでのパス名（経路名）のうちディレクトリ名を削除する方法でおこないます。手順は[既存ファイル名の変更](/ja/file-operation/renaming-an-existing-file.md)と似ています。ディレクトリ内のいずれかのファイル名をクリックしてください。ここでは`section-1.md`（赤丸）をクリックします
+2. ディレクトリ内のファイル一覧画面に遷移しました。ディレクトリ名の削除は、リポジトリからファイルまでのパス名（経路名）のうちディレクトリ名を削除する方法でおこないます。手順は[既存ファイル名の変更](/ja/file-operation/renaming-an-existing-file.md)とよく似ています。ディレクトリ内のいずれかのファイル名をクリックしてください。ここでは`section-1.md`（赤丸）をクリックします
 
 ![ ](images/directory-operations/delete-an-existing-directory/fig-2.png)
 
@@ -26,7 +26,7 @@
 
 ![ ](images/directory-operations/delete-an-existing-directory/fig-6a.png)
 
-7. 削除が終わったら“Commit Changes” ボタン（赤丸）を押下して変更を確定すると、ファイル操作画面に戻ります。画面左上のリポジトリ名をクリックしてください
+7. 削除が終わったら“Commit Changes” （コミットの変更）ボタン（赤丸）を押下して変更を確定すると、ファイル操作画面に戻ります。画面左上のリポジトリ名をクリックしてください
 
 ![ ](images/directory-operations/delete-an-existing-directory/fig-7.png)
 
@@ -51,7 +51,7 @@
 - [新規ファイルの追加](/ja/file-operation/adding-a-new-file.md)
 
 
-11. 削除し終わったら、“Commit Changes” ボタン（赤丸）を押下して、変更を確定してください。
+11. 削除し終わったら、“Commit Changes” （コミットの変更）ボタン（赤丸）を押下して、変更を確定してください。
 
 ![ ](images/directory-operations/delete-an-existing-directory/fig-11.png)
 

@@ -29,7 +29,7 @@
 
 ![ ](images/file-operation/adding-existing-files/fig-5.png)
 
-6. エディタ画面に遷移しました。赤矢印の部分に下記の雛形をペースとして`chapter-3.md`を追記しましょう。編集が終わったら“Commit Changes” ボタン（赤丸）を押下して、追加を確定してください
+6. エディタ画面に遷移しました。赤矢印の部分に下記の雛形をペースとして`chapter-3.md`を追記しましょう。編集が終わったら“Commit Changes” （コミットの変更）ボタン（赤丸）を押下して、追加を確定してください
 
 ```
     'chapter-3.md',

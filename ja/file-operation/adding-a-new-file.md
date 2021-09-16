@@ -4,7 +4,7 @@
 
 ![ ](images/file-operation/adding-a-new-file/fig-1.png)
 
-2. エディタ画面に遷移します。なにか文字を書いてください。この段階では内容は仮のもので大丈夫です。終わったら “Commit Changes” ボタン（❺）を押下して、内容を確定してください
+2. エディタ画面に遷移します。なにか文字を書いてください。この段階では内容は仮のもので大丈夫です。終わったら “Commit Changes” （コミットの変更）ボタン（❺）を押下して、内容を確定してください
 
 ![ ](images/file-operation/adding-a-new-file/fig-2.png)
 
@@ -27,16 +27,16 @@
 ![ ](images/file-operation/adding-a-new-file/fig-4.png)
 
 
-5. 前記「2」と同じエディタ画面に遷移します。❶のカラムにファイル名`chapter-2.md`を記入、仮のファイル内容を書き、終わったら “Commit Changes” ボタン（❷）を押下して確定してください
+5. 前記「2」と同じエディタ画面に遷移します。❶のカラムにファイル名`chapter-2.md`を記入、仮のファイル内容を書き、終わったら “Commit Changes” （コミットの変更）ボタン（❷）を押下して確定してください
 
 ![ ](images/file-operation/adding-a-new-file/fig-5.png)
 
-6. `chapter-2.md`が追加されました（赤矢印）。最後に設定ファイル`vivliostyle.config.js`を新規作成します。再度、リポジトリのトップページからAdd file」（ファイル追加）ボタンをクリックし、「Create new file」（新規ファイル作成）を選択します
+6. `chapter-2.md`が追加されました（赤矢印）。最後に設定ファイル`vivliostyle.config.js`を新規作成します。再度、リポジトリのトップページから「Add file」（ファイル追加）ボタンをクリックし、「Create new file」（新規ファイル作成）を選択します
 
 ![ ](images/file-operation/adding-a-new-file/fig-6.png)
 
 
-7. エディタ画面に遷移するので、ファイル名のカラム（❶）に`vivliostyle.config.js`と入力し、下記の雛形を参考にしてファイルを完成させてください。終わったら “Commit Changes” ボタン（❷）を押下して、内容を確定します
+7. エディタ画面に遷移するので、ファイル名のカラム（❶）に`vivliostyle.config.js`と入力し、下記の雛形を参考にしてファイルを完成させてください。終わったら “Commit Changes” （コミットの変更）ボタン（❷）を押下して、内容を確定します
 
 ![ ](images/file-operation/adding-a-new-file/fig-7.png)
 

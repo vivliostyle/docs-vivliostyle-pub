@@ -38,7 +38,7 @@
 
 ![ ](images/directory-operations/create-a-new-directory/fig-8.png)
 
-9. エディタ画面に遷移しました。`chapter-3/section-1`と`chapter-3/section-2`を追記しましょう（赤矢印）。編集が終わったら“Commit Changes” ボタン（赤丸）を押下して、変更を確定してください
+9. エディタ画面に遷移しました。`chapter-3/section-1`と`chapter-3/section-2`を追記しましょう（赤矢印）。編集が終わったら“Commit Changes” （コミットの変更）ボタン（赤丸）を押下して、変更を確定してください
 
 ![ ](images/directory-operations/create-a-new-directory/fig-9.png)
 

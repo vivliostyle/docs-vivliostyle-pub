@@ -12,7 +12,7 @@
 
 ![ ](images/file-operation/delete-existing-file/fig-3.png)
 
-4. Commit画面に遷移するので、“Commit Changes” ボタン（赤丸）を押下して削除を確定してください
+4. Commit画面に遷移するので、“Commit Changes” （コミットの変更）ボタン（赤丸）を押下して削除を確定してください
 
 ![ ](images/file-operation/delete-existing-file/fig-4.png)
 
@@ -30,7 +30,7 @@
 ![ ](images/file-operation/delete-existing-file/fig-7.png)
 
 
-8. エディタ画面に遷移します。`entry: [`以降の行（赤丸❶）から`chapter-100.md`を削除ししてください。終わったら “Commit Changes” ボタン（赤丸❷）を押下して変更を確定してください。“Commit Changes” のカラムはオプションです
+8. エディタ画面に遷移します。`entry: [`以降の行（赤丸❶）から`chapter-100.md`を削除ししてください。終わったら “Commit Changes” （コミットの変更）ボタン（赤丸❷）を押下して変更を確定してください。“Commit Changes” のカラムはオプションです
 
 ![ ](images/file-operation/delete-existing-file/fig-8.png)
 
