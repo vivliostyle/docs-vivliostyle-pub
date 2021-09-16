@@ -9,12 +9,12 @@
 ![ ](images/file-operation/adding-a-new-file/fig-2.png)
 
 
-- ❶ファイル名……新規追加するファイル名をここに入力してください。**拡張子は必ず`.md`を指定してください**
-- ❷Edit new fileタブ……ファイルの内容を入力・編集できます
-- ❸Commit名……新規ファイル名を入力すると、ここにもそのファイル名が自動的に入力されます（オプション）
-- ❹Commitの説明……追加するファイルの内容、意図など説明をここに書きます（オプション）
-- ❺Commit new file……ファイルの編集が終わったらこのボタンを押して、終了してください
-- ❻Cancel Changes……変更を破棄して終了します
+- ①ファイル名……新規追加するファイル名をここに入力してください。**拡張子は必ず`.md`を指定してください**
+- ②Edit new fileタブ……ファイルの内容を入力・編集できます
+- ③Commit名……新規ファイル名を入力すると、ここにもそのファイル名が自動的に入力されます（オプション）
+- ④Commitの説明……追加するファイルの内容、意図など説明をここに書きます（オプション）
+- ⑤Commit new file……ファイルの編集が終わったらこのボタンを押して、終了してください
+- ⑥Cancel Changes……変更を破棄して終了します
 
 
 3. ちなみに、エディタ画面の「Preview」タブをクリックすると、Markdown形式をHTML形式で描画したプレビューが確認できます。ただし、[GitHub Flavored Markdown - GFM記法](https://docs.github.com/ja/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)による描画なので、Vivliostyle Pubのプレビューと異なる部分もあります。参考に留めてください（→[VFM (Vivliostyle Flavored Markdown) の記法]()）
@@ -27,7 +27,7 @@
 ![ ](images/file-operation/adding-a-new-file/fig-4.png)
 
 
-5. 前記「2」と同じエディタ画面に遷移します。❶のカラムにファイル名`chapter-2.md`を記入、仮のファイル内容を書き、終わったら “Commit Changes” （コミットの変更）ボタン（❷）を押下して確定してください
+5. 前記「2」と同じエディタ画面に遷移します。①のカラムにファイル名`chapter-2.md`を記入、仮のファイル内容を書き、終わったら “Commit Changes” （コミットの変更）ボタン（②）を押下して確定してください
 
 ![ ](images/file-operation/adding-a-new-file/fig-5.png)
 
@@ -36,7 +36,7 @@
 ![ ](images/file-operation/adding-a-new-file/fig-6.png)
 
 
-7. エディタ画面に遷移するので、ファイル名のカラム（❶）に`vivliostyle.config.js`と入力し、下記の雛形を参考にしてファイルを完成させてください。終わったら “Commit Changes” （コミットの変更）ボタン（❷）を押下して、内容を確定します
+7. エディタ画面に遷移するので、ファイル名のカラム（①）に`vivliostyle.config.js`と入力し、下記の雛形を参考にしてファイルを完成させてください。終わったら “Commit Changes” （コミットの変更）ボタン（②）を押下して、内容を確定します
 
 ![ ](images/file-operation/adding-a-new-file/fig-7.png)
 

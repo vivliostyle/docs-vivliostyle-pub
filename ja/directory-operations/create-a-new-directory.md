@@ -5,7 +5,7 @@
 
 ![ ](images/directory-operations/create-a-new-directory/fig-1.png)
 
-2. エディタ画面に遷移します。❶のカラムに新規ディレクトリ名として`chapter-3`と記入してください
+2. エディタ画面に遷移します。①のカラムに新規ディレクトリ名として`chapter-3`と記入してください
 
 ![ ](images/directory-operations/create-a-new-directory/fig-2.png)
 

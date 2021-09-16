@@ -12,7 +12,7 @@
 
 ![ ](images/directory-operations/rename-an-existing-directory/fig-3.png)
 
-4. エディタ画面に遷移します。ファイル名のカラム（赤丸❶）をクリックし、写真のようにカーソルをカラム左端まで移動させてください
+4. エディタ画面に遷移します。ファイル名のカラム（赤丸①）をクリックし、写真のようにカーソルをカラム左端まで移動させてください
 
 ![ ](images/directory-operations/rename-an-existing-directory/fig-4-1.png)
 
@@ -31,7 +31,7 @@
 
 ![ ](images/directory-operations/rename-an-existing-directory/fig-4-5.png)
 
-8. “Commit Changes” （コミットの変更）ボタン（「4」赤丸❷）を押下して、変更を確定してください。以下のような`section-1.md`のファイル操作画面に戻ります。画面左上のリポジトリ名（赤丸）をクリックしてください
+8. “Commit Changes” （コミットの変更）ボタン（「4」赤丸②）を押下して、変更を確定してください。以下のような`section-1.md`のファイル操作画面に戻ります。画面左上のリポジトリ名（赤丸）をクリックしてください
 
 ![ ](images/directory-operations/rename-an-existing-directory/fig-5.png)
 

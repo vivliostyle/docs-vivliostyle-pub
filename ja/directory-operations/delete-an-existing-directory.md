@@ -12,7 +12,7 @@
 
 ![ ](images/directory-operations/delete-an-existing-directory/fig-3.png)
 
-4. エディタ画面に遷移します。ファイル名のカラム（赤丸❶）をクリックし、写真のようにカーソルをカラム左端まで移動させてください
+4. エディタ画面に遷移します。ファイル名のカラム（赤丸①）をクリックし、写真のようにカーソルをカラム左端まで移動させてください
 
 ![ ](images/directory-operations/delete-an-existing-directory/fig-4.png)
 
