@@ -34,7 +34,7 @@
 
 ![ ](images/advance-preparation/get-an-account/fig-7.png)
 
-8. 作成書類を非公開にしたい場合は「Private」に、公開したい場合は「Public」にチェックをいれてください（赤矢印）。次に “Repository name”（リポジトリ名）を英数字で入力（赤丸①）。リポジトリ名が利用可能なら、緑色の✓マークが表示され “Create repository” ボタン（赤丸②）がアクティブになるのでクリックしてください
+8. 作成書類を非公開にしたい場合は「Private」に、公開したい場合は「Public」にチェックをいれてください（赤矢印）。次に “Repository name”（リポジトリ名）を英数字で入力（赤丸①）。リポジトリ名が利用可能なら、緑色の✓マークが表示され “Create repository” （リポジトリの作成）ボタン（赤丸②）がアクティブになるのでクリックしてください
 
 ![ ](images/advance-preparation/get-an-account/fig-8.png)
 
