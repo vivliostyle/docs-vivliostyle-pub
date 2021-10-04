@@ -26,7 +26,7 @@
 ![ ](images/advance-preparation/get-an-account/fig-5.png)
 
 
-6. GitHubアカウントのプランを選択。Free（無料）、Teamの2つのプランのうち、自分に合ったプランを選択し（初めて利用するなら “Free” で十分です）、決定ボタンをクリックしてください
+6. GitHubアカウントのプランを選択。Free（無料）、Team（チーム）の2つのプランのうち、自分に合ったプランを選択し（初めて利用するなら “Free” で十分です）、決定ボタンをクリックしてください
 
 ![ ](images/advance-preparation/get-an-account/fig-6.png)
 
@@ -34,7 +34,7 @@
 
 ![ ](images/advance-preparation/get-an-account/fig-7.png)
 
-8. 作成書類を非公開にしたい場合は「Private」に、公開したい場合は「Public」にチェックをいれてください（赤矢印）。次に “Repository name”（リポジトリ名）を英数字で入力（赤丸①）。リポジトリ名が利用可能なら、緑色の✓マークが表示され “Create repository” （リポジトリの作成）ボタン（赤丸②）がアクティブになるのでクリックしてください
+8. 作成書類を非公開にしたい場合は「Private」（私的）に、公開したい場合は「Public」（公的）にチェックをいれてください（赤矢印）。次に “Repository name”（リポジトリ名）を英数字で入力（赤丸①）。リポジトリ名が利用可能なら、緑色の✓マークが表示され “Create repository” （リポジトリの作成）ボタン（赤丸②）がアクティブになるのでクリックしてください
 
 ![ ](images/advance-preparation/get-an-account/fig-8.png)
 
