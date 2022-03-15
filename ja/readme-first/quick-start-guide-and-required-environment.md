@@ -7,26 +7,61 @@
 
 ## 初期画面
 
-[所定のURL](https://vivliostyle-pub-develop.vercel.app/)にアクセスすると、以下の初期画面が表示されます。①「Login」ボタンを押して、GitHubアカウントでログインしてください。（→[GitHubアカウントの取得方法](/ja/advance-preparation/get-an-account#github%E3%82%A2%E3%82%AB%E3%82%A6%E3%83%B3%E3%83%88%E3%81%AE%E5%8F%96%E5%BE%97%E6%96%B9%E6%B3%95)）
+[所定のURL](https://vivliostyle-pub-develop.vercel.app/)にアクセスすると、以下の初期画面が表示されます。①「Login」ボタンを押して、GitHubアカウントでログインしてください（→[GitHubアカウントの取得方法](/ja/advance-preparation/get-an-account#github%E3%82%A2%E3%82%AB%E3%82%A6%E3%83%B3%E3%83%88%E3%81%AE%E5%8F%96%E5%BE%97%E6%96%B9%E6%B3%95)）。なお、②言語メニューから使用言語を選択することができます（初期値：日本語）。
 
 ![](images/readme-first/fig-1.png)
 
 ## リポジトリとブランチの選択
 
-ログインするとすると以下の画面でリポジトリを選択します。リポジトリに複数のブランチがある場合はブランチも選択できます（予定）。公開リポジトリは“Public”、非公開は“Private” と表示されます。
+ログインするとすると以下の画面でリポジトリを選択します。リポジトリに複数のブランチがある場合はブランチも選択できます。公開リポジトリは“Public”、非公開は“Private” と表示されます。
 
 ![](images/readme-first/fig-2.png)
 
 - ①……リポジトリの選択
-- ②……GitHubアプリのインストール（→[最初のログインで必要な作業](/ja/advance-preparation/login.md)）
-- ③……GitHubアクセス・トークンのリフレッシュ（→[最初のログインで必要な作業](/ja/advance-preparation/login.md)）
-- ④……ログアウト
+- ②……リポジトリ表示の更新
+- ③……GitHubアプリのインストール（→[最初のログインで必要な作業](/ja/advance-preparation/login.md)）
+- ④……GitHubアクセス・トークンのリフレッシュ（→[最初のログインで必要な作業](/ja/advance-preparation/login.md)）
+- ⑤……GitHubアカウントのユーザ名（[GitHub > Settings > Public profile](https://github.com/settings/profile)の “Name” に記入された名前）
+- ⑥……言語メニュー（初期値：日本語）
 
-リポジトリ（①）をクリックすると、自動的にエディタ／プレビュー画面に遷移します。
+いずれかのリポジトリ（①）をクリックすると、自動的にエディタ／プレビュー画面に遷移します。
+
+## ログアウト／利用者アンケートの送付／不具合のフィードバック
+
+GitHubアカウントのユーザ名をクリックすると、プルダウンメニューが表示されます。ログアウトはメニュー項目の一番下です。これを選択すると、ログアウトして初期画面に戻ります。また、このメニューから利用者アンケートの送付や不具合のフィードバックができます。ぜひご利用ください。
+
+![](images/readme-first/fig-3.png)
+
+- ①……利用者アンケートの送付
+- ②……不具合のフィードバック
+- ③……ログアウト
 
 ## エディタ／プレビュー画面
 
-![](images/readme-first/fig-3.png)
+![](images/readme-first/fig-4.png)
+
+### メニュー・エリア
+
+![](images/readme-first/fig-5.png)
+
+- ①……ユーザ名 / リポジトリ名
+- ②……ブランチ切り替えメニュー
+- ③……ファイル保存ボタン
+- ④……GitHubアカウントのユーザ名（プルダウンメニュー→アンケート送付／フィードバック／ログアウト）
+- ⑤……言語メニュー（初期値：日本語）
+- ⑥……ファイル一覧ペインの表示／非表示
+- ⑦……エディタ・ペインの表示／非表示
+- ⑧……プレビュー・ペインの表示／非表示
+- ⑨……Actionメニュー（→ [スタイルの切替](/ja/style-switching-and-file-output/switching-styles.md)、[PDFの出力](/ja/style-switching-and-file-output/output-pdf.md)）
+
+### ファイル一覧ペイン
+
+### エディタ・ペイン
+
+### プレビュー・ペイン
+
+
+
 
 - ①……ファイル選択ペイン
 - ②……ファイル検索ウィンドウ

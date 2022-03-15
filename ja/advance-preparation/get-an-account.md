@@ -17,11 +17,11 @@
 
 ![ ](images/advance-preparation/get-an-account/fig-3.png)
 
-4. ここからはGitHubによるアンケートです。“How many team member will be working with you?”（何人のチームメンバーがあなたと一緒に働きますか？）、Are you a student or teacher?（あなたは学生ですか、教師ですか？）いずれも選択しなくて問題ありません。その後、「Continue」（続ける）をクリック
+4. ここからはGitHubによるアンケートです。“How many team member will be working with you?”（何人のチームメンバーがあなたと一緒に働きますか？）、Are you a student or teacher?（あなたは学生ですか、教師ですか？）いずれも必ずしも回答する必要はありません。その後、「Continue」（続ける）をクリック
 
 ![ ](images/advance-preparation/get-an-account/fig-4.png)
 
-5. “What specific features are you interested in using?”（具体的にどのような機能を使いたいとお考えですか？）これも選択しなくても問題ありません。その後、「Continue」（続ける）をクリック
+5. “What specific features are you interested in using?”（具体的にどのような機能を使いたいとお考えですか？）これも必ず回答する必要はありません。その後、「Continue」（続ける）をクリック
 
 ![ ](images/advance-preparation/get-an-account/fig-5.png)
 
