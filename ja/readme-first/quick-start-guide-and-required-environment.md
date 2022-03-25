@@ -22,7 +22,7 @@
 ③……GitHubアプリのインストール（→[最初のログインで必要な作業](/ja/advance-preparation/login.md)）<br>
 ④……GitHubアクセス・トークンのリフレッシュ（→[最初のログインで必要な作業](/ja/advance-preparation/login.md)）<br>
 ⑤……GitHubアカウントのユーザ名（[GitHub > Settings > Public profile](https://github.com/settings/profile)）<br>
-⑥……言語メニュー<br>
+⑥……言語メニュー（English / 日本語）<br>
 
 いずれかのリポジトリ（①）をクリックすると、自動的にエディタ／プレビュー画面に遷移します。
 
