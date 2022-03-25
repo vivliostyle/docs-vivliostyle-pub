@@ -7,7 +7,7 @@
 
 ## 初期画面
 
-[所定のURL](https://vivliostyle-pub-develop.vercel.app/)にアクセスすると、以下の初期画面が表示されます。①「Login」ボタンを押して、GitHubアカウントでログインしてください（→[GitHubアカウントの取得方法](/ja/advance-preparation/get-an-account#github%E3%82%A2%E3%82%AB%E3%82%A6%E3%83%B3%E3%83%88%E3%81%AE%E5%8F%96%E5%BE%97%E6%96%B9%E6%B3%95)）。なお、②言語メニューから使用言語を選択することができます。なお、初期値はブラウザの言語設定を使用します。
+[所定のURL](https://vivliostyle-pub-develop.vercel.app/)にアクセスすると、以下の初期画面が表示されます。①「Login」ボタンを押して、GitHubアカウントでログインしてください（→[GitHubアカウントの取得方法](/ja/advance-preparation/get-an-account#github%E3%82%A2%E3%82%AB%E3%82%A6%E3%83%B3%E3%83%88%E3%81%AE%E5%8F%96%E5%BE%97%E6%96%B9%E6%B3%95)）。なお、②言語メニューから使用言語を選択することができます（English / 日本語）。
 
 ![](images/readme-first/fig-1.png)
 
@@ -21,7 +21,8 @@
 ②……リポジトリ表示の更新<br>
 ③……GitHubアプリのインストール（→[最初のログインで必要な作業](/ja/advance-preparation/login.md)）<br>
 ④……GitHubアクセス・トークンのリフレッシュ（→[最初のログインで必要な作業](/ja/advance-preparation/login.md)）<br>
-⑤……GitHubアカウントのユーザ名（[GitHub > Settings > Public profile](https://github.com/settings/profile)の ⑥……言語メニュー<br>
+⑤……GitHubアカウントのユーザ名（[GitHub > Settings > Public profile](https://github.com/settings/profile)）<br>
+⑥……言語メニュー<br>
 
 いずれかのリポジトリ（①）をクリックすると、自動的にエディタ／プレビュー画面に遷移します。
 
@@ -49,7 +50,7 @@ GitHubアカウントのユーザ名をクリックすると、プルダウン�
 ②……ブランチ切り替えメニュー<br>
 ③……ファイル保存ボタン<br>
 ④……GitHubアカウントのユーザ名（プルダウンメニュー→アンケート送付／フィードバック／ログアウト）<br>
-⑤……言語メニュー<br>
+⑤……言語メニュー（English / 日本語）<br>
 ⑥……ファイル一覧ペインの表示／非表示<br>
 ⑦……エディタ・ペインの表示／非表示<br>
 ⑧……プレビュー・ペインの表示／非表示<br>
