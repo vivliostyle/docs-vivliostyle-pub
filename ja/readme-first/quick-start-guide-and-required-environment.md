@@ -65,12 +65,16 @@ GitHubアカウントのユーザ名をクリックすると、プルダウン�
 - ④……リポジトリにフォルダを新規作成<br>
 - ⑤……リポジトリにファイルを新規作成<br>
 - ⑥……現在編集中のファイル（**太字**）<br>
-- ⑦……リポジトリ内のファイル／フォルダの一覧<br>
-  - ![アイコン](images/readme-first/fig-7-1.png)……フォルダ
-  - ![アイコン](images/readme-first/fig-7-1.png)……画像ファイル
-  - ![アイコン](images/readme-first/fig-7-1.png)……HTMLファイル
-  - ![アイコン](images/readme-first/fig-7-1.png)……CSSファイル
-  - ![アイコン](images/readme-first/fig-7-1.png)……Markdownファイル
+- ⑦……リポジトリ内のファイル一覧<br>
+- **アイコン種別一覧**
+  - ![](https://raw.githubusercontent.com/astrit/css.gg/master/icons/svg/corner-left-up.svg)……上位フォルダへ移動
+  - ![](https://raw.githubusercontent.com/microsoft/vscode-codicons/main/src/icons/folder.svg)……フォルダ
+  - ![](https://raw.githubusercontent.com/microsoft/vscode-codicons/main/src/icons/file-media.svg)……画像ファイル
+  - ![](https://raw.githubusercontent.com/microsoft/vscode-codicons/main/src/icons/code.svg)……HTMLファイル
+  - ![](https://raw.githubusercontent.com/microsoft/vscode-codicons/main/src/icons/symbol-namespace.svg)……CSSファイル
+  - ![](https://raw.githubusercontent.com/microsoft/vscode-codicons/main/src/icons/markdown.svg)……Markdownファイル
+  - ![](https://raw.githubusercontent.com/microsoft/vscode-codicons/main/src/icons/settings-gear.svg)……vivliostyle.config.js
+  - ![](https://raw.githubusercontent.com/microsoft/vscode-codicons/main/src/icons/file.svg)……その他のファイル
 
 
 
