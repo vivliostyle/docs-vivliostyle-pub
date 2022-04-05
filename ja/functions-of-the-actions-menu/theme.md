@@ -12,19 +12,19 @@ Actionメニューの「Theme」以下のメニュー項目を選択すること
 4. Slide theme
 5. Techbook (技術同人誌) theme
 
-## 1. Plain theme
+## Plain theme
 
 シンプルで汎用的なスタイルで、Vivliostyle Viewerのデフォルトスタイルシートです。横組で文字サイズは12ポイント、ページサイズはウィンドウに追従します。
 
 ![ ](images/functions-of-the-actions-menu/theme/fig-2.png)
 
-## 2. Custom theme
+## Custom theme
 
 ![ ](images/functions-of-the-actions-menu/theme/fig-3.png)
 
 ユーザが作成した任意のスタイルシート（CSSファイル）を適用します。vivliostyle.config.jsでスタイルシートのpathを指定してから（赤線部）、このメニュー項目を選択してくだい。
 
-## 3. 文庫用のテーマ
+## 文庫用のテーマ
 
 ![ ](images/functions-of-the-actions-menu/theme/fig-4.png)
 
@@ -32,7 +32,7 @@ Vivliostyleが npm package として公開している公式Themeのひとつで
 
 - [@vivliostyle/theme-bunko](https://vivliostyle.github.io/themes/#/ja/gallery#vivliostyletheme-bunko)
 
-## 4. Slide theme
+## Slide theme
 
 ![ ](images/functions-of-the-actions-menu/theme/fig-5.png)
 
@@ -44,7 +44,7 @@ Vivliostyleが npm package として公開している公式Themeのひとつで
 
 ![ ](images/functions-of-the-actions-menu/theme/fig-6.png)
 
-## 5. Techbook (技術同人誌) theme
+## Techbook (技術同人誌) theme
 
 Vivliostyleが npm package として公開している公式Themeのひとつです。横組で文字サイズは12ポイント、ページサイズは182×257mm（B5判タテ）、コードブロックのクラス指定、[脚注の記法](https://vivliostyle.org/ja/make-books-with-create-book/#%E8%84%9A%E6%B3%A8)もサポートされており、技術同人誌に適しています。
 
