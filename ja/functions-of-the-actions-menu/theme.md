@@ -12,7 +12,7 @@ Actionメニューの「Theme」以下のメニュー項目を選択すること
 4. Slide theme
 5. Techbook (技術同人誌) theme
 
-以下、テーマ毎にその内容を説明します。サンプルデータの出典は下記の通りです。
+以下、テーマ毎にその内容を説明します。サンプルデータの出典は下記の通りです。なお、スクリーンショットは[プレゼンテーション・モード](/ja/functions-of-the-actions-menu/presentation-mode.md)でのものです。
 
 - 1〜3……銀河鉄道の夜（宮沢賢治、[青空文庫](https://www.aozora.gr.jp/cards/000081/card456.html)）
 - 4 ………[Slide theme 付属のslide.md](https://github.com/vivliostyle/themes/blob/master/packages/%40vivliostyle/theme-slide/example/slide.md)
