@@ -28,7 +28,15 @@ Actionメニューの「Theme」以下のメニュー項目を選択すること
 
 ![ ](images/functions-of-the-actions-menu/theme/fig-3.png)
 
-ユーザが作成した任意のスタイルシート（CSSファイル）を適用します。vivliostyle.config.jsでスタイルシートのpathを指定してから（赤線部）、このメニュー項目を選択してくだい。
+ユーザが作成した任意のスタイルシート（CSSファイル）を適用します。vivliostyle.config.jsでスタイルシートのpathを指定してから（赤線部）、このメニュー項目を選択します。
+
+vivliostyle.config.jsでの記法は下記の通りです。---の部分にpathを記述してください。
+
+```js
+module.exports = {
+  theme: '---',
+ }
+```
 
 ## 文庫用のテーマ
 
