@@ -4,12 +4,12 @@
 
 ![ ](images/file-operation/adding-existing-files/fig-1.png)
 
-2. 追加したい既存ファイルを1の画面上にドラッグすると、“Drop to upload your files ”（ファイルをドロップしてアップロードします）というメッセージが表示されます。
+2. 追加したい既存ファイルを1の画面上にドラッグすると、“Drop to upload your files ”（ファイルをドロップしてアップロードします）というメッセージが表示されます
 
 ![ ](images/file-operation/adding-existing-files/fig-2.png)
 
-- 上記スクリーンショットではファイルは1つですが、複数ファイルもドロップできます。
-- ただし、すでにリポジトリにファイルがある場合、追加しようとしているものとファイル名が重複しないよう注意してください。その場合は上記画面は表示されず、アップロードできません。
+- 上記スクリーンショットではファイルは1つですが、複数ファイルもドロップできます
+- ただし、すでにリポジトリにファイルがある場合、追加しようとしているものとファイル名が重複しないよう注意してください。その場合は上記画面は表示されず、アップロードできません
 
 
 3. Commit画面に遷移します。内容を確認し、“Commit Changes” ボタン（③）を押下して、追加を確定してください。
@@ -43,6 +43,6 @@
 
 ![ ](images/file-operation/adding-existing-files/fig-6.png)
 
-7. Vivliostyle Pubを再読み込みさせて、追加した`chapter-3.md`（赤矢印）が表示されるか確認します。
+7. Vivliostyle Pubを再読み込みさせて、追加した`chapter-3.md`（赤矢印）が表示されるか確認します
 
 ![ ](images/file-operation/adding-existing-files/fig-7.png)

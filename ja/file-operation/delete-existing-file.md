@@ -25,7 +25,7 @@
 ![ ](images/file-operation/delete-existing-file/fig-6.png)
 
 
-7. `vivliostyle.config.js`のファイル操作画面で鉛筆アイコン（赤丸）をクリックします。
+7. `vivliostyle.config.js`のファイル操作画面で鉛筆アイコン（赤丸）をクリックします
 
 ![ ](images/file-operation/delete-existing-file/fig-7.png)
 

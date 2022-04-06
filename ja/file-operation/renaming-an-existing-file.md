@@ -29,6 +29,3 @@
 6. Vivliostyle Pubを再読み込みさせて、ファイル名が変更されているか確認します（赤矢印）
 
 ![ ](images/file-operation/renaming-an-existing-file/fig-6.png)
-
-
-
