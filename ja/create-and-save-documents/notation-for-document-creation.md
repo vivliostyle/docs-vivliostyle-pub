@@ -204,9 +204,10 @@ September 11, 2021</a></blockquote>
 
 ## 縦中横
 
-残念ながら今はまだ縦中横をMarkdownで表現できません。HTMLのspan要素とtcy属性`<span class="tcy">`と閉じタグ`</span>`で数字を囲みます。（Chromeバージョン93で、縦中横がずれるバグが発生しています。2021年10月19日配布予定の次バージョンで解決する見込みです）
+残念ながら今はまだ縦中横をMarkdownで表現できません。HTMLのspan要素とtcy属性`<span class="tcy">`と閉じタグ`</span>`で数字を囲みます。
 
 ### 記法
+
 ```html
 ## 縦中横
 
@@ -218,7 +219,6 @@ September 11, 2021</a></blockquote>
 おそらく日本でも希少な例に属するわけです。
 ```
 
-
 ### Vivliostyle Pub エディタ
 
 ![ ](images/create-and-save-documents/notation-for-document-creation/fig-15.png)
@@ -227,4 +227,20 @@ September 11, 2021</a></blockquote>
 
 ![ ](images/create-and-save-documents/notation-for-document-creation/fig-16.png)
 
+## 画像のキャプションとサイズ指定
 
+### 記法
+
+```md
+## 画像のキャプションとサイズ指定
+
+![千代ヶ崎砲台跡の塁道から南上空を仰ぎ見る](IMG_5694-2.jpeg){width=100%}
+```
+
+### Vivliostyle Pub エディタ
+
+![ ](images/create-and-save-documents/notation-for-document-creation/fig-17.png)
+
+### Vivliostyle Pub プレビュー
+
+![ ](images/create-and-save-documents/notation-for-document-creation/fig-18.png)
