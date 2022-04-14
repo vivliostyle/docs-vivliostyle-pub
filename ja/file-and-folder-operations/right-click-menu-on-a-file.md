@@ -57,4 +57,6 @@
 
 ![ ](images/file-and-folder-operations/right-click-menu-on-a-file/fig-12.png)
 
-2. 当該のファイルがダウンロードされます。ダウンロードされる場所はブラウザの設定に従います
+2. 当該のファイルがダウンロードされました（赤丸）。ダウンロードされる場所はブラウザの設定に従います
+
+![ ](images/file-and-folder-operations/right-click-menu-on-a-file/fig-13.png)
