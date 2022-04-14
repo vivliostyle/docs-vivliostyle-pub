@@ -14,6 +14,8 @@
 
 ![ ](images/file-and-folder-operations/overview/fig-1.png)
 
+- **参考**： [ファイル一覧ペイン](/ja/readme-first/quick-start-guide-and-required-environment.md#%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E4%B8%80%E8%A6%A7%E3%83%9A%E3%82%A4%E3%83%B3)
+
 ## ファイル上からの右クリックメニュー
 
 ![ ](images/file-and-folder-operations/overview/fig-2.png)

@@ -8,9 +8,12 @@
 
 ![ ](images/create-and-save-documents/Image-specification-and-caption/fig-2.png)
 
-3. ファイル選択画面が開くので、アップロードしたい画像ファイルを選択します（赤丸）。なお、現在のバージョンではアップロードできるファイル容量は700キロバイト以下に制限されているのでご注意下さい
+3. ファイル選択画面が開くので、“Select File” を押してアップロードしたい画像ファイルを選択します（赤丸）
 
 ![ ](images/create-and-save-documents/Image-specification-and-caption/fig-3.png)
+
+- **ご注意**：現在のバージョンではアップロードできるファイル容量は700キロバイト以下に制限されているのでご注意下さい
+- **ご注意**：デコードできる画像フォーマットは、jpegとpngだけです
 
 4. 先ほどの “Upload File” ウィンドウに戻ります。選択した画像ファイルのファイル名が入っていることを確認したら、“Upload”（赤丸）ボタンをクリックします
 
