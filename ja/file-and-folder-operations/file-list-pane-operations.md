@@ -28,6 +28,8 @@
 
 ![ ](images/file-and-folder-operations/file-list-pane-operations/fig-6.png)
 
+- その他のフォルダ操作は[右クリックメニュー（フォルダ操作）](/ja/file-and-folder-operations/right-click-menu-on-a-folder.md)を参照してください
+
 ## ファイルのアップロード
 
 1. ファイル一覧ペインのアイコン群の中から、右端にある ファイル・アップロードのアイコン ![](https://github.com/microsoft/vscode-codicons/raw/main/src/icons/arrow-up.svg) をクリックします
