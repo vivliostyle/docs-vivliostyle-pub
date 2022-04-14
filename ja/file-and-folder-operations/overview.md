@@ -7,8 +7,8 @@
 
 上記2. は、マウスカーソルを置く場所によって、以下の2つの種類に分かれます
 
-2-1. ファイル上からの右クリックメニュー（ファイル操作）<br/>
-2-2. フォルダ上からの右クリックメニュー（フォルダ操作）
+2-1. [ファイル上からの右クリックメニュー（ファイル操作）](/ja/file-and-folder-operations/right-click-menu-on-a-file.md)<br/>
+2-2. [フォルダ上からの右クリックメニュー（フォルダ操作）](/ja/file-and-folder-operations/right-click-menu-on-a-folder.md)
 
 ## ファイル一覧ペインのアイコン群
 
