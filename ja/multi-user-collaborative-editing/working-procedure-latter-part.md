@@ -56,6 +56,6 @@
 
 ![](/images/multi-user-collaborative-editing/working-procedure-latter-part/fig-10.png)
 
-7. ごくろうさまでした。デフォルトブランチへのマージが成功しました。“Pull request successfully merged and closed”（プルリクエストは正常にマージされ、クローズされました）。ついでに “Delete blanch”（赤丸）を押して、不要になったブランチを削除しておきましょう
+7. ごくろうさまでした。デフォルトブランチへのマージが成功しました。“Pull request successfully merged and closed”（プルリクエストは正常にマージされ、クローズされました）。ついでに “Delete branch”（赤丸）を押して、不要になったブランチを削除しておきましょう
 
 ![](/images/multi-user-collaborative-editing/working-procedure-latter-part/fig-11.png)
