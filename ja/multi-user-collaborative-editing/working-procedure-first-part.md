@@ -11,7 +11,7 @@
 
 ![](images/multi-user-collaborative-editing/working-procedure-first-part/fig-2.png)
 
-3. 新規作成するブランチ名を半角英数字で入力し、太字で表示された “Create blanch: xxxxxx”（赤丸）をクリック
+3. 新規作成するブランチ名を半角英数字で入力し、太字で表示された “Create branch: xxxxxx”（赤丸）をクリック
 
 ![](images/multi-user-collaborative-editing/working-procedure-first-part/fig-3.png)
 
