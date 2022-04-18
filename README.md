@@ -1,4 +1,4 @@
-# Vivliostyle Pub プロトタイプ版ユーザガイド
+# Vivliostyle Pub アルファ版ユーザガイド
     
 ## 🚀 最初にお読みください
 
