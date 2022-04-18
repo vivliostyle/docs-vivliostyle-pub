@@ -10,7 +10,7 @@
 2-1. [ファイル上からの右クリックメニュー（ファイル操作）](/file-and-folder-operations/right-click-menu-on-a-file.md)<br/>
 2-2. [フォルダ上からの右クリックメニュー（フォルダ操作）](/file-and-folder-operations/right-click-menu-on-a-folder.md)
 
-## ファイル一覧ペインのアイコン群
+## ファイル一覧ペインからのファイル操作
 
 ![ ](images/file-and-folder-operations/overview/fig-1.png)
 
