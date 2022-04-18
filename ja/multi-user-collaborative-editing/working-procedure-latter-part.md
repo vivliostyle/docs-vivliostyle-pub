@@ -25,9 +25,7 @@
 
 ここからは、レビューを依頼された管理者の操作です。
 
-1. メールでコミッターからのレビュー依頼を受信したら、“View Invitation”（赤丸／招待を確認）をクリック
-
-![](/images/multi-user-collaborative-editing/working-procedure-latter-part/fig-5.png)
+1. メールでコミッターからのレビュー依頼を受信したら、プルリクエストの番号をクリック
 
 2. プルリクエストの画面が開きます。自分の名前が “Reviewer”（赤丸）にあることを確認したら、“Files changed”（赤四角／ファイルの変更）をクリック
 
