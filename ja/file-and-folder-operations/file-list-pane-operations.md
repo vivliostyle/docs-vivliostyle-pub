@@ -16,7 +16,7 @@
 
 ## 新規フォルダの追加
 
-1. ファイル一覧ペインのアイコン群の中から、中央にある 新規フォルダ追加のアイコン ![](https://github.com/microsoft/vscode-codicons/raw/main/src/icons/arrow-up.svg) をクリックします
+1. ファイル一覧ペインのアイコン群の中から、中央にある 新規フォルダ追加のアイコン ![](https://github.com/microsoft/vscode-codicons/raw/main/src/icons/new-folder.svg) をクリックします
 
 ![ ](images/file-and-folder-operations/file-list-pane-operations/fig-4.png)
 
