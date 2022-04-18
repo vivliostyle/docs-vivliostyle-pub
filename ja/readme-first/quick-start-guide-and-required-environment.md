@@ -62,9 +62,9 @@ GitHubアカウントのユーザ名をクリックすると、プルダウン�
 
 - ①……リポジトリ内のファイル名を検索<br>
 - ②……リポジトリのファイル一覧を再取得<br>
-- ③……リポジトリにファイルをアップロード<br>
-- ④……リポジトリにフォルダを新規作成<br>
-- ⑤……リポジトリにファイルを新規作成<br>
+- ③……![](https://github.com/microsoft/vscode-codicons/raw/main/src/icons/arrow-up.svg) リポジトリにファイルをアップロード<br>
+- ④……![](https://github.com/microsoft/vscode-codicons/raw/main/src/icons/new-folder.svg) リポジトリにフォルダを新規作成<br>
+- ⑤……![](https://raw.githubusercontent.com/microsoft/vscode-codicons/main/src/icons/new-file.svg) リポジトリにファイルを新規作成<br>
 - ⑥……現在編集中のファイル（**太字**）<br>
 - ⑦……リポジトリ内のファイル一覧<br>
 - **アイコン種別一覧**

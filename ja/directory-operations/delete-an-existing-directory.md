@@ -22,7 +22,7 @@
 
 ![ ](images/directory-operations/delete-an-existing-directory/fig-5a.png)
 
-6. `chapter-100`の部分をそっくりバックスペースキーで削除しましょう。
+6. `chapter-100`の部分をそっくりバックスペースキーで削除しましょう
 
 ![ ](images/directory-operations/delete-an-existing-directory/fig-6a.png)
 
@@ -51,7 +51,7 @@
 - [新規ファイルの追加](/ja/file-operation/adding-a-new-file.md)
 
 
-11. 削除し終わったら、“Commit Changes” （コミットの変更）ボタン（赤丸）を押下して、変更を確定してください。
+11. 削除し終わったら、“Commit Changes” （コミットの変更）ボタン（赤丸）を押下して、変更を確定してください
 
 ![ ](images/directory-operations/delete-an-existing-directory/fig-11.png)
 
