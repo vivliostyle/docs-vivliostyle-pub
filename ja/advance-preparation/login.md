@@ -17,11 +17,11 @@ https://vivliostyle-pub-develop.vercel.app/
 
 ![ ](images/advance-preparation/login/fig-3.png)
 
-4. GitHubの認証画面に遷移するので、“Install” をクリック
+4. 新規タブが開いてGitHubの認証画面に遷移するので、“Install” をクリック
 
 ![ ](images/advance-preparation/login/fig-4.png)
 
-5. この画面が表示されたら、無事にインストールが完了しました。先ほど開いたVivliostyle Pubに切り替えてください（自動では切り替わりません）
+5. この画面が表示されたら、インストールは無事に完了です。“Okay, vivliostyle-pub-dev was Installed on the XXXXXX account.”（赤線部：オーケー、vivliostyle-pub-devは XXXXXXのアカウントにインストールされました）と表示されます。タブをVivliostyle Pubに切り替えてください。自動では切り替わりません
 
 ![ ](images/advance-preparation/login/fig-5.png)
 
@@ -33,7 +33,7 @@ https://vivliostyle-pub-develop.vercel.app/
 
 ![ ](images/advance-preparation/login/fig-7.png)
 
-8. 自動的にVivliostyle Pubの画面に戻ります。
+8. 自動的にVivliostyle Pubの画面に戻ります。前ページで作成したリポジトリが表示されています。もしも表示されない場合は、リポジトリ表示の更新ボタンをクリックしてください（赤丸）
 
 ![ ](images/advance-preparation/login/fig-8.png)
 
