@@ -1,80 +1,40 @@
-## Vivliostyle.org
+# Vivliostyle Pub アルファ版ユーザガイド
+    
+## 🚀 最初にお読みください
 
-This is the source for the [vivliostyle.org](https://vivliostyle.org/) web site.
+- [クイックスタートガイド](/readme-first/quick-start-guide-and-required-environment.md)
 
-### Install on local environment
+## 🧰 事前準備
 
-```
-$ git clone https://github.com/vivliostyle/vivliostyle.org.git
-$ cd vivliostyle.org
-$ bundle install
-```
+- [GitHubアカウントの取得方法](/advance-preparation/get-an-account.md)
+- [リポジトリの作成方法](/advance-preparation/how-to-create-a-repository.md)
+- [最初のログインで必要な作業](/advance-preparation/login.md)
 
-### Test on local server
+## 🗄️ ファイルとフォルダの操作
 
-```
-$ bundle exec jekyll serve
-```
+- [ファイルとフォルダ操作の概要](/file-and-folder-operations/overview.md)
+- [ファイル一覧ペインからの操作](/file-and-folder-operations/file-list-pane-operations.md)
+- [右クリックメニュー（ファイル操作）](/file-and-folder-operations/right-click-menu-on-a-file.md)
+- [右クリックメニュー（フォルダ操作）](/file-and-folder-operations/right-click-menu-on-a-folder.md)
 
-and open http://127.0.0.1:4000/
+## ✍️ 文書の作成と保存
 
-### How to write a blog post
+- [文書作成の記法](/create-and-save-documents/notation-for-document-creation.md)
+- [画像の指定とキャプション](/create-and-save-documents/Image-specification-and-caption.md)
+- [文書の保存](/create-and-save-documents/save-document.md)
 
-For example, the blog post "On Vivliostyle-print" (Date: 2018-10-03)
-https://vivliostyle.org/blog/2018/10/03/vivliostyle-print/
-and its Japanese version "Vivliostyle-print について"
-https://vivliostyle.org/ja/blog/2018/10/03/vivliostyle-print/
-are made with the following steps:
+## 👘 Actionsメニューの機能
 
-#### English blog post
+- [Presentation Mode](/functions-of-the-actions-menu/presentation-mode.md)
+- [Auto reload（自動再読み込み）](/functions-of-the-actions-menu/auto-reload.md)
+- [Theme（テーマの選択）](/functions-of-the-actions-menu/theme.md)
+- [Add Files（ファイルの追加）](/functions-of-the-actions-menu/add-files.md)
+- [Export（出力）](/functions-of-the-actions-menu/export.md)
+- [Help（ヘルプ）](/functions-of-the-actions-menu/help.md)
 
-Create the markdown file `2018-10-03-vivliostyle-print.md` in the `_posts` directory.
+## 👥 複数ユーザによる文書作成
 
-The markdown file begins with:
+- [概要](/multi-user-collaborative-editing/overview.md)
+- [作業の手順（前半）](/multi-user-collaborative-editing/working-procedure-first-part.md)
+- [作業の手順（後半）](/multi-user-collaborative-editing/working-procedure-latter-part.md)
 
-```
----
-title: On Vivliostyle-print
-author: johannes
-tags:
-  - Vivliostyle-print
-  - release
-image: /assets/posts/2018-10-03-vivliostyle-print/image.png
----
-```
-
-The `author` value must be defined in the `_data/people.yml` file. e.g.:
-
-```
-members:
-  johannes:
-    name:
-      ja: ヨハネス・ウィルム
-      en: Johannes Wilm
-    role:
-      ja: 理事、W3C Editing Taskforce Invited Expert
-      en: Director, W3C Editing Taskforce Invited Expert
-    email: johannes@fiduswriter.org
-```
-
-#### Japanese blog post
-
-Create the markdown file `2018-10-03-vivliostyle-print.md` (same file name as the English version) in the `_posts/ja` directory.
-
-The markdown file begins with:
-
-```
----
-title: Vivliostyle-print について
-lang: ja
-author: johannes
-tags:
-  - Vivliostyle-print
-  - リリース
-image: /assets/posts/2018-10-03-vivliostyle-print/image.png
----
-```
-
-#### Images
-
-To include images in the blog post, put the image files in the directory with same name of the blog post file name in the `/assets/posts/` directory. For example, image files in the blog post `2018-11-12-interview-by-fiduswriter` are placed in the directory `/assets/posts/2018-11-12-interview-by-fiduswriter/`.
