@@ -1,10 +1,15 @@
 # フォントの指定方法
 
-## Vivliostyle Pubがフォントを表示するしくみ
+## フォントを表示するしくみ
 
-![プレビューにおけるフォントの利用](images/create-and-save-documents/how-to-specify-fonts/fig-1.jpg)
+Vivliostyle Pubは以下の3種類の場所にあるフォントを使用できます。
 
-![PDF出力におけるフォントの利用](images/create-and-save-documents/how-to-specify-fonts/fig-2.jpg)
+1. 
+
+
+![図1 プレビューにおけるフォントの利用](images/create-and-save-documents/how-to-specify-fonts/fig-1.jpg)
+
+![図2 PDF出力におけるフォントの利用](images/create-and-save-documents/how-to-specify-fonts/fig-2.jpg)
 
 
 ## Custom theme以外のフォント利用
