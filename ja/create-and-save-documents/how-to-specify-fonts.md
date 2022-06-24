@@ -35,7 +35,7 @@ Vivliostyle Pubでは以下の3種類の場所にあるフォントを使用で�
 font-family: 'IPAPGothic', sans-serif;
 ```
 
-## Custom theme以外のフォント利用
+## themeライブラリのフォント利用
 
 ## Custom theme／クラウドにあるフォントの利用
 
