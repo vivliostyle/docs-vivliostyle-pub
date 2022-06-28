@@ -54,7 +54,7 @@ module.exports = {
 
 ![ ](images/functions-of-the-actions-menu/theme/fig-4.png)
 
-Vivliostyleが [npm package として公開](https://www.npmjs.com/package/@vivliostyle/theme-bunko)している公式Theme、[@vivliostyle/theme-gutenberg](https://vivliostyle.github.io/themes/#/ja/gallery#vivliostyletheme-gutenberg)そのものです。以下にその一部を引用します。
+これはVivliostyleが [npm package として公開](https://www.npmjs.com/package/@vivliostyle/theme-bunko)している公式Theme、[@vivliostyle/theme-gutenberg](https://vivliostyle.github.io/themes/#/ja/gallery#vivliostyletheme-gutenberg)そのものです。以下にその一部を引用します。
 
 ```css
 html {
@@ -77,7 +77,7 @@ html {
 
 ここで指定されるフォントについては下記もご参照ください。
 
-- 参考：[themeライブラリのフォント利用](/ja/create-and-save-documents/how-to-specify-fonts.md#themeライブラリのフォント利用)
+- 参考：[vivliostyle公式themeのフォント利用](/ja/create-and-save-documents/how-to-specify-fonts.md#vivliostyle公式themeのフォント利用)
 
 ## 文庫用のテーマ
 
@@ -85,7 +85,7 @@ html {
 
 ![ ](images/functions-of-the-actions-menu/theme/fig-5.png)
 
-Vivliostyleが [npm package として公開](https://www.npmjs.com/package/@vivliostyle/theme-bunko)している公式Theme、[@vivliostyle/theme-bunko](https://vivliostyle.github.io/themes/#/ja/gallery#vivliostyletheme-bunko)そのものです。以下にその一部を引用します。
+これはVivliostyleが [npm package として公開](https://www.npmjs.com/package/@vivliostyle/theme-bunko)している公式Theme、[@vivliostyle/theme-bunko](https://vivliostyle.github.io/themes/#/ja/gallery#vivliostyletheme-bunko)そのものです。以下にその一部を引用します。
 
 ```css
 html {
@@ -106,7 +106,7 @@ html {
 
 ここで指定されるフォントについては下記もご参照ください。
 
-- 参考：[themeライブラリのフォント利用](/ja/create-and-save-documents/how-to-specify-fonts.md#themeライブラリのフォント利用)
+- 参考：[vivliostyle公式themeのフォント利用](/ja/create-and-save-documents/how-to-specify-fonts.md#vivliostyle公式themeのフォント利用)
 
 ## Slide theme
 
@@ -114,7 +114,7 @@ html {
 
 ![ ](images/functions-of-the-actions-menu/theme/fig-6.png)
 
-Vivliostyleが [npm package として公開](https://www.npmjs.com/package/@vivliostyle/theme-slide)している公式Theme、[@vivliostyle/theme-slide](https://vivliostyle.github.io/themes/#/ja/gallery#vivliostyletheme-slide)そのものです。以下にその一部を引用します。
+これはVivliostyleが [npm package として公開](https://www.npmjs.com/package/@vivliostyle/theme-slide)している公式Theme、[@vivliostyle/theme-slide](https://vivliostyle.github.io/themes/#/ja/gallery#vivliostyletheme-slide)そのものです。以下にその一部を引用します。
 
 ```css
 html {
@@ -144,7 +144,7 @@ html {
 
 ここで指定されるフォントについては下記もご参照ください。
 
-- 参考：[themeライブラリのフォント利用](/ja/create-and-save-documents/how-to-specify-fonts.md#themeライブラリのフォント利用)
+- 参考：[vivliostyle公式themeのフォント利用](/ja/create-and-save-documents/how-to-specify-fonts.md#vivliostyle公式themeのフォント利用)
 
 ## Techbook (技術同人誌) theme
 
@@ -152,7 +152,7 @@ html {
 
 ![ ](images/functions-of-the-actions-menu/theme/fig-8.png)
 
-Vivliostyleが [npm package として公開](https://www.npmjs.com/package/@vivliostyle/theme-techbook)している公式Theme、[@vivliostyle/theme-techbook](https://vivliostyle.github.io/themes/#/ja/gallery#vivliostyletheme-techbook)そのものです。以下にその一部を引用します。
+これはVivliostyleが [npm package として公開](https://www.npmjs.com/package/@vivliostyle/theme-techbook)している公式Theme、[@vivliostyle/theme-techbook](https://vivliostyle.github.io/themes/#/ja/gallery#vivliostyletheme-techbook)そのものです。以下にその一部を引用します。
 
 ```css
 :root {
@@ -182,7 +182,7 @@ Vivliostyleが [npm package として公開](https://www.npmjs.com/package/@vivl
 
 ここで指定されるフォントについては下記もご参照ください。
 
-- 参考：[themeライブラリのフォント利用](/ja/create-and-save-documents/how-to-specify-fonts.md#themeライブラリのフォント利用)
+- 参考：[vivliostyle公式themeのフォント利用](/ja/create-and-save-documents/how-to-specify-fonts.md#vivliostyle公式themeのフォント利用)
 
 ## Academic theme
 
@@ -190,7 +190,7 @@ Vivliostyleが [npm package として公開](https://www.npmjs.com/package/@vivl
 
 ![ ](images/functions-of-the-actions-menu/theme/fig-9.png)
 
-Vivliostyleが [npm package として公開](https://www.npmjs.com/package/@vivliostyle/theme-academic)している公式Theme、[@vivliostyle/theme-academic](https://vivliostyle.github.io/themes/#/ja/gallery#vivliostyletheme-academic)そのものです。以下にその一部を引用します。
+これはVivliostyleが [npm package として公開](https://www.npmjs.com/package/@vivliostyle/theme-academic)している公式Theme、[@vivliostyle/theme-academic](https://vivliostyle.github.io/themes/#/ja/gallery#vivliostyletheme-academic)そのものです。以下にその一部を引用します。
 
 ```css
 @page {
@@ -210,4 +210,4 @@ html {
 
 ここで指定されるフォントについては下記もご参照ください。
 
-- 参考：[themeライブラリのフォント利用](/ja/create-and-save-documents/how-to-specify-fonts.md#themeライブラリのフォント利用)
+- 参考：[vivliostyle公式themeのフォント利用](/ja/create-and-save-documents/how-to-specify-fonts.md#vivliostyle公式themeのフォント利用)
