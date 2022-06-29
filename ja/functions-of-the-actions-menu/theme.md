@@ -36,13 +36,17 @@ Actionメニューの「Theme」の項目を選択することで、以下のテ
 
 ![ ](images/functions-of-the-actions-menu/theme/fig-3.png)
 
-この項目を選択すると、ユーザが作成した任意のスタイルシート（CSSファイル）が利用できます。vivliostyle.config.jsでスタイルシートのpathを指定してから（赤線部）、このメニュー項目を選択します。記法は下記の通りです。---の部分にpathを記述してください。
+この項目を選択すると、ユーザが作成した任意のスタイルシート（CSSファイル）が利用でき、さらにそのスタイルシートにもとづき、PDFの出力ができます（→[Export（PDF）](/ja/functions-of-the-actions-menu/export.md#export出力)）。
+
+vivliostyle.config.jsで以下のようにスタイルシートのpathを指定してください（赤線部）。記法は下記の通りです。---の部分にpathを記述してください。
 
 ```js
 module.exports = {
   theme: '---',
  }
 ```
+
+その上で、`Actionメニュー > Custom theme`を選択します。
 
 スタイルシートで指定できるフォントについては下記もご参照ください。
 
