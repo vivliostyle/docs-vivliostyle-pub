@@ -14,7 +14,11 @@ Actionメニューの「Theme」の項目を選択することで、以下のテ
 6. Techbook (技術同人誌) theme
 7. Academic theme 
 
-以下、テーマ毎にその内容を説明します。ご参考まで、使用したサンプルデータの出典は下記の通りです。なお、スクリーンショットは[プレゼンテーション・モード](/ja/functions-of-the-actions-menu/presentation-mode.md)の表示です。
+ただし、ここで選択したテーマをPDFの出力にも反映できるのは、現在のところ上記2のCustom theme（自分で作成するスタイルシート）だけです。PDFにお好みのフォントを使用したい場合は、Custom theme で指定するようにしてください。この問題の詳細は、下記をご参照ください。
+
+- [Issueが登録されたらここを変更](xxxxxx)
+
+以下では、テーマ毎に内容を説明します。ご参考まで、使用したサンプルデータの出典は下記の通りです。なお、スクリーンショットは[プレゼンテーション・モード](/ja/functions-of-the-actions-menu/presentation-mode.md)の表示です。
 
 - 1、2、4……銀河鉄道の夜（宮沢賢治、[青空文庫](https://www.aozora.gr.jp/cards/000081/card456.html)）
 - 3………[The Project Gutenberg eBook of Alice’s Adventures in Wonderland, by Lewis Carroll](https://www.gutenberg.org/files/11/11-h/11-h.htm)
@@ -28,9 +32,7 @@ Actionメニューの「Theme」の項目を選択することで、以下のテ
 
 ![ ](images/functions-of-the-actions-menu/theme/fig-2.png)
 
-ただし、ローカルフォントを使用するため、PDF出力には反映されません。詳細は下記をご参照ください。
-
-- 参考：[Plain themeを選択した際に使われるフォント](/ja/create-and-save-documents/how-to-specify-fonts.md#plain-themeを選択した際に使われるフォント)
+なお、Plain themeはプレビューのための簡易スタイルで、出力は想定していません。PDF出力には次項の Custom themeを作成してください。
 
 ## Custom theme
 
@@ -79,7 +81,11 @@ html {
 
 ```
 
-ここで指定されるフォントについては下記もご参照ください。
+ただしここで選択したテーマは、現在のところPDFの出力には反映されません。この問題の詳細は、下記をご参照ください。
+
+- [Issueが登録されたらここを変更](xxxxxx)
+
+フォントのしくみについて、詳細は下記をご参照ください。
 
 - 参考：[vivliostyle公式themeのフォント利用](/ja/create-and-save-documents/how-to-specify-fonts.md#vivliostyle公式themeのフォント利用)
 
@@ -108,7 +114,11 @@ html {
 }
 ```
 
-ここで指定されるフォントについては下記もご参照ください。
+ただしここで選択したテーマは、現在のところPDFの出力には反映されません。この問題の詳細は、下記をご参照ください。
+
+- [Issueが登録されたらここを変更](xxxxxx)
+
+フォントのしくみについて、詳細は下記をご参照ください。
 
 - 参考：[vivliostyle公式themeのフォント利用](/ja/create-and-save-documents/how-to-specify-fonts.md#vivliostyle公式themeのフォント利用)
 
@@ -146,7 +156,11 @@ html {
 
 ![ ](images/functions-of-the-actions-menu/theme/fig-7.png)
 
-ここで指定されるフォントについては下記もご参照ください。
+ただしここで選択したテーマは、現在のところPDFの出力には反映されません。この問題の詳細は、下記をご参照ください。
+
+- [Issueが登録されたらここを変更](xxxxxx)
+
+フォントのしくみについて、詳細は下記をご参照ください。
 
 - 参考：[vivliostyle公式themeのフォント利用](/ja/create-and-save-documents/how-to-specify-fonts.md#vivliostyle公式themeのフォント利用)
 
@@ -184,7 +198,11 @@ html {
 }
 ```
 
-ここで指定されるフォントについては下記もご参照ください。
+ただしここで選択したテーマは、現在のところPDFの出力には反映されません。この問題の詳細は、下記をご参照ください。
+
+- [Issueが登録されたらここを変更](xxxxxx)
+
+フォントのしくみについて、詳細は下記をご参照ください。
 
 - 参考：[vivliostyle公式themeのフォント利用](/ja/create-and-save-documents/how-to-specify-fonts.md#vivliostyle公式themeのフォント利用)
 
@@ -212,6 +230,10 @@ html {
 }
 ```
 
-ここで指定されるフォントについては下記もご参照ください。
+ただしここで選択したテーマは、現在のところPDFの出力には反映されません。この問題の詳細は、下記をご参照ください。
+
+- [Issueが登録されたらここを変更](xxxxxx)
+
+フォントのしくみについて、詳細は下記をご参照ください。
 
 - 参考：[vivliostyle公式themeのフォント利用](/ja/create-and-save-documents/how-to-specify-fonts.md#vivliostyle公式themeのフォント利用)

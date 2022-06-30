@@ -4,7 +4,7 @@
 
 ActionメニューでCustom themeが選択されている場合、PDFの出力ができます。
 
-出力されるファイルはvivliostyle.config.jsの記述にもとづきます（→[Theme（テーマの選択）> Custom theme](/ja/functions-of-the-actions-menu/theme.md#custom-theme)）。複数あるファイルのうち、特定のファイルだけをPDF出力したい場合は、vivliostyle.config.jsで出力したいファイルだけを記述するか、出力しないファイルをコメントアウトしてください。
+出力されるファイルはvivliostyle.config.jsの記述にもとづき処理されます（→[Theme（テーマの選択）> Custom theme](/ja/functions-of-the-actions-menu/theme.md#custom-theme)）。複数あるファイルのうち、特定のファイルだけをPDF出力したい場合は、vivliostyle.config.jsで出力したいファイルだけを記述するか、出力しないファイルをコメントアウトしてください。
 
 1. 「Actionメニュー > PDF」を選択します
 
@@ -18,9 +18,15 @@ ActionメニューでCustom themeが選択されている場合、PDFの出力�
 
 ![](images/functions-of-the-actions-menu/export/fig-3.png)
 
-4. ブラウザのPDF閲覧画面に遷移します。ウィンドウ左上の下向き矢印「↓」（赤丸）をクリックするとPDFがダウンロードできます
+4. ブラウザのPDF閲覧画面に遷移します。ウィンドウ左上の下向き矢印「↓」（赤丸）をクリックするとファイルダイアログが開き、PDFがダウンロードできます
 
 ![](images/functions-of-the-actions-menu/export/fig-4.png)
+
+### 補足情報
+
+本来、ActionメニューにあるVivliostyle公式Themeで指定されているフォントも、PDF出力に利用できるはずでした。しかし、下記の問題があるため、今のところこの機能はサポートされていません。私たちはこの問題の解決に取り組んでおり、将来的にこの部分の記述は変更される予定です。
+
+- [Issueが登録されたらここを変更](xxxxxx)
 
 PDFを出力するしくみについては、下記も参照してください。
 
