@@ -26,7 +26,7 @@ ActionメニューでCustom themeが選択されている場合、PDFの出力�
 
 本来、ActionメニューにあるVivliostyle公式Themeで指定されているフォントも、PDF出力に利用できるはずでした。しかし、下記の問題があるため、今のところこの機能はサポートされていません。私たちはこの問題の解決に取り組んでおり、将来的にこの部分の記述は変更される予定です。
 
-- [Issueが登録されたらここを変更](xxxxxx)
+- [ themeの設定により「テーマの準備に失敗しました」エラーになる #202 ](https://github.com/vivliostyle/vivliostyle-pub/issues/202)
 
 PDFを出力するしくみについては、下記も参照してください。
 
