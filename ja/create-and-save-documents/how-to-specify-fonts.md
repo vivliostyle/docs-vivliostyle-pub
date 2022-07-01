@@ -124,4 +124,9 @@ Googleフォントは無料で利用できるWebフォントサービスです�
 | PDF出力／印刷 |  ○             | ×                      | ×                    | ×                      | ×                   |    ×               | 
 | 有償販売     |  ○                    | ×                      | ×                    | ×                      | ×                   |    ×               | 
 
-※……FONTPLUSは「利用者のWebサイト以外での使用を禁止」方式だが、ブログと同じと解釈しプレビューのみ「○」。ただし、PDF出力等については要問い合わせ
+※……FONTPLUSはプレビューのみ○（ブログでの使用と同じと解釈）。ただし、PDF出力等については個別判断になるので要問い合わせ
+
+より詳細については、以下をご参照ください。
+
+- [VivliostyleでWebフォントを使う 調査編：小形克宏（YouTube）](https://www.youtube.com/watch?v=czVRSsekLjc)
+- [VivliostyleでWebフォントを使う：調査編（slide）](https://vivliostyle.org/viewer/#src=https://github.com/ogwata/slide-20220423-2/blob/main/myslide.html&bookMode=true&spread=false)
