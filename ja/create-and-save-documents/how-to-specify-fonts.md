@@ -82,9 +82,9 @@ Custom themeの利用方法については、下記もご参照ください。
 
 Webフォント（前掲図1／図2の**フォント③**）を利用することで、プレビューでもPDF出力でもお好みのフォントを利用することができます。本項では無料のWebフォントサービス、GoogleフォントをVivliostyle Pubで使用する方法を説明します。
 
-1. まず[Googleフォント](https://fonts.google.com/)でフォント選択し、つぎにStylesで使いたい太さを “Select this style” 右横にある[+]　をクリックして選択します。ここでは、しっぽり明朝 Regular 400、Noto Sans Japanese Bold 700、Noto Sans Japanese Medium 500を選択しました。
+1. まず[Googleフォント](https://fonts.google.com/)でフォント選択し、つぎにStylesで使いたい太さを “Select this style” 右横にある(+)　をクリックして選択します。ここでは、しっぽり明朝 Regular 400、Noto Sans Japanese Bold 700、Noto Sans Japanese Medium 500を選択しました。
 
-すると、画面右ペインに選択したフォントの読み込み用コードが表示されるので、これをコピーします。また、「CSS rules to specify families」から`font-family`のコードもコピーします。
+すると、画面右ペインに選択したフォント／スタイルの読み込み用コードが表示されるので、これをコピーします。また、「CSS rules to specify families」から`font-family`のコードもコピーします。
 
 ![ ](images/create-and-save-documents/how-to-specify-fonts/fig-7.png)
 
@@ -112,4 +112,16 @@ Custom themeの利用方法については、下記もご参照ください。
 
 ## Custom theme／有料Webフォントサービスの利用
 
-## 推奨する有料Webフォントサービスの利用方法
+Googleフォントは無料で利用できるWebフォントサービスですが、デメリットは
+
+
+## 推奨する有料Webフォントサービスの利用規準
+
+
+|              | DynaSmart V           | DynaSmart V  | TypeSquare    |fonts.com          | FONT PLUS※  | Adobe Fonts     |
+| ------------ | -------------- | ---------------- | --------------- |  -------------- | ---------------- | --------------- |
+| プレビュー | ○                    | ×                      | ×                     | ×                      | ○                   |    ×                 | 
+| PDF出力／印刷 |  ○             | ×                      | ×                    | ×                      | ×                   |    ×               | 
+| 有償販売     |  ○                    | ×                      | ×                    | ×                      | ×                   |    ×               | 
+
+※……FONTPLUSは「利用者のWebサイト以外での使用を禁止」方式だが、ブログと同じと解釈しプレビューのみ「○」。ただし、PDF出力等については要問い合わせ
