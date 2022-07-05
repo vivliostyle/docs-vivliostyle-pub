@@ -24,12 +24,12 @@
 |  LiberationSerif  |   4 |  ttf  |
 |  Andale_Mono  |   1 |   ttf |
 |  Arial  |  5  | ttf   |
-|  Comic_Sans  |  2  |  ttf  |
-|  Courier_New  |  3  |  ttf  |
+|  Comic Sans  |  2  |  ttf  |
+|  Courier New  |  3  |  ttf  |
 |  Georgia  | 4   |  ttf  |
 |  Impact  |  1  | ttf   |
-|  Times_New_Roman  |  4  |  ttf  |
-|  Trebuchet_MS  |  4  |  ttf  |
+|  Times New Roman  |  4  |  ttf  |
+|  Trebuchet MS  |  4  |  ttf  |
 |  Verdana  |  4  |  ttf  |
 |  Webdings  |   1 |  ttf  |
 |  andalemo  |  1  | ttf   |
@@ -228,14 +228,14 @@
 |  URWBookman  |  4  |  t1  |
 |  URWGothic  |  4  |  t1  |
 |  Z003  |  1  | t1   |
-|  c0419bt_  |  1  |  pfb  |
-|  c0582bt _ |  1  |  pfb  |
-|  c0583bt_  |  1  |  pfb  |
-|  c0611bt_  |  1  |  pfb  |
-|  c0632bt_  |  1  |  pfb  |
-|  c0633bt_  |  1  |  pfb  |
-|  c0648bt_  |  1  |  pfb  |
-|  c0649bt_  |  1  |  pfb  |
+|  c0419bt  |  1  |  pfb  |
+|  c0582bt |  1  |  pfb  |
+|  c0583bt  |  1  |  pfb  |
+|  c0611bt  |  1  |  pfb  |
+|  c0632bt  |  1  |  pfb  |
+|  c0633bt  |  1  |  pfb  |
+|  c0648bt  |  1  |  pfb  |
+|  c0649bt  |  1  |  pfb  |
 
 
 
