@@ -14,9 +14,7 @@ Actionメニューの「Theme」の項目を選択することで、以下のテ
 6. Techbook (技術同人誌) theme
 7. Academic theme 
 
-ただし、ここで選択したテーマをPDFの出力にも反映できるのは、現在のところ上記2のCustom theme（自分で作成するスタイルシート）だけです。PDFにお好みのフォントを使用したい場合は、Custom theme で指定するようにしてください。
-
-以下では、テーマ毎に内容を説明します。ご参考まで、使用したサンプルデータの出典は下記の通りです。なお、スクリーンショットは[プレゼンテーション・モード](/ja/functions-of-the-actions-menu/presentation-mode.md)の表示です。
+以下では、テーマ毎にその内容を概説します。使用したサンプルデータの出典は下記の通りです。なお、スクリーンショットは[プレゼンテーション・モード](/ja/functions-of-the-actions-menu/presentation-mode.md)での表示です。
 
 - 1、2、4……銀河鉄道の夜（宮沢賢治、[青空文庫](https://www.aozora.gr.jp/cards/000081/card456.html)）
 - 3………[The Project Gutenberg eBook of Alice’s Adventures in Wonderland, by Lewis Carroll](https://www.gutenberg.org/files/11/11-h/11-h.htm)
@@ -26,11 +24,13 @@ Actionメニューの「Theme」の項目を選択することで、以下のテ
 
 ## Plain theme
 
-ブラウザのデフォルト設定を使った、シンプルなスタイルです。横組で文字サイズは12ポイント、ページサイズはウィンドウに追従します。フォントはブラウザの設定で「標準フォント」に指定されたものが使用されます。
+ブラウザのデフォルト設定を使った、シンプルなスタイルです。横組で文字サイズは12ポイント、ページサイズは非定型でウィンドウに追従します。フォントはブラウザの設定で「標準フォント」に指定されたものが使用されます。
 
 ![ ](images/functions-of-the-actions-menu/theme/fig-2.png)
 
-なお、Plain themeはプレビューのためのスタイルで、出力は想定していません。PDF出力には次項の Custom themeを作成してください。
+Plain themeは手早くプレビューを確認するためのもので出力は想定していません。ご自分のイメージ通りのスタイルでPDF出力をしたい場合は、後述のVivliostyle公式テーマの中から選択するか、自分でCustom themeを作成してください。フォントについては下記も参照してください。
+
+- [Plain themeで使われるフォント](/ja/create-and-save-documents/how-to-specify-fonts.md#plain-themeで使われるフォント)
 
 ## Custom theme
 
@@ -38,7 +38,7 @@ Actionメニューの「Theme」の項目を選択することで、以下のテ
 
 この項目を選択すると、ユーザが作成した任意のスタイルシート（CSSファイル）が利用でき、さらにそのスタイルシートにもとづき、PDFの出力ができます（→[Export（PDF）](/ja/functions-of-the-actions-menu/export.md#export出力)）。
 
-vivliostyle.config.jsで以下のようにスタイルシートのpathを指定してください（赤線部）。記法は下記の通りです。---の部分にpathを記述してください。
+`vivliostyle.config.js`で以下のようにスタイルシートのpathを指定してください（上スクリーンショットの赤線部）。記法は下記の通りです。`---`の部分にpathを記述してください。
 
 ```js
 module.exports = {
@@ -46,19 +46,19 @@ module.exports = {
  }
 ```
 
-その上で、`Actionメニュー > Custom theme`を選択します。
+その上で、`Actionメニュー > Custom theme`を選択することでCustom themeに切り替えられます。
 
-スタイルシートで指定できるフォントについては下記もご参照ください。
+指定できるフォントについては下記もご参照ください。
 
 - 参考：[フォントの指定方法](/ja/create-and-save-documents/how-to-specify-fonts.md)
 
 ## Book theme for latin font
 
-英語をはじめとしたラテン文字書籍のためのスタイルシートです。横組で文字サイズは`small` 、ページサイズはウィンドウに追従します。
+英語をはじめとしたラテン文字書籍のためのスタイルシートです。横組で文字サイズは`small` 、ページサイズは非定型でウィンドウサイズに追従します。
 
 ![ ](images/functions-of-the-actions-menu/theme/fig-4.png)
 
-これはVivliostyleが [npm package として公開](https://www.npmjs.com/package/@vivliostyle/theme-bunko)している公式Theme、[@vivliostyle/theme-gutenberg](https://vivliostyle.github.io/themes/#/ja/gallery#vivliostyletheme-gutenberg)そのものです。以下にその一部を引用します。
+これはVivliostyleが [npm packageとして公開](https://www.npmjs.com/package/@vivliostyle/theme-gutenberg)している公式Theme、[@vivliostyle/theme-gutenberg](https://vivliostyle.github.io/themes/#/ja/gallery#vivliostyletheme-gutenberg)そのものです。以下にその一部を引用します。
 
 ```css
 html {
@@ -79,21 +79,19 @@ html {
 
 ```
 
-ただしここで選択したテーマは、現在のところPDFの出力には反映されません。この問題の詳細は、下記をご参照ください。
-
-- [ themeの設定により「テーマの準備に失敗しました」エラーになる #202 ](https://github.com/vivliostyle/vivliostyle-pub/issues/202)
+上記でフォントは`Georgia`が指定されています。すでに多くのPCは`Georgia`がインストールされているはずです。一方、VVivliostyle PubでPDF出力をおこなうクラウドにも`Georgia`がインストールされているので、このテーマを選択した場合、プレビューとPDF出力のフォントは一致します。ただし、フォントのバージョンが異なることがあり、リガチャーをはじめ細部では一致しない場合もあることにご注意ください。
 
 フォントのしくみについて、詳細は下記をご参照ください。
 
-- 参考：[vivliostyle公式themeのフォント利用](/ja/create-and-save-documents/how-to-specify-fonts.md#vivliostyle公式themeのフォント利用)
+- 参考：[フォントを使用するしくみ](/ja/create-and-save-documents/how-to-specify-fonts.md#フォントを使用するしくみ)
 
 ## 文庫用のテーマ
 
-縦組で文字サイズは8.5ポイント、ページサイズは148×210mm（A5判タテ）、縦中横や柱にも対応しており、長文の読み物に合います。テーマ名の「文庫」は読み物の意味で、文庫版=B6とは違うことに注意してください。
+縦組で文字サイズは8.5ポイント、ページサイズは148×210mm（A5判タテ）、縦中横や柱にも対応しており、長文の読み物に合います。テーマ名の「文庫」は読み物の意味で、文庫判（B6判）とは違うことに注意してください。
 
 ![ ](images/functions-of-the-actions-menu/theme/fig-5.png)
 
-これはVivliostyleが [npm package として公開](https://www.npmjs.com/package/@vivliostyle/theme-bunko)している公式Theme、[@vivliostyle/theme-bunko](https://vivliostyle.github.io/themes/#/ja/gallery#vivliostyletheme-bunko)そのものです。以下にその一部を引用します。
+これはVivliostyleが [npm packageとして公開](https://www.npmjs.com/package/@vivliostyle/theme-bunko)している公式Theme、[@vivliostyle/theme-bunko](https://vivliostyle.github.io/themes/#/ja/gallery#vivliostyletheme-bunko)そのものです。以下にその一部を引用します。
 
 ```css
 html {
@@ -112,13 +110,13 @@ html {
 }
 ```
 
-ただしここで選択したテーマは、現在のところPDFの出力には反映されません。この問題の詳細は、下記をご参照ください。
+上記でフォントは`游明朝`が指定されています。WindowsでもMacでも`游明朝`はプリインストールされているので、プレビューではこれが使用されます（ただし、WindowsとMacの游明朝はウェイトが多少異なり、同一ではありません）。一方、PDF出力ではVivliostyle PubでPDF出力をおこなうクラウドに`游明朝`はインストールされておらず、`Noto Serif CJK JP`に置き換えられます。
 
-- [ themeの設定により「テーマの準備に失敗しました」エラーになる #202 ](https://github.com/vivliostyle/vivliostyle-pub/issues/202)
+- [クラウド上のVivliostyle CLIの代替フォントルール](/ja/create-and-save-documents/additional-information-on-fonts.md#クラウド上のvivliostyle-cliの代替フォントルール)
 
 フォントのしくみについて、詳細は下記をご参照ください。
 
-- 参考：[vivliostyle公式themeのフォント利用](/ja/create-and-save-documents/how-to-specify-fonts.md#vivliostyle公式themeのフォント利用)
+- 参考：[Vivliostyle公式Themeで使われるフォント](/ja/create-and-save-documents/how-to-specify-fonts.md#vivliostyle公式themeで使われるフォント)
 
 ## Slide theme
 
@@ -150,13 +148,13 @@ html {
   }
 ```
 
-見開きではなく、単一ページでプレビューしたい場合は、Vivliostyleのロゴからアクセスできる設定メニューから、“Page Spread View” のうち “Single page” のラジオボタンを選択してください。
+上記でフォントは優先度順に、1. `Noto Serif CJK JP`、2. `游ゴシック`、3. `メイリオ` 4. `sans-serif` と指定されています。プレビューでは、1〜3までのフォントがインストールされていない場合はブラウザ設定における「Sans Serif フォント」のフォントが使われます。一方、PDF出力ではすべて`Noto Serif CJK JP`に置き換えられます。
+
+- [クラウド上のVivliostyle CLIの代替フォントルール](/ja/create-and-save-documents/additional-information-on-fonts.md#クラウド上のvivliostyle-cliの代替フォントルール)
+
+なお、見開きではなく、単一ページでプレビューしたい場合は、Vivliostyleのロゴからアクセスできる設定メニューから、“Page Spread View” のうち “Single page” のラジオボタンを選択してください。
 
 ![ ](images/functions-of-the-actions-menu/theme/fig-7.png)
-
-ただしここで選択したテーマは、現在のところPDFの出力には反映されません。この問題の詳細は、下記をご参照ください。
-
-- [ themeの設定により「テーマの準備に失敗しました」エラーになる #202 ](https://github.com/vivliostyle/vivliostyle-pub/issues/202)
 
 フォントのしくみについて、詳細は下記をご参照ください。
 
@@ -196,9 +194,8 @@ html {
 }
 ```
 
-ただしここで選択したテーマは、現在のところPDFの出力には反映されません。この問題の詳細は、下記をご参照ください。
 
-- [ themeの設定により「テーマの準備に失敗しました」エラーになる #202 ](https://github.com/vivliostyle/vivliostyle-pub/issues/202)
+
 
 フォントのしくみについて、詳細は下記をご参照ください。
 
@@ -228,9 +225,6 @@ html {
 }
 ```
 
-ただしここで選択したテーマは、現在のところPDFの出力には反映されません。この問題の詳細は、下記をご参照ください。
-
-- [ themeの設定により「テーマの準備に失敗しました」エラーになる #202 ](https://github.com/vivliostyle/vivliostyle-pub/issues/202)
 
 フォントのしくみについて、詳細は下記をご参照ください。
 

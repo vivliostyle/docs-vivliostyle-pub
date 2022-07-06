@@ -238,6 +238,14 @@
 |  c0649bt  |  1  |  pfb  |
 
 
+## クラウド上のVivliostyle CLIの代替フォントルール
+
+| 指定フォント                                                                                                                                            | 代替フォント      |     | 
+| ------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------- | --- | 
+| Source Han Serif<br>Hiragino Mincho ProN<br>Hiragino Mincho Pro<br>YuMincho<br>Yu Mincho<br>MS Mincho<br>MS PMincho                                     | Noto Serif CJK JP |     | 
+| Source Han Sans<br>Hiragino Sans<br>Hiragino Kaku Gothic ProN<br>Hiragino Kaku Gothic Pro<br>YuGothic<br>Yu Gothic<br>Meiryo<br>MS Gothic<br>MS PGothic | Noto Sans CJK JP  |     | 
+|
+
 
 
 ## 推奨する有料Webフォントサービスの利用規準
