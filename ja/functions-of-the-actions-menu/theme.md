@@ -28,7 +28,7 @@ Actionメニューの「Theme」の項目を選択することで、以下のテ
 
 ![ ](images/functions-of-the-actions-menu/theme/fig-2.png)
 
-Plain themeは手早くプレビューを確認するためのもので出力は想定していません。ご自分のイメージ通りのスタイルでPDF出力をしたい場合は、後述のVivliostyle公式テーマの中から選択するか、自分でCustom themeを作成してください。フォントについては下記も参照してください。
+Plain themeは手早くプレビューを確認するためのもので出力は想定していません。イメージ通りのスタイルでPDF出力をしたい場合は、後述のVivliostyle公式テーマの中から選択するか、自分でCustom themeを作成してください。フォントについては下記も参照してください。
 
 - [Plain themeで使われるフォント](/ja/create-and-save-documents/how-to-specify-fonts.md#plain-themeで使われるフォント)
 
@@ -36,7 +36,7 @@ Plain themeは手早くプレビューを確認するためのもので出力は
 
 ![ ](images/functions-of-the-actions-menu/theme/fig-3.png)
 
-この項目を選択すると、ユーザが作成した任意のスタイルシート（CSSファイル）が利用でき、さらにそのスタイルシートにもとづき、PDFの出力ができます（→[Export（PDF）](/ja/functions-of-the-actions-menu/export.md#export出力)）。
+この項目を選択すると、ユーザーが作成した任意のスタイルシート（CSSファイル）が利用でき、さらにそのスタイルシートにもとづき、PDFの出力ができます（→[Export（PDF）](/ja/functions-of-the-actions-menu/export.md#export出力)）。
 
 `vivliostyle.config.js`で以下のようにスタイルシートのpathを指定してください（上スクリーンショットの赤線部）。記法は下記の通りです。`---`の部分にpathを記述してください。
 
@@ -48,13 +48,15 @@ module.exports = {
 
 その上で、`Actionメニュー > Custom theme`を選択することでCustom themeに切り替えられます。
 
-指定できるフォントについては下記もご参照ください。
+なお、Vivliostyle PubではプレビューとPDF出力で組版エンジンのある場所が違うため、Custom themeの作成に当たってなかなか自分が指定した通りのフォントが表示されなかったり、プレビューとPDFとでページがずれてしまうことが起こり得ます。事前に以下の記事を参照して、プレビューとPDF出力とでフォントを一致するよう作成することをお勧めします。
 
-- 参考：[フォントの指定方法](/ja/create-and-save-documents/how-to-specify-fonts.md)
+- [フォントの指定方法](/ja/create-and-save-documents/how-to-specify-fonts.md)
+- [クラウドにインストールされているフォント一覧](/ja/create-and-save-documents/additional-information-on-fonts.md#クラウドにインストールされているフォント一覧)
+- [クラウド上のVivliostyle CLIにおける代替フォントルール](/ja/create-and-save-documents/additional-information-on-fonts.md#クラウド上のvivliostyle-cliにおける代替フォントルール)
 
 ## Book theme for latin font
 
-英語をはじめとしたラテン文字書籍のためのスタイルシートです。横組で文字サイズは`small` 、ページサイズは非定型でウィンドウサイズに追従します。
+英語をはじめとしたラテン文字書籍のためのスタイルシートです。横組で文字サイズは`small` （デフォルトの16pxよりも一回り小さい）、ページサイズは非定型でウィンドウサイズに追従します。
 
 ![ ](images/functions-of-the-actions-menu/theme/fig-4.png)
 
@@ -79,11 +81,12 @@ html {
 
 ```
 
-上記でフォントは`Georgia`が指定されています。すでに多くのPCは`Georgia`がインストールされているはずです。一方、VVivliostyle PubでPDF出力をおこなうクラウドにも`Georgia`がインストールされているので、このテーマを選択した場合、プレビューとPDF出力のフォントは一致します。ただし、フォントのバージョンが異なることがあり、リガチャーをはじめ細部では一致しない場合もあることにご注意ください。
+上記でフォントは`Georgia`と`serif`が指定されています。多くのPCには`Georgia`がインストールされているはずです。一方、Vivliostyle PubでPDF出力をおこなうクラウド（前掲図2）にも`Georgia`がインストールされているので、このテーマでは多くの場合プレビューとPDF出力のフォントは一致するでしょう。ただし、フォントのバージョン不一致により一致しない場合もあることにご注意ください（クラウドのフォントは比較的古いバージョンです）。
 
-フォントのしくみについて、詳細は下記をご参照ください。
+より詳細は下記をご参照ください。
 
-- 参考：[フォントを使用するしくみ](/ja/create-and-save-documents/how-to-specify-fonts.md#フォントを使用するしくみ)
+- [Vivliostyle公式Themeで使われるフォント](/ja/create-and-save-documents/how-to-specify-fonts.md#vivliostyle公式themeで使われるフォント)
+- [クラウドにインストールされているフォント一覧](/ja/create-and-save-documents/additional-information-on-fonts.md#クラウドにインストールされているフォント一覧)
 
 ## 文庫用のテーマ
 
@@ -110,19 +113,18 @@ html {
 }
 ```
 
-上記でフォントは`游明朝`が指定されています。WindowsでもMacでも`游明朝`はプリインストールされているので、プレビューではこれが使用されます（ただし、WindowsとMacの游明朝はウェイトが多少異なり、同一ではありません）。一方、PDF出力ではVivliostyle PubでPDF出力をおこなうクラウドに`游明朝`はインストールされておらず、`Noto Serif CJK JP`に置き換えられます。
+上記でフォントは`游明朝`が指定されています。WindowsでもMacでも`游明朝`はプリインストールされているので、プレビューではこれが使用されます（ただし、WindowsとMacではウェイトが多少異なります）。一方、PDF出力では`Noto Serif CJK JP`に置き換えられます。この結果、プレビューとPDF出力とでは行がずれることが起こり得ます（たとえば下記スクリーンショットではプレビューと比べて3行、後にずれています）。より詳細は下記をご参照ください。
 
-- [クラウド上のVivliostyle CLIの代替フォントルール](/ja/create-and-save-documents/additional-information-on-fonts.md#クラウド上のvivliostyle-cliの代替フォントルール)
+![ ](images/functions-of-the-actions-menu/theme/fig-6.png)
 
-フォントのしくみについて、詳細は下記をご参照ください。
-
-- 参考：[Vivliostyle公式Themeで使われるフォント](/ja/create-and-save-documents/how-to-specify-fonts.md#vivliostyle公式themeで使われるフォント)
+- [Vivliostyle公式Themeで使われるフォント](/ja/create-and-save-documents/how-to-specify-fonts.md#vivliostyle公式themeで使われるフォント)
+- [クラウド上のVivliostyle CLIにおける代替フォントルール](/ja/create-and-save-documents/additional-information-on-fonts.md#クラウド上のvivliostyle-cliにおける代替フォントルール)
 
 ## Slide theme
 
 横組で文字サイズは12ポイント、ページサイズは210×148mm（A5判ヨコ）、スライド資料に適しています。
 
-![ ](images/functions-of-the-actions-menu/theme/fig-6.png)
+![ ](images/functions-of-the-actions-menu/theme/fig-7.png)
 
 これはVivliostyleが [npm package として公開](https://www.npmjs.com/package/@vivliostyle/theme-slide)している公式Theme、[@vivliostyle/theme-slide](https://vivliostyle.github.io/themes/#/ja/gallery#vivliostyletheme-slide)そのものです。以下にその一部を引用します。
 
@@ -148,30 +150,31 @@ html {
   }
 ```
 
-上記でフォントは優先度順に、1. `Noto Serif CJK JP`、2. `游ゴシック`、3. `メイリオ` 4. `sans-serif` と指定されています。プレビューでは、1〜3までのフォントがインストールされていない場合はブラウザ設定における「Sans Serif フォント」のフォントが使われます。一方、PDF出力ではすべて`Noto Serif CJK JP`に置き換えられます。
+上記でフォントは優先度順に、1. `Noto Serif CJK JP`、2. `游ゴシック`、3. `メイリオ` 4. `sans-serif` と指定されています。プレビューでは、1〜3までのフォントがインストールされていない場合、ブラウザ設定の「Sans Serif フォント」の指定に従います。一方、PDF出力ではすべて`Noto Serif CJK JP`に置き換えられます。
 
+- [Vivliostyle公式Themeで使われるフォント](/ja/create-and-save-documents/how-to-specify-fonts.md#vivliostyle公式themeで使われるフォント)
 - [クラウド上のVivliostyle CLIの代替フォントルール](/ja/create-and-save-documents/additional-information-on-fonts.md#クラウド上のvivliostyle-cliの代替フォントルール)
 
-なお、見開きではなく、単一ページでプレビューしたい場合は、Vivliostyleのロゴからアクセスできる設定メニューから、“Page Spread View” のうち “Single page” のラジオボタンを選択してください。
+なお、見開きではなく、単一ページでプレビューしたい場合は、Vivliostyleのロゴからアクセスできる設定メニューを開き、“Page Spread View” のうち “Single page” のラジオボタンを選択してください。
 
-![ ](images/functions-of-the-actions-menu/theme/fig-7.png)
+![ ](images/functions-of-the-actions-menu/theme/fig-8.png)
 
-フォントのしくみについて、詳細は下記をご参照ください。
+より詳細は下記をご参照ください。
 
-- 参考：[vivliostyle公式themeのフォント利用](/ja/create-and-save-documents/how-to-specify-fonts.md#vivliostyle公式themeのフォント利用)
+- [Vivliostyle公式Themeで使われるフォント](/ja/create-and-save-documents/how-to-specify-fonts.md#vivliostyle公式themeで使われるフォント)
+- [クラウド上のVivliostyle CLIにおける代替フォントルール](/ja/create-and-save-documents/additional-information-on-fonts.md#クラウド上のvivliostyle-cliにおける代替フォントルール)
 
 ## Techbook (技術同人誌) theme
 
 横組で文字サイズは12ポイント、ページサイズは182×257mm（B5判タテ）、コードブロックのクラス指定、[脚注の記法](https://vivliostyle.org/ja/make-books-with-create-book/#%E8%84%9A%E6%B3%A8)もサポートされており、技術同人誌に適しています。
 
-![ ](images/functions-of-the-actions-menu/theme/fig-8.png)
+![ ](images/functions-of-the-actions-menu/theme/fig-9.png)
 
 これはVivliostyleが [npm package として公開](https://www.npmjs.com/package/@vivliostyle/theme-techbook)している公式Theme、[@vivliostyle/theme-techbook](https://vivliostyle.github.io/themes/#/ja/gallery#vivliostyletheme-techbook)そのものです。以下にその一部を引用します。
 
 ```css
 :root {
-  font-family: 'Neue Frutiger World', 'Verdana', 'Yakumono', 'body',
-    'Hiragino Sans', sans-serif;
+  font-family: 'Neue Frutiger World', 'Verdana',  'Hiragino Sans', sans-serif;
   font-weight: 400;
   line-height: 1.7;
 }
@@ -194,18 +197,21 @@ html {
 }
 ```
 
+上記でフォントは優先度順に、1. `Neue Frutiger World`、2. `Verdana`、3. `ヒラギノ角ゴシック`、4. `sans-serif`と指定されています。プレビューで表示される文字は、1〜3の順番でフォントが割り当てられ、どのフォントも当該の文字を表示できない場合はブラウザ設定の「Sans Serif フォント」の指定に従います。たとえば原稿が日本語文の場合、英数字は`Neue Frutiger World`、なければ`Verdana`、仮名や漢字は`ヒラギノ角ゴシック`で表示されます。もしユーザーのPCに`ヒラギノ角ゴシック`がインストールされていなければ、ブラウザ設定の「Sans Serif フォント」が使われます。
 
+一方、PDF出力においては、英数字は`Verdana`、仮名と漢字は`Noto Serif CJK JP`に置き換えられます。こうした結果、プレビューとPDF出力とでページのズレが発生する場合があることにご注意ください。
 
+詳細は下記をご参照ください。
 
-フォントのしくみについて、詳細は下記をご参照ください。
-
-- 参考：[vivliostyle公式themeのフォント利用](/ja/create-and-save-documents/how-to-specify-fonts.md#vivliostyle公式themeのフォント利用)
+- [vivliostyle公式themeのフォント利用](/ja/create-and-save-documents/how-to-specify-fonts.md#vivliostyle公式themeのフォント利用)
+- [クラウドにインストールされているフォント一覧](/ja/create-and-save-documents/additional-information-on-fonts.md#クラウドにインストールされているフォント一覧)
+- [クラウド上のVivliostyle CLIにおける代替フォントルール](/ja/create-and-save-documents/additional-information-on-fonts.md#クラウド上のvivliostyle-cliにおける代替フォントルール)
 
 ## Academic theme
 
 横組でページサイズは210×297mm（A4判タテ）、自動で章・節番号がつき、[脚注の記法](https://vivliostyle.org/ja/make-books-with-create-book/#%E8%84%9A%E6%B3%A8)もつかえる、理系の学生レポート向けのスタイルです。
 
-![ ](images/functions-of-the-actions-menu/theme/fig-9.png)
+![ ](images/functions-of-the-actions-menu/theme/fig-10.png)
 
 これはVivliostyleが [npm package として公開](https://www.npmjs.com/package/@vivliostyle/theme-academic)している公式Theme、[@vivliostyle/theme-academic](https://vivliostyle.github.io/themes/#/ja/gallery#vivliostyletheme-academic)そのものです。以下にその一部を引用します。
 
@@ -225,7 +231,10 @@ html {
 }
 ```
 
+上記でフォントは`Hiragino Mincho ProN`と`serif`が指定されています。プレビューでは`ヒラギノ明朝`が使われ、ユーザーのPCにインストールされていない場合はブラウザ設定の「Serif フォント」の設定に従います。PDF出力においては、すべて`Noto Serif CJK JP`に置き換えられます。こうした結果、プレビューとPDF出力とでページのズレが発生する場合があることにご注意ください。
 
 フォントのしくみについて、詳細は下記をご参照ください。
 
-- 参考：[vivliostyle公式themeのフォント利用](/ja/create-and-save-documents/how-to-specify-fonts.md#vivliostyle公式themeのフォント利用)
+- [vivliostyle公式themeのフォント利用](/ja/create-and-save-documents/how-to-specify-fonts.md#vivliostyle公式themeのフォント利用)
+- [クラウドにインストールされているフォント一覧](/ja/create-and-save-documents/additional-information-on-fonts.md#クラウドにインストールされているフォント一覧)
+- [クラウド上のVivliostyle CLIにおける代替フォントルール](/ja/create-and-save-documents/additional-information-on-fonts.md#クラウド上のvivliostyle-cliにおける代替フォントルール)

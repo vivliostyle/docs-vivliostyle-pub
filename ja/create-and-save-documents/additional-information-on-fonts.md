@@ -2,6 +2,8 @@
 
 ## クラウドにインストールされているフォント一覧
 
+PDF出力に際して、クラウド上のVivliostyle CLIが使用するフォントは下記の通りです。
+
 | フォント名 | ウェイト数 | 拡張子 |
 | ------------ | -------------- | ---------------- | 
 |   NotoSansCJK |  72  | ttc   |
@@ -237,16 +239,30 @@
 |  c0648bt  |  1  |  pfb  |
 |  c0649bt  |  1  |  pfb  |
 
+上の表は`fc-list`コマンドの実行結果を簡略化したものです。より詳細な情報は以下をご覧ください。
 
-## クラウド上のVivliostyle CLIの代替フォントルール
+- [fc-list.sorted](/ja/create-and-save-documents/fc-list.sorted.md)
 
-| 指定フォント                                                                                                                                            | 代替フォント      |     | 
+## クラウド上のVivliostyle CLIにおける代替フォントルール
+
+PDF出力に際して、前節のリストにないフォントが指定された場合、以下のように代替されます。
+
+| 指定されたフォント                                                                                                                                            | 代替されるフォント      |     | 
 | ------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------- | --- | 
+|  Times  |  Times New Roman  |
+|  Helvetica  |  Arial  |
+|  Courier  | Courier New   |
+|  `font-family: fantasy;`  |  Impact  |
+|  `font-family: cursive`  |  Comic Sans MS  |
+|  `font-family: monospace;`  |  Andale Mono  |
 | Source Han Serif<br>Hiragino Mincho ProN<br>Hiragino Mincho Pro<br>YuMincho<br>Yu Mincho<br>MS Mincho<br>MS PMincho                                     | Noto Serif CJK JP |     | 
-| Source Han Sans<br>Hiragino Sans<br>Hiragino Kaku Gothic ProN<br>Hiragino Kaku Gothic Pro<br>YuGothic<br>Yu Gothic<br>Meiryo<br>MS Gothic<br>MS PGothic | Noto Sans CJK JP  |     | 
-|
+| Source Han Sans<br>Hiragino Sans<br>Hiragino Kaku Gothic ProN<br>Hiragino Kaku Gothic Pro<br>YuGothic<br>Yu Gothic<br>Meiryo<br>MS Gothic<br>MS PGothic | Noto Sans CJK JP  | 
+|  上記以外の欧文フォント  |  Times New Roman  |
+|  上記以外の日本語フォント  |  Noto Sans CJK JP  |
 
+**ご注意**：たとえばスタイルシートで`font-family: "IPA明朝", serif;`と指定されていた場合、IPA明朝は前節のリストにも上の表にもありませんから、PDF出力に際しては`serif`の指定によりブラウザ「Selif」で設定されたフォント（日本語環境では明朝体）が使用されるはずです。しかし、実際にはNoto Sans CJK JPに代替されます。上の表で`Noto Serif CJK JP`に代替されるフォント以外の明朝体フォント全てにこの問題が発生します。詳細は、下記をご参照ください。
 
+- [font-family: serif を指定しても明朝体にならない問題と対策](https://github.com/vivliostyle/vivliostyle-cli/issues/303#issuecomment-1169786479)
 
 ## 推奨する有料Webフォントサービスの利用規準
 
