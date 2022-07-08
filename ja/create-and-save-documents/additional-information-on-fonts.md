@@ -2,9 +2,9 @@
 
 ## クラウドにインストールされているフォント一覧
 
-PDF出力に際して、クラウド上のVivliostyle CLIが使用するフォントは下記の通りです（これ以外にWebフォントサービスのフォントが利用可能です）。
+PDF出力に際して、クラウド上のVivliostyle CLIが使用するフォントは下記の通りです（これ以外にWebフォントサービスのフォントが利用可能です→[フォントを使用するしくみ](/ja/create-and-save-documents/how-to-specify-fonts.md#フォントを使用するしくみ)）。
 
-| フォント名 | ウェイト数 | 拡張子 |`font-family`名|
+| フォントファイル名 | ウェイト数 | 拡張子 |`font-family`名|
 | ------------ | -------------- | ---------------- |  ---------------- | 
 |  c0419bt  |  1  |  pfb  |  Courier 10 Pitch  |
 |  c0582bt |  1  |  pfb  |  Courier 10 Pitch  |
@@ -14,7 +14,16 @@ PDF出力に際して、クラウド上のVivliostyle CLIが使用するフォ�
 |  c0633bt  |  1  |  pfb  |  Courier 10 Pitch  |
 |  c0648bt  |  1  |  pfb  |  Courier 10 Pitch  |
 |  c0649bt  |  1  |  pfb  |  Courier 10 Pitch  |
-|   NotoSansCJK |  73  | ttc   |  Noto Sans CJK HK,<br>Noto Sans CJK JP,<br>Noto Sans CJK KR,<br>Noto Sans CJK SC,<br>Noto Sans CJK TC,  |
+|  NotoSansCJK  |  9  |  ttc  |  Noto Sans CJK HK,<br>Noto Sans Mono CJK HK  |
+|  NotoSansCJK  |  9  |  ttc  |  Noto Sans CJK JP,<br> Noto Sans Mono CJK JP  |
+|  NotoSansCJK  |  9  |  ttc  |  Noto Sans CJK KR,<br>Noto Sans Mono CJK KR  |
+|  NotoSansCJK  |  9  |  ttc  |  Noto Sans CJK SC,<br>Noto Sans Mono CJK SC  |
+|  NotoSansCJK  |  9  |  ttc  |  Noto Sans CJK TC,<br>Noto Sans Mono CJK TC  |
+|  NotoSerifCJK  |  7  |  ttc  |  Noto Serif CJK HK  |
+|  NotoSerifCJK  |  7  |  ttc  |  Noto Serif CJK JP  |
+|  NotoSerifCJK  |  7  |  ttc  |  Noto Serif CJK KR  |
+|  NotoSerifCJK  |  7  |  ttc  |  Noto Serif CJK SC  |
+|  NotoSerifCJK  |  7  |  ttc  |  Noto Serif CJK TC  |
 |  Loma  |   4 | otf   |  Loma  |
 |   C059 | 4   |   otf |  C059  |
 |  D050000L  |  1  | otf   |  D050000L  |
@@ -265,9 +274,11 @@ PDF出力に際して、クラウド上のVivliostyle CLIが使用するフォ�
 |  URWGothic  |  4  |  t1  |   URW Gothic  |
 |  Z003  |  1  | t1   |   Z003  |
 
-上の表は概要をまとめるため、`fc-list`コマンドの実行結果を簡略化したものです。`font-family`名が複数ある場合はファミリー共通のものか先に掲出されている方を掲載しています。また、同一の`font-family`を指定し分ける`style`等、より詳細な情報については全文である以下をご参照ください。
-
-- [fc-list.sorted](/ja/create-and-save-documents/fc-list.sorted.md)
+- 上の表は`fc-list`コマンドの実行結果を簡略化したものです。
+    - `font-family`名が複数ある場合はファミリー共通のものか先に掲出されている方を掲載しました
+    - ただし`Noto Sans CJK`はすべて掲載しました
+- 同一の`font-family`を指定し分ける`style`等、より詳細な情報については以下をご参照ください
+    - [fc-list.sorted](/ja/create-and-save-documents/fc-list.sorted.md)
 
 ## クラウド上のVivliostyle CLIにおける代替フォントルール
 
@@ -286,9 +297,10 @@ PDF出力に際して、前節のリストにないフォントが指定され�
 |  上記以外の欧文フォント  |  Times New Roman  |
 |  上記以外の日本語フォント  |  Noto Sans CJK JP  |
 
-**ご注意**：たとえばスタイルシートで`font-family: "IPA明朝", serif;`と指定されていた場合、IPA明朝は前節のリストにも上の表にもありませんから、PDF出力に際しては`serif`の指定によりブラウザ「Selif」で設定されたフォント（日本語環境では明朝体）が使用されるはずです。しかし、実際にはNoto Sans CJK JPに代替されます。上の表で`Noto Serif CJK JP`に代替されるフォント以外の明朝体フォント全てにこの問題が発生します。詳細は、下記をご参照ください。
-
-- [font-family: serif を指定しても明朝体にならない問題と対策](https://github.com/vivliostyle/vivliostyle-cli/issues/303#issuecomment-1169786479)
+- **ご注意**
+    - たとえばスタイルシートで`font-family: "IPA明朝", serif;`と指定されていた場合、IPA明朝は前節のリストにも上の表にもありませんから、PDF出力に際しては`serif`の指定によりブラウザ設定「Selif」のフォント（日本語環境では明朝体）が使用されるはずです。しかし、実際にはNoto Sans CJK JPが使用されてしまいます。
+    - 上の表で`Noto Serif CJK JP`に代替されるフォント以外の明朝体フォント全てにこの問題が発生します（逆の言い方をすれば、上の表で`Noto Serif CJK JP`に代替されるフォントはこの問題は発生しません）。Vivliostyleではこの問題の解決に努めています。詳細は下記をご参照ください。
+        - [font-family: serif を指定しても明朝体にならない問題と対策](https://github.com/vivliostyle/vivliostyle-cli/issues/303#issuecomment-1169786479)
 
 ## 推奨する有料Webフォントサービスの利用規準
 

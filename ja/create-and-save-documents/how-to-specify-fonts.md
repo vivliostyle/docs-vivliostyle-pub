@@ -8,7 +8,7 @@ Vivliostyle Pubでは以下の3種類の場所にあるフォントを利用す�
 2. クラウドにインストールされたフォント（図2：**フォント2**）
 3. Webフォントサービスのフォント（図1、図2：**フォント3**）
 
-ただし、プレビューで使われるフォントとPDF出力で使われるフォントが、無条件に一致するのは上記のうち3だけです。これ以外の1、2では、互いに似たフォントが使われますが、厳密には一致しないことが多いのが実際です。これはVivliostyle PubではプレビューとPDF出力が、別々の機構によって処理されることによります。本節ではまずその仕組みを概説し、ついでActionメニューの項目に沿いながら、3種類のフォントを利用する方法について説明していきます。
+ただし、プレビューで使われるフォントとPDF出力で使われるフォントが、無条件に一致するのは上記のうち3だけです。これ以外の1、2では、互いに似たフォントが使われますが、一致しないことが多いのが実際です（一致しない場合、ページがずれる可能性があります）。これはVivliostyle PubではプレビューとPDF出力が、別々の機構によって処理されることによります。本節ではまずその仕組みを概説し、ついでActionメニューの項目に沿いながら、3種類のフォントを利用する方法について説明していきます。
 
 では、プレビューにおいてフォントがどのように使われるかをみてみましょう（図1）。ここで注意してほしいのは、実際に組版をおこなうVivliostyle.js（赤色）は、プレビューにおいてはユーザーのPC上のフロントエンドにあるということです。組版エンジンはフォントを直接操作します。したがって同じユーザーのPCにある**フォント1**がプレビューで利用できるわけです。
 
@@ -48,37 +48,33 @@ Actionメニューから、以下のthemeを選択した場合、npm package管�
 - [Techbook (技術同人誌) theme](/ja/functions-of-the-actions-menu/theme.md#techbook-技術同人誌-theme)
 - [Academic theme](/ja/functions-of-the-actions-menu/theme.md#academic-theme) 
 
-これらのthemeで利用されるフォントは、前掲図1の分類では**フォント1**（ユーザーのPCにあるローカルフォント）です。プレビューにおいて、もしユーザーのPCにそれらのフォントがインストールされていなければ、`font-family:`の設定に従って`sans-serif`ないしは`serif`に代替されます。それぞれの公式themeでどのようなフォントが指定されているかは、下記をご参照ください。
+プレビューにおいて、これらのthemeで使用されるのはユーザーのPCにあるローカルフォント（前掲図1の**フォント1**）です。したがってthemeで指定されたフォントがインストールされている必要があります。もしユーザーのPCにそれらのフォントがインストールされていなければ、`font-family:`の設定に従って`sans-serif`ないしは`serif`に代替されます。
+
+一方、PDF出力ではクラウドにインストールされたフォント（前掲図2の**フォント2**）が使用されます。もし公式themeで指定されているフォントがクラウドになければ、[クラウド上のVivliostyle CLIにおける代替フォントルール](/ja/create-and-save-documents/additional-information-on-fonts.md#クラウド上のvivliostyle-cliにおける代替フォントルール)に従って別のフォントが使用されます。それぞれの公式themeで、どのようなフォントが指定されているか、クラウド上にどのようなフォントがインストールされているのかは下記をご参照ください。
 
 - [Theme（テーマの選択）](/ja/functions-of-the-actions-menu/theme.md)
+- [クラウドにインストールされているフォント一覧](/ja/create-and-save-documents/additional-information-on-fonts.md#クラウドにインストールされているフォント一覧)
 
+こうした代替処理により、プレビューとPDF出力でフォントが異なることにより、ページがずれる可能性があることにご注意ください。
 
+## Custom theme／プレビューとPDF出力とでフォントを一致させる方法
 
-## Custom theme／クラウドにあるフォントの使用
+自作したスタイルシートのpathを`vivliostyle.config.js`で指定することにより、そのスタイルシートを使ったPDF出力ができます（→[Custom theme](/ja/functions-of-the-actions-menu/theme.md#custom-theme)）。この時使用されるのはクラウドにインストールされたフォント（前掲図2の**フォント2**）です。
 
-Custom themeでクラウドにインストールされたフォント（前掲図2の**フォント2**）を指定すると、PDF出力でそれらのフォントが利用できます。クラウドにインストールされているフォントのリストは、下記を参照してください。日本語フォントは[IPAゴシック、IPA Pゴシック](https://moji.or.jp/ipafont/)が利用できます。
+Vivliostyle Pubのクラウドにどのようなフォントがインストールされているのか、またクラウドにインストールされていないフォントが指定された場合、どのようなフォントで代替されるかは、下記をご参照ください。
 
-- [現状の利用可能なフォントについて[vivliostyle-cli]](https://github.com/vivliostyle/vivliostyle-cli/issues/303#issuecomment-1163980308)
+- [クラウドにインストールされているフォント一覧](/ja/create-and-save-documents/additional-information-on-fonts.md#クラウドにインストールされているフォント一覧)
+- [クラウド上のVivliostyle CLIにおける代替フォントルール](/ja/create-and-save-documents/additional-information-on-fonts.md#クラウド上のvivliostyle-cliにおける代替フォントルール)
 
-ただし、これらのフォントをプレビューにも使うためには、ユーザーのPCにもIPAゴシック、IPA Pゴシックをインストールする必要があることにご注意ください（前掲図1の**フォント1**）。
+ここで問題になるのは、ユーザーのPCにクラウドにあるフォント（前掲図1の**フォント1**）がインストールされていなかった場合です。その場合はプレビューとPDF出力で使われるフォントが一致しないことになります（似たフォントに置き換わります）。逆に言えば、クラウドにあるフォントをPCにインストールしてしまえばプレビューとPDF出力とでフォントを一致させられ、ページのズレも発生しません。
 
-たとえば、IPA Pゴシックをインストールした場合、以下のようにCustom themeに記述することで、プレビューでもPDF出力でもIPA Pゴシックが利用できます。
+もっとも確実なのは、クラウドにインストールされている[Notoシリーズ](https://fonts.google.com/?query=noto)をPCにもインストールすることです。Googleによるフリーフォントで、ウェイトや対応言語がとても豊富なので、誌面を同じデザインで統一できるメリットもあります。
 
-```css
-font-family: 'IPAPGothic', sans-serif;
-```
-
-![ ](images/create-and-save-documents/how-to-specify-fonts/fig-5.png)
-
-![ ](images/create-and-save-documents/how-to-specify-fonts/fig-6.png)
-
-Custom themeの利用方法については、下記もご参照ください。
-
-- 参考：[Theme（テーマの選択）> Custom theme](/ja/functions-of-the-actions-menu/theme.md#custom-theme)
+これ以外にも、Webフォントサービス（図1、図2：**フォント3**）を利用することで、同様にプレビューとPDF出力とでフォントを一致させることができます（次節参照）。
 
 ## Custom theme／Googleフォントの使用
 
-Webフォント（前掲図1／図2の**フォント3**）を利用することで、プレビューでもPDF出力でもお好みのフォントを利用することができます。本項では無料のWebフォントサービス、GoogleフォントをVivliostyle Pubで使用する方法を説明します。
+Webフォント（前掲図1／図2の**フォント3**）を利用することで、プレビューとPDF出力とでフォントを一致させることができます。本項では無料のWebフォントサービス、GoogleフォントをVivliostyle Pubで使用する方法を説明します。
 
 1. まず[Googleフォント](https://fonts.google.com/)でフォント選択し、つぎにStylesで使いたい太さを “Select this style” 右横にある(+)　をクリックして選択します。ここでは、しっぽり明朝 Regular 400、Noto Sans Japanese Bold 700、Noto Sans Japanese Medium 500を選択しました。
 
