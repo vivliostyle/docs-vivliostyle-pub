@@ -2,244 +2,270 @@
 
 ## クラウドにインストールされているフォント一覧
 
-PDF出力に際して、クラウド上のVivliostyle CLIが使用するフォントは下記の通りです。
+PDF出力に際して、クラウド上のVivliostyle CLIが使用するフォントは下記の通りです（これ以外にWebフォントサービスのフォントが利用可能です）。
 
-| フォント名 | ウェイト数 | 拡張子 |
-| ------------ | -------------- | ---------------- | 
-|   NotoSansCJK |  72  | ttc   |
-|   Noto Sans CJK Variable |  1  | ttc   |
-|  Loma  |   4 | otf   |
-|   C059 | 4   |   otf |
-|  D050000L  |  1  | otf   |
-|   NimbusMonoPS |  3  |  otf  |
-|  NimbusRoman  | 4   |  otf  |
-|  NimbusSans  |  4  |  otf  |
-|  NimbusSansNarrow  | 4   |   otf |
-|  P052  | 4   |  otf  |
-|  StandardSymbolsPS  |  1  |  otf  |
-|  URWBookman  | 4   |   otf |
-|  URWGothic  |  4  |  otf  |
-|  Z003  |  1  |  otf  |
-|  LiberationMono  |   4 | ttf   |
-|  LiberationSans  |  8  |  ttf  |
-|  LiberationSansNarrow  | 4   | ttf   |
-|  LiberationSerif  |   4 |  ttf  |
-|  Andale_Mono  |   1 |   ttf |
-|  Arial  |  5  | ttf   |
-|  Comic Sans  |  2  |  ttf  |
-|  Courier New  |  3  |  ttf  |
-|  Georgia  | 4   |  ttf  |
-|  Impact  |  1  | ttf   |
-|  Times New Roman  |  4  |  ttf  |
-|  Trebuchet MS  |  4  |  ttf  |
-|  Verdana  |  4  |  ttf  |
-|  Webdings  |   1 |  ttf  |
-|  andalemo  |  1  | ttf   |
-|  NotoColorEmoji  |  1  | ttf   |
-|  NotoKufiArabic  |   9 |  ttf  |
-|  NotoMono  |  1  | ttf   |
-| NotoMusic   |  1  | ttf   |
-|  NotoNaskhArabic  |  4  |  ttf  |
-|  NotoNastaliqUrdu  |  2  |  ttf  |
-|  NotoSans  |  72  |  ttf  |
-|  NotoSansAdlam  |  2  |  ttf  |
-|  NotoSansAnatolianHieroglyphs  |  1  | ttf   |
-|  NotoSansArabic  |  36  |  ttf  |
-|  NotoSansArabicUI  | 36   | ttf   |
-|  NotoSansArmenian  | 36   | ttf   |
-|  NotoSansAvestan  |  1  | ttf   |
-|  NotoSansBamum  |  1  | ttf   |
-|  NotoSansBassaVah  |  1  | ttf   |
-|  NotoSansBatak  |  1  | ttf   |
-|  NotoSansBengali  |  12  |  ttf  |
-|  NotoSansBengaliUI  |  12  |  ttf  |
-|  NotoSansBhaiksuki  |  1  | ttf   |
-|  NotoSansBrahmi  |  1  | ttf   |
-|  NotoSansBuginese  |  1  | ttf   |
-|  NotoSansBuhid  |  1  | ttf   |
-|  NotoSansCanadianAboriginal  |  9  |  ttf  |
-|  NotoSansCarian  |  1  | ttf   |
-|  NotoSansCaucasianAlbanian  |  1  | ttf   |
-|  NotoSansChakma  |  1  | ttf   |
-|  NotoSansCham  |  9  |   ttf |
-|  NotoSansCherokee  |  9  |  ttf  |
-|  NotoSansCoptic  |  1  | ttf   |
-|  NotoSansCuneiform  |  1  | ttf   |
-|  NotoSansCypriot  |  1  | ttf   |
-|  NotoSansDeseret  |  1  | ttf   |
-|  NotoSansDevanagari  |  36  |  ttf  |
-|  NotoSansDevanagariUI  |  36  | ttf   |
-|  NotoSansDisplay  |  72  |  ttf  |
-|  NotoSansDuployan  |  1  | ttf   |
-|  NotoSansEgyptianHieroglyphs  |  1  | ttf   |
-|  NotoSansElbasan  |  1  | ttf   |
-|  NotoSansEthiopic  |  36  |   ttf |
-|  NotoSansGeorgian  |  36  |  ttf  |
-|  NotoSansGlagolitic  |  1  | ttf   |
-|  NotoSansGothic  |  1  | ttf   |
-|  NotoSansGrantha  |  1  | ttf   |
-|  NotoSansGujarati  |  2  | ttf   |
-|  NotoSansGujaratiUI  |  1  | ttf   |
-|  NotoSansGunjalaGondi  |  1  | ttf   |
-|  NotoSansGurmukhi  |  36  |   ttf |
-|  NotoSansGurmukhiUI  |  36  |   ttf |
-|  NotoSansHanifiRohingya  |  1  | ttf   |
-|  NotoSansHanunoo  |  1  | ttf   |
-|  NotoSansHatran  |  1  | ttf   |
-|  NotoSansHebrew  |  36  |   ttf |
-|  NotoSansImperialAramaic  |  1  | ttf   |
-|  NotoSansIndicSiyaqNumbers  |  1  | ttf   |
-|  NotoSansInscriptionalPahlavi  |  1  | ttf   |
-|  NotoSansInscriptionalParthian  |  1  | ttf   |
-|  NotoSansJavanese  |  2  | ttf   |
-|  NotoSansKaithi  |  1  | ttf   |
-|  NotoSansKannada  |  36  |   ttf |
-|  NotoSansKannadaUI  |  36  |   ttf |
-|  NotoSansKayahLi  |  1  | ttf   |
-|  NotoSansKharoshthi  |  1  | ttf   |
-|  NotoSansKhmer  |  36  |   ttf |
-|  NotoSansKhmerUI  |  36  |   ttf |
-|  NotoSansKhojki  |  1  | ttf   |
-|  NotoSansKhudawadi  |  1  | ttf   |
-|  NotoSansLao-Black  |  36  |   ttf |
-|  NotoSansLaoUI  |  36  |   ttf |
-|  NotoSansLepcha  |  1  | ttf   |
-|  NotoSansLimbu  |  1  | ttf   |
-|  NotoSansLinearA  |  1  | ttf   |
-|  NotoSansLinearB  |  1  | ttf   |
-|  NotoSansLisu  |  4  | ttf   |
-|  NotoSansMahajani  |  1  | ttf   |
-|  NotoSansMalayalam  |  36  |   ttf |
-|  NotoSansMalayalamUI  |  36  |   ttf |
-|  NotoSansMandaic  |  1  | ttf   |
-|  NotoSansManichaean  |  1  | ttf   |
-|  NotoSansMarchen  |  1  | ttf   |
-|  NotoSansMasaramGondi  |  1  | ttf   |
-|  NotoSansMath  |  1  | ttf   |
-|  NotoSansMayanNumerals  |  1  | ttf   |
-|  NotoSansMeeteiMayek  |  1  | ttf   |
-|  NotoSansMendeKikakui  |  1  | ttf   |
-|  NotoSansMeroitic  |  1  | ttf   |
-|  NotoSansMiao  |  1  | ttf   |
-|  NotoSansModi  |  1  | ttf   |
-|  NotoSansMongolian  |  1  | ttf   |
-|  NotoSansMono  |  36  |   ttf |
-|  NotoSansMro  |  1  | ttf   |
-|  NotoSansMultani  |  1  | ttf   |
-|  NotoSansMyanmar  |  36  |   ttf |
-|  NotoSansMyanmarUI  |  36  |   ttf |
-|  NotoSansNKo  |  1  | ttf   |
-|  NotoSansNabataean  |  1  | ttf   |
-|  NotoSansNewTaiLue  |  1  | ttf   |
-|  NotoSansNewa  |  1  | ttf   |
-|  NotoSansOgham  |  1  | ttf   |
-|  NotoSansOlChiki  |  4  | ttf   |
-|  NotoSansOldHungarian  |  1  | ttf   |
-|  NotoSansOldItalic  |  1  | ttf   |
-|  NotoSansOldNorthArabian  |  1  | ttf   |
-|  NotoSansOldPermic  |  1  | ttf   |
-|  NotoSansOldPersian  |  1  | ttf   |
-|  NotoSansOldSogdian  |  1  | ttf   |
-|  NotoSansOldSouthArabian  |  1  | ttf   |
-|  NotoSansOldTurkic  |  1  | ttf   |
-|  NotoSansOriya  |  2  | ttf   |
-|  NotoSansOriyaUI  |  2  | ttf   |
-|  NotoSansOsage  |  1  | ttf   |
-|  NotoSansOsmanya  |  1  | ttf   |
-|  NotoSansPahawhHmong  |    |    |
-|  NotoSansPalmyrene  |  1  | ttf   |
-|  NotoSansPauCinHau  |  1  | ttf   |
-|  NotoSansPhagsPa  |  1  | ttf   |
-|  NotoSansPhoenician  |  1  | ttf   |
-|  NotoSansPsalterPahlavi  |  1  | ttf   |
-|  NotoSansRejang  |  1  | ttf   |
-|  NotoSansRunic  |  1  | ttf   |
-|  NotoSansSamaritan  |  1  | ttf   |
-|  NotoSansSaurashtra  |  1  | ttf   |
-|  NotoSansSharada  |  1  | ttf   |
-|  NotoSansShavian  |  1  | ttf   |
-|  NotoSansSiddham  |  1  | ttf   |
-|  NotoSansSinhala  |   36 |  ttf  |
-|  NotoSansSinhalaUI  |   36 |  ttf  |
-|  NotoSansSogdian  |  1  | ttf   |
-|  NotoSansSoraSompeng  |  1  | ttf   |
-|  NotoSansSoyombo  |  1  | ttf   |
-|  NotoSansSundanese  |  1  | ttf   |
-|  NotoSansSylotiNagri  |  1  | ttf   |
-|  NotoSansSymbols  |  9  | ttf   |
-|  NotoSansSymbols2  |  1  | ttf   |
-|  NotoSansSyriac  |  3  | ttf   |
-|  NotoSansTagalog  |  1  | ttf   |
-|  NotoSansTagbanwa  |  1  | ttf   |
-|  NotoSansTaiLe  |  1  | ttf   |
-|  NotoSansTaiTham  |  1  | ttf   |
-|  NotoSansTaiViet  |  1  | ttf   |
-|  NotoSansTakri  |  1  | ttf   |
-|  NotoSansTamil  |   36 |  ttf  |
-|  NotoSansTamilSupplement |  1  | ttf   |
-|  NotoSansTamilUI  |   36 |  ttf  |
-|  NotoSansTelugu  |   36 |  ttf  |
-|  NotoSansTeluguUI  |   36 |  ttf  |
-|  NotoSansThaana  |  9  | ttf   |
-|  NotoSansThai  |   36 |  ttf  |
-|  NotoSansThaiUI  |   36 |  ttf  |
-|  NotoSansTibetan  |  2  | ttf   |
-|  NotoSansTifinagh  |  1  | ttf   |
-|  NotoSansTirhuta  |  1  | ttf   |
-|  NotoSansUgaritic  |  1  | ttf   |
-|  NotoSansVai  |  1  | ttf   |
-|  NotoSansWancho  |  1  | ttf   |
-|  NotoSansWarangCiti |  1  | ttf   |
-|  NotoSansYi  |  1  | ttf   |
-|  NotoSansZanabazarSquare  |  1  | ttf   |
-|  NotoSerif  |  72  |  ttf  |
-|  NotoSerifAhom  |  1  | ttf   |
-|  NotoSerifArmenian  |   36 |  ttf  |
-|  NotoSerifBalinese  |  1  | ttf   |
-|  NotoSerifBengali  |   36 |  ttf  |
-|  NotoSerifDevanagari  |   36 |  ttf  |
-|  NotoSerifDisplay  |   72 |  ttf  |
-|  NotoSerifDogra  |  1  | ttf   |
-|  NotoSerifEthiopic  |   36 |  ttf  |
-|  NotoSerifGeorgian  |   36 |  ttf  |
-|  NotoSerifGujarati  | 9  | ttf   |
-|  NotoSerifGurmukhi  |  9  | ttf   |
-|  NotoSerifHebrew  |   36 |  ttf  |
-|  NotoSerifKannada  | 9  | ttf   |
-|  NotoSerifKhmer  |   36 |  ttf  |
-|  NotoSerifLao  |   36 |  ttf  |
-|  NotoSerifMalayalam  | 9  | ttf   |
-|  NotoSerifMyanmar  |   36 |  ttf  |
-|  NotoSerifSinhala  |   36 |  ttf  |
-|  NotoSerifTamil  |   36 |  ttf  |
-|  NotoSerifTamilSlanted  |   36 |  ttf  |
-|  NotoSerifTangut  |  1  | ttf   |
-|  NotoSerifTelugu  | 9  | ttf   |
-|  NotoSerifThai  |   36 |  ttf  |
-|  NotoSerifTibetan  | 9  | ttf   |
-|  Ubuntu  |  10  |  ttf  |
-|  UbuntuMono  |  4  | ttf   |
-|  C059  |  4  |  t1  |
-|  D050000L  |  1  |  t1  |
-|  NimbusMonoPS  |  4  |  t1  |
-|  NimbusRoman  |  4  |  t1  |
-|  NimbusSans  |  4  |  t1  |
-|  NimbusSansNarrow  |  4  |  t1  |
-|  P052  |  4  |  t1  |
-|  StandardSymbolsPS  |  1  | t1   |
-|  URWBookman  |  4  |  t1  |
-|  URWGothic  |  4  |  t1  |
-|  Z003  |  1  | t1   |
-|  c0419bt  |  1  |  pfb  |
-|  c0582bt |  1  |  pfb  |
-|  c0583bt  |  1  |  pfb  |
-|  c0611bt  |  1  |  pfb  |
-|  c0632bt  |  1  |  pfb  |
-|  c0633bt  |  1  |  pfb  |
-|  c0648bt  |  1  |  pfb  |
-|  c0649bt  |  1  |  pfb  |
+| フォント名 | ウェイト数 | 拡張子 |`font-family`名|
+| ------------ | -------------- | ---------------- |  ---------------- | 
+|  c0419bt  |  1  |  pfb  |  Courier 10 Pitch  |
+|  c0582bt |  1  |  pfb  |  Courier 10 Pitch  |
+|  c0583bt  |  1  |  pfb  |  Courier 10 Pitch  |
+|  c0611bt  |  1  |  pfb  |  Courier 10 Pitch  |
+|  c0632bt  |  1  |  pfb  |  Courier 10 Pitch  |
+|  c0633bt  |  1  |  pfb  |  Courier 10 Pitch  |
+|  c0648bt  |  1  |  pfb  |  Courier 10 Pitch  |
+|  c0649bt  |  1  |  pfb  |  Courier 10 Pitch  |
+|   NotoSansCJK |  73  | ttc   |  Noto Sans CJK HK,<br>Noto Sans CJK JP,<br>Noto Sans CJK KR,<br>Noto Sans CJK SC,<br>Noto Sans CJK TC,  |
+|  Loma  |   4 | otf   |  Loma  |
+|   C059 | 4   |   otf |  C059  |
+|  D050000L  |  1  | otf   |  D050000L  |
+|   NimbusMonoPS |  3  |  otf  |  Nimbus Mono PS  |
+|  NimbusRoman  | 4   |  otf  |  Nimbus Roman  |
+|  NimbusSans  |  4  |  otf  |  Nimbus Sans  |
+|  NimbusSansNarrow  | 4   |   otf |  Nimbus Sans Narrow  |
+|  P052  | 4   |  otf  |  P052  |
+|  StandardSymbolsPS  |  1  |  otf  |  Standard Symbols PS  |
+|  URWBookman  | 4   |   otf |  URW Bookman  |
+|  URWGothic  |  4  |  otf  |  URW Gothic  |
+|  Z003  |  1  |  otf  |  Z003  |
+|  LiberationMono  |   4 | ttf   |  Liberation Mono  |
+|  LiberationSans  |  8  |  ttf  |  Liberation Sans  |
+|  LiberationSansNarrow  | 4   | ttf   |  Liberation Sans Narrow  |
+|  LiberationSerif  |   4 |  ttf  |  Liberation Serif  |
+|  Andale_Mono  |   1 |   ttf |  Andale Mono  |
+|  Arial  |  5  | ttf   |  Arial, Arial Black  |
+|  Comic Sans  |  2  |  ttf  |  Comic Sans MS  |
+|  Courier New  |  4  |  ttf  |   Courier New  |
+|  Georgia  | 4   |  ttf  |   Georgia  |
+|  Impact  |  1  | ttf   |   Impact  |
+|  Times New Roman  |  4  |  ttf  |   Times New Roman  |
+|  Trebuchet MS  |  4  |  ttf  |   Trebuchet MS  |
+|  Verdana  |  4  |  ttf  |   Verdana  |
+|  Webdings  |   1 |  ttf  |   Webdings  |
+|  andalemo  |  1  | ttf   |   Andale Mono  |
+|  arialbd  |  1  | ttf   |   Arial  |
+|  arialbi  |  1  | ttf   |   Arial  |
+|  ariali  |  1  | ttf   |   Arial  |
+|  ariblk  |  1  | ttf   |    Arial Black  |
+|  comic  |  1  |  ttf  |  Comic Sans MS  |
+|  comicbd  |  1  |  ttf  |  Comic Sans MS  |
+|  cour  |  1  |  ttf  |  Courier New  |
+|  courbd    |  1  |  ttf  |   Courier New  |
+|  courbi    |  1  |  ttf  |   Courier New  |
+|  couri    |  1  |  ttf  |   Courier New  |
+|  georgiab   |  1  |  ttf  |   Georgia  |
+|  georgiai    |  1  |  ttf  |   Georgia  |
+|  georgiaz    |  1  |  ttf  |   Georgia  |
+|  times   |  1  |  ttf  |   Times New Roman  |
+|  timesbd   |  1  |  ttf  |  Times New Roman   |
+|  timesbi   |  1  |  ttf  |   Times New Roman  |
+|  timesi   |  1  |  ttf  |   Times New Roman  |
+|  trebuc   |  1  |  ttf  |   Trebuchet MS  |
+|  trebucbd   |  1  |  ttf  |   Trebuchet MS  |
+|  trebucbi   |  1  |  ttf  |   Trebuchet MS  |
+|  trebucit   |  1  |  ttf  |   Trebuchet MS  |
+|  verdanab   |  1  |  ttf  |   Verdana  |
+|  verdanai   |  1  |  ttf  |   Verdana  |
+|  verdanaz   |  1  |  ttf  |   Verdana  |
+|  NotoColorEmoji  |  1  | ttf   |   Noto Color Emoji  |
+|  NotoKufiArabic  |   9 |  ttf  |  Noto Kufi Arabic  |
+|  NotoMono  |  1  | ttf   |   Noto Mono  |
+| NotoMusic   |  1  | ttf   |    Noto Music  |
+|  NotoNaskhArabic  |  2  |  ttf  |   Noto Naskh Arabic  |
+|  NotoNaskhArabicUI  |  2  |  ttf  |   Noto Naskh Arabic UI  |
+|  NotoNastaliqUrdu  |  2  |  ttf  |   Noto Nastaliq Urdu  |
+|  NotoSans  |  72  |  ttf  |  Noto Sans  |
+|  NotoSansAdlam  |  1  |  ttf  |   Noto Sans Adlam  |
+|  NotoSansAdlamUnjoined  |  1  |  ttf  |   Noto Sans Adlam Unjoined  |
+|  NotoSansAnatolianHieroglyphs  |  1  | ttf   |  Noto Sans Anatolian Hieroglyphs  |
+|  NotoSansArabic  |  36  |  ttf  |   Noto Sans Arabic  |
+|  NotoSansArabicUI  | 36   | ttf   |   Noto Sans Arabic UI  |
+|  NotoSansArmenian  | 36   | ttf   |   Noto Sans Armenian  |
+|  NotoSansAvestan  |  1  | ttf   |   Noto Sans Avestan  |
+|  NotoSansBamum  |  1  | ttf   |   Noto Sans Bamum  |
+|  NotoSansBassaVah  |  1  | ttf   |   Noto Sans Bassa Vah  |
+|  NotoSansBatak  |  1  | ttf   |   Noto Sans Batak  |
+|  NotoSansBengali  |  12  |  ttf  |   Noto Sans Bengali  |
+|  NotoSansBengaliUI  |  12  |  ttf  |   Noto Sans Bengali UI  |
+|  NotoSansBhaiksuki  |  1  | ttf   |   Noto Sans Bhaiksuki  |
+|  NotoSansBrahmi  |  1  | ttf   |   Noto Sans Brahmi  |
+|  NotoSansBuginese  |  1  | ttf   |   Noto Sans Buginese  |
+|  NotoSansBuhid  |  1  | ttf   |   Noto Sans Buhid  |
+|  NotoSansCanadianAboriginal  |  9  |  ttf  |   Noto Sans Canadian Aboriginal  |
+|  NotoSansCarian  |  1  | ttf   |   Noto Sans Carian  |
+|  NotoSansCaucasianAlbanian  |  1  | ttf   |  Noto Sans Caucasian Albanian  |
+|  NotoSansChakma  |  1  | ttf   |   Noto Sans Chakma  |
+|  NotoSansCham  |  9  |   ttf |   Noto Sans Cham  |
+|  NotoSansCherokee  |  9  |  ttf  |   Noto Sans Cherokee  |
+|  NotoSansCoptic  |  1  | ttf   |   Noto Sans Coptic  |
+|  NotoSansCuneiform  |  1  | ttf   |   Noto Sans Cuneiform  |
+|  NotoSansCypriot  |  1  | ttf   |   Noto Sans Cypriot  |
+|  NotoSansDeseret  |  1  | ttf   |   Noto Sans Deseret  |
+|  NotoSansDevanagari  |  36  |  ttf  |   Noto Sans Devanagari  |
+|  NotoSansDevanagariUI  |  36  | ttf   |   Noto Sans Devanagari UI  |
+|  NotoSansDisplay  |  72  |  ttf  |   Noto Sans Display  |
+|  NotoSansDuployan  |  1  | ttf   |   Noto Sans Duployan  |
+|  NotoSansEgyptianHieroglyphs  |  1  | ttf   |  Noto Sans Egyptian Hieroglyphs  |
+|  NotoSansElbasan  |  1  | ttf   |   Noto Sans Elbasan  |
+|  NotoSansEthiopic  |  36  |   ttf |   Noto Sans Ethiopic  |
+|  NotoSansGeorgian  |  36  |  ttf  |   Noto Sans Georgian  |
+|  NotoSansGlagolitic  |  1  | ttf   |   Noto Sans Glagolitic  |
+|  NotoSansGothic  |  1  | ttf   |   Noto Sans Gothic  |
+|  NotoSansGrantha  |  1  | ttf   |   Noto Sans Grantha  |
+|  NotoSansGujarati  |  2  | ttf   |   Noto Sans Gujarati  |
+|  NotoSansGujaratiUI  |  2  | ttf   |   Noto Sans Gujarati UI  |
+|  NotoSansGunjalaGondi  |  1  | ttf   |   Noto Sans Gunjala Gondi  |
+|  NotoSansGurmukhi  |  36  |   ttf |   Noto Sans Gurmukhi  |
+|  NotoSansGurmukhiUI  |  36  |   ttf |   Noto Sans Gurmukhi UI  |
+|  NotoSansHanifiRohingya  |  1  | ttf   |  Noto Sans Hanifi Rohingya  |
+|  NotoSansHanunoo  |  1  | ttf   |   Noto Sans Hanunoo  |
+|  NotoSansHatran  |  1  | ttf   |   Noto Sans Hatran  |
+|  NotoSansHebrew  |  36  |   ttf |   Noto Sans Hebrew  |
+|  NotoSansImperialAramaic  |  1  | ttf   |  Noto Sans Imperial Aramaic  |
+|  NotoSansIndicSiyaqNumbers  |  1  | ttf   |   Noto Sans Indic Siyaq Numbers  |
+|  NotoSansInscriptionalPahlavi  |  1  | ttf   |  Noto Sans Inscriptional Pahlavi  |
+|  NotoSansInscriptionalParthian  |  1  | ttf   |  Noto Sans Inscriptional Parthian  |
+|  NotoSansJavanese  |  2  | ttf   |   Noto Sans Javanese  |
+|  NotoSansKaithi  |  1  | ttf   |   Noto Sans Kaithi  |
+|  NotoSansKannada  |  36  |   ttf |   Noto Sans Kannada  |
+|  NotoSansKannadaUI  |  36  |   ttf |   Noto Sans Kannada UI  |
+|  NotoSansKayahLi  |  1  | ttf   |   Noto Sans Kayah Li  |
+|  NotoSansKharoshthi  |  1  | ttf   |   Noto Sans Kharoshthi  |
+|  NotoSansKhmer  |  36  |   ttf |  Noto Sans Khmer  |
+|  NotoSansKhmerUI  |  36  |   ttf |   Noto Sans Khmer UI  |
+|  NotoSansKhojki  |  1  | ttf   |   Noto Sans Khojki  |
+|  NotoSansKhudawadi  |  1  | ttf   |   Noto Sans Khudawadi  |
+|  NotoSansLao-Black  |  36  |   ttf |   Noto Sans Lao  |
+|  NotoSansLaoUI  |  36  |   ttf |   Noto Sans Lao UI  |
+|  NotoSansLepcha  |  1  | ttf   |   Noto Sans Lepcha  |
+|  NotoSansLimbu  |  1  | ttf   |   Noto Sans Limbu  |
+|  NotoSansLinearA  |  1  | ttf   |   Noto Sans Linear A  |
+|  NotoSansLinearB  |  1  | ttf   |    Noto Sans Linear B  |
+|  NotoSansLisu  |  4  | ttf   |   Noto Sans Lisu  |
+|  NotoSansLycian  |  2  | ttf   |    Noto Sans Lycian  |
+|  NotoSansMahajani  |  1  | ttf   |   Noto Sans Mahajani  |
+|  NotoSansMalayalam  |  36  |   ttf |   Noto Sans Malayalam  |
+|  NotoSansMalayalamUI  |  36  |   ttf |   Noto Sans Malayalam UI  |
+|  NotoSansMandaic  |  1  | ttf   |   Noto Sans Mandaic  |
+|  NotoSansManichaean  |  1  | ttf   |   Noto Sans Manichaean  |
+|  NotoSansMarchen  |  1  | ttf   |   Noto Sans Marchen  |
+|  NotoSansMasaramGondi  |  1  | ttf   |   Noto Sans Masaram Gondi  |
+|  NotoSansMath  |  1  | ttf   |   Noto Sans Math  |
+|  NotoSansMayanNumerals  |  1  | ttf   |   Noto Sans Mayan Numerals  |
+|  NotoSansMeeteiMayek  |  1  | ttf   |   Noto Sans Meetei Mayek  |
+|  NotoSansMendeKikakui  |  1  | ttf   |   Noto Sans Mende Kikakui  |
+|  NotoSansMeroitic  |  1  | ttf   |   Noto Sans Meroitic  |
+|  NotoSansMiao  |  1  | ttf   |   Noto Sans Miao  |
+|  NotoSansModi  |  1  | ttf   |   Noto Sans Modi  |
+|  NotoSansMongolian  |  1  | ttf   |   Noto Sans Mongolian  |
+|  NotoSansMono  |  36  |   ttf |  Noto Sans Mono  |
+|  NotoSansMro  |  1  | ttf   |   Noto Sans Mro  |
+|  NotoSansMultani  |  1  | ttf   |   Noto Sans Multani  |
+|  NotoSansMyanmar  |  36  |   ttf |   Noto Sans Myanmar  |
+|  NotoSansMyanmarUI  |  36  |   ttf |   Noto Sans Myanmar UI  |
+|  NotoSansNKo  |  1  | ttf   |   Noto Sans NKo  |
+|  NotoSansNabataean  |  1  | ttf   |   Noto Sans Nabataean  |
+|  NotoSansNewTaiLue  |  1  | ttf   |   Noto Sans New Tai Lue  |
+|  NotoSansNewa  |  1  | ttf   |   Noto Sans Newa  |
+|  NotoSansOgham  |  1  | ttf   |   Noto Sans Ogham  |
+|  NotoSansOlChiki  |  4  | ttf   |   Noto Sans Ol Chiki  |
+|  NotoSansOldHungarian  |  1  | ttf   |  Noto Sans Old Hungarian  |
+|  NotoSansOldItalic  |  1  | ttf   |   Noto Sans Old Italic  |
+|  NotoSansOldNorthArabian  |  1  | ttf   |  Noto Sans Old North Arabian  |
+|  NotoSansOldPermic  |  1  | ttf   |   Noto Sans Old Permic  |
+|  NotoSansOldPersian  |  1  | ttf   |   Noto Sans Old Persian  |
+|  NotoSansOldSogdian  |  1  | ttf   |   Noto Sans Old Sogdian  |
+|  NotoSansOldSouthArabian  |  1  | ttf   |  Noto Sans Old South Arabian  |
+|  NotoSansOldTurkic  |  1  | ttf   |   Noto Sans Old Turkic  |
+|  NotoSansOriya  |  2  | ttf   |   Noto Sans Oriya  |
+|  NotoSansOriyaUI  |  2  | ttf   |   Noto Sans Oriya UI  |
+|  NotoSansOsage  |  1  | ttf   |   Noto Sans Osage  |
+|  NotoSansOsmanya  |  1  | ttf   |   Noto Sans Osmanya  |
+|  NotoSansPahawhHmong  |  1  |  ttf  |   Noto Sans Pahawh Hmong  |
+|  NotoSansPalmyrene  |  1  | ttf   |   Noto Sans Palmyrene  |
+|  NotoSansPauCinHau  |  1  | ttf   |   Noto Sans Pau Cin Hau  |
+|  NotoSansPhagsPa  |  1  | ttf   |   Noto Sans PhagsPa  |
+|  NotoSansPhoenician  |  1  | ttf   |   Noto Sans Phoenician  |
+|  NotoSansPsalterPahlavi  |  1  | ttf   |  Noto Sans Psalter Pahlavi  |
+|  NotoSansRejang  |  1  | ttf   |   Noto Sans Rejang  |
+|  NotoSansRunic  |  1  | ttf   |   Noto Sans Runic  |
+|  NotoSansSamaritan  |  1  | ttf   |   Noto Sans Samaritan  |
+|  NotoSansSaurashtra  |  1  | ttf   |   Noto Sans Saurashtra  |
+|  NotoSansSharada  |  1  | ttf   |   Noto Sans Sharada  |
+|  NotoSansShavian  |  1  | ttf   |   Noto Sans Shavian  |
+|  NotoSansSiddham  |  1  | ttf   |   Noto Sans Siddham  |
+|  NotoSansSinhala  |   36 |  ttf  |   Noto Sans Sinhala  |
+|  NotoSansSinhalaUI  |   36 |  ttf  |   Noto Sans Sinhala UI  |
+|  NotoSansSogdian  |  1  | ttf   |   Noto Sans Sogdian  |
+|  NotoSansSoraSompeng  |  1  | ttf   |  Noto Sans Sora Sompeng  |
+|  NotoSansSoyombo  |  1  | ttf   |   Noto Sans Soyombo  |
+|  NotoSansSundanese  |  1  | ttf   |   Noto Sans Sundanese  |
+|  NotoSansSylotiNagri  |  1  | ttf   |   Noto Sans Syloti Nagri  |
+|  NotoSansSymbols  |  9  | ttf   |   Noto Sans Symbols  |
+|  NotoSansSymbols2  |  1  | ttf   |   Noto Sans Symbols2  |
+|  NotoSansSyriac  |  3  | ttf   |   Noto Sans Syriac  |
+|  NotoSansTagalog  |  1  | ttf   |   Noto Sans Tagalog  |
+|  NotoSansTagbanwa  |  1  | ttf   |   Noto Sans Tagbanwa  |
+|  NotoSansTaiLe  |  1  | ttf   |   Noto Sans Tai Le  |
+|  NotoSansTaiTham  |  1  | ttf   |   Noto Sans Tai Tham  |
+|  NotoSansTaiViet  |  1  | ttf   |   Noto Sans Tai Viet  |
+|  NotoSansTakri  |  1  | ttf   |   Noto Sans Takri  |
+|  NotoSansTamil  |   36 |  ttf  |   Noto Sans Tamil  |
+|  NotoSansTamilSupplement |  1  | ttf   |   Noto Sans Tamil Supplement  |
+|  NotoSansTamilUI  |   36 |  ttf  |   Noto Sans Tamil UI  |
+|  NotoSansTelugu  |   36 |  ttf  |   Noto Sans Telugu  |
+|  NotoSansTeluguUI  |   36 |  ttf  |   Noto Sans Telugu UI  |
+|  NotoSansThaana  |  9  | ttf   |   Noto Sans Thaana  |
+|  NotoSansThai  |   36 |  ttf  |   Noto Sans Thai  |
+|  NotoSansThaiUI  |   36 |  ttf  |   Noto Sans Thai UI  |
+|  NotoSansTibetan  |  2  | ttf   |   Noto Sans Tibetan  |
+|  NotoSansTifinagh  |  1  | ttf   |   Noto Sans Tifinagh  |
+|  NotoSansTirhuta  |  1  | ttf   |   Noto Sans Tirhuta  |
+|  NotoSansUgaritic  |  1  | ttf   |   Noto Sans Ugaritic  |
+|  NotoSansVai  |  1  | ttf   |   Noto Sans Vai  |
+|  NotoSansWancho  |  1  | ttf   |   Noto Sans Wancho  |
+|  NotoSansWarangCiti |  1  | ttf   |   Noto Sans Warang Citi  |
+|  NotoSansYi  |  1  | ttf   |   Noto Sans Yi  |
+|  NotoSansZanabazarSquare  |  1  | ttf   |  Noto Sans Zanabazar Square  |
+|  NotoSerif  |  72  |  ttf  |   Noto Serif  |
+|  NotoSerifAhom  |  1  | ttf   |   Noto Serif Ahom  |
+|  NotoSerifArmenian  |   36 |  ttf  |   Noto Serif Armenian  |
+|  NotoSerifBalinese  |  1  | ttf   |   Noto Serif Balinese  |
+|  NotoSerifBengali  |   36 |  ttf  |   Noto Serif Bengali  |
+|  NotoSerifDevanagari  |   36 |  ttf  |   Noto Serif Devanagari  |
+|  NotoSerifDisplay  |   72 |  ttf  |   Noto Serif Display  |
+|  NotoSerifDogra  |  1  | ttf   |   Noto Serif Dogra  |
+|  NotoSerifEthiopic  |   36 |  ttf  |   Noto Serif Ethiopic  |
+|  NotoSerifGeorgian  |   36 |  ttf  |   Noto Serif Georgian  |
+|  NotoSerifGujarati  | 9  | ttf   |   Noto Serif Gujarati  |
+|  NotoSerifGurmukhi  |  9  | ttf   |   Noto Serif Gurmukhi  |
+|  NotoSerifHebrew  |   36 |  ttf  |   Noto Serif Hebrew  |
+|  NotoSerifKannada  | 9  | ttf   |   Noto Serif Kannada  |
+|  NotoSerifKhmer  |   36 |  ttf  |   Noto Serif Khmer  |
+|  NotoSerifLao  |   36 |  ttf  |   Noto Serif Lao  |
+|  NotoSerifMalayalam  | 9  | ttf   |   Noto Serif Malayalam  |
+|  NotoSerifMyanmar  |   36 |  ttf  |   Noto Serif Myanmar  |
+|  NotoSerifSinhala  |   36 |  ttf  |   Noto Serif Sinhala  |
+|  NotoSerifTamil  |   36 |  ttf  |   Noto Serif Tamil  |
+|  NotoSerifTamilSlanted  |   36 |  ttf  |   Noto Serif Tamil Slanted  |
+|  NotoSerifTangut  |  1  | ttf   |   Noto Serif Tangut  |
+|  NotoSerifTelugu  | 9  | ttf   |   Noto Serif Telugu  |
+|  NotoSerifThai  |   36 |  ttf  |   Noto Serif Thai  |
+|  NotoSerifTibetan  | 9  | ttf   |   Noto Serif Tibetan  |
+|  Ubuntu  |  10  |  ttf  |   Ubuntu  |
+|  UbuntuMono  |  4  | ttf   |   Ubuntu Mono  |
+|  C059  |  4  |  t1  |   C059  |
+|  D050000L  |  1  |  t1  |   D050000L  |
+|  NimbusMonoPS  |  4  |  t1  |   Nimbus Mono PS  |
+|  NimbusRoman  |  4  |  t1  |   Nimbus Roman  |
+|  NimbusSans  |  4  |  t1  |   Nimbus Sans  |
+|  NimbusSansNarrow  |  4  |  t1  |   Nimbus Sans Narrow  |
+|  P052  |  4  |  t1  |   P052  |
+|  StandardSymbolsPS  |  1  | t1   |   Standard Symbols PS  |
+|  URWBookman  |  4  |  t1  |   URW Bookman  |
+|  URWGothic  |  4  |  t1  |   URW Gothic  |
+|  Z003  |  1  | t1   |   Z003  |
 
-上の表は`fc-list`コマンドの実行結果を簡略化したものです。より詳細な情報は以下をご覧ください。
+上の表は概要をまとめるため、`fc-list`コマンドの実行結果を簡略化したものです。`font-family`名が複数ある場合はファミリー共通のものか先に掲出されている方を掲載しています。また、同一の`font-family`を指定し分ける`style`等、より詳細な情報については全文である以下をご参照ください。
 
 - [fc-list.sorted](/ja/create-and-save-documents/fc-list.sorted.md)
 

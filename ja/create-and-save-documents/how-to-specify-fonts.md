@@ -30,7 +30,7 @@ Vivliostyle Pubでは以下の3種類の場所にあるフォントを利用す�
 
 Plain themeは最小の手間で素早くプレビューを確認するために用意されたテーマです。プレビューのスタイルはブラウザのデフォルト設定にしたがいます。たとえばフォントはブラウザ設定の「標準フォント」が参照されます。これは、前掲図1の分類では**フォント1**（ユーザーのPCにあるローカルフォント）に当たります。
 
-PDF出力ではクラウド上のVivliostyle CLIのデフォルト設定にしたがいます（参考：[クラウド上のVivliostyle CLIの代替フォントルール](/ja/create-and-save-documents/additional-information-on-fonts.md#クラウド上のvivliostyle-cliの代替フォントルール)）。ただしこのテーマの目的上、出力は想定されていません（PDF出力そのものは可能ですが、Plain themeと無関係に`vivliostyle.config.js`での設定にもとづき処理されます）。ご自分のイメージ通りのスタイルでプレビューやPDF出力をしたい場合は、後述のVivliostyle公式テーマの中から選択するか、Custom themeを作成してください。
+PDF出力に際しては[クラウド上のVivliostyle CLIにおける代替フォントルール](/ja/create-and-save-documents/additional-information-on-fonts.md#クラウド上のvivliostyle-cliにおける代替フォントルール)に従ってフォントが使用されます。ただしこのテーマの目的上、出力は想定されていません（PDF出力そのものは可能ですが、Plain themeと無関係に`vivliostyle.config.js`での設定で出力されます）。イメージ通りのスタイルでプレビューやPDF出力をしたい場合は、後述のVivliostyle公式テーマの中から選択するか、Custom themeを作成してください。
 
 Plain themeについては、以下もご参照ください。
 

@@ -48,7 +48,7 @@ module.exports = {
 
 その上で、`Actionメニュー > Custom theme`を選択することでCustom themeに切り替えられます。
 
-なお、Vivliostyle PubではプレビューとPDF出力で組版エンジンのある場所が違うため、Custom themeの作成に当たってなかなか自分が指定した通りのフォントが表示されなかったり、プレビューとPDFとでページがずれてしまうことが起こり得ます。事前に以下の記事を参照して、プレビューとPDF出力とでフォントを一致するよう作成することをお勧めします。
+なお、Vivliostyle PubではプレビューとPDF出力とで組版エンジンのある場所が違うため、Custom themeの作成に当たってなかなかイメージした通りのフォントが表示されなかったり、プレビューとPDFとでページがずれてしまうことが起こり得ます。事前に以下の記事を参照してプレビューとPDF出力とでフォントが一致するように、Custom themeを作成することをお勧めします。
 
 - [フォントの指定方法](/ja/create-and-save-documents/how-to-specify-fonts.md)
 - [クラウドにインストールされているフォント一覧](/ja/create-and-save-documents/additional-information-on-fonts.md#クラウドにインストールされているフォント一覧)
@@ -81,7 +81,7 @@ html {
 
 ```
 
-上記でフォントは`Georgia`と`serif`が指定されています。多くのPCには`Georgia`がインストールされているはずです。一方、Vivliostyle PubでPDF出力をおこなうクラウド（前掲図2）にも`Georgia`がインストールされているので、このテーマでは多くの場合プレビューとPDF出力のフォントは一致するでしょう。ただし、フォントのバージョン不一致により一致しない場合もあることにご注意ください（クラウドのフォントは比較的古いバージョンです）。
+上記でフォントは`Georgia`と`serif`が指定されています。多くのPCには`Georgia`がインストールされているはずです。一方、Vivliostyle PubでPDF出力をおこなうクラウド（前掲図2）にも`Georgia`がインストールされているので、このテーマでは多くの場合プレビューとPDF出力のフォントは一致するでしょう。ただし、フォントのバージョン不一致によりズレが生じる場合もあることにご注意ください（クラウドのフォントは比較的古いバージョンです）。
 
 より詳細は下記をご参照ください。
 
@@ -113,7 +113,9 @@ html {
 }
 ```
 
-上記でフォントは`游明朝`が指定されています。WindowsでもMacでも`游明朝`はプリインストールされているので、プレビューではこれが使用されます（ただし、WindowsとMacではウェイトが多少異なります）。一方、PDF出力では`Noto Serif CJK JP`に置き換えられます。この結果、プレビューとPDF出力とでは行がずれることが起こり得ます（たとえば下記スクリーンショットではプレビューと比べて3行、後にずれています）。より詳細は下記をご参照ください。
+上記でフォントは`游明朝`が指定されています。Windows（`游明朝`/`Yu Mincho`）でもMac（`游明朝体`/`YuMincho`）でもプリインストールされているので、プレビューではこれが使用されます（ただし、WindowsとMacではウェイトが若干異なります）。
+
+一方、PDF出力では`Noto Serif CJK JP`に置き換えられます。この結果、プレビューとPDF出力とでは行がずれることが起こり得ます（たとえば下記スクリーンショットではプレビューと比べて3行、後にずれています）。より詳細は下記をご参照ください。
 
 ![ ](images/functions-of-the-actions-menu/theme/fig-6.png)
 
@@ -122,7 +124,7 @@ html {
 
 ## Slide theme
 
-横組で文字サイズは12ポイント、ページサイズは210×148mm（A5判ヨコ）、スライド資料に適しています。
+横組で文字サイズは24ポイント（デフォルトの150%）、ページサイズは210×148mm（A5判ヨコ）、スライド資料に適しています。
 
 ![ ](images/functions-of-the-actions-menu/theme/fig-7.png)
 
@@ -150,19 +152,21 @@ html {
   }
 ```
 
-上記でフォントは優先度順に、1. `Noto Serif CJK JP`、2. `游ゴシック`、3. `メイリオ` 4. `sans-serif` と指定されています。プレビューでは、1〜3までのフォントがインストールされていない場合、ブラウザ設定の「Sans Serif フォント」の指定に従います。一方、PDF出力ではすべて`Noto Serif CJK JP`に置き換えられます。
+上記でフォントは優先度順に、1. `Noto Serif CJK JP`、2. `游ゴシック`、3. `メイリオ` 4. `sans-serif` と指定されています。プレビューで、ユーザのPCに1〜3までのフォントがインストールされていない場合は、ブラウザ設定の「Sans Serif フォント」の指定に従います。一方、PDF出力ではすべて`Noto Serif CJK JP`に置き換えられます。
+
+もしもプレビューとPDF出力とでズレが気になる場合、ユーザーのPCにフリーフォントである[`Noto Serif CJK JP`](https://fonts.google.com/noto/specimen/Noto+Serif+JP)をインストールすることで改善する可能性があります。
 
 - [Vivliostyle公式Themeで使われるフォント](/ja/create-and-save-documents/how-to-specify-fonts.md#vivliostyle公式themeで使われるフォント)
 - [クラウド上のVivliostyle CLIの代替フォントルール](/ja/create-and-save-documents/additional-information-on-fonts.md#クラウド上のvivliostyle-cliの代替フォントルール)
 
-なお、見開きではなく、単一ページでプレビューしたい場合は、Vivliostyleのロゴからアクセスできる設定メニューを開き、“Page Spread View” のうち “Single page” のラジオボタンを選択してください。
-
-![ ](images/functions-of-the-actions-menu/theme/fig-8.png)
-
-より詳細は下記をご参照ください。
+詳細は下記をご参照ください。
 
 - [Vivliostyle公式Themeで使われるフォント](/ja/create-and-save-documents/how-to-specify-fonts.md#vivliostyle公式themeで使われるフォント)
 - [クラウド上のVivliostyle CLIにおける代替フォントルール](/ja/create-and-save-documents/additional-information-on-fonts.md#クラウド上のvivliostyle-cliにおける代替フォントルール)
+
+なお、見開きではなく、単一ページでプレビューしたい場合は、Vivliostyleのロゴからアクセスできる設定メニューを開き、“Page Spread View” のうち “Single page” のラジオボタンを選択してください。
+
+![ ](images/functions-of-the-actions-menu/theme/fig-8.png)
 
 ## Techbook (技術同人誌) theme
 
@@ -231,9 +235,9 @@ html {
 }
 ```
 
-上記でフォントは`ヒラギノ明朝 ProN`と`serif`が指定されています。ユーザーのPCに`ヒラギノ明朝 ProN`がインストールされていれば、これがプレビューで使われます。インストールされていなければ、ブラウザ設定の「Serif フォント」の設定に従います。一方、PDF出力においてはすべて`Noto Serif CJK JP`に置き換えられます。こうした結果、プレビューとPDF出力とでページのズレが発生する場合があることにご注意ください。
+上記でフォントは`ヒラギノ明朝 ProN`と`serif`が指定されています。ユーザーのPCに`ヒラギノ明朝 ProN`がインストールされていれば、これがプレビューで使われます。インストールされていなければ、ブラウザ設定の「Serif フォント」の設定に従います。
 
-フォントのしくみについて、詳細は下記をご参照ください。
+一方、PDF出力においてはすべて`Noto Serif CJK JP`に置き換えられます。こうした結果、プレビューとPDF出力とでページのズレが発生する場合があることにご注意ください。フォントのしくみについて、詳細は下記をご参照ください。
 
 - [vivliostyle公式themeのフォント利用](/ja/create-and-save-documents/how-to-specify-fonts.md#vivliostyle公式themeのフォント利用)
 - [クラウドにインストールされているフォント一覧](/ja/create-and-save-documents/additional-information-on-fonts.md#クラウドにインストールされているフォント一覧)
