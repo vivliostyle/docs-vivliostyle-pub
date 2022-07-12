@@ -8,7 +8,9 @@ Vivliostyle Pubでは以下の3種類の場所にあるフォントを利用す�
 2. クラウドにインストールされたフォント（図2：**フォント2**）
 3. Webフォントサービスのフォント（図1、図2：**フォント3**）
 
-ただし、プレビューで使われるフォントとPDF出力で使われるフォントが、無条件に一致するのは上記のうち3だけです。これ以外の1、2では、互いに似たフォントが使われますが、一致しないことが多いのが実際です（一致しない場合、ページがずれる可能性があります）。これはVivliostyle PubではプレビューとPDF出力が、別々の機構によって処理されることによります。本節ではまずその仕組みを概説し、ついでActionメニューの項目に沿いながら、3種類のフォントを利用する方法について説明していきます。
+ただし、プレビューで使われるフォントとPDF出力で使われるフォントが、無条件に一致するのは上記のうち3だけです。これ以外の1、2では、互いに似たフォントが使われますが、一致しないことが多いのが実際です（一致しない場合、ページがずれる可能性があります）。これはVivliostyle PubではプレビューとPDF出力が、別々の機構によって処理されることによります。
+
+本節ではまずその仕組みを概説し、ついでActionメニューの項目に沿いながら、3種類のフォントを利用する方法について説明していきます。その中で、プレビューとPDF出力とでフォントを一致させる方法について触れます。
 
 では、プレビューにおいてフォントがどのように使われるかをみてみましょう（図1）。ここで注意してほしいのは、実際に組版をおこなうVivliostyle.js（赤色）は、プレビューにおいてはユーザーのPC上のフロントエンドにあるということです。組版エンジンはフォントを直接操作します。したがって同じユーザーのPCにある**フォント1**がプレビューで利用できるわけです。
 
@@ -69,7 +71,9 @@ Custom themeを選択することで、そのスタイルシートにもとづ�
 
 ------------------------
 
-1. 以下のような内容のファイルを任意のpathにアップロードします（→[ファイルのアップロード](/ja/file-and-folder-operations/file-list-pane-operations.md)）
+1. あらかじめPCに[`Noto Sans CJK JP`](https://github.com/googlefonts/noto-cjk/raw/main/Sans/Variable/OTC/NotoSansCJK-VF.ttf.ttc)をインストールしておきます。
+
+2. Vivliostyle Pubで、以下のような内容のスタイルシート（Custom theme）をアップロードします（→[ファイルのアップロード](/ja/file-and-folder-operations/file-list-pane-operations.md)）。すでにスタイルシート（Custom theme）がある場合は下記を参考に書き換えてください
 
 ```css
 @charset "UTF-8";
@@ -125,17 +129,28 @@ h2 {
 
 上記はあくまでCustom themeの一例ですが、ルート要素の`font-family`として`Noto Sans CJK JP`を指定し、本文（`p`）に`font-weight: 300;`、大見出し（`h1`）に`font-weight: 900;`、小見出し（`h2`）に`font-weight: 700;`と、同じデザインで複数の太さを指定し分けています。またページ設定（`@page`）として判型はA5判タテ、幅360pt、高さ468pt、フォントサイズ8.5ptを指定しています。
 
-2. 設定ファイル`vivliostyle.config.js`の中で、Custom themeのpathを指定します（→[Custom theme](/ja/functions-of-the-actions-menu/theme.md#custom-theme)）
+3. 設定ファイル`vivliostyle.config.js`の中で、Custom themeのあるpathを指定します（→[Custom theme](/ja/functions-of-the-actions-menu/theme.md#custom-theme)）。`entry: `にはPDF出力するファイル名を記述します。
 
-3. Actionメニューから「Custom theme」を選択します
+```js
+module.exports = {
+  title: '私の本',
+  author: '尾久綿次郎',
+  theme: 'css/style.css',
+  entry: [
+    'chapter-2.md',
+    ]
+}
+```
+
+4. Actionメニューから「Custom theme」を選択します。themeが切り替わらない場合は、ブラウザをリロードさせてください
 
 ![ ](images/create-and-save-documents/how-to-specify-fonts/fig-5.png)
 
-4. プレビューで`Noto Sans CJK JP`が使用されるようになりました
+5. プレビューで`Noto Sans CJK JP`が使用されるようになりました
 
 ![ ](images/create-and-save-documents/how-to-specify-fonts/fig-6.png)
 
-5. Actionメニューから「PDF」を選択すると、Custom themeを適用したPDF出力ができます（→[Export（出力）>PDF](/ja/functions-of-the-actions-menu/export.md#pdf)）。プレビューと同じ`Noto Sans CJK JP`が、同じ文字サイズ、行長、行送りで使用されていることを確認してください   
+6. Actionメニューから「Export（出力）>PDF」を選択すると、Custom themeを適用したPDFが出力されます（→[Export（出力）>PDF](/ja/functions-of-the-actions-menu/export.md#pdf)）。プレビューと同じ`Noto Sans CJK JP`が、同じ文字サイズ、行長、行送りにより使用されていることを確認してください   
 
 ![ ](images/create-and-save-documents/how-to-specify-fonts/fig-7.png)
 
@@ -146,7 +161,7 @@ h2 {
 
 ## Custom theme／Googleフォントの使用
 
-前節で説明した以外にも、Webフォント（前掲図1／図2の**フォント3**）を利用することで、プレビューとPDF出力とでフォントを一致させることができます。本項では無料のWebフォントサービス、GoogleフォントをVivliostyle Pubで使用する方法を説明します。ここでは[前項](/ja/create-and-save-documents/how-to-specify-fonts.md#custom-theme／プレビューとpdf出力とでフォントを一致させる)で使ったものを雛形にしましょう。
+前節で説明した以外にも、Webフォント（前掲図1／図2の**フォント3**）を利用することで、プレビューとPDF出力とでフォントを一致させることができます。本項では無償のWebフォントサービス、GoogleフォントをVivliostyle Pubで使用する方法を説明します。
 
 1. まず[Googleフォント](https://fonts.google.com/)でフォント選択し、つぎにStylesで使いたい太さを “Select this style” 右横にある(+)　をクリックして選択します。ここでは、しっぽり明朝 Regular 400、Noto Sans Japanese Bold 700、Noto Sans Japanese Medium 900を選択しました。
 
@@ -154,7 +169,7 @@ h2 {
 
 ![ ](images/create-and-save-documents/how-to-specify-fonts/fig-8.png)
 
-2. コピーした読み込み用コードをCustom themeにペーストします
+2. 下記のようにGoogleフォントの読み込み用コードや`font-family`のコードを記入したCustom themeをアップロードします（→[ファイルのアップロード](/ja/file-and-folder-operations/file-list-pane-operations.md)）。すでにスタイルシート（Custom theme）がある場合は下記を参考に書き換えてください
 
 ```css
 @charset "UTF-8";
@@ -211,15 +226,24 @@ font-weight: 700;
 }
 ```
 
-Googleフォントの読み込みコードは、`link`要素と`@import`の2種類用意されていますが、どちらも外部スタイルシートを読み込むもので、機能的には同一です。今回は複数のMarkdownファイルにWebフォントを適用したいので、スタイルシート（Custom theme）に`@import`の読み込みコードをペーストすることにします（HTMLファイルで使うため前後に`style`要素が入っていますが、それらは取り除いてください）。
+Googleフォントでは、読み込みコードとして`link`要素と`@import`の2種類を用意していますが、どちらも外部スタイルシートを読み込むもので機能的には同一です。ここでは複数のMarkdownファイルにWebフォントを適用できるメリットを重視し、スタイルシート（Custom theme）に`@import`の読み込みコードをペーストすることにします（HTMLファイルで使うため前後に`style`要素が入っていますが、それらは取り除いてください）。
 
-それから、忘れずに具体的なフォント名を指定する`font-family`のコードもCustom themeにペーストします。ここではルート要素にしっぽり明朝 Regular 400を、`h1`にNoto Sans Japanese Bold 900を、`h2`にNoto Sans Japanese Medium 700を指定しました。
+それから、具体的なフォント名を指定する`font-family`のコードもCustom themeにペーストします。ここではルート要素にしっぽり明朝 Regular 400を、`h1`にNoto Sans Japanese Bold 900を、`h2`にNoto Sans Japanese Medium 700を指定しました。
 
-なお、特定のMarkdownファイルにだけWebフォントを適用したい場合は、当該ファイルの先頭に読み込みコード（`link`要素、及び`style`要素で囲った`@import`のどちらか）をペーストします。スタイルシートで`font-family`を指定するのもお忘れなく。
+3. 設定ファイル`vivliostyle.config.js`の中で、Custom themeのpathを指定します（→[Custom theme](/ja/functions-of-the-actions-menu/theme.md#custom-theme)）。`entry: `にはPDF出力するファイル名を記述します。
 
-3. 設定ファイル`vivliostyle.config.js`の中で、Custom themeのpathを指定します（→[Custom theme](/ja/functions-of-the-actions-menu/theme.md#custom-theme)）
+```js
+module.exports = {
+  title: '私の本',
+  author: '尾久綿次郎',
+  theme: 'css/style.css',
+  entry: [
+    'chapter-2.md',
+    ]
+}
+```
 
-4. ActionメニューでCustom themeを選択し、プレビューにWebフォントが適用されたことを確認します
+4. ActionメニューでCustom themeを選択し、プレビューにWebフォントが適用されたことを確認します。themeが切り替わらない場合は、ブラウザをリロードさせてください
 
 ![ ](images/create-and-save-documents/how-to-specify-fonts/fig-9.png)
 
@@ -227,11 +251,106 @@ Googleフォントの読み込みコードは、`link`要素と`@import`の2種�
 
 ![ ](images/create-and-save-documents/how-to-specify-fonts/fig-10.png)
 
-Custom themeの利用方法については、下記もご参照ください。
+- **補足情報**
+    - ここでは複数のMarkdownファイルにWebフォントを適用するためスタイルシートに`@import`をペーストしましたが、特定のMarkdownファイルにだけWebフォントを適用したい場合は、当該ファイルの先頭に読み込みコード（`link`要素、及び`style`要素で囲った`@import`のどちらか）をペーストします。その際、忘れずにスタイルシートの方で`font-family`を指定してください
+    - [bunny.net](https://fonts.bunny.net/)によりGoogleフォントと同じフォントが無償で利用可能です
+        - このサービスはGoogleフォントと互換性を維持した上で（つまり同じフォントをホスティングした上で）、EUの[GDPR（一般データ保護規則）](https://www.jetro.go.jp/world/europe/eu/gdpr/)をクリアするためにユーザのトラッキングをしないことを明示しています（[bunny.net > about](https://fonts.bunny.net/about)）
+        - 使い方は簡単で、Googleフォントで取得した読み込み用コードのうち、`googleapis.com`の部分を`bunny.net`に置き換えるだけ
+        - もしくは、[bunny.net](https://fonts.bunny.net/)でフォントを選択し、画面右上の「Font+」をクリックして読み込みコードを取得し、スタイルシート（Custom theme）かMarkdownにペーストします
 
-- 参考：[Theme（テーマの選択）> Custom theme](/ja/functions-of-the-actions-menu/theme.md#custom-theme)
+## Custom theme／有償Webフォントサービスの使用      
 
-## Custom theme／有料Webフォントサービスの使用      
+Googleフォントは無償で利用できますが、デメリットは読み込みスピードが多少落ちることです。短い文章なら十分ですが、長大な原稿の場合は遅さが気になるかもしれません。そうした場合は、有償Webフォントサービスの利用を検討するとよいでしょう。本項ではダイナコムウェア社の[DynaSmart V](https://www.dynacw.co.jp/product/product_dynasmart_detail.aspx?sid=25)を例にとり、これをVivliostyle Pubで利用する方法を説明します。なお、以下ではすでに同社のアカウントを取得している前提ですすめます。
 
-Googleフォントは無料で利用できるWebフォントサービスですが、デメリットは
+1. DynaFont OnlineのマイページからVivliostyle Pubのドメイン名`vivliostyle-pub-develop.vercel.app`を登録した上で、利用したいフォントのJavaScriptコード（script要素）と`font-family`を取得します。詳細は下記ページが参考になるでしょう。
 
+    - [DFO JavaScript Generator（ダイナコムウェア）](https://dfo.dynacw.co.jp/service/JS_Gen.aspx)
+
+ここでは本文書体として「ＤＦ華康明朝体 StdN W3 OpenType」、`h1`に「ＤＦ金剛黒体 Pro-6N Semibold OpenType」、`h2`に「ＤＦ金剛黒体 Pro-6N Ultrabold OpenType」を利用することにします。
+
+2. Markdownファイルの先頭に取得したJavaScriptコードをペーストします（この段階ではまだフォントは変更されていません）。
+
+![ ](images/create-and-save-documents/how-to-specify-fonts/fig-11.png)
+
+3. 取得した`font-family`を記入した以下のようなスタイルシート（Custom theme）をアップロードします（→[ファイルのアップロード](/ja/file-and-folder-operations/file-list-pane-operations.md)）。すでにスタイルシート（Custom theme）がある場合は下記を参考に書き換えてください
+
+```css
+@charset "UTF-8";
+
+html{
+writing-mode: vertical-rl;
+font-family: 'DFMinchoPPro6N-W3', serif;
+font-style: normal;
+text-align: justify;
+text-spacing: space-first allow-end ideograph-alpha ideograph-numeric;
+line-height: 2;
+}
+
+p {
+  font-weight: 400;
+  text-indent: 1em;
+  hanging-punctuation: first allow-end;
+}
+
+h1 {
+font-family: 'DFKingGothicJP16N-Ultrabold', sans-serif; 
+}
+
+h2 {
+font-family: 'DFKingGothicJP16N-Semibold', sans-serif; 
+}
+
+@page {
+  size: 148mm 210mm;
+  width: 360pt;
+  height: 468pt;
+  margin: auto;
+  font-size: 8.5pt;
+}
+@page :left {
+  @top-left {
+    writing-mode: horizontal-tb;  
+    content: counter(page) "　" env(doc-title);
+    margin-left: 7pt;
+    margin-top: 8.5mm;
+  }
+}
+@page :right {
+  @top-right {
+    writing-mode: horizontal-tb;
+    content: counter(page);
+    margin-right: 7pt;
+    margin-top: 8.5mm;
+   }
+}
+```
+
+4. 設定ファイル`vivliostyle.config.js`の中で、Custom themeのあるpathを指定します（→[Custom theme](/ja/functions-of-the-actions-menu/theme.md#custom-theme)）。`entry: `にはPDF出力するファイル名を記述します。
+
+```js
+module.exports = {
+  title: '私の本',
+  author: '尾久綿次郎',
+  theme: 'css/style.css',
+  entry: [
+    'chapter-2.md',
+    ]
+}
+```
+
+5. Actionメニューから「Custom theme」を選択します。themeが切り替わらない場合は、ブラウザをリロードさせてください
+
+6. プレビューで「ＤＦ華康明朝体」「ＤＦ金剛黒体」が使用されるようになりました
+
+![ ](images/create-and-save-documents/how-to-specify-fonts/fig-12.png)
+
+7.  Actionメニューから「Export（出力）>PDF」を選択すると、Custom themeを適用したPDFが出力されます（→[Export（出力）>PDF](/ja/functions-of-the-actions-menu/export.md#pdf)）。プレビューと同じ「ＤＦ華康明朝体」「ＤＦ金剛黒体」が、同じ文字サイズ、行長、行送りにより使用されていることを確認してください   
+
+![ ](images/create-and-save-documents/how-to-specify-fonts/fig-13.png)
+
+- **補足情報**
+    - 有償Webフォントサービスの読み込みスピードが速いのは、**動的サブセッティング**という方式を採用しているからです。これは収容文字数が膨大になる東アジア言語のWebフォントで有効性を発揮する技術です。
+    - 大容量のフォントファイルはネットワークに依存するWebフォントに不向きです。そこでレンダリング前にコンテンツをパースし、そこに含まれている文字だけからなる小容量のサブセット・フォントを作成し、これをWebサーバに送ってレンダリングします。常にサブセットの内容が異なるのでこの名前があります
+    - これに対してGoogleフォントが採用しているのは**静的サブセッティング**です。この方式ではコンテンツとは無関係に、使用頻度ごとに小容量のサブセット・フォントに分割しておきます。Webサーバーから文字を要求されると、その文字が含まれたサブセット・フォントを送ってレンダリングします。サブセットの内容は常に固定されているのでこの名前があります。前者と比べれば効率は悪くなりがちで、読み込みスピードは前者に軍配が上がります
+    - ただし、有償Webフォントサービスは利用規約によって用途を制限しており、Vivliostyle Pubで無条件にこれらのサービスが利用できるわけではありません。
+    - より詳細は[推奨する有償Webフォントサービスの利用規準](/ja/create-and-save-documents/additional-information-on-fonts.md#推奨する有償webフォントサービスの利用規準)を参照してください

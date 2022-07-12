@@ -302,8 +302,19 @@ PDF出力に際して、前節のリストにないフォントが指定され�
     - 上の表で`Noto Serif CJK JP`に代替されるフォント以外の明朝体フォント全てにこの問題が発生します（逆の言い方をすれば、上の表で`Noto Serif CJK JP`に代替されるフォントはこの問題は発生しません）。Vivliostyleではこの問題の解決に努めています。詳細は下記をご参照ください。
         - [font-family: serif を指定しても明朝体にならない問題と対策](https://github.com/vivliostyle/vivliostyle-cli/issues/303#issuecomment-1169786479)
 
-## 推奨する有料Webフォントサービスの利用規準
+## 推奨する有償Webフォントサービスの利用規準
 
+- 私たちが調べた限り、以下の3つ全てをクリアするのはダイナコムウェア社のWebフォントサービス、[DynaSmart V](https://www.dynacw.co.jp/product/product_dynasmart_detail.aspx?sid=25)及び[DynaSmart T](https://www.dynacw.co.jp/product/product_dynasmart_detail.aspx?sid=43)だけのようです
+    - Webフォントを使ってプレビューができる
+    - Webフォントを使ってPDF出力、及びオフセット／オンデマンド印刷ができる
+    - Webフォントを使って成果物の有償販売ができる
+    - DynaSmart Vはローカルフォント年間ライセンスであり、Webフォントサービス[「DynaFont Online」](https://dfo.dynacw.co.jp/index.aspx)が無償で利用できます
+    - DynaSmart Tは同じくローカルフォント年間ライセンスであり、有償で「DynaFont Online」が利用可能です
+
+
+本来、利用規約の解釈は契約者間で決めるものであり、第三者である私たちが口出しすべきではありません。とはいえ、一人でも多くのユーザに私たちのサービスを使っていただくためには、
+
+私たちがWebフォントサービス各社とコミュニケーションをとった上で、独自に判断した
 
 |              | [DynaSmart V](https://www.dynacw.co.jp/product/product_dynasmart_detail.aspx?sid=25)           | [DynaSmart T](https://www.dynacw.co.jp/product/product_dynasmart_detail.aspx?sid=43)  | [TypeSquare](https://typesquare.com/ja/)    |[fonts.com](https://www.fonts.com/ja)  | [FONTPLUS](https://fontplus.jp/)※  | [Adobe Fonts](https://fonts.adobe.com/)     |
 | ------------ | -------------- | ---------------- | --------------- |  -------------- | ---------------- | --------------- |
