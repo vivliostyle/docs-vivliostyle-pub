@@ -2,37 +2,35 @@
 
 ## フォントを使用するしくみ
 
-Vivliostyle Pubでは以下の3種類の場所にあるフォントを利用することができます。
+Vivliostyle Pubは、Actionメニューで選択されているテーマ（→[Theme（テーマの選択](/ja/functions-of-the-actions-menu/theme.md#themeテーマの選択)）にもとづきフォントを利用します。その際、プレビューとPDF出力とでは、別々の組版エンジン（Vivliostyle.js）が処理します。
 
-1. ユーザーのPCにあるローカルフォント（図1：**フォント1**）
-2. クラウドにインストールされたフォント（図2：**フォント2**）
-3. Webフォントサービスのフォント（図1、図2：**フォント3**）
+つまり、プレビューにおいてはユーザーのPCにあるローカルフォント（図1：**フォント1**）かWebフォントサービスのフォント（図1、図2：**フォント3**）が、PDF出力においてはクラウドにインストールされたフォント（図2：**フォント3**）かWebフォントサービスのフォント（図1、図2：**フォント3**）が使用されます。
 
-ただし、プレビューで使われるフォントとPDF出力で使われるフォントが、無条件に一致するのは上記のうち3だけです。これ以外の1、2では、互いに似たフォントが使われますが、一致しないことが多いのが実際です（一致しない場合、ページがずれる可能性があります）。これはVivliostyle PubではプレビューとPDF出力が、別々の機構によって処理されることによります。
+こうしたしくみにより、プレビューで使われるフォントとPDF出力で使われるフォントが、無条件に一致するのはWebフォントサービスのフォント（図1、図2：**フォント3**）だけになります。ユーザーのPCにあるローカルフォントがクラウドにない場合は、似たフォントで代替されます（→[ クラウド上のVivliostyle CLIにおける代替フォントルール](/ja/create-and-save-documents/additional-information-on-fonts.md#クラウド上のvivliostyle-cliにおける代替フォントルール)）。この時、プレビューとPDF出力とでページのズレが発生する可能性があることにご注意ください。
 
-本節ではまずその仕組みを概説し、ついでActionメニューの項目に沿いながら、3種類のフォントを利用する方法について説明していきます。その中で、プレビューとPDF出力とでフォントを一致させる方法について触れます。
+本節ではまずVivliostyle Pubがフォントを使用するしくみを概説し、ついでActionメニューの項目に沿いながら、3種類のフォントを利用する方法について説明していきます。その中で、プレビューとPDF出力とでフォントを一致させる方法についても触れます。
 
-では、プレビューにおいてフォントがどのように使われるかをみてみましょう（図1）。ここで注意してほしいのは、実際に組版をおこなうVivliostyle.js（赤色）は、プレビューにおいてはユーザーのPC上のフロントエンドにあるということです。組版エンジンはフォントを直接操作します。したがって同じユーザーのPCにある**フォント1**がプレビューで利用できるわけです。
+では、プレビューにおいてフォントがどのように使われるかをみてみましょう（図1）。ここで注意してほしいのは、プレビューにおいて実際に組版をおこなうVivliostyle.js（赤色）は、ユーザーのPC上のフロントエンドにあるということです。組版エンジンはフォントを直接操作します。したがって同様にユーザーのPCにある**フォント1**がプレビューで利用できるわけです。
 
-ただし、この図にはバックエンドが図示されていません。プレビューではクラウド上にあるバックエンドのコンポーネントは関与しない仕組みです。したがってクラウドにインストールされた**フォント2**も利用できません。
+ただし、この図にはバックエンドが図示されていません。プレビューではクラウド上にあるバックエンドのコンポーネントは関与しません。これによりクラウドにインストールされた**フォント2**も利用できないのです。
 
 <img src="images/create-and-save-documents/how-to-specify-fonts/fig-1.jpg" alt="図1 プレビューにおけるフォントの利用" style="max-height: 500px;">
 
-次に、PDF出力においてフォントがどのように使われるかをみてみましょう（図2）。注意してほしいのは、PDF出力では実際に組版をおこなうVivliostyle.js（赤色）はクラウド上のバックエンドにあるということです。したがって同じクラウドにインストールされている**フォント2**がPDF出力で利用できるわけです。
+次に、PDF出力においてフォントがどのように使われるかをみてみましょう（図2）。注意してほしいのは、PDF出力において実際に組版をおこなうVivliostyle.js（赤色）はクラウド上のバックエンドにあるということです。したがって同様にクラウドにインストールされている**フォント2**がPDF出力で利用できるわけです。
 
 <img src="images/create-and-save-documents/how-to-specify-fonts/fig-2.jpg" alt="図2 PDF出力におけるフォントの利用" style="max-height: 500px;">
 
-ただし、上の図にはフロントエンドのVivliostyle.jsやユーザーのPCにある**フォント1**は図示されていません。PDF出力において、フロントエンドはメニューを通じて指示を出すだけで、組版には関与しない仕組みです。したがってユーザーのPCにある**フォント1**も利用できません。
+ただし、上の図にはフロントエンドのVivliostyle.jsやユーザーのPCにある**フォント1**は図示されていません。PDF出力では、フロントエンドはメニューを通じて指示を出すだけで、組版には関与しない仕組みです。これによりユーザーのPCにある**フォント1**も利用できないのです。
 
-一方、Webフォントサービスの**フォント3**は、図1にも図2にも図示されています。つまり、フロントエンドのVivliostyle.jsでもバックエンドにあるVivliostyle.jsでも、同じ**フォント3**を使うことができます。こうしてプレビューで使われるフォントとPDF出力で使われるフォントを一致させることができるわけです。
+一方、Webフォントサービスの**フォント3**は、図1にも図2にも図示されています。つまり、フロントエンドのVivliostyle.jsでもバックエンドにあるVivliostyle.jsでも、同じ**フォント3**を使うことができます。こうしてプレビューで使われるフォントとPDF出力で使われるフォントを無条件で一致させることができるわけです。
 
 ## Plain themeで使われるフォント
 
 ![ ](images/create-and-save-documents/how-to-specify-fonts/fig-3.png)
 
-Plain themeは最小の手間で素早くプレビューを確認するために用意されたテーマです。プレビューのスタイルはブラウザのデフォルト設定にしたがいます。たとえばフォントはブラウザ設定の「標準フォント」が参照されます。これは、前掲図1の分類では**フォント1**（ユーザーのPCにあるローカルフォント）に当たります。
+Plain themeは最小の手間で素早くプレビューを確認するためのものです。他と違って特定のテーマがあるのではなく、ブラウザのデフォルト設定にしたがいます。たとえばフォントはブラウザ設定の「標準フォント」が参照されます。これは、前掲図1の分類では**フォント1**（ユーザーのPCにあるローカルフォント）に当たります。
 
-PDF出力に際しては[クラウド上のVivliostyle CLIにおける代替フォントルール](/ja/create-and-save-documents/additional-information-on-fonts.md#クラウド上のvivliostyle-cliにおける代替フォントルール)に従ってフォントが使用されます。ただしこのテーマの目的上、出力は想定されていません（PDF出力そのものは可能ですが、Plain themeと無関係に`vivliostyle.config.js`での設定で出力されます）。イメージ通りのスタイルでプレビューやPDF出力をしたい場合は、後述のVivliostyle公式テーマの中から選択するか、Custom themeを作成してください。
+PDF出力に際しては[クラウド上のVivliostyle CLIにおける代替フォントルール](/ja/create-and-save-documents/additional-information-on-fonts.md#クラウド上のvivliostyle-cliにおける代替フォントルール)に従ってフォントが使用されます。ただしこのテーマの目的上、出力は想定されていません（PDF出力そのものは可能ですが、Plain themeの設定と無関係に`vivliostyle.config.js`にもとづき出力されます）。イメージ通りのスタイルでプレビューやPDF出力をしたい場合は、後述のVivliostyle公式テーマの中から選択するか、Custom themeを作成してください。
 
 Plain themeについては、以下もご参照ください。
 
@@ -52,7 +50,7 @@ Actionメニューから、以下のthemeを選択した場合、npm package管�
 
 プレビューにおいて、これらのthemeで使用されるのはユーザーのPCにあるローカルフォント（前掲図1の**フォント1**）です。したがってthemeで指定されたフォントがインストールされている必要があります。もしユーザーのPCにそれらのフォントがインストールされていなければ、`font-family:`の設定に従って`sans-serif`ないしは`serif`に代替されます。
 
-一方、PDF出力ではクラウドにインストールされたフォント（前掲図2の**フォント2**）が使用されます。もし公式themeで指定されているフォントがクラウドになければ、[クラウド上のVivliostyle CLIにおける代替フォントルール](/ja/create-and-save-documents/additional-information-on-fonts.md#クラウド上のvivliostyle-cliにおける代替フォントルール)に従って別のフォントが使用されます。それぞれの公式themeで、どのようなフォントが指定されているか、クラウド上にどのようなフォントがインストールされているのかは下記をご参照ください。
+一方、PDF出力ではクラウドにインストールされたフォント（前掲図2の**フォント2**）が使用されます。もし公式themeで指定されているフォントがクラウドになければ、[クラウド上のVivliostyle CLIにおける代替フォントルール](/ja/create-and-save-documents/additional-information-on-fonts.md#クラウド上のvivliostyle-cliにおける代替フォントルール)に従って別のフォントで代替されます。それぞれの公式themeでどのようなフォントが指定されているか、そしてクラウド上にどのようなフォントがインストールされているのかは下記をご参照ください。
 
 - [Theme（テーマの選択）](/ja/functions-of-the-actions-menu/theme.md)
 - [クラウドにインストールされているフォント一覧](/ja/create-and-save-documents/additional-information-on-fonts.md#クラウドにインストールされているフォント一覧)
@@ -61,13 +59,13 @@ Actionメニューから、以下のthemeを選択した場合、npm package管�
 
 ## Custom theme／プレビューとPDF出力とでフォントを一致させる
 
-Custom themeを選択することで、そのスタイルシートにもとづきプレビューとPDF出力ができます。この時プレビューで使用されるのはユーザーのPCにあるローカルフォント（前掲図1の**フォント1**）、PDF出力で使用されるのはクラウドにインストールされたフォント（前掲図2の**フォント2**）です。
+Custom themeを作成することで、そのスタイルシートにもとづいたプレビューとPDF出力ができます。この時プレビューで使用されるのはユーザーのPCにあるローカルフォント（前掲図1の**フォント1**）であり、一方、PDF出力で使用されるのはクラウドにインストールされたフォント（前掲図2の**フォント2**）です。
 
-ここで問題になるのは、クラウドにあるフォントと同じフォントがユーザーのPCにインストールされていなかった場合です。その場合はプレビューとPDF出力で使われるフォントとが一致しないことになり、似たフォントを使ってPDF出力されます。フォントが異なるので、プレビューとPDF出力とでページのズレが発生する可能性があります。
+ここで問題になるのは、Custom themeで指定したフォントが、ユーザーのPCとクラウドの片方にしかインストールされていなかった時です。その場合は似たフォントが代替使用されるので、プレビューとPDF出力でフォントが一致しないことになります。フォントが異なるので、プレビューとPDF出力とでページのズレが発生します。
 
-しかし、あらかじめクラウドにあるフォントをPCにもインストールしておけば、プレビューとPDF出力とでフォントを一致させられ、ページのズレも発生しなくなります。
+しかし、クラウドにあるフォントをPCにもインストールし、これをCustom themeで指定すればプレビューとPDF出力とでフォントを一致させられ、ページのズレは発生しません。それでも、クラウドには2,300以上ものフォントがインストールされています（→[クラウドにインストールされているフォント一覧](/ja/create-and-save-documents/additional-information-on-fonts.md#クラウドにインストールされているフォント一覧)）。どのフォントをPCにインストールすればよいのでしょう？
 
-クラウドにインストールされているフォントの数は2,300以上もあります（→[クラウドにインストールされているフォント一覧](/ja/create-and-save-documents/additional-information-on-fonts.md#クラウドにインストールされているフォント一覧)）。日本語環境で使用する場合、もっとも効率的で効果的なのは[`Noto Sans CJK JP`](https://github.com/googlefonts/noto-cjk/raw/main/Sans/Variable/OTC/NotoSansCJK-VF.ttf.ttc)をインストールすることです。以下、本項ではその方法を説明します。
+日本語環境で使用する場合、もっとも効率的で効果的なフォントは、ウェイトが豊富な[`Noto Sans CJK JP`](https://github.com/googlefonts/noto-cjk/raw/main/Sans/Variable/OTC/NotoSansCJK-VF.ttf.ttc)です。Notoシリーズは対応言語が豊富で、異なる言語の間でデザインを統一しやすいこともメリットです。以下、本項ではこれを使ってプレビューとPDF出力をする方法を説明します。
 
 ------------------------
 
@@ -161,11 +159,11 @@ module.exports = {
 
 ## Custom theme／Googleフォントの使用
 
-前節で説明した以外にも、Webフォント（前掲図1／図2の**フォント3**）を利用することで、プレビューとPDF出力とでフォントを一致させることができます。本項では無償のWebフォントサービス、GoogleフォントをVivliostyle Pubで使用する方法を説明します。
+前項で説明した以外にも、Webフォント（前掲図1／図2の**フォント3**）を利用することで、プレビューとPDF出力とでフォントを一致させることができます。本項では無償のWebフォントサービス、[Googleフォント](https://fonts.google.com/)をVivliostyle Pubで使用する方法を説明します。
 
-1. まず[Googleフォント](https://fonts.google.com/)でフォント選択し、つぎにStylesで使いたい太さを “Select this style” 右横にある(+)　をクリックして選択します。ここでは、しっぽり明朝 Regular 400、Noto Sans Japanese Bold 700、Noto Sans Japanese Medium 900を選択しました。
+1. まず[Googleフォント](https://fonts.google.com/)でフォント選択し、つぎにStylesで使いたい太さを “Select this style” 右横にある(+)　をクリックして選択します。ここでは、しっぽり明朝 Regular 400、Noto Sans Japanese Bold 700、Noto Sans Japanese Medium 900を選択しました
 
-すると、画面右ペインに選択したフォント／スタイルの読み込み用コードが表示されるので、これをコピーします。また、「CSS rules to specify families」から`font-family`のコードもコピーします。
+すると、画面右ペインに選択したフォント／スタイルの読み込み用コードが表示されるので、これをコピーします。また、「CSS rules to specify families」から`font-family`のコードもコピーします
 
 ![ ](images/create-and-save-documents/how-to-specify-fonts/fig-8.png)
 
@@ -226,11 +224,11 @@ font-weight: 700;
 }
 ```
 
-Googleフォントでは、読み込みコードとして`link`要素と`@import`の2種類を用意していますが、どちらも外部スタイルシートを読み込むもので機能的には同一です。ここでは複数のMarkdownファイルにWebフォントを適用できるメリットを重視し、スタイルシート（Custom theme）に`@import`の読み込みコードをペーストすることにします（HTMLファイルで使うため前後に`style`要素が入っていますが、それらは取り除いてください）。
+Googleフォントでは、読み込みコードとして`link`要素と`@import`の2種類を用意していますが、どちらも外部スタイルシートを読み込むもので機能的には同一です。ここでは複数のMarkdownファイルにWebフォントを適用できるメリットを重視し、スタイルシート（Custom theme）に`@import`の読み込みコードをペーストすることにします（HTMLファイルで使うため前後に`style`要素が入っていますが、それらは取り除いてください）
 
-それから、具体的なフォント名を指定する`font-family`のコードもCustom themeにペーストします。ここではルート要素にしっぽり明朝 Regular 400を、`h1`にNoto Sans Japanese Bold 900を、`h2`にNoto Sans Japanese Medium 700を指定しました。
+それから、具体的なフォント名を指定する`font-family`のコードもCustom themeにペーストします。ここではルート要素にしっぽり明朝 Regular 400を、`h1`にNoto Sans Japanese Bold 900を、`h2`にNoto Sans Japanese Medium 700を指定しました
 
-3. 設定ファイル`vivliostyle.config.js`の中で、Custom themeのpathを指定します（→[Custom theme](/ja/functions-of-the-actions-menu/theme.md#custom-theme)）。`entry: `にはPDF出力するファイル名を記述します。
+3. 設定ファイル`vivliostyle.config.js`の中で、Custom themeのpathを指定します（→[Custom theme](/ja/functions-of-the-actions-menu/theme.md#custom-theme)）。`entry: `にはPDF出力するファイル名を記述します
 
 ```js
 module.exports = {
@@ -260,19 +258,19 @@ module.exports = {
 
 ## Custom theme／有償Webフォントサービスの使用      
 
-Googleフォントは無償で利用できますが、デメリットは読み込みスピードが多少落ちることです。短い文章なら十分ですが、長大な原稿の場合は遅さが気になるかもしれません。そうした場合は、有償Webフォントサービスの利用を検討するとよいでしょう。本項ではダイナコムウェア社の[DynaSmart V](https://www.dynacw.co.jp/product/product_dynasmart_detail.aspx?sid=25)を例にとり、これをVivliostyle Pubで利用する方法を説明します。なお、以下ではすでに同社のアカウントを取得している前提ですすめます。
+Googleフォントは無償で利用できますが、デメリットは読み込みスピードが多少落ちることです。短い文章なら問題なくとも、原稿がとても長い場合は遅さが気になるかもしれません。そうした場合は、有償Webフォントサービスの利用を検討するとよいでしょう。本項ではダイナコムウェア社の[DynaSmart V](https://www.dynacw.co.jp/product/product_dynasmart_detail.aspx?sid=25)を例にとり、これをVivliostyle Pubで利用する方法を説明します。なお、以下ではすでに同社のアカウントを取得している前提ですすめます。
 
-1. DynaFont OnlineのマイページからVivliostyle Pubのドメイン名`vivliostyle-pub-develop.vercel.app`を登録した上で、利用したいフォントのJavaScriptコード（script要素）と`font-family`を取得します。詳細は下記ページが参考になるでしょう。
+1. DynaFont OnlineのマイページからVivliostyle Pubのドメイン名`vivliostyle-pub-develop.vercel.app`を登録した上で、利用したいフォントのJavaScriptコード（script要素）と`font-family`を取得します。詳細は下記ページが参考になるでしょう
 
     - [DFO JavaScript Generator（ダイナコムウェア）](https://dfo.dynacw.co.jp/service/JS_Gen.aspx)
 
-ここでは本文書体として「ＤＦ華康明朝体 StdN W3 OpenType」、`h1`に「ＤＦ金剛黒体 Pro-6N Semibold OpenType」、`h2`に「ＤＦ金剛黒体 Pro-6N Ultrabold OpenType」を利用することにします。
+ここでは本文書体としてＤＦ華康明朝体 StdN W3 OpenType、`h1`にＤＦ金剛黒体 Pro-6N Semibold OpenType、`h2`にＤＦ金剛黒体 Pro-6N Ultrabold OpenTypeを利用することにします
 
-2. Markdownファイルの先頭に取得したJavaScriptコードをペーストします（この段階ではまだフォントは変更されていません）。
+2. Markdownファイルの先頭に取得したJavaScriptコードをペーストします（この段階ではまだフォントは変更されていません）
 
 ![ ](images/create-and-save-documents/how-to-specify-fonts/fig-11.png)
 
-3. 取得した`font-family`を記入した以下のようなスタイルシート（Custom theme）をアップロードします（→[ファイルのアップロード](/ja/file-and-folder-operations/file-list-pane-operations.md)）。すでにスタイルシート（Custom theme）がある場合は下記を参考に書き換えてください
+3. 取得した`font-family`を記入した以下のようなスタイルシート（Custom theme）をアップロードします（→[ファイルのアップロード](/ja/file-and-folder-operations/file-list-pane-operations.md)）。すでにCustom themeがある場合は、下記を参考に書き換えてください
 
 ```css
 @charset "UTF-8";
@@ -325,7 +323,7 @@ font-family: 'DFKingGothicJP16N-Semibold', sans-serif;
 }
 ```
 
-4. 設定ファイル`vivliostyle.config.js`の中で、Custom themeのあるpathを指定します（→[Custom theme](/ja/functions-of-the-actions-menu/theme.md#custom-theme)）。`entry: `にはPDF出力するファイル名を記述します。
+4. 設定ファイル`vivliostyle.config.js`の中で、Custom themeのあるpathを指定します（→[Custom theme](/ja/functions-of-the-actions-menu/theme.md#custom-theme)）。`entry: `にはPDF出力するファイル名を記述します
 
 ```js
 module.exports = {
@@ -340,17 +338,18 @@ module.exports = {
 
 5. Actionメニューから「Custom theme」を選択します。themeが切り替わらない場合は、ブラウザをリロードさせてください
 
-6. プレビューで「ＤＦ華康明朝体」「ＤＦ金剛黒体」が使用されるようになりました
+6. プレビューでＤＦ華康明朝体、ＤＦ金剛黒体が使用されるようになりました
 
 ![ ](images/create-and-save-documents/how-to-specify-fonts/fig-12.png)
 
-7.  Actionメニューから「Export（出力）>PDF」を選択すると、Custom themeを適用したPDFが出力されます（→[Export（出力）>PDF](/ja/functions-of-the-actions-menu/export.md#pdf)）。プレビューと同じ「ＤＦ華康明朝体」「ＤＦ金剛黒体」が、同じ文字サイズ、行長、行送りにより使用されていることを確認してください   
+7.  Actionメニューから「Export（出力）>PDF」を選択すると、Custom themeを適用したPDFが出力されます（→[Export（出力）>PDF](/ja/functions-of-the-actions-menu/export.md#pdf)）。プレビューと同じＤＦ華康明朝体、ＤＦ金剛黒体が、同じ文字サイズ、行長、行送りにより使用されていることを確認してください   
 
 ![ ](images/create-and-save-documents/how-to-specify-fonts/fig-13.png)
 
 - **補足情報**
-    - 有償Webフォントサービスの読み込みスピードが速いのは、**動的サブセッティング**という方式を採用しているからです。これは収容文字数が膨大になる東アジア言語のWebフォントで有効性を発揮する技術です。
+    - 有償Webフォントサービスの読み込みスピードが速いのは、**動的サブセッティング**という方式を採用しているからです。これは収容文字数が膨大になる東アジア言語のWebフォントで有効性を発揮する技術です
     - 大容量のフォントファイルはネットワークに依存するWebフォントに不向きです。そこでレンダリング前にコンテンツをパースし、そこに含まれている文字だけからなる小容量のサブセット・フォントを作成し、これをWebサーバに送ってレンダリングします。常にサブセットの内容が異なるのでこの名前があります
-    - これに対してGoogleフォントが採用しているのは**静的サブセッティング**です。この方式ではコンテンツとは無関係に、使用頻度ごとに小容量のサブセット・フォントに分割しておきます。Webサーバーから文字を要求されると、その文字が含まれたサブセット・フォントを送ってレンダリングします。サブセットの内容は常に固定されているのでこの名前があります。前者と比べれば効率は悪くなりがちで、読み込みスピードは前者に軍配が上がります
-    - ただし、有償Webフォントサービスは利用規約によって用途を制限しており、Vivliostyle Pubで無条件にこれらのサービスが利用できるわけではありません。
-    - より詳細は[推奨する有償Webフォントサービスの利用規準](/ja/create-and-save-documents/additional-information-on-fonts.md#推奨する有償webフォントサービスの利用規準)を参照してください
+    - これに対してGoogleフォントが採用しているのは**静的サブセッティング**です。この方式ではコンテンツとは無関係に、使用頻度ごとに小容量のサブセット・フォントに分割しておきますWebサーバーから文字を要求されると、その文字が含まれたサブセット・フォントを送ってレンダリングします。サブセットの内容は固定されているのでこの名前があります。前者と比べれば効率は悪くなりがちで、読み込みスピードは前者に軍配が上がります
+    - ただし、有償Webフォントサービスは利用規約によって用途を制限しており、Vivliostyle Pubで無条件にこれらのサービスが利用できるわけではありません
+    - そこで、ユーザーに安心してVivliostyle Pubを利用していただくために、独自調査にもとづきWebフォントサービス会社ごとに推奨する用途を選定しました。ご参照ください
+       - [推奨する有償Webフォントサービスの用途](/ja/create-and-save-documents/additional-information-on-fonts.md#推奨する有償webフォントサービスの用途)
