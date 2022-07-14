@@ -1,10 +1,10 @@
 # 文書のカスタマイズ
 
-`vivliostyle.config.js`は作ろうとする文書全体の設定ファイルです。 pathはリポジトリのルートです。
+文書全体の設定ファイルが`vivliostyle.config.js`です。 pathはリポジトリのルートです
 
 ![](/images/create-and-save-documents/document-customization/fig-1.png)
 
-これを新規追加、編集することで、 以下のようなカスタマイズが可能になります。もちろんVivliostyle Pubにより編集でき、保存すると文書全体に反映されます。記法は下記の`{ }` の内部に事項のような値を記入していきます
+もちろんVivliostyle Pubにより編集でき、保存すると文書全体に反映されます。記法は下記`{ }` の内部に次項のような値を記入していくことで、文書のカスタマイズができます
 
 ```js
 module.exports = {
@@ -82,11 +82,13 @@ entry: [
 ],
 ```
 
+出力したくないファイルがあれば、行頭に`//`を記入すればコメントアウトになります
+
 ## 目次の追加
 
 以下の手順で目次を追加することができます
 
-1. あらかじめ以下のような目次用の markdown ファイルを用意し、ファイル名を `index.md` としてアップロードします（→[ファイルのアップロード](/ja/file-and-folder-operations/file-list-pane-operations.md#ファイルのアップロード)）。他と違って以下はHTMLの構文であり、したがって指定するのもHTMLファイルであることにご注意ください
+1. あらかじめ以下のような目次用の markdown ファイルを用意し、ファイル名を `index.md` としてアップロードします（→[ファイルのアップロード](/ja/file-and-folder-operations/file-list-pane-operations.md#ファイルのアップロード)）。他と違って以下はHTML構文なので、指定するのもHTMLファイルであることにご注意ください
 
 ```md
 # 本のタイトル
@@ -102,7 +104,7 @@ entry: [
 </nav>
 ```
 
-なお、HTMLのタグがある行とmarkdownの行の間には、必ず空行をいれるよう注意してください。そうしないとエラーになります
+なお、HTMLのタグがある行とmarkdownの行の間は、必ず空行をいれるよう注意してください。そうしないとエラーになります
 
 2. `vivliostyle.config.js` の `entry` の先頭行に、用意した `index.md` を指定します
 
@@ -119,7 +121,7 @@ entry: [
 
 以下の手順で奥付を追加することができます
 
-1. あらかじめ以下のような markdownファイルを用意し、ファイル名を `colophon.md` として保存します
+1. あらかじめ以下のような markdownファイルを用意し、ファイル名を `colophon.md` としてアップロードします（→[ファイルのアップロード](/ja/file-and-folder-operations/file-list-pane-operations.md#ファイルのアップロード)）
 
 ```md
 <section id="colophon" role="doc-colophon">
@@ -127,7 +129,7 @@ entry: [
 ## 私が書いた本
 20xx年x月x日　初版発行
 - 発行　私が書いた本刊行会
-- 編集　山田太郎
+- 著者　尾久綿次郎
 - 印刷　Sample Printing
 © My Book Publishing, 20xx
 
@@ -145,5 +147,3 @@ entry: [
     "colophon.md",
 ],
 ```
-
-出力したくないファイルがあれば、行頭に`//`を記入すればコメントアウトになります。また、HTMLのタグがある行とmarkdownの行の間には、必ず空行をいれるよう注意してください。エラーになります

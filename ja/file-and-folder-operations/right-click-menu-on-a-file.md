@@ -18,6 +18,12 @@
 
 ![ ](images/file-and-folder-operations/right-click-menu-on-a-file/fig-4.png)
 
+5. ファイル名の変更を`vivliostyle.config.js`に記述することで、PDFに出力できます（逆に言えば、`vivliostyle.config.js`を変更しなければPDF出力もできません）。記述の方法は下記をご参照ください
+
+    - [文書のカスタマイズ>複数文書の出力](/ja/create-and-save-documents/document-customization.md#複数文書の出力)
+
+
+
 ## ファイルを複製
 
 1. 複製したいファイルの上にマウスカーソルを置き右クリックすると、メニューが表示されるので「ファイルを複製」（赤丸）を選択
@@ -36,6 +42,10 @@
 
 ![ ](images/file-and-folder-operations/right-click-menu-on-a-file/fig-8.png)
 
+5. 複製したファイル名を`vivliostyle.config.js`に記述することで、PDFに出力できます（逆に言えば、`vivliostyle.config.js`を変更しなければPDF出力もできません）。記述の方法は下記をご参照ください
+
+    - [文書のカスタマイズ>複数文書の出力](/ja/create-and-save-documents/document-customization.md#複数文書の出力)
+
 
 ## ファイルを削除
 
@@ -50,6 +60,11 @@
 3. ファイル一覧ペインから削除されました
 
 ![ ](images/file-and-folder-operations/right-click-menu-on-a-file/fig-11.png)
+
+4. ファイルの削除を`vivliostyle.config.js`に反映します。記述の方法は下記をご参照ください
+
+- [文書のカスタマイズ>複数文書の出力](/ja/create-and-save-documents/document-customization.md#複数文書の出力)
+
 
 ## ファイルをダウンロード
 
