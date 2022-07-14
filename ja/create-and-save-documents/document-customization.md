@@ -1,17 +1,23 @@
 # 文書のカスタマイズ
 
-`vivliostyle.config.js`は作ろうとする文書全体の設定ファイルです。 
+`vivliostyle.config.js`は作ろうとする文書全体の設定ファイルです。 pathはリポジトリのルートです。
 
+![](/images/create-and-save-documents/document-customization/fig-1.png)
 
+これを新規追加、編集することで、 以下のようなカスタマイズが可能になります。もちろんVivliostyle Pubにより編集でき、保存すると文書全体に反映されます。記法は下記の`{ }` の内部に事項のような値を記入していきます
 
-を新規追加することで、 以下のようなカスタマイズが可能になります
+```js
+module.exports = {
+
+}
+```
 
 ## 書名の指定
 
  `title` で書名を指定できます（値をシングルクォートで括る。以下同じ）
 
 ```js
-title: 'mybook',
+title: '私の本',
 ```
 
 ## 著者名とメールアドレスの指定
@@ -56,7 +62,7 @@ size: 'JIS-B5',
  `theme` で任意のスタイルシート（Custom theme）を指定できます
 
 ```js
-theme: 'sample.css',
+theme: 'css/style.css',
 ```
 
 Custom themeについては、下記もご参照ください。
@@ -70,9 +76,9 @@ Custom themeについては、下記もご参照ください。
 
 ```js
 entry: [
-    "filename1.md",
-    "filename2.md",
-    "filename3.md",
+    "Chapter-1.md",
+    "Chapter-2.md",
+    "Chapter-3.md",
 ],
 ```
 
@@ -80,7 +86,7 @@ entry: [
 
 以下の手順で目次を追加することができます
 
-1. あらかじめ以下のような目次用の markdown ファイルを用意し、ファイル名を `index.md` としてアップロードします（→[ファイルのアップロード](/ja/file-and-folder-operations/file-list-pane-operations.md#ファイルのアップロード)）
+1. あらかじめ以下のような目次用の markdown ファイルを用意し、ファイル名を `index.md` としてアップロードします（→[ファイルのアップロード](/ja/file-and-folder-operations/file-list-pane-operations.md#ファイルのアップロード)）。他と違って以下はHTMLの構文であり、したがって指定するのもHTMLファイルであることにご注意ください
 
 ```md
 # 本のタイトル
@@ -89,9 +95,9 @@ entry: [
 
 ## 目次
 
-- [記事タイトル1](filename1.html)
-- [記事タイトル2](filename2.html)
-- [記事タイトル3](filename3.html)
+- [記事タイトル1](Chapter-1.html)
+- [記事タイトル2](Chapter-2.html)
+- [記事タイトル3](Chapter-3.html)
 
 </nav>
 ```
@@ -103,9 +109,9 @@ entry: [
 ```js
 entry: [
     "index.md",
-    "filename1.md",
-    "filename2.md",
-    "filename3.md",
+    "Chapter-1.md",
+    "Chapter-2.md",
+    "Chapter-3.md",
 ],
 ```
 
@@ -133,11 +139,11 @@ entry: [
 ```js
 entry: [
     "index.md",
-    "filename1.md",
-    "filename2.md",
-    "filename3.md",
+    "Chapter-1.md",
+    "Chapter-2.md",
+    "Chapter-3.md",
     "colophon.md",
 ],
 ```
 
-なお、HTMLのタグがある行とmarkdownの行の間には、必ず空行をいれるよう注意してください。エラーになります
+出力したくないファイルがあれば、行頭に`//`を記入すればコメントアウトになります。また、HTMLのタグがある行とmarkdownの行の間には、必ず空行をいれるよう注意してください。エラーになります
