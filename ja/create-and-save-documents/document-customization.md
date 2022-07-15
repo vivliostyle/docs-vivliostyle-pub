@@ -4,7 +4,7 @@
 
 ![](/images/create-and-save-documents/document-customization/fig-1.png)
 
-もちろんVivliostyle Pubにより編集でき、保存すると文書全体に反映されます。記法は下記`{ }` の内部に次項のような値を記入していくことで、文書のカスタマイズができます
+もちろんVivliostyle Pubを使って編集でき、保存すると文書全体に反映されます。記法は下記`{ }` の内部に次項のような値を記入していくことで、文書のカスタマイズができます
 
 ```js
 module.exports = {
@@ -22,7 +22,7 @@ title: '私の本',
 
 ## 著者名とメールアドレスの指定
 
- `author name`  で著者名を指定できます
+ `author`  で著者名を指定できます
 
 ```js
 author: '尾久綿次郎 <ogwata@example.com>',
@@ -30,7 +30,7 @@ author: '尾久綿次郎 <ogwata@example.com>',
 
 ## 使用言語の指定
 
-`language`で文書で使用する言語を指定できます。英語は  `en`、日本語は `ja`。その他 [ISO 639-1](https://www.loc.gov/standards/iso639-2/php/code_list.php )に規定された2文字コードが指定できます
+`language`で文書で使用する言語を指定できます。英語は  `en`、日本語は `ja`、その他 [ISO 639-1](https://www.loc.gov/standards/iso639-2/php/code_list.php )に規定された2文字コードが指定できます
 
 ```js
 language: 'ja',
@@ -44,7 +44,7 @@ language: 'ja',
 size: 'JIS-B5',
 ```
 
-[CSS Paged Media Module Level 3 (7.1. Page size)](https://drafts.csswg.org/css-page-3/#page-size-prop )に規定された下記の値が指定できます。なお、日本での一般的なB5は `JIS-B5` ですのでご注意ください (B4も同様)。
+[CSS Paged Media Module Level 3 (7.1. Page size)](https://drafts.csswg.org/css-page-3/#page-size-prop )に規定された下記の値が指定できます。なお、日本での一般的なB5は `JIS-B5` ですのでご注意ください (B4も同様)
 
 - `A5`
 - `A4`
@@ -65,7 +65,7 @@ size: 'JIS-B5',
 theme: 'css/style.css',
 ```
 
-Custom themeについては、下記もご参照ください。
+Custom themeについては、下記もご参照ください
 
 - [Custom theme](/ja/functions-of-the-actions-menu/theme.md#custom-theme)
 - [Custom theme／プレビューとPDF出力とでフォントを一致させる](/ja/create-and-save-documents/how-to-specify-fonts.md#custom-theme／プレビューとpdf出力とでフォントを一致させる)

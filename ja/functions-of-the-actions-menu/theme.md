@@ -46,7 +46,11 @@ module.exports = {
  }
 ```
 
-その上で、`Actionメニュー > Custom theme`を選択することでCustom themeに切り替えられます。
+なお、`vivliostyle.config.js`についての詳細は下記をご参照ください。
+
+- [文書のカスタマイズ](/ja/create-and-save-documents/document-customization.md)
+
+`Actionメニュー > Custom theme`を選択することでCustom themeに切り替えられます。
 
 なお、Vivliostyle PubではプレビューとPDF出力とで組版エンジンのある場所が違うため、Custom themeの作成に当たってなかなかイメージした通りのフォントが表示されなかったり、プレビューとPDFとでページがずれてしまうことが起こり得ます。事前に以下の記事を参照してプレビューとPDF出力とでフォントが一致するように、Custom themeを作成することをお勧めします。
 

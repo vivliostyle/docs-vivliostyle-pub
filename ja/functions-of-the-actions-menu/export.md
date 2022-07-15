@@ -2,9 +2,15 @@
 
 ## PDF
 
-ActionメニューでCustom themeが選択されている場合、PDFの出力ができます。
+Actionメニューで「Export（出力）」を選ぶとPDFが出力されます。その際、出力されるファイルは、プレビューとは無関係に`vivliostyle.config.js`の内容にもとづき処理されます。詳細は下記をご参照ください。
 
-出力されるファイルはvivliostyle.config.jsの記述にもとづき処理されます（→[Theme（テーマの選択）> Custom theme](/ja/functions-of-the-actions-menu/theme.md#custom-theme)）。複数あるファイルのうち、特定のファイルだけをPDF出力したい場合は、vivliostyle.config.jsで出力したいファイルだけを記述するか、出力しないファイルをコメントアウトしてください。
+- [フォントの指定方法 > フォントを使用するしくみ](/ja/create-and-save-documents/how-to-specify-fonts.md#フォントを使用するしくみ)
+- [Theme（テーマの選択）> Custom theme](/ja/functions-of-the-actions-menu/theme.md#custom-theme)）
+
+複数あるファイルのうち、特定のファイルだけをPDF出力したい場合は、vivliostyle.config.jsで出力したいファイルだけを記述するか、出力しないファイルをコメントアウトしてください。詳細は下記をご参照ください。
+
+- [文書のカスタマイズ > 複数文書の出力](/ja/create-and-save-documents/document-customization.md#複数文書の出力)
+
 
 1. 「Actionメニュー > PDF」を選択します
 
@@ -22,12 +28,26 @@ ActionメニューでCustom themeが選択されている場合、PDFの出力�
 
 ![](images/functions-of-the-actions-menu/export/fig-4.png)
 
-### 補足情報
+## 補足情報
 
-
-
-
-
-PDFを出力するしくみについては、下記も参照してください。
-
-- [文書の作成と保存 > フォントの指定方法 > フォントを表示するしくみ](/ja/create-and-save-documents/how-to-specify-fonts.md#フォントを表示するしくみ)
+- VivliostyleによるPDF出力には、以下の2つの問題が指摘されています
+    - [Vivliostyle CLI: 出力したPDFの文字がK100にならないケースがある #276 ](https://github.com/vivliostyle/vivliostyle-cli/issues/276)
+    - Vivliostyle.js: PDFを出力するとフォントが “Type 3” に変換されて埋め込まれる
+        - [please use CID instead of Type3 #437](https://github.com/vivliostyle/vivliostyle.js/issues/437)
+        - [the reversed string is returned on Preview.app when selecting PDF contents which uses Type3 #439](https://github.com/vivliostyle/vivliostyle.js/issues/439)
+- このうち前者の問題はまだ解決策を検討中ですが、現在でも出力したPDFを以下のようなサイトを利用してグレイスケールに変換することで解決できるでしょう
+    - [DeftPDF](https://deftpdf.com/ja/grayscale-pdf)
+    - ただし、この問題は大部数を均一な品質で印刷することを求められる商業印刷（オフセット印刷）では問題になっても、少部数の同人誌印刷（トナー印刷）ではあまり問題にはならない可能性が高いと考えています
+- 後者の問題に関して、一般に商業向けのオフセット印刷ではType 3フォントは不適とされることが多く、この問題の早い解決が望まれます
+- とはいえ、この問題はVivliostyle.jsそのものでなく、外部のライブラリ（Chromium）に起因します
+- 解決は当該ライブラリのアップデートを待つしかありませんが、現在でもいくつか回避方法はあります
+    - [Adobe Acrobat Pro DC](https://www.adobe.com/jp/products/acrobat-pro-cc.html)（有償）を使ってPDF/x規格に変換する
+        -  [PDF から PDF/X、PDF/A または PDF/E への変換](https://helpx.adobe.com/jp/acrobat/using/pdf-x-pdf-a-pdf.html)
+    - [Create Book](https://github.com/vivliostyle/create-book)で、[Vivliostyle CLI](https://github.com/vivliostyle/vivliostyle-cli)の`--press-ready`オプションを使ってPDF/x-1a準拠のPDFをビルドする
+    - “Type 3” に変換されないようTrueTypeフォントを利用する。たとえば下記リストを参照して無償のWebフォントサービス、Googleフォントを利用するのも一案
+        - [GoogleフォントのうちVivliostyleのPDF出力で “Type 3” にならない日本語フォント一覧](/ja/create-and-save-documents/additional-information-on-fonts.md#googleフォントのうちvivliostyleのpdf出力で-type-3-にならない日本語フォント一覧)
+- ただし、この問題も商業印刷（オフセット印刷）では問題になっても、少部数の同人誌印刷（トナー印刷）ではあまり問題にはならない可能性があります
+    - 私たちのテストではVivliostyle CLIから`build`コマンド、つまりVivliostyle PubでのPDF出力と同じ環境で出力したPDF（A5判、281ページ、1.01GB）が、オンデマンド印刷機[コニカミノルタ1085](https://www.konicaminolta.jp/business/products/graphic/ondemand_print/color/bizhub_press_c1100_c1085/index.html)で印刷できました
+        - このPDFはType 3フォントが埋め込まれており、通常のオフセット印刷では不適とされる可能性が高いデータです
+    - 他にも[SCREENグラフィックソリューションズのRIPワークフローEQIOS](https://www.screen.co.jp/ga/product/category/workflow)で同じPDFを使って中間データへの変換に成功しています
+    - いずれにしても、どんな場合でも見た目通り印刷できる保証はないのが正直なところです。印刷会社とコミュニケーションをとった上で入稿されることをお勧めします

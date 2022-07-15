@@ -306,13 +306,13 @@ PDF出力に際して、前項のリストにないフォントが指定され�
 
 有償Webフォントサービスは利用規約によって用途を制限しており、Vivliostyle Pubで無条件にこれらのサービスを利用できるわけではありません。
 
-本来、利用規約の解釈は契約者間で解決すべきであり、第三者である私たちが判断できるものではありません。とはいえ、この問題を放置すると安心してVivliostyle PubでWebフォントを使うことはできません。そこで、各社とコミュニケーションをとりながら、以下の用途を利用規約が許容しているか調査することにしました。
+本来、利用規約の解釈は契約者間で解決すべきであり、第三者である私たちが判断できるものではありません。とはいえ、このままではユーザが安心してVivliostyle PubでWebフォントを使うことはできないでしょう。そこで、各社とコミュニケーションをとりながら、以下の用途を利用規約が許容しているか調査しました。
 
 - Webフォントを使ってプレビューができる
 - Webフォントを使ってPDF出力、及びオフセット／オンデマンド印刷ができる
 - Webフォントを使って成果物の有償販売ができる
 
-その上で、私たちとして推奨できる用途をWebフォントサービスごとに選定したのが下記のものです。
+その結果を踏まえ、Webフォントサービスごとに推奨できる用途を選定したのが下記のものです。
 
 |              | [DynaSmart V](https://www.dynacw.co.jp/product/product_dynasmart_detail.aspx?sid=25)           | [DynaSmart T](https://www.dynacw.co.jp/product/product_dynasmart_detail.aspx?sid=43)  | [TypeSquare](https://typesquare.com/ja/)    |[fonts.com](https://www.fonts.com/ja)  | [FONTPLUS](https://fontplus.jp/)※  | [Adobe Fonts](https://fonts.adobe.com/)     |
 | ------------ | -------------- | ---------------- | --------------- |  -------------- | ---------------- | --------------- |
@@ -326,3 +326,66 @@ PDF出力に際して、前項のリストにないフォントが指定され�
 
 - [VivliostyleでWebフォントを使う 調査編：小形克宏（YouTube）](https://www.youtube.com/watch?v=czVRSsekLjc)
 - [VivliostyleでWebフォントを使う：調査編（スライド）](https://vivliostyle.org/viewer/#src=https://github.com/ogwata/slide-20220423-2/blob/main/myslide.html&bookMode=true&spread=false)
+
+## GoogleフォントのうちVivliostyleのPDF出力で “Type 3” にならない日本語フォント一覧
+
+以下は、[Googleフォント](https://fonts.google.com/?subset=japanese)に収録されている日本語フォント50書体のうち、私たちのテストの結果、VivliostyleによるPDF出力で “Type 3” ではなく “TrueType (CID)” として埋め込まれたフォントです。結果として、Noto Sans JapaneseとNoto Serif Japanese を除くすべての日本語フォントでもあります。
+
+一般に “Type 3” としてフォントが埋め込まれたPDFファイルは印刷に不適とされています。一方で “TrueType (CID)” として埋め込まれていれば問題はないとされています。詳細は下記をご参照ください。
+
+- [Actionメニューの機能 > Export（出力）> 補足情報](/ja/functions-of-the-actions-menu/export.md#補足情報)
+
+----------------------------
+
+BIZ UDGothic<br>
+BIZ UDMincho<br>
+BIZ UDPGothic<br>
+BIZ UDPMincho<br>
+Dela Gothic One<br>
+DotGothic16<br>
+Hachi Maru Pop<br>
+Hina Mincho<br>
+Kaisei Decol<br>
+Kaisei HarunoUmi<br>
+Kaisei Opti<br>
+Kaisei Tokumin<br>
+Kiwi Maru<br>
+Klee One<br>
+Kosugi<br>
+Kosugi Maru<br>
+M PLUS 1<br>
+M PLUS 1 Code<br>
+M PLUS 1p<br>
+M PLUS 2<br>
+M PLUS Rounded 1c<br>
+Mochiy Pop One<br>
+Mochiy Pop P One<br>
+Murecho<br>
+New Tegomin<br>
+Potta One<br>
+Rampart One<br>
+Reggae One<br>
+RocknRoll One<br>
+Sawarabi Gothic<br>
+Shippori Antique<br>
+Shippori Antique B1<br>
+Shippori Mincho<br>
+Shippori Mincho B1<br>
+Stick<br>
+Train One<br>
+Yomogi<br>
+Yuji Boku<br>
+Yuji Mai<br>
+Yuji Syuku<br>
+Yusei Magic<br>
+Zen Antique<br>
+Zen Antique Soft<br>
+Zen Kaku Gothic Antique<br>
+Zen Kaku Gothic New<br>
+Zen Kurenaido<br>
+Zen Maru Gothic<br>
+Zen Old Mincho<br>
+
+
+
+

@@ -28,13 +28,13 @@ Vivliostyle Pubは、Actionメニューで選択されているテーマ（→[T
 
 ![ ](images/create-and-save-documents/how-to-specify-fonts/fig-3.png)
 
-Plain themeは最小の手間で素早くプレビューを確認するためのものです。他と違って特定のテーマがあるのではなく、ブラウザのデフォルト設定にしたがいます。たとえばフォントはブラウザ設定の「標準フォント」が参照されます。これは、前掲図1の分類では**フォント1**（ユーザーのPCにあるローカルフォント）に当たります。
+Plain themeは最小の手間で素早くプレビューを確認するためのものです。他と違って特定のテーマ（スタイルシート）があるのではなく、ブラウザのデフォルト設定にしたがいます。たとえばフォントはブラウザ設定の「標準フォント」が参照されます。これは、前掲図1の分類では**フォント1**（ユーザーのPCにあるローカルフォント）に当たります。
 
 PDF出力に際しては[クラウド上のVivliostyle CLIにおける代替フォントルール](/ja/create-and-save-documents/additional-information-on-fonts.md#クラウド上のvivliostyle-cliにおける代替フォントルール)に従ってフォントが使用されます。ただしこのテーマの目的上、出力は想定されていません（PDF出力そのものは可能ですが、Plain themeの設定と無関係に`vivliostyle.config.js`にもとづき出力されます）。イメージ通りのスタイルでプレビューやPDF出力をしたい場合は、後述のVivliostyle公式テーマの中から選択するか、Custom themeを作成してください。
 
 Plain themeについては、以下もご参照ください。
 
-- [Theme（テーマの選択）> Plain theme](/ja/functions-of-the-actions-menu/theme.md#plain-theme)
+- [Theme（テーマの選択） >  Plain theme](/ja/functions-of-the-actions-menu/theme.md#plain-theme)
 
 ## Vivliostyle公式Themeで使われるフォント
 
@@ -63,9 +63,9 @@ Custom themeを作成することで、そのスタイルシートにもとづ�
 
 ここで問題になるのは、Custom themeで指定したフォントが、ユーザーのPCとクラウドの片方にしかインストールされていなかった時です。その場合は似たフォントが代替使用されるので、プレビューとPDF出力でフォントが一致しないことになります。フォントが異なるので、プレビューとPDF出力とでページのズレが発生します。
 
-しかし、クラウドにあるフォントをPCにもインストールし、これをCustom themeで指定すればプレビューとPDF出力とでフォントを一致させられ、ページのズレは発生しません。それでも、クラウドには2,300以上ものフォントがインストールされています（→[クラウドにインストールされているフォント一覧](/ja/create-and-save-documents/additional-information-on-fonts.md#クラウドにインストールされているフォント一覧)）。どのフォントをPCにインストールすればよいのでしょう？
+しかし、クラウドにあるフォントをPCにもインストールし、これをCustom themeで指定すればプレビューとPDF出力とでフォントを一致させられ、ページのズレは発生しません。それでも、クラウドには2,300以上ものフォントがインストールされています（→[クラウドにインストールされているフォント一覧](/ja/create-and-save-documents/additional-information-on-fonts.md#クラウドにインストールされているフォント一覧)）。どのフォントをPCにインストールすれば間違いないのでしょう？
 
-日本語環境で使用する場合、もっとも効率的で効果的なフォントは、ウェイトが豊富で日中韓の言語が単一パッケージにまとまっている[`Noto Sans CJK JP`](https://github.com/googlefonts/noto-cjk/raw/main/Sans/Variable/OTC/NotoSansCJK-VF.ttf.ttc)です。また、クラウドには[Noto Sansシリーズ](https://fonts.google.com/noto/use#how-are-noto-fonts-organized)が全てインストールされていますが、これは対応言語が豊富で、異なる言語の間でデザインを統一できます。以下、本項では`Noto Sans CJK JP`を使ってプレビューとPDF出力をする方法を説明します。
+日本語環境で使用する場合、もっとも効率的で効果的なフォントは、ウェイトが豊富な[`Noto Sans CJK JP`](https://github.com/googlefonts/noto-cjk/raw/main/Sans/Variable/OTC/NotoSansCJK-VF.ttf.ttc)です。以下、本項では`Noto Sans CJK JP`を使ってプレビューとPDF出力をする方法を説明します。
 
 ------------------------
 
@@ -140,6 +140,11 @@ module.exports = {
 }
 ```
 
+`vivliostyle.config.js`についての詳細は下記をご参照ください。
+
+- [文書のカスタマイズ](/ja/create-and-save-documents/document-customization.md)
+
+
 4. Actionメニューから「Custom theme」を選択します。themeが切り替わらない場合は、ブラウザをリロードさせてください
 
 ![ ](images/create-and-save-documents/how-to-specify-fonts/fig-5.png)
@@ -148,7 +153,7 @@ module.exports = {
 
 ![ ](images/create-and-save-documents/how-to-specify-fonts/fig-6.png)
 
-6. Actionメニューから「Export（出力）>PDF」を選択すると、Custom themeを適用したPDFが出力されます（→[Export（出力）>PDF](/ja/functions-of-the-actions-menu/export.md#pdf)）。プレビューと同じ`Noto Sans CJK JP`が、同じ文字サイズ、行長、行送りにより使用されていることを確認してください   
+6. Actionメニューから「Export（出力） > PDF」を選択すると、Custom themeを適用したPDFが出力されます（→[Export（出力） > PDF](/ja/functions-of-the-actions-menu/export.md#pdf)）。プレビューと同じ`Noto Sans CJK JP`が、同じ文字サイズ、行長、行送りにより使用されていることを確認してください   
 
 ![ ](images/create-and-save-documents/how-to-specify-fonts/fig-7.png)
 
@@ -159,7 +164,7 @@ module.exports = {
 
 ## Custom theme／Googleフォントの使用
 
-前項で説明した以外にも、Webフォント（前掲図1／図2の**フォント3**）を利用することで、プレビューとPDF出力とでフォントを一致させることができます。本項では無償のWebフォントサービス、[Googleフォント](https://fonts.google.com/)をVivliostyle Pubで使用する方法を説明します。
+Webフォント（前掲図1／図2の**フォント3**）を利用することでも、プレビューとPDF出力とでフォントを一致させることができます。本項では無償のWebフォントサービス、[Googleフォント](https://fonts.google.com/)をVivliostyle Pubで使用する方法を説明します。
 
 1. まず[Googleフォント](https://fonts.google.com/)でフォント選択し、つぎにStylesで使いたい太さを “Select this style” 右横にある(+)　をクリックして選択します。ここでは、しっぽり明朝 Regular 400、Noto Sans Japanese Bold 700、Noto Sans Japanese Medium 900を選択しました
 
@@ -245,7 +250,7 @@ module.exports = {
 
 ![ ](images/create-and-save-documents/how-to-specify-fonts/fig-9.png)
 
-5. Actionメニューで「Export（出力）>PDF」を選択すると、WebフォントでPDF出力ができます（→[Export（出力）>PDF](/ja/functions-of-the-actions-menu/export.md#pdf)）。プレビューと同じフォントが、同じ文字サイズ、行長、行送りでPDF出力されたことを確認します
+5. Actionメニューで「Export（出力） > PDF」を選択すると、WebフォントでPDF出力ができます（→[Export（出力）> PDF](/ja/functions-of-the-actions-menu/export.md#pdf)）。プレビューと同じフォントが、同じ文字サイズ、行長、行送りでPDF出力されたことを確認します
 
 ![ ](images/create-and-save-documents/how-to-specify-fonts/fig-10.png)
 
@@ -342,7 +347,7 @@ module.exports = {
 
 ![ ](images/create-and-save-documents/how-to-specify-fonts/fig-12.png)
 
-7.  Actionメニューから「Export（出力）>PDF」を選択すると、Custom themeを適用したPDFが出力されます（→[Export（出力）>PDF](/ja/functions-of-the-actions-menu/export.md#pdf)）。プレビューと同じＤＦ華康明朝体、ＤＦ金剛黒体が、同じ文字サイズ、行長、行送りにより使用されていることを確認してください   
+7.  Actionメニューから「Export（出力）> PDF」を選択すると、Custom themeを適用したPDFが出力されます（→[Export（出力）> PDF](/ja/functions-of-the-actions-menu/export.md#pdf)）。プレビューと同じＤＦ華康明朝体、ＤＦ金剛黒体が、同じ文字サイズ、行長、行送りにより使用されていることを確認してください   
 
 ![ ](images/create-and-save-documents/how-to-specify-fonts/fig-13.png)
 
