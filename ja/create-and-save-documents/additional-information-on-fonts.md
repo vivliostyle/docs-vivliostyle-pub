@@ -275,7 +275,7 @@ PDF出力に際して、クラウド上のVivliostyle CLIが使用するフォ�
 |  Z003  |  1  | t1   |   Z003  |
 
 - 上の表は`fc-list`コマンドの実行結果を簡略化したものです。
-    - `font-family`名が複数ある場合はファミリー共通のものか先に掲出されている方を掲載しました
+    - `font-family`名が複数ある場合、ファミリー共通のものか先に掲出された方を掲載しました
     - ただし`Noto Sans CJK`はすべて掲載しました
 - 同一の`font-family`を指定し分ける`style`等、より詳細な情報については以下をご参照ください
     - [fc-list.sorted](/ja/create-and-save-documents/fc-list.sorted.md)

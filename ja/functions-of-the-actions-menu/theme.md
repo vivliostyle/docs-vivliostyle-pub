@@ -36,7 +36,7 @@ Plain themeは手早くプレビューを確認するためのもので出力は
 
 ![ ](images/functions-of-the-actions-menu/theme/fig-3.png)
 
-この項目を選択すると、ユーザーが作成した任意のスタイルシート（CSSファイル）が利用でき、さらにそのスタイルシートにもとづき、PDFの出力ができます（→[Export（PDF）](/ja/functions-of-the-actions-menu/export.md#export出力)）。
+この項目を選択すると、ユーザーが作成した任意のスタイルシート（CSSファイル）が利用でき、さらにそのスタイルシートにもとづき、PDFの出力ができます（→[Export（出力）](/ja/functions-of-the-actions-menu/export.md#export出力)）。
 
 `vivliostyle.config.js`で以下のようにスタイルシートのpathを指定してください（上スクリーンショットの赤線部）。記法は下記の通りです。`---`の部分にpathを記述してください。
 
@@ -119,7 +119,7 @@ html {
 
 上記でフォントは`游明朝`が指定されています。Windows（`游明朝`/`Yu Mincho`）でもMac（`游明朝体`/`YuMincho`）でもプリインストールされているので、プレビューではこれが使用されます（ただし、WindowsとMacではウェイトが若干異なります）。
 
-一方、PDF出力では`Noto Serif CJK JP`に置き換えられます。この結果、プレビューとPDF出力とでは行がずれることが起こり得ます（たとえば下記スクリーンショットではプレビューと比べて3行、後にずれています）。より詳細は下記をご参照ください。
+一方、PDF出力では`Noto Serif CJK JP`に置き換えられます。この結果、プレビューとPDF出力とではズレが発生します（たとえば下記スクリーンショットではプレビューと比べて3行、後にずれています）。より詳細は下記をご参照ください。
 
 ![ ](images/functions-of-the-actions-menu/theme/fig-6.png)
 
@@ -132,7 +132,7 @@ html {
 
 ![ ](images/functions-of-the-actions-menu/theme/fig-7.png)
 
-これはVivliostyleが [npm package として公開](https://www.npmjs.com/package/@vivliostyle/theme-slide)している公式Theme、[@vivliostyle/theme-slide](https://vivliostyle.github.io/themes/#/ja/gallery#vivliostyletheme-slide)そのものです。以下にその一部を引用します。
+これはVivliostyleが [npmパッケージとして公開](https://www.npmjs.com/package/@vivliostyle/theme-slide)している公式Theme、[@vivliostyle/theme-slide](https://vivliostyle.github.io/themes/#/ja/gallery#vivliostyletheme-slide)そのものです。以下にその一部を引用します。
 
 ```css
 html {
@@ -156,16 +156,14 @@ html {
   }
 ```
 
-上記でフォントは優先度順に、1. `Noto Serif CJK JP`、2. `游ゴシック`、3. `メイリオ` 4. `sans-serif` と指定されています。プレビューで、ユーザのPCに1〜3までのフォントがインストールされていない場合は、ブラウザ設定の「Sans Serif フォント」の指定に従います。一方、PDF出力ではすべて`Noto Serif CJK JP`に置き換えられます。
+上記でフォントは優先度順に、1. `Noto Sans CJK JP`、2. `游ゴシック`、3. `メイリオ` 4. `sans-serif` と指定されています。プレビューで、ユーザのPCに1〜3までのフォントがインストールされていない場合は、ブラウザ設定の「Sans Serif フォント」の指定に従います。一方、PDF出力ではすべて`Noto Sans CJK JP`に置き換えられます。
 
-もしもプレビューとPDF出力とでズレが気になる場合、ユーザーのPCにフリーフォントである[`Noto Serif CJK JP`](https://fonts.google.com/noto/specimen/Noto+Serif+JP)をインストールすることで改善する可能性があります。
-
-- [Vivliostyle公式Themeで使われるフォント](/ja/create-and-save-documents/how-to-specify-fonts.md#vivliostyle公式themeで使われるフォント)
-- [クラウド上のVivliostyle CLIの代替フォントルール](/ja/create-and-save-documents/additional-information-on-fonts.md#クラウド上のvivliostyle-cliの代替フォントルール)
+もしもプレビューとPDF出力とでズレが気になる場合、ユーザーのPCにフリーフォントである[`Noto Sans CJK JP`](https://fonts.google.com/noto/specimen/Noto+Serif+JP)をインストールすることで改善する可能性があります。
 
 詳細は下記をご参照ください。
 
 - [Vivliostyle公式Themeで使われるフォント](/ja/create-and-save-documents/how-to-specify-fonts.md#vivliostyle公式themeで使われるフォント)
+- [](/ja/create-and-save-documents/how-to-specify-fonts.md#)
 - [クラウド上のVivliostyle CLIにおける代替フォントルール](/ja/create-and-save-documents/additional-information-on-fonts.md#クラウド上のvivliostyle-cliにおける代替フォントルール)
 
 なお、見開きではなく、単一ページでプレビューしたい場合は、Vivliostyleのロゴからアクセスできる設定メニューを開き、“Page Spread View” のうち “Single page” のラジオボタンを選択してください。
@@ -178,7 +176,7 @@ html {
 
 ![ ](images/functions-of-the-actions-menu/theme/fig-9.png)
 
-これはVivliostyleが [npm package として公開](https://www.npmjs.com/package/@vivliostyle/theme-techbook)している公式Theme、[@vivliostyle/theme-techbook](https://vivliostyle.github.io/themes/#/ja/gallery#vivliostyletheme-techbook)そのものです。以下にその一部を引用します。
+これはVivliostyleが [npmパッケージとして公開](https://www.npmjs.com/package/@vivliostyle/theme-techbook)している公式Theme、[@vivliostyle/theme-techbook](https://vivliostyle.github.io/themes/#/ja/gallery#vivliostyletheme-techbook)そのものです。以下にその一部を引用します。
 
 ```css
 :root {
@@ -207,7 +205,7 @@ html {
 
 上記でフォントは優先度順に、1. `Neue Frutiger World`、2. `Verdana`、3. `ヒラギノ角ゴシック`、4. `sans-serif`と指定されています。プレビューで表示される文字は、1〜3の順番でフォントが割り当てられ、どのフォントも当該の文字を表示できない場合はブラウザ設定の「Sans Serif フォント」の指定に従います。たとえば原稿が日本語文の場合、英数字は`Neue Frutiger World`、なければ`Verdana`、仮名や漢字は`ヒラギノ角ゴシック`で表示されます。もしユーザーのPCに`ヒラギノ角ゴシック`がインストールされていなければ、ブラウザ設定の「Sans Serif フォント」が使われます。
 
-一方、PDF出力においては、英数字は`Verdana`、仮名と漢字は`Noto Serif CJK JP`に置き換えられます。こうした結果、プレビューとPDF出力とでページのズレが発生する場合があることにご注意ください。
+一方、PDF出力においては、英数字は`Verdana`、仮名と漢字は`Noto Sans CJK JP`に置き換えられます。こうした結果、プレビューとPDF出力とでページのズレが発生する場合があることにご注意ください。
 
 詳細は下記をご参照ください。
 
@@ -221,7 +219,7 @@ html {
 
 ![ ](images/functions-of-the-actions-menu/theme/fig-10.png)
 
-これはVivliostyleが [npm package として公開](https://www.npmjs.com/package/@vivliostyle/theme-academic)している公式Theme、[@vivliostyle/theme-academic](https://vivliostyle.github.io/themes/#/ja/gallery#vivliostyletheme-academic)そのものです。以下にその一部を引用します。
+これはVivliostyleが [npmパッケージとして公開](https://www.npmjs.com/package/@vivliostyle/theme-academic)している公式Theme、[@vivliostyle/theme-academic](https://vivliostyle.github.io/themes/#/ja/gallery#vivliostyletheme-academic)そのものです。以下にその一部を引用します。
 
 ```css
 @page {
@@ -241,7 +239,7 @@ html {
 
 上記でフォントは`ヒラギノ明朝 ProN`と`serif`が指定されています。ユーザーのPCに`ヒラギノ明朝 ProN`がインストールされていれば、これがプレビューで使われます。インストールされていなければ、ブラウザ設定の「Serif フォント」の設定に従います。
 
-一方、PDF出力においてはすべて`Noto Serif CJK JP`に置き換えられます。こうした結果、プレビューとPDF出力とでページのズレが発生する場合があることにご注意ください。フォントのしくみについて、詳細は下記をご参照ください。
+一方、PDF出力においてはすべて`Noto Serif CJK JP`に置き換えられます。こうした結果、プレビューとPDF出力とでページのズレが発生することにご注意ください。フォントのしくみについて、詳細は下記をご参照ください。
 
 - [vivliostyle公式themeのフォント利用](/ja/create-and-save-documents/how-to-specify-fonts.md#vivliostyle公式themeのフォント利用)
 - [クラウドにインストールされているフォント一覧](/ja/create-and-save-documents/additional-information-on-fonts.md#クラウドにインストールされているフォント一覧)
