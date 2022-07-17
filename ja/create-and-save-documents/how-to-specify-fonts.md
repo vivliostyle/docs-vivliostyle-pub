@@ -36,7 +36,7 @@ PDF出力において実際に組版をおこなうVivliostyle.js（赤い四角
 
 Plain themeは最小の手間で素早くプレビューを確認するためのものです。他と違って特定のテーマ（スタイルシート）があるのではなく、ブラウザのデフォルト設定にしたがいます。たとえばフォントはブラウザ設定の「標準フォント」が参照されます。これは、前掲図1の分類では**フォント1**（ユーザーのPCにあるローカルフォント）に当たります。
 
-このテーマの目的上、出力は想定されていません。PDF出力そのものは可能ですが、Plain themeの設定と無関係に[クラウド上のVivliostyle CLIにおける代替フォントルール](/ja/create-and-save-documents/additional-information-on-fonts.md#クラウド上のvivliostyle-cliにおける代替フォントルール)に従ってフォントが使用されます。イメージ通りのスタイルでプレビューやPDF出力をしたい場合は、後述のVivliostyle公式テーマの中から選択するか、Custom themeを作成してください。
+このテーマの目的上、出力は想定されていません。PDF出力そのものは可能ですが、Plain themeで使われたブラウザのデフォルト設定は[クラウド上のVivliostyle CLIにおける代替フォントルール](/ja/create-and-save-documents/additional-information-on-fonts.md#クラウド上のvivliostyle-cliにおける代替フォントルール)に従って置き換えられます。イメージ通りのスタイルでプレビューやPDF出力をしたい場合は、後述のVivliostyle公式テーマの中から選択するか、Custom themeを作成してください。
 
 Plain themeについては、以下もご参照ください。
 
