@@ -9,7 +9,7 @@ Actionメニューで「Export（出力）」を選ぶとPDFが出力されま�
 
 複数あるファイルのうち、特定のファイルだけをPDF出力したい場合は、vivliostyle.config.jsで出力したいファイルだけを記述するか、出力しないファイルをコメントアウトしてください。詳細は下記をご参照ください。
 
-- [文書のカスタマイズ > 複数文書の出力](/ja/create-and-save-documents/document-customization.md#複数文書の出力)
+- [文書のカスタマイズ > 対象となる文書の指定](/ja/create-and-save-documents/document-customization.md#対象となる文書の指定)
 
 
 1. 「Actionメニュー > PDF」を選択します

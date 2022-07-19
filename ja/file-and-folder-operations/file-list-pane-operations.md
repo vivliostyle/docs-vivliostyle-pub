@@ -16,7 +16,7 @@
 
 4. 追加したファイルを`vivliostyle.config.js`にも記述することで、PDFに出力できます（逆に言えば、記述しなければPDF出力もできません）。記述の方法は下記をご参照ください
 
-    - [文書のカスタマイズ>複数文書の出力](/ja/create-and-save-documents/document-customization.md#複数文書の出力)
+    - [文書のカスタマイズ>対象となる文書の指定](/ja/create-and-save-documents/document-customization.md#対象となる文書の指定)
 
 ## 新規フォルダの追加
 
@@ -58,4 +58,4 @@
 
 6. アップロードしたファイルを`vivliostyle.config.js`にも記述することで、PDFに出力できます（逆に言えば、記述しなければPDF出力もできません）。記述の方法は下記をご参照ください
 
-    - [文書のカスタマイズ>複数文書の出力](/ja/create-and-save-documents/document-customization.md#複数文書の出力)
+    - [文書のカスタマイズ>対象となる文書の指定](/ja/create-and-save-documents/document-customization.md#対象となる文書の指定)

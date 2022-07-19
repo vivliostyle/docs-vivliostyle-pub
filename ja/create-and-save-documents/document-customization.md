@@ -4,7 +4,7 @@
 
 ![](/images/create-and-save-documents/document-customization/fig-1.png)
 
-もちろんVivliostyle Pubを使って編集でき、保存すると文書全体に反映されます。記法は下記`{ }` の内部に次項のような値を記入していくことで、文書のカスタマイズができます
+`vivliostyle.config.js`はVivliostyle Pub自身を使って編集でき、編集後に保存すれば文書全体に反映されます。記法は下記`{  }` の内部に次項のような値を記入していくものです
 
 ```js
 module.exports = {
@@ -70,9 +70,9 @@ Custom themeについては、下記もご参照ください
 - [Custom theme](/ja/functions-of-the-actions-menu/theme.md#custom-theme)
 - [Custom theme／プレビューとPDF出力とでフォントを一致させる](/ja/create-and-save-documents/how-to-specify-fonts.md#custom-theme／プレビューとpdf出力とでフォントを一致させる)
 
-## 複数文書の出力
+## 対象となる文書の指定
 
-`entry` で下記のように指定することで、複数のmarkdownファイルをまとめて1冊の本として出力できます
+`entry: [  ]` の記法により処理の対象となる文書を指定します。複数文書を指定可能で、下記のように指定することで、複数のmarkdownファイルをまとめて1冊の本として出力できるようになります
 
 ```js
 entry: [
