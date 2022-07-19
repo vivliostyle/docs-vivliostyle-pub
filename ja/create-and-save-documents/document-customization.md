@@ -131,6 +131,7 @@ entry: [
 - 発行　私が書いた本刊行会
 - 著者　尾久綿次郎
 - 印刷　Sample Printing
+
 © My Book Publishing, 20xx
 
 </section>
