@@ -1,10 +1,10 @@
-# Theme（テーマの選択）
+# Theme（themeの選択）
 
 ## 概要
 
 ![ ](images/functions-of-the-actions-menu/theme/fig-1.png)
 
-Actionメニューの「Theme」の項目を選択することで、以下のテーマ（スタイル情報）に切り替えることができます。
+Actionメニューの「Theme」の項目を選択することで、以下のtheme（スタイル情報）に切り替えることができます。
 
 1. Plain theme
 2. Custom theme
@@ -14,7 +14,7 @@ Actionメニューの「Theme」の項目を選択することで、以下のテ
 6. Techbook (技術同人誌) theme
 7. Academic theme 
 
-以下では、テーマ毎にその内容を概説します。使用したサンプルデータの出典は下記の通りです。なお、スクリーンショットは[プレゼンテーション・モード](/ja/functions-of-the-actions-menu/presentation-mode.md)での表示です。
+以下では、theme毎にその内容を概説します。使用したサンプルデータの出典は下記の通りです。なお、スクリーンショットは[プレゼンテーション・モード](/ja/functions-of-the-actions-menu/presentation-mode.md)での表示です。
 
 - 1、2、4……銀河鉄道の夜（宮沢賢治、[青空文庫](https://www.aozora.gr.jp/cards/000081/card456.html)）
 - 3………[The Project Gutenberg eBook of Alice’s Adventures in Wonderland, by Lewis Carroll](https://www.gutenberg.org/files/11/11-h/11-h.htm)
@@ -28,7 +28,7 @@ Actionメニューの「Theme」の項目を選択することで、以下のテ
 
 ![ ](images/functions-of-the-actions-menu/theme/fig-2.png)
 
-Plain themeは手早くプレビューを確認するためのもので出力は想定していません。イメージ通りのスタイルでPDF出力をしたい場合は、後述のVivliostyle公式テーマの中から選択するか、自分でCustom themeを作成してください。フォントについては下記も参照してください。
+Plain themeは手早くプレビューを確認するためのもので出力は想定していません。イメージ通りのスタイルでPDF出力をしたい場合は、後述のVivliostyle公式themeの中から選択するか、自分でCustom themeを作成してください。フォントについては下記も参照してください。
 
 - [Plain themeで使われるフォント](/ja/create-and-save-documents/how-to-specify-fonts.md#plain-themeで使われるフォント)
 
@@ -85,7 +85,7 @@ html {
 
 ```
 
-上記でフォントは`Georgia`と`serif`が指定されています。多くのPCには`Georgia`がインストールされているはずです。一方、Vivliostyle PubでPDF出力をおこなうクラウド（前掲図2）にも`Georgia`がインストールされているので、このテーマでは多くの場合プレビューとPDF出力のフォントは一致するでしょう。ただし、フォントのバージョン不一致によりズレが生じる場合もあることにご注意ください（クラウドのフォントは比較的古いバージョンです）。
+上記でフォントは`Georgia`と`serif`が指定されています。多くのPCには`Georgia`がインストールされているはずです。一方、Vivliostyle PubでPDF出力をおこなうクラウド（前掲図2）にも`Georgia`がインストールされているので、このthemeでは多くの場合プレビューとPDF出力のフォントは一致するでしょう。ただし、フォントのバージョン不一致によりズレが生じる場合もあることにご注意ください（クラウドのフォントは比較的古いバージョンです）。
 
 より詳細は下記をご参照ください。
 
@@ -94,7 +94,7 @@ html {
 
 ## 文庫用のテーマ
 
-縦組で文字サイズは8.5ポイント、ページサイズは148×210mm（A5判タテ）、縦中横や柱にも対応しており、長文の読み物に合います。テーマ名の「文庫」は読み物の意味で、文庫判（B6判）とは違うことに注意してください。
+縦組で文字サイズは8.5ポイント、ページサイズは148×210mm（A5判タテ）、縦中横や柱にも対応しており、長文の読み物に合います。theme名の「文庫」は読み物の意味で、文庫判（B6判）とは違うことに注意してください。
 
 ![ ](images/functions-of-the-actions-menu/theme/fig-5.png)
 
@@ -158,12 +158,12 @@ html {
 
 上記でフォントは優先度順に、1. `Noto Sans CJK JP`、2. `游ゴシック`、3. `メイリオ` 4. `sans-serif` と指定されています。プレビューで、ユーザのPCに1〜3までのフォントがインストールされていない場合は、ブラウザ設定の「Sans Serif フォント」の指定に従います。一方、PDF出力ではすべて`Noto Sans CJK JP`に置き換えられます。
 
-もしもプレビューとPDF出力とでズレが気になる場合、ユーザーのPCにフリーフォントである[`Noto Sans CJK JP`](https://fonts.google.com/noto/specimen/Noto+Serif+JP)をインストールすることで改善する可能性があります。
+もしもプレビューとPDF出力とでズレが気になる場合、ユーザーのPCに[`Noto Sans CJK JP`](https://fonts.google.com/noto/specimen/Noto+Serif+JP)をインストールすることで改善する可能性があります。
 
 詳細は下記をご参照ください。
 
 - [Vivliostyle公式Themeで使われるフォント](/ja/create-and-save-documents/how-to-specify-fonts.md#vivliostyle公式themeで使われるフォント)
-- [](/ja/create-and-save-documents/how-to-specify-fonts.md#)
+- [プレビューとPDF出力とでフォントを一致させる](/ja/create-and-save-documents/how-to-specify-fonts.md#custom-theme／プレビューとpdf出力とでフォントを一致させる)
 - [クラウド上のVivliostyle CLIにおける代替フォントルール](/ja/create-and-save-documents/additional-information-on-fonts.md#クラウド上のvivliostyle-cliにおける代替フォントルール)
 
 なお、見開きではなく、単一ページでプレビューしたい場合は、Vivliostyleのロゴからアクセスできる設定メニューを開き、“Page Spread View” のうち “Single page” のラジオボタンを選択してください。
@@ -241,6 +241,6 @@ html {
 
 一方、PDF出力においてはすべて`Noto Serif CJK JP`に置き換えられます。こうした結果、プレビューとPDF出力とでページのズレが発生することにご注意ください。フォントのしくみについて、詳細は下記をご参照ください。
 
-- [vivliostyle公式themeのフォント利用](/ja/create-and-save-documents/how-to-specify-fonts.md#vivliostyle公式themeのフォント利用)
+- [vivliostyle公式themeのフォント利用](/ja/create-and-save-documents/how-to-specify-fonts.md#vivliostyle公式themeで使われるフォント)
 - [クラウドにインストールされているフォント一覧](/ja/create-and-save-documents/additional-information-on-fonts.md#クラウドにインストールされているフォント一覧)
 - [クラウド上のVivliostyle CLIにおける代替フォントルール](/ja/create-and-save-documents/additional-information-on-fonts.md#クラウド上のvivliostyle-cliにおける代替フォントルール)

@@ -1,6 +1,6 @@
 # フォントの指定方法
 
-## フォントを使用するしくみ
+## フォントを指定するしくみ
 
 プレビューにおいてフォントがどのように使われるかを図式化したのが図1です。
 
@@ -28,19 +28,19 @@ PDF出力において実際に組版をおこなうVivliostyle.js（赤い四角
 
 例えば、プレビューで使ったローカルフォント（図1：**フォント1**）がクラウドになかった場合、PDFを出力する際はクラウドにインストールされたフォントのうち、似たものに置き換えられます（→[ クラウド上のVivliostyle CLIにおける代替フォントルール](/ja/create-and-save-documents/additional-information-on-fonts.md#クラウド上のvivliostyle-cliにおける代替フォントルール)）。その結果、プレビューとPDF出力のフォントが一致しないことで、ページのズレが発生することにご注意ください。
 
-本節ではActionメニューの項目に沿いながら、3種類のフォントを利用する方法について説明していきます。その中で、プレビューとPDF出力のフォントを一致させる方法についても触れます。
+本節ではActionメニューの項目に沿いながら、3種類のフォントを使い分ける方法について説明していきます。その中で、プレビューとPDF出力のフォントを一致させる方法についても触れます。
 
 ## Plain themeで使われるフォント
 
 ![ ](images/create-and-save-documents/how-to-specify-fonts/fig-3.png)
 
-Plain themeは最小の手間で素早くプレビューを確認するためのものです。他と違って特定のテーマ（スタイルシート）があるのではなく、ブラウザのデフォルト設定にしたがいます。たとえばフォントはブラウザ設定の「標準フォント」が参照されます。これは、前掲図1の分類では**フォント1**（ユーザーのPCにあるローカルフォント）に当たります。
+Plain themeは最小の手間で素早くプレビューを確認するためのものです。他と違って特定のtheme（スタイルシート）があるのではなく、ブラウザのデフォルト設定にしたがいます。たとえばフォントはブラウザ設定の「標準フォント」が参照されます。これは、前掲図1の分類では**フォント1**（ユーザーのPCにあるローカルフォント）に当たります。
 
-このテーマの目的上、出力は想定されていません。PDF出力そのものは可能ですが、Plain themeで使われたブラウザのデフォルト設定は[クラウド上のVivliostyle CLIにおける代替フォントルール](/ja/create-and-save-documents/additional-information-on-fonts.md#クラウド上のvivliostyle-cliにおける代替フォントルール)に従って置き換えられます。イメージ通りのスタイルでプレビューやPDF出力をしたい場合は、後述のVivliostyle公式テーマの中から選択するか、Custom themeを作成してください。
+このthemeの目的上、出力は想定されていません。PDF出力そのものは可能ですが、Plain themeで使われたブラウザのデフォルト設定は[クラウド上のVivliostyle CLIにおける代替フォントルール](/ja/create-and-save-documents/additional-information-on-fonts.md#クラウド上のvivliostyle-cliにおける代替フォントルール)に従って置き換えられます。イメージ通りのスタイルでプレビューやPDF出力をしたい場合は、後述のVivliostyle公式themeの中から選択するか、Custom themeを作成してください。
 
 Plain themeについては、以下もご参照ください。
 
-- [Theme（テーマの選択） >  Plain theme](/ja/functions-of-the-actions-menu/theme.md#plain-theme)
+- [Theme（themeの選択） >  Plain theme](/ja/functions-of-the-actions-menu/theme.md#plain-theme)
 
 ## Vivliostyle公式Themeで使われるフォント
 
@@ -58,7 +58,7 @@ Actionメニューから、以下のthemeを選択した場合、npm package管�
 
 一方、PDF出力ではクラウドにインストールされたフォント（前掲図2の**フォント2**）が使用されます。もし公式themeで指定されているフォントがクラウドになければ、[クラウド上のVivliostyle CLIにおける代替フォントルール](/ja/create-and-save-documents/additional-information-on-fonts.md#クラウド上のvivliostyle-cliにおける代替フォントルール)に従って別のフォントで代替されます。それぞれの公式themeでどのようなフォントが指定されているか、そしてクラウド上にどのようなフォントがインストールされているのかは下記をご参照ください。
 
-- [Theme（テーマの選択）](/ja/functions-of-the-actions-menu/theme.md)
+- [Theme（themeの選択）](/ja/functions-of-the-actions-menu/theme.md)
 - [クラウドにインストールされているフォント一覧](/ja/create-and-save-documents/additional-information-on-fonts.md#クラウドにインストールされているフォント一覧)
 
 こうした代替処理に起因するフォントの不一致により、プレビューとPDFとでページがずれることにご注意ください。
@@ -67,15 +67,15 @@ Actionメニューから、以下のthemeを選択した場合、npm package管�
 
 Custom themeを作成することで、そのスタイルシートにもとづいたプレビューとPDF出力ができます。この時プレビューで使用されるのはユーザーのPCにあるローカルフォント（前掲図1の**フォント1**）であり、一方、PDF出力で使用されるのはクラウドにインストールされたフォント（前掲図2の**フォント2**）です。
 
-ここで問題になるのは、Custom themeで指定したフォントが、ユーザーのPCとクラウドの片方にしかインストールされていなかった時です。その場合は似たフォントが代替使用されるので、プレビューとPDF出力でフォントが一致しないことになります。フォントが異なるので、プレビューとPDF出力とでページのズレが発生します。
+ここで問題になるのは、Custom themeで指定したフォントが、ユーザーのPCかクラウドの片方にしかインストールされていなかった時です。その場合は似たフォントが代替使用されるので、プレビューとPDF出力でフォントが一致しないことになります。フォントが異なるので、プレビューとPDF出力とでページのズレが発生します。
 
-しかし、クラウドにあるフォントをPCにもインストールし、これをCustom themeで指定すればプレビューとPDF出力とでフォントを一致させられ、ページのズレは発生しません。それでも、クラウドには2,300以上ものフォントがインストールされています（→[クラウドにインストールされているフォント一覧](/ja/create-and-save-documents/additional-information-on-fonts.md#クラウドにインストールされているフォント一覧)）。どのフォントをPCにインストールすれば間違いないのでしょう？
+しかし、クラウドにあるフォントをPCにもインストールし、これをCustom themeで指定すればプレビューとPDF出力とでフォントを一致させられ、ページのズレは発生しません。この時、[クラウドにインストールされているフォント](/ja/create-and-save-documents/additional-information-on-fonts.md#クラウドにインストールされているフォント一覧)のうち、どのフォントをPCにインストールすれば間違いないのでしょう？
 
-日本語環境で使用する場合、もっとも効率的で効果的なフォントは、ウェイトが豊富な[`Noto Sans CJK JP`](https://github.com/googlefonts/noto-cjk/raw/main/Sans/Variable/OTC/NotoSansCJK-VF.ttf.ttc)です。以下、本項では`Noto Sans CJK JP`を使ってプレビューとPDF出力をする方法を説明します。
+Vivliostyle Pubでは、クラウドに世界中の言語や文字体系に対応し、豊富なウェイトとスタイルをもつ[Noto fonts](https://fonts.google.com/noto)全てをインストールしています。そのうちの日本語ゴシック体フォントである[`Noto Sans CJK JP`](https://github.com/googlefonts/noto-cjk/tree/main/Sans)、および日本語明朝体フォントである[`Noto Serif CJK JP`](https://github.com/googlefonts/noto-cjk/tree/main/Serif)を、ユーザーのPCにもインストールするのが最も効率的で効果的です。以下、本項では`Noto Sans CJK JP`を使ってプレビューとPDF出力をする方法を説明します。
 
 ------------------------
 
-1. あらかじめPCに[`Noto Sans CJK JP`](https://github.com/googlefonts/noto-cjk/raw/main/Sans/Variable/OTC/NotoSansCJK-VF.ttf.ttc)をインストールしておきます。
+1. あらかじめPCに`Noto Sans CJK JP`をインストールしておきます。
 
 2. Vivliostyle Pubで、以下のような内容のスタイルシート（Custom theme）をアップロードします（→[ファイルのアップロード](/ja/file-and-folder-operations/file-list-pane-operations.md)）。すでにスタイルシート（Custom theme）がある場合は下記を参考に書き換えてください
 
@@ -164,8 +164,11 @@ module.exports = {
 ![ ](images/create-and-save-documents/how-to-specify-fonts/fig-7.png)
 
 - **補足情報**
-    - Noto Sansは多種多様なバリエーションがあり、なかなか希望のフォントが見つからない可能性があります。`Noto Sans CJK JP`を入手する場合、下記リンクからダウンロードするのが簡単でしょう
-        - [NotoSansCJK-VF.ttf.ttc（github.com/googlefonts 38.9 MB）](https://github.com/googlefonts/noto-cjk/raw/main/Sans/Variable/OTC/NotoSansCJK-VF.ttf.ttc)
+    - Noto fontsは多種多様なバリエーションがあり、なかなか目的のフォントが見つからない可能性があります。 下記リポジトリにあるリンクのうち **“Variable OTC”** をダウンロードするとよいでしょう。
+        - [`Noto Sans CJK JP`](https://github.com/googlefonts/noto-cjk/tree/main/Sans)
+        - [`Noto Serif CJK JP`](https://github.com/googlefonts/noto-cjk/tree/main/Serif)
+    - リンクは “OTC”（54.3MB）と “TTF”（57.1MB）の2つあります。どちらも単一フォントパッケージに複数のフォントファイルを内蔵させる「フォントコレクション」と呼ばれる形式であり、Vivliostyle Pubで使う場合は “OTC”と “TTF” のどちらを使っても同じです。
+    - “Variable OTC” をインストールすることで、日本語（JP）、繁体字（TC）、簡体字（SC）、香港（HK）、朝鮮語（KR）の5つの言語用フォントがインストールされます。
     - 本項で説明した方法以外にも、Webフォントサービス（図1、図2：**フォント3**）を利用することで、同様にプレビューとPDF出力とでフォントを一致させることができます（次項以降参照）
 
 ## Custom theme／Googleフォントの使用

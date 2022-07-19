@@ -57,7 +57,7 @@ size: 'JIS-B5',
 - `legal`
 - `ledger`
 
-## テーマの指定
+## themeの指定
 
  `theme` で任意のスタイルシート（Custom theme）を指定できます
 

@@ -20,7 +20,7 @@
 
 5. ファイル名の変更を`vivliostyle.config.js`に記述することで、PDFに出力できます（逆に言えば、`vivliostyle.config.js`を変更しなければPDF出力もできません）。記述の方法は下記をご参照ください
 
-    - [文書のカスタマイズ>複数文書の出力](/ja/create-and-save-documents/document-customization.md#複数文書の出力)
+    - [文書のカスタマイズ>対象となる文書の指定](/ja/create-and-save-documents/document-customization.md#対象となる文書の指定)
 
 
 
@@ -44,7 +44,7 @@
 
 5. 複製したファイル名を`vivliostyle.config.js`に記述することで、PDFに出力できます（逆に言えば、`vivliostyle.config.js`を変更しなければPDF出力もできません）。記述の方法は下記をご参照ください
 
-    - [文書のカスタマイズ>複数文書の出力](/ja/create-and-save-documents/document-customization.md#複数文書の出力)
+    - [文書のカスタマイズ>対象となる文書の指定](/ja/create-and-save-documents/document-customization.md#対象となる文書の指定)
 
 
 ## ファイルを削除
@@ -63,7 +63,7 @@
 
 4. ファイルの削除を`vivliostyle.config.js`に反映します。記述の方法は下記をご参照ください
 
-- [文書のカスタマイズ>複数文書の出力](/ja/create-and-save-documents/document-customization.md#複数文書の出力)
+- [文書のカスタマイズ>対象となる文書の指定](/ja/create-and-save-documents/document-customization.md#対象となる文書の指定)
 
 
 ## ファイルをダウンロード
