@@ -34,11 +34,11 @@ Plain themeは手早くプレビューを確認するためのもので出力は
 
 ## Custom theme
 
+この項目を選択すると、ユーザーが作成した任意のtheme（CSSスタイルシート）が利用でき、さらにそのthemeにもとづき、PDFの出力ができます（→[Export（出力）](/ja/functions-of-the-actions-menu/export.md#export出力)）。`vivliostyle.config.js`でthemeのpathを指定してください（スクリーンショットの赤線部）。
+
 ![ ](images/functions-of-the-actions-menu/theme/fig-3.png)
 
-この項目を選択すると、ユーザーが作成した任意のスタイルシート（CSSファイル）が利用でき、さらにそのスタイルシートにもとづき、PDFの出力ができます（→[Export（出力）](/ja/functions-of-the-actions-menu/export.md#export出力)）。
-
-`vivliostyle.config.js`で以下のようにスタイルシートのpathを指定してください（上スクリーンショットの赤線部）。記法は下記の通りです。`---`の部分にpathを記述してください。
+themeのpathを指定する記法は下記の通りです。`---`の部分にpathを記述してください。
 
 ```js
 module.exports = {
@@ -73,7 +73,7 @@ module.exports = {
 
 ## Book theme for latin font
 
-英語をはじめとしたラテン文字書籍のためのスタイルシートです。横組で文字サイズは`small` （デフォルトの16pxよりも一回り小さい）、ページサイズは非定型でウィンドウサイズに追従します。
+英語をはじめとしたラテン文字書籍のためのtheme（CSSスタイルシート）です。横組で文字サイズは`small` （デフォルトの16pxよりも一回り小さい）、ページサイズは非定型でウィンドウサイズに追従します。
 
 ![ ](images/functions-of-the-actions-menu/theme/fig-4.png)
 

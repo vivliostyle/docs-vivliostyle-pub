@@ -2,7 +2,7 @@
 
 ## フォントを利用するしくみ
 
-フォントは theme（スタイル情報）の中で指定されます（→[ Theme（スタイル情報の選択）](/ja/functions-of-the-actions-menu/theme.md)）。組版エンジンであるVivliostyle.jsは、themeにしたがってフォントを操作し、レイアウトや組版をします。以下の図1はプレビューのしくみを図式化したものです。
+フォントは themeの中で指定されます（→[ Theme（スタイル情報の選択）](/ja/functions-of-the-actions-menu/theme.md)）。組版エンジンであるVivliostyle.jsは、themeにしたがってフォントを操作し、レイアウトや組版をします。以下の図1はプレビューのしくみを図式化したものです。
 
 <img src="images/create-and-save-documents/how-to-specify-fonts/fig-1.jpg" alt="図1 プレビューにおけるフォントの利用" style="max-height: 500px;">
 
@@ -65,13 +65,13 @@ Actionメニューから、以下のthemeを選択した場合、npm package管�
 
 ## Custom theme／プレビューとPDF出力とでフォントを一致させる
 
-Custom themeを作成することで、そのスタイルシートにもとづいたプレビューとPDF出力ができます。この時プレビューで使用されるのはユーザーのPCにあるローカルフォント（前掲図1の**フォント1**）であり、一方、PDF出力で使用されるのはクラウドにインストールされたフォント（前掲図2の**フォント2**）です。
+Custom themeを作成することで、それにもとづいたプレビューとPDF出力ができます。この時プレビューで使用されるのはユーザーのPCにあるローカルフォント（前掲図1の**フォント1**）であり、一方、PDF出力で使用されるのはクラウドにインストールされたフォント（前掲図2の**フォント2**）です。
 
 ここで問題になるのは、Custom themeで指定したフォントが、ユーザーのPCかクラウドにしかインストールされていなかった時です。その場合は似たフォントが代替使用されるので、プレビューとPDF出力でフォントが不一致になります。フォントが異なるので、プレビューとPDF出力とでページのズレが発生します。
 
 しかし、クラウドにあるフォントをPCにもインストールし、これをCustom themeで指定すればプレビューとPDF出力とでフォントを一致させられ、ページのズレは発生しません。では、[クラウドにインストールされているフォント](/ja/create-and-save-documents/additional-information-on-fonts.md#クラウドにインストールされているフォント一覧)のうち、どのフォントをPCにインストールすれば間違いないのでしょう？
 
-Vivliostyle Pubでは、クラウドに世界中の言語や文字体系に対応し、豊富なウェイトとスタイルをもつ[Noto fonts](https://fonts.google.com/noto)全てをインストールしています。そのうちの日本語ゴシック体フォントである[`Noto Sans CJK JP`](https://github.com/googlefonts/noto-cjk/tree/main/Sans)、および日本語明朝体フォントである[`Noto Serif CJK JP`](https://github.com/googlefonts/noto-cjk/tree/main/Serif)を、ユーザーのPCにもインストールするのが最も効率的で効果的です。以下、本項では`Noto Sans CJK JP`を使ってプレビューとPDF出力をする方法を説明します。
+Vivliostyle Pubでは、世界中の言語や文字体系に対応し豊富なウェイトとスタイルをもつ[Noto fonts](https://fonts.google.com/noto)全てを、クラウドにインストールしています。そのうちの日本語ゴシック体フォントである[`Noto Sans CJK JP`](https://github.com/googlefonts/noto-cjk/tree/main/Sans)、および日本語明朝体フォントである[`Noto Serif CJK JP`](https://github.com/googlefonts/noto-cjk/tree/main/Serif)を、ユーザーのPCにもインストールするのが最も効率的で効果的です。以下、本項では`Noto Sans CJK JP`を使ってプレビューとPDF出力をする方法を説明します。
 
 ------------------------
 
@@ -268,7 +268,7 @@ module.exports = {
 ![ ](images/create-and-save-documents/how-to-specify-fonts/fig-10.png)
 
 - **補足情報**
-    - この記事では複数のMarkdownファイルにWebフォントを適用するためスタイルシートに`@import`をペーストしましたが、特定のMarkdownファイルにだけWebフォントを適用したい場合は、当該ファイルの先頭に読み込みコード（`link`要素、及び`style`要素で囲った`@import`のどちらか）をペーストします。その際、忘れずにスタイルシートの方で`font-family`を指定してください
+    - この記事では複数のMarkdownファイルにWebフォントを適用するためスタイルシート（Custom theme）に`@import`をペーストしましたが、特定のMarkdownファイルにだけWebフォントを適用したい場合は、当該ファイルの先頭に読み込みコード（`link`要素、及び`style`要素で囲った`@import`のどちらか）をペーストします。その際、忘れずにスタイルシートの方で`font-family`を指定してください
     - [bunny.net](https://fonts.bunny.net/)によりGoogleフォントと同じフォントが無償で利用可能です
         - このサービスはGoogleフォントと互換性を維持した上で（つまり同じフォントをホスティングした上で）、EUの[GDPR（一般データ保護規則）](https://www.jetro.go.jp/world/europe/eu/gdpr/)をクリアするためにユーザのトラッキングをしないことを明示しています（[bunny.net > about](https://fonts.bunny.net/about)）
         - 使い方は簡単で、Googleフォントで取得した読み込み用コードのうち、`googleapis.com`の部分を`bunny.net`に置き換えるだけ
