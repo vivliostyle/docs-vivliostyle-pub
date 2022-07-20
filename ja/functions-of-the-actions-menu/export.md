@@ -42,12 +42,12 @@ Actionメニューで「Export（出力）」を選ぶとPDFが出力されま�
 - とはいえ、これはVivliostyle.jsそのものでなく、外部のライブラリ（Chromium）に起因する問題です
 - したがって解決は当該ライブラリのアップデートを待つしかありませんが、現在でもいくつか回避方法はあります
     - [Adobe Acrobat Pro DC](https://www.adobe.com/jp/products/acrobat-pro-cc.html)（有償）を使ってPDF/x規格に変換する
-        -  [PDF から PDF/X、PDF/A または PDF/E への変換](https://helpx.adobe.com/jp/acrobat/using/pdf-x-pdf-a-pdf.html)
+        -  [PDF から PDF/X、PDF/A または PDF/E への変換（アドビ）](https://helpx.adobe.com/jp/acrobat/using/pdf-x-pdf-a-pdf.html)
     - [Create Book](https://github.com/vivliostyle/create-book)で、[Vivliostyle CLI](https://github.com/vivliostyle/vivliostyle-cli)の`--press-ready`オプションを使ってPDF/x-1a準拠のPDFをビルドする
     - “Type 3” に変換されないようTrueTypeフォントを指定する。たとえば下記リストを参照して無償のWebフォントサービス、Googleフォントを利用するのも一案
         - [GoogleフォントのうちVivliostyleのPDF出力で “Type 3” にならない日本語フォント一覧](/ja/create-and-save-documents/additional-information-on-fonts.md#googleフォントのうちvivliostyleのpdf出力で-type-3-にならない日本語フォント一覧)
 - ただし、この問題も商業印刷（オフセット印刷）では問題になっても、少部数の同人誌印刷（トナー印刷）ではあまり問題にはならない可能性があります
-    - 私たちのテストではVivliostyle CLIから`build`コマンド、つまりVivliostyle PubでのPDF出力と同じ環境で出力したPDF（A5判、281ページ、1.01GB）が、オンデマンド印刷機[コニカミノルタ1085](https://www.konicaminolta.jp/business/products/graphic/ondemand_print/color/bizhub_press_c1100_c1085/index.html)で印刷できました
+    - 私たちのテストではVivliostyle CLIから`build`コマンド、つまりVivliostyle PubでのPDF出力と同じ環境で出力したPDF（A5判、281ページ、1.01GB）が、オンデマンド印刷機[bizhub PRESS 1085（コニカミノルタ）](https://www.konicaminolta.jp/business/products/graphic/ondemand_print/color/bizhub_press_c1100_c1085/index.html)で印刷できました
         - このPDFはType 3フォントが埋め込まれており、通常のオフセット印刷では不適とされる可能性が高いデータです
-    - 他にも同じPDFを使って、SCREENグラフィックソリューションズのRIPワークフロー[EQUIOS](https://www.screen.co.jp/ga/product/category/workflow)から中間データへの変換に成功しています
+    - 他にも同じPDFを使って、RIPワークフロー[EQUIOS（SCREENグラフィックソリューションズ）](https://www.screen.co.jp/ga/product/category/workflow)から中間データへの変換に成功しています
     - いずれにしても、どんな場合でも見た目通り印刷できる保証はないのが正直なところです。印刷会社とよくコミュニケーションをとった上で入稿されることをお勧めします
