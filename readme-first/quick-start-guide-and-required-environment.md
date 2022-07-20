@@ -54,7 +54,7 @@ GitHubアカウントのユーザ名をクリックすると、プルダウン�
 ⑥……ファイル一覧ペインの表示／非表示<br>
 ⑦……エディタ・ペインの表示／非表示<br>
 ⑧……プレビュー・ペインの表示／非表示<br>
-⑨……Actionメニュー（→ [スタイルの切替](/style-switching-and-file-output/switching-styles.md)、[PDFの出力](/style-switching-and-file-output/output-pdf.md)）<br>
+⑨……Actionメニュー（→ [Theme（スタイル情報の選択）](/ja/functions-of-the-actions-menu/theme.md)、[Export（出力）](/ja/functions-of-the-actions-menu/export.md)など）<br>
 
 ### ファイル一覧ペイン
 
