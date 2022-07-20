@@ -168,7 +168,7 @@ module.exports = {
         - [`Noto Sans CJK JP`](https://github.com/googlefonts/noto-cjk/tree/main/Sans)
         - [`Noto Serif CJK JP`](https://github.com/googlefonts/noto-cjk/tree/main/Serif)
     - リンクは “OTC”（54.3MB）と “TTF”（57.1MB）の2つあります。どちらも単一フォントパッケージに複数のフォントファイルを内蔵させる「フォントコレクション」と呼ばれる形式であり、Vivliostyle Pubで使う場合は “OTC”と “TTF” のどちらを使っても同じです。
-    - “Variable OTC” をインストールすることで、日本語（JP）、繁体字（TC）、簡体字（SC）、香港（HK）、朝鮮語（KR）の5つの言語用フォントがインストールされます。
+    - “Variable OTC” をインストールすることで、日本語（JP）、繁体字（TC）、簡体字（SC）、香港（HK）、韓国語（KR）の5つの言語用フォントがインストールされます。
     - 本項で説明した方法以外にも、Webフォントサービス（図1、図2：**フォント3**）を利用することで、同様にプレビューとPDF出力とでフォントを一致させることができます（次項以降参照）
 
 ## Custom theme／Googleフォントの使用
