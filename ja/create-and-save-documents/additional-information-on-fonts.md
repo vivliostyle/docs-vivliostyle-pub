@@ -18,221 +18,236 @@ PDF出力で使われるクラウドのフォントは、なるべく多くの�
 
 個々の`font-family`名は下記の通りです。これらをCustom theme（スタイル情報）の中で指定することにより、出力するPDFに埋め込むことができます（→[フォントを利用するしくみ](/ja/create-and-save-documents/how-to-specify-fonts.md#フォントを利用するしくみ)）
 
-`Andale Mono`<br>
-`Arial`<br>
-`Arial Black`<br>
-`C059`<br>
-`Comic Sans MS`<br>
-`Courier New`<br>
-`D050000L`<br>
-`Georgia`<br>
-`Impact`<br>
-`Liberation Mono`<br>
-`Liberation Sans`<br>
-`Liberation Sans Narrow`<br>
-`Liberation Serif`<br>
-`Loma`<br>
-`Nimbus Mono PS`<br>
-`Nimbus Roman`<br>
-`Nimbus Sans`<br>
-`Nimbus Sans Narrow`<br>
-`Noto Color Emoji`<br>
-`Noto Kufi Arabic`<br>
-`Noto Mono`<br>
-`Noto Music`<br>
-`Noto Naskh Arabic`<br>
-`Noto Naskh Arabic UI`<br>
-`Noto Nastaliq Urdu`<br>
-`Noto Sans`<br>
-`Noto Sans Adlam`<br>
-`Noto Sans Adlam Unjoined`<br>
-`Noto Sans Arabic`<br>
-`Noto Sans Arabic UI`<br>
-`Noto Sans Armenian`<br>
-`Noto Sans Avestan`<br>
-`Noto Sans Bamum`<br>
-`Noto Sans Bassa Vah`<br>
-`Noto Sans Batak`<br>
-`Noto Sans Bengali`<br>
-`Noto Sans Bengali UI`<br>
-`Noto Sans Bhaiksuki`<br>
-`Noto Sans Brahmi`<br>
-`Noto Sans Buginese`<br>
-`Noto Sans Buhid`<br>
-`Noto Sans CJK HK`<br>
-`Noto Sans CJK JP`<br>
-`Noto Sans CJK KR`<br>
-`Noto Sans CJK SC`<br>
-`Noto Sans CJK TC`<br>
-`Noto Sans Carian`<br>
-`Noto Sans Chakma`<br>
-`Noto Sans Cham`<br>
-`Noto Sans Cherokee`<br>
-`Noto Sans Coptic`<br>
-`Noto Sans Cuneiform`<br>
-`Noto Sans Cypriot`<br>
-`Noto Sans Deseret`<br>
-`Noto Sans Devanagari`<br>
-`Noto Sans Devanagari UI`<br>
-`Noto Sans Display`<br>
-`Noto Sans Duployan`<br>
-`Noto Sans Elbasan`<br>
-`Noto Sans Ethiopic`<br>
-`Noto Sans Georgian`<br>
-`Noto Sans Glagolitic`<br>
-`Noto Sans Gothic`<br>
-`Noto Sans Grantha`<br>
-`Noto Sans Gujarati`<br>
-`Noto Sans Gujarati UI`<br>
-`Noto Sans Gunjala Gondi`<br>
-`Noto Sans Gurmukhi`<br>
-`Noto Sans Gurmukhi UI`<br>
-`Noto Sans Hanunoo`<br>
-`Noto Sans Hatran`<br>
-`Noto Sans Hebrew`<br>
-`Noto Sans Indic Siyaq Numbers`<br>
-`Noto Sans Javanese`<br>
-`Noto Sans Kaithi`<br>
-`Noto Sans Kannada`<br>
-`Noto Sans Kannada UI`<br>
-`Noto Sans Kayah Li`<br>
-`Noto Sans Kharoshthi`<br>
-`Noto Sans Khmer`<br>
-`Noto Sans Khmer UI`<br>
-`Noto Sans Khojki`<br>
-`Noto Sans Khudawadi`<br>
-`Noto Sans Lao`<br>
-`Noto Sans Lao UI`<br>
-`Noto Sans Lepcha`<br>
-`Noto Sans Limbu`<br>
-`Noto Sans Linear A`<br>
-`Noto Sans Linear B`<br>
-`Noto Sans Lisu`<br>
-`Noto Sans Lycian`<br>
-`Noto Sans Lydian`<br>
-`Noto Sans Mahajani`<br>
-`Noto Sans Malayalam`<br>
-`Noto Sans Malayalam UI`<br>
-`Noto Sans Mandaic`<br>
-`Noto Sans Manichaean`<br>
-`Noto Sans Marchen`<br>
-`Noto Sans Masaram Gondi`<br>
-`Noto Sans Math`<br>
-`Noto Sans Mayan Numerals`<br>
-`Noto Sans Meetei Mayek`<br>
-`Noto Sans Mende Kikakui`<br>
-`Noto Sans Meroitic`<br>
-`Noto Sans Miao`<br>
-`Noto Sans Modi`<br>
-`Noto Sans Mongolian`<br>
-`Noto Sans Mono`<br>
-`Noto Sans Mono CJK HK`<br>
-`Noto Sans Mono CJK JP`<br>
-`Noto Sans Mono CJK KR`<br>
-`Noto Sans Mono CJK SC`<br>
-`Noto Sans Mono CJK TC`<br>
-`Noto Sans Mro`<br>
-`Noto Sans Multani`<br>
-`Noto Sans Myanmar`<br>
-`Noto Sans Myanmar UI`<br>
-`Noto Sans Nabataean`<br>
-`Noto Sans New Tai Lue`<br>
-`Noto Sans Newa`<br>
-`Noto Sans Ogham`<br>
-`Noto Sans Ol Chiki`<br>
-`Noto Sans Old Italic`<br>
-`Noto Sans Old Permic`<br>
-`Noto Sans Old Persian`<br>
-`Noto Sans Old Sogdian`<br>
-`Noto Sans Old Turkic`<br>
-`Noto Sans Oriya`<br>
-`Noto Sans Oriya UI`<br>
-`Noto Sans Osage`<br>
-`Noto Sans Osmanya`<br>
-`Noto Sans Pahawh Hmong`<br>
-`Noto Sans Palmyrene`<br>
-`Noto Sans Pau Cin Hau`<br>
-`Noto Sans PhagsPa`<br>
-`Noto Sans Phoenician`<br>
-`Noto Sans Rejang`<br>
-`Noto Sans Runic`<br>
-`Noto Sans Samaritan`<br>
-`Noto Sans Saurashtra`<br>
-`Noto Sans Sharada`<br>
-`Noto Sans Shavian`<br>
-`Noto Sans Siddham`<br>
-`Noto Sans Sinhala`<br>
-`Noto Sans Sinhala UI`<br>
-`Noto Sans Sogdian`<br>
-`Noto Sans Soyombo`<br>
-`Noto Sans Sundanese`<br>
-`Noto Sans Syloti Nagri`<br>
-`Noto Sans Symbols`<br>
-`Noto Sans Symbols2`<br>
-`Noto Sans Syriac`<br>
-`Noto Sans Tagalog`<br>
-`Noto Sans Tagbanwa`<br>
-`Noto Sans Tai Le`<br>
-`Noto Sans Tai Tham`<br>
-`Noto Sans Tai Viet`<br>
-`Noto Sans Takri`<br>
-`Noto Sans Tamil`<br>
-`Noto Sans Tamil Supplement`<br>
-`Noto Sans Tamil UI`<br>
-`Noto Sans Telugu`<br>
-`Noto Sans Telugu UI`<br>
-`Noto Sans Thaana`<br>
-`Noto Sans Thai`<br>
-`Noto Sans Thai UI`<br>
-`Noto Sans Tibetan`<br>
-`Noto Sans Tifinagh`<br>
-`Noto Sans Tirhuta`<br>
-`Noto Sans Ugaritic`<br>
-`Noto Sans Vai`<br>
-`Noto Sans Wancho`<br>
-`Noto Sans Warang Citi`<br>
-`Noto Sans Yi`<br>
-`Noto Serif`<br>
-`Noto Serif Ahom`<br>
-`Noto Serif Armenian`<br>
-`Noto Serif Balinese`<br>
-`Noto Serif Bengali`<br>
-`Noto Serif CJK JP`<br>
-`Noto Serif CJK KR`<br>
-`Noto Serif CJK SC`<br>
-`Noto Serif CJK TC`<br>
-`Noto Serif Devanagari`<br>
-`Noto Serif Display`<br>
-`Noto Serif Dogra`<br>
-`Noto Serif Ethiopic`<br>
-`Noto Serif Georgian`<br>
-`Noto Serif Gujarati`<br>
-`Noto Serif Gurmukhi`<br>
-`Noto Serif Hebrew`<br>
-`Noto Serif Kannada`<br>
-`Noto Serif Khmer`<br>
-`Noto Serif Lao`<br>
-`Noto Serif Malayalam`<br>
-`Noto Serif Myanmar`<br>
-`Noto Serif Sinhala`<br>
-`Noto Serif Tamil`<br>
-`Noto Serif Tamil Slanted`<br>
-`Noto Serif Tangut`<br>
-`Noto Serif Telugu`<br>
-`Noto Serif Thai`<br>
-`Noto Serif Tibetan`<br>
-`P052`<br>
-`Standard Symbols PS`<br>
-`Times New Roman`<br>
-`Trebuchet MS`<br>
-`URW Bookman`<br>
-`URW Gothic`<br>
-`Ubuntu`<br>
-`Ubuntu Condensed`<br>
-`Ubuntu Mono`<br>
-`Verdana`<br>
-`Webdings`<br>
-`Z003`<br>
+- `Andale Mono`
+- `Arial`
+- `Arial Black`
+- `C059`
+- `Comic Sans MS`
+- `Courier New`
+- `D050000L`
+- `Georgia`
+- `Impact`
+- `Liberation Mono`
+- `Liberation Sans`
+- `Liberation Sans Narrow`
+- `Liberation Serif`
+- `Loma`
+- `Nimbus Mono PS`
+- `Nimbus Roman`
+- `Nimbus Sans`
+- `Nimbus Sans Narrow`
+- `Noto Color Emoji`
+- `Noto Kufi Arabic`
+- `Noto Mono`
+- `Noto Music`
+- `Noto Naskh Arabic`
+- `Noto Naskh Arabic UI`
+- `Noto Nastaliq Urdu`
+- `Noto Sans`
+- `Noto Sans Adlam`
+- `Noto Sans Adlam Unjoined`
+- `Noto Sans Anatolian Hieroglyphs`, `Noto Sans AnatoHiero`
+- `Noto Sans Arabic`
+- `Noto Sans Arabic UI`
+- `Noto Sans Armenian`
+- `Noto Sans Avestan`
+- `Noto Sans Bamum`
+- `Noto Sans Bassa Vah`
+- `Noto Sans Batak`
+- `Noto Sans Bengali`
+- `Noto Sans Bengali UI`
+- `Noto Sans Bhaiksuki`
+- `Noto Sans Brahmi`
+- `Noto Sans Buginese`
+- `Noto Sans Buhid`
+- `Noto Sans CJK HK`
+- `Noto Sans CJK JP`
+- `Noto Sans CJK KR`
+- `Noto Sans CJK SC`
+- `Noto Sans CJK TC`
+- `Noto Sans Canadian Aboriginal`, `Noto Sans CanAborig`
+- `Noto Sans Carian`
+- `Noto Sans Caucasian Albanian`, `Noto Sans CaucAlban`
+- `Noto Sans Chakma`
+- `Noto Sans Cham`
+- `Noto Sans Cherokee`
+- `Noto Sans Coptic`
+- `Noto Sans Cuneiform`
+- `Noto Sans Cypriot`
+- `Noto Sans Deseret`
+- `Noto Sans Devanagari`
+- `Noto Sans Devanagari UI`
+- `Noto Sans Display`
+- `Noto Sans Duployan`
+- `Noto Sans Egyptian Hieroglyphs`, `Noto Sans EgyptHiero`
+- `Noto Sans Elbasan`
+- `Noto Sans Ethiopic`
+- `Noto Sans Georgian`
+- `Noto Sans Glagolitic`
+- `Noto Sans Gothic`
+- `Noto Sans Grantha`
+- `Noto Sans Gujarati`
+- `Noto Sans Gujarati UI`
+- `Noto Sans Gunjala Gondi`
+- `Noto Sans Gurmukhi`
+- `Noto Sans Gurmukhi UI`
+- `Noto Sans Hanifi Rohingya`, `Noto Sans HanifiRohg`
+- `Noto Sans Hanunoo`
+- `Noto Sans Hatran`
+- `Noto Sans Hebrew`
+- `Noto Sans Imperial Aramaic`, `Noto Sans ImpAramaic`
+- `Noto Sans Indic Siyaq Numbers`
+- `Noto Sans Inscriptional Pahlavi`, `Noto Sans InsPahlavi`
+- `Noto Sans Inscriptional Parthian`, `Noto Sans InsParthi`
+- `Noto Sans Javanese`
+- `Noto Sans Kaithi`
+- `Noto Sans Kannada`
+- `Noto Sans Kannada UI`
+- `Noto Sans Kayah Li`
+- `Noto Sans Kharoshthi`
+- `Noto Sans Khmer`
+- `Noto Sans Khmer UI`
+- `Noto Sans Khojki`
+- `Noto Sans Khudawadi`
+- `Noto Sans Lao`
+- `Noto Sans Lao UI`
+- `Noto Sans Lepcha`
+- `Noto Sans Limbu`
+- `Noto Sans Linear A`
+- `Noto Sans Linear B`
+- `Noto Sans Lisu`
+- `Noto Sans Lycian`
+- `Noto Sans Lydian`
+- `Noto Sans Mahajani`
+- `Noto Sans Malayalam`
+- `Noto Sans Malayalam UI`
+- `Noto Sans Mandaic`
+- `Noto Sans Manichaean`
+- `Noto Sans Marchen`
+- `Noto Sans Masaram Gondi`
+- `Noto Sans Math`
+- `Noto Sans Mayan Numerals`
+- `Noto Sans Meetei Mayek`
+- `Noto Sans Mende Kikakui`
+- `Noto Sans Meroitic`
+- `Noto Sans Miao`
+- `Noto Sans Modi`
+- `Noto Sans Mongolian`
+- `Noto Sans Mono`
+- `Noto Sans Mono CJK HK`
+- `Noto Sans Mono CJK JP`
+- `Noto Sans Mono CJK KR`
+- `Noto Sans Mono CJK SC`
+- `Noto Sans Mono CJK TC`
+- `Noto Sans Mro`
+- `Noto Sans Multani`
+- `Noto Sans Myanmar`
+- `Noto Sans Myanmar UI`
+- `Noto Sans NKo`, `Noto Sans N'Ko`
+- `Noto Sans Nabataean`
+- `Noto Sans New Tai Lue`
+- `Noto Sans Newa`
+- `Noto Sans Ogham`
+- `Noto Sans Ol Chiki`
+- `Noto Sans Old Hungarian`, `Noto Sans OldHung`
+- `Noto Sans Old Italic`
+- `Noto Sans Old North Arabian`, `Noto Sans OldNorArab`
+- `Noto Sans Old Permic`
+- `Noto Sans Old Persian`
+- `Noto Sans Old Sogdian`
+- `Noto Sans Old South Arabian`, `Noto Sans OldSouArab`
+- `Noto Sans Old Turkic`
+- `Noto Sans Oriya`
+- `Noto Sans Oriya UI`
+- `Noto Sans Osage`
+- `Noto Sans Osmanya`
+- `Noto Sans Pahawh Hmong`
+- `Noto Sans Palmyrene`
+- `Noto Sans Pau Cin Hau`
+- `Noto Sans PhagsPa`
+- `Noto Sans Phoenician`
+- `Noto Sans Psalter Pahlavi`, `Noto Sans PsaPahlavi`
+- `Noto Sans Rejang`
+- `Noto Sans Runic`
+- `Noto Sans Samaritan`
+- `Noto Sans Saurashtra`
+- `Noto Sans Sharada`
+- `Noto Sans Shavian`
+- `Noto Sans Siddham`
+- `Noto Sans Sinhala`
+- `Noto Sans Sinhala UI`
+- `Noto Sans Sogdian`
+- `Noto Sans Sora Sompeng`, `Noto Sans SoraSomp`
+- `Noto Sans Soyombo`
+- `Noto Sans Sundanese`
+- `Noto Sans Syloti Nagri`
+- `Noto Sans Symbols`
+- `Noto Sans Symbols2`
+- `Noto Sans Syriac`
+- `Noto Sans Tagalog`
+- `Noto Sans Tagbanwa`
+- `Noto Sans Tai Le`
+- `Noto Sans Tai Tham`
+- `Noto Sans Tai Viet`
+- `Noto Sans Takri`
+- `Noto Sans Tamil`
+- `Noto Sans Tamil Supplement`
+- `Noto Sans Tamil UI`
+- `Noto Sans Telugu`
+- `Noto Sans Telugu UI`
+- `Noto Sans Thaana`
+- `Noto Sans Thai`
+- `Noto Sans Thai UI`
+- `Noto Sans Tibetan`
+- `Noto Sans Tifinagh`
+- `Noto Sans Tirhuta`
+- `Noto Sans Ugaritic`
+- `Noto Sans Vai`
+- `Noto Sans Wancho`
+- `Noto Sans Warang Citi`
+- `Noto Sans Yi`
+- `Noto Sans Zanabazar Square`, `Noto Sans Zanabazar`
+- `Noto Serif`
+- `Noto Serif Ahom`
+- `Noto Serif Armenian`
+- `Noto Serif Balinese`
+- `Noto Serif Bengali`
+- `Noto Serif CJK JP`
+- `Noto Serif CJK KR`
+- `Noto Serif CJK SC`
+- `Noto Serif CJK TC`
+- `Noto Serif Devanagari`
+- `Noto Serif Display`
+- `Noto Serif Dogra`
+- `Noto Serif Ethiopic`
+- `Noto Serif Georgian`
+- `Noto Serif Gujarati`
+- `Noto Serif Gurmukhi`
+- `Noto Serif Hebrew`
+- `Noto Serif Kannada`
+- `Noto Serif Khmer`
+- `Noto Serif Lao`
+- `Noto Serif Malayalam`
+- `Noto Serif Myanmar`
+- `Noto Serif Sinhala`
+- `Noto Serif Tamil`
+- `Noto Serif Tamil Slanted`
+- `Noto Serif Tangut`
+- `Noto Serif Telugu`
+- `Noto Serif Thai`
+- `Noto Serif Tibetan`
+- `P052`
+- `Standard Symbols PS`
+- `Times New Roman`
+- `Trebuchet MS`
+- `URW Bookman`
+- `URW Gothic`
+- `Ubuntu`
+- `Ubuntu Condensed`
+- `Ubuntu Mono`
+- `Verdana`
+- `Webdings`
+- `Z003`
 
 なお、 各フォントがサポートするウェイトを含む詳細なリストは、こちらをご参照ください（→[fc-list.sorted](/ja/create-and-save-documents/fc-list.sorted.md)）
 
