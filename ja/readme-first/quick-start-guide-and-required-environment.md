@@ -15,7 +15,7 @@
 
 1. ……「Login」ボタンを押して、GitHubアカウントでログインしてください（→[GitHubアカウントの取得方法](/ja/advance-preparation/get-an-account#github%E3%82%A2%E3%82%AB%E3%82%A6%E3%83%B3%E3%83%88%E3%81%AE%E5%8F%96%E5%BE%97%E6%96%B9%E6%B3%95)）
 2. ……言語メニューから使用言語を選択することができます（English / 日本語）
-3. ……ユーザガイド（本文書）を表示します
+3. ……ユーザーガイド（本文書）を表示します
 
 
 
@@ -29,7 +29,7 @@
 2. ……GitHubアクセス・トークンのリフレッシュ（→[最初のログインで必要な作業](/ja/advance-preparation/login.md)）
 3. ……GitHubアカウントのユーザ名（[GitHub > Settings > Public profile](https://github.com/settings/profile)）
 4. ……言語メニュー（English / 日本語）
-5. ……ユーザガイド（本文書）の表示
+5. ……ユーザーガイド（本文書）の表示
 6. ……リポジトリ表示の更新
 7. ……リポジトリの選択
 
@@ -60,11 +60,11 @@ GitHubアカウントのユーザ名をクリックすると、プルダウン�
 3. ……ファイル保存ボタン
 4. ……GitHubアカウントのユーザ名（プルダウンメニュー→アンケート送付／フィードバック／ログアウト）
 5. ……言語メニュー（English / 日本語）
-6. ……ファイル一覧ペインの表示／非表示
-7. ……エディタ・ペインの表示／非表示
-8. ……プレビュー・ペインの表示／非表示
-9. ……Actionメニュー（→ [スタイルの切替](/ja/style-switching-and-file-output/switching-styles.md)、[PDFの出力](/ja/style-switching-and-file-output/output-pdf.md)）
-10. ……
+6. ……ユーザーガイド（本文書）の表示
+7. ……ファイル一覧ペインの表示／非表示
+8. ……エディタ・ペインの表示／非表示
+9. ……プレビュー・ペインの表示／非表示
+10. ……Actionメニュー（→ [スタイルの切替](/ja/style-switching-and-file-output/switching-styles.md)、[PDFの出力](/ja/style-switching-and-file-output/output-pdf.md)）
 
 ### ファイル一覧ペイン
 
