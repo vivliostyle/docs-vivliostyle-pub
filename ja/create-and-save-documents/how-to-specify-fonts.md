@@ -1,8 +1,8 @@
 # フォントの指定方法
 
-## フォントを指定するしくみ
+## フォントを利用するしくみ
 
-フォントは theme（スタイル情報）の中で指定されます（→[ Theme（スタイル情報の選択）](/ja/functions-of-the-actions-menu/theme.md)）。実際に組版をおこなうVivliostyle.jsはthemeを読み込み、そこで指定されたフォントを操作します。以下の図1はプレビューのしくみを図式化したものです。
+フォントは theme（スタイル情報）の中で指定されます（→[ Theme（スタイル情報の選択）](/ja/functions-of-the-actions-menu/theme.md)）。組版エンジンであるVivliostyle.jsは、themeにしたがってフォントを操作し、レイアウトや組版をします。以下の図1はプレビューのしくみを図式化したものです。
 
 <img src="images/create-and-save-documents/how-to-specify-fonts/fig-1.jpg" alt="図1 プレビューにおけるフォントの利用" style="max-height: 500px;">
 
@@ -67,9 +67,9 @@ Actionメニューから、以下のthemeを選択した場合、npm package管�
 
 Custom themeを作成することで、そのスタイルシートにもとづいたプレビューとPDF出力ができます。この時プレビューで使用されるのはユーザーのPCにあるローカルフォント（前掲図1の**フォント1**）であり、一方、PDF出力で使用されるのはクラウドにインストールされたフォント（前掲図2の**フォント2**）です。
 
-ここで問題になるのは、Custom themeで指定したフォントが、ユーザーのPCかクラウドの片方にしかインストールされていなかった時です。その場合は似たフォントが代替使用されるので、プレビューとPDF出力でフォントが一致しないことになります。フォントが異なるので、プレビューとPDF出力とでページのズレが発生します。
+ここで問題になるのは、Custom themeで指定したフォントが、ユーザーのPCかクラウドにしかインストールされていなかった時です。その場合は似たフォントが代替使用されるので、プレビューとPDF出力でフォントが不一致になります。フォントが異なるので、プレビューとPDF出力とでページのズレが発生します。
 
-しかし、クラウドにあるフォントをPCにもインストールし、これをCustom themeで指定すればプレビューとPDF出力とでフォントを一致させられ、ページのズレは発生しません。この時、[クラウドにインストールされているフォント](/ja/create-and-save-documents/additional-information-on-fonts.md#クラウドにインストールされているフォント一覧)のうち、どのフォントをPCにインストールすれば間違いないのでしょう？
+しかし、クラウドにあるフォントをPCにもインストールし、これをCustom themeで指定すればプレビューとPDF出力とでフォントを一致させられ、ページのズレは発生しません。では、[クラウドにインストールされているフォント](/ja/create-and-save-documents/additional-information-on-fonts.md#クラウドにインストールされているフォント一覧)のうち、どのフォントをPCにインストールすれば間違いないのでしょう？
 
 Vivliostyle Pubでは、クラウドに世界中の言語や文字体系に対応し、豊富なウェイトとスタイルをもつ[Noto fonts](https://fonts.google.com/noto)全てをインストールしています。そのうちの日本語ゴシック体フォントである[`Noto Sans CJK JP`](https://github.com/googlefonts/noto-cjk/tree/main/Sans)、および日本語明朝体フォントである[`Noto Serif CJK JP`](https://github.com/googlefonts/noto-cjk/tree/main/Serif)を、ユーザーのPCにもインストールするのが最も効率的で効果的です。以下、本項では`Noto Sans CJK JP`を使ってプレビューとPDF出力をする方法を説明します。
 
@@ -162,6 +162,10 @@ module.exports = {
 6. Actionメニューから「Export（出力） > PDF」を選択すると、Custom themeを適用したPDFが出力されます（→[Export（出力） > PDF](/ja/functions-of-the-actions-menu/export.md#pdf)）。プレビューと同じ`Noto Sans CJK JP`が、同じ文字サイズ、行長、行送りにより使用されていることを確認してください   
 
 ![ ](images/create-and-save-documents/how-to-specify-fonts/fig-7.png)
+
+Custom themeについての詳細は下記をご参照ください。
+
+- [Custom theme](/ja/functions-of-the-actions-menu/theme.md#custom-theme)
 
 - **補足情報**
     - Noto fontsは多種多様なバリエーションがあり、なかなか目的のフォントが見つからない可能性があります。 下記リポジトリにあるリンクのうち **“Variable OTC”** をダウンロードするとよいでしょう。
