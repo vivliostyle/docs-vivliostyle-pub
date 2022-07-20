@@ -2,17 +2,17 @@
 
 ## フォントを指定するしくみ
 
-プレビューにおいてフォントがどのように使われるかを図式化したのが図1です。
+フォントは theme（スタイル情報）の中で指定されます（→[ Theme（スタイル情報の選択）](/ja/functions-of-the-actions-menu/theme.md)）。実際に組版をおこなうVivliostyle.jsはthemeを読み込み、そこで指定されたフォントを操作します。以下の図1はプレビューのしくみを図式化したものです。
 
 <img src="images/create-and-save-documents/how-to-specify-fonts/fig-1.jpg" alt="図1 プレビューにおけるフォントの利用" style="max-height: 500px;">
 
-ここで注意してほしいのは、プレビューにおいて実際に組版をおこなうVivliostyle.js（赤い四角）は、ユーザーのPC上のフロントエンドにあるということです。したがってVivliostyle.jsと同じユーザーのPCにある**フォント1**、及びWebフォントサービスの**フォント3**がプレビューで利用できるわけです。
+ここで注意してほしいのは、プレビューのために組版をおこなうVivliostyle.js（赤い四角）は、ユーザーのPC上のフロントエンドにあるということです。したがってVivliostyle.jsと同じユーザーのPCにある**フォント1**、及びWebフォントサービスの**フォント3**がプレビューで利用できるわけです。
 
-次に、PDF出力においてフォントがどのように使われるか図式化したのが図2です。
+次に、PDF出力のしくみを図式化したのが図2です。PDF出力のために組版をおこなうVivliostyle.js（赤い四角）はクラウド上のバックエンドにあります。
 
 <img src="images/create-and-save-documents/how-to-specify-fonts/fig-2.jpg" alt="図2 PDF出力におけるフォントの利用" style="max-height: 500px;">
 
-PDF出力において実際に組版をおこなうVivliostyle.js（赤い四角）はクラウド上のバックエンドにあります。したがってVivliostyle.jsと同じクラウドにある**フォント2**、及びWebフォントサービスの**フォント3**がPDF出力で利用できるわけです。
+したがってVivliostyle.jsと同じクラウドにある**フォント2**、及びWebフォントサービスの**フォント3**がPDF出力で利用できるわけです。
 
 ここまでの説明をまとめてみましょう。プレビューとPDF出力は、それぞれ別の組版エンジン、Vivliostyle.js（図1、図2の赤い四角）が担当します。その際、それぞれの組版エンジンは以下の3つの場所にあるフォントを使用します。
 
@@ -26,7 +26,7 @@ PDF出力において実際に組版をおこなうVivliostyle.js（赤い四角
 
 このようなしくみなので、プレビューで使われるフォントとPDF出力で使われるフォントが、いつでも無条件に一致するのは、Webフォントサービスのフォント（図1、図2：**フォント3**）だけです。プレビューではクラウドにインストールされたフォント（図2：**フォント2**）は使われず、PDF出力ではユーザーのPCにインストールされたローカルフォント（図1：**フォント1**）は使われないからです。
 
-例えば、プレビューで使ったローカルフォント（図1：**フォント1**）がクラウドになかった場合、PDFを出力する際はクラウドにインストールされたフォントのうち、似たものに置き換えられます（→[ クラウド上のVivliostyle CLIにおける代替フォントルール](/ja/create-and-save-documents/additional-information-on-fonts.md#クラウド上のvivliostyle-cliにおける代替フォントルール)）。その結果、プレビューとPDF出力のフォントが一致しないことで、ページのズレが発生することにご注意ください。
+例えば、プレビューで使ったローカルフォント（図1：**フォント1**）がクラウドになかった場合、PDF出力ではクラウドにインストールされたフォントのうち、似たものに置き換えられます（→[ クラウド上のVivliostyle CLIにおける代替フォントルール](/ja/create-and-save-documents/additional-information-on-fonts.md#クラウド上のvivliostyle-cliにおける代替フォントルール)）。その結果、プレビューとPDF出力のフォントが一致しないことで、ページのズレが発生することにご注意ください。
 
 本節ではActionメニューの項目に沿いながら、3種類のフォントを使い分ける方法について説明していきます。その中で、プレビューとPDF出力のフォントを一致させる方法についても触れます。
 
@@ -34,13 +34,13 @@ PDF出力において実際に組版をおこなうVivliostyle.js（赤い四角
 
 ![ ](images/create-and-save-documents/how-to-specify-fonts/fig-3.png)
 
-Plain themeは最小の手間で素早くプレビューを確認するためのものです。他と違って特定のtheme（スタイルシート）があるのではなく、ブラウザのデフォルト設定にしたがいます。たとえばフォントはブラウザ設定の「標準フォント」が参照されます。これは、前掲図1の分類では**フォント1**（ユーザーのPCにあるローカルフォント）に当たります。
+Plain themeは最小の手間で素早くプレビューを確認するためのものです。他と違って特定のtheme（スタイル情報）があるのではなく、ブラウザのデフォルト設定にしたがいます。たとえばフォントはブラウザ設定の「標準フォント」が参照されます。これは、前掲図1の分類では**フォント1**（ユーザーのPCにあるローカルフォント）に当たります。
 
 このthemeの目的上、出力は想定されていません。PDF出力そのものは可能ですが、Plain themeで使われたブラウザのデフォルト設定は[クラウド上のVivliostyle CLIにおける代替フォントルール](/ja/create-and-save-documents/additional-information-on-fonts.md#クラウド上のvivliostyle-cliにおける代替フォントルール)に従って置き換えられます。イメージ通りのスタイルでプレビューやPDF出力をしたい場合は、後述のVivliostyle公式themeの中から選択するか、Custom themeを作成してください。
 
 Plain themeについては、以下もご参照ください。
 
-- [Theme（themeの選択） >  Plain theme](/ja/functions-of-the-actions-menu/theme.md#plain-theme)
+- [ Theme（スタイル情報の選択） >  Plain theme](/ja/functions-of-the-actions-menu/theme.md#plain-theme)
 
 ## Vivliostyle公式Themeで使われるフォント
 
@@ -58,10 +58,10 @@ Actionメニューから、以下のthemeを選択した場合、npm package管�
 
 一方、PDF出力ではクラウドにインストールされたフォント（前掲図2の**フォント2**）が使用されます。もし公式themeで指定されているフォントがクラウドになければ、[クラウド上のVivliostyle CLIにおける代替フォントルール](/ja/create-and-save-documents/additional-information-on-fonts.md#クラウド上のvivliostyle-cliにおける代替フォントルール)に従って別のフォントで代替されます。それぞれの公式themeでどのようなフォントが指定されているか、そしてクラウド上にどのようなフォントがインストールされているのかは下記をご参照ください。
 
-- [Theme（themeの選択）](/ja/functions-of-the-actions-menu/theme.md)
+- [ Theme（スタイル情報の選択）](/ja/functions-of-the-actions-menu/theme.md)
 - [クラウドにインストールされているフォント一覧](/ja/create-and-save-documents/additional-information-on-fonts.md#クラウドにインストールされているフォント一覧)
 
-こうした代替処理に起因するフォントの不一致により、プレビューとPDFとでページがずれることにご注意ください。
+こうした代替処理によりフォントが不一致になった場合、プレビューとPDFとでページがずれることにご注意ください。（→[Custom theme／プレビューとPDF出力とでフォントを一致させる](/ja/create-and-save-documents/how-to-specify-fonts.md#custom-theme／プレビューとpdf出力とでフォントを一致させる)）
 
 ## Custom theme／プレビューとPDF出力とでフォントを一致させる
 
@@ -77,7 +77,7 @@ Vivliostyle Pubでは、クラウドに世界中の言語や文字体系に対�
 
 1. あらかじめPCに`Noto Sans CJK JP`をインストールしておきます。
 
-2. Vivliostyle Pubで、以下のような内容のスタイルシート（Custom theme）をアップロードします（→[ファイルのアップロード](/ja/file-and-folder-operations/file-list-pane-operations.md)）。すでにスタイルシート（Custom theme）がある場合は下記を参考に書き換えてください
+2. Vivliostyle Pubで、以下のような内容のスタイルシート（Custom theme）をアップロードします（→[ファイルのアップロード](/ja/file-and-folder-operations/file-list-pane-operations.md)）。すでにある場合は下記を参考に書き換えてください
 
 ```css
 @charset "UTF-8";

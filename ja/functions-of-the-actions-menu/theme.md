@@ -1,10 +1,10 @@
-# Theme（themeの選択）
+# Theme（スタイル情報の選択）
 
 ## 概要
 
 ![ ](images/functions-of-the-actions-menu/theme/fig-1.png)
 
-Actionメニューの「Theme」の項目を選択することで、以下のtheme（スタイル情報）に切り替えることができます。
+Actionメニューの「Theme」の項目を選択することで、以下のスタイル情報に切り替えることができます。
 
 1. Plain theme
 2. Custom theme
@@ -14,7 +14,7 @@ Actionメニューの「Theme」の項目を選択することで、以下のthe
 6. Techbook (技術同人誌) theme
 7. Academic theme 
 
-以下では、theme毎にその内容を概説します。使用したサンプルデータの出典は下記の通りです。なお、スクリーンショットは[プレゼンテーション・モード](/ja/functions-of-the-actions-menu/presentation-mode.md)での表示です。
+以下では、themeごとにその内容を概説します。使用したサンプルデータの出典は下記の通りです。なお、スクリーンショットは[プレゼンテーション・モード](/ja/functions-of-the-actions-menu/presentation-mode.md)での表示です。
 
 - 1、2、4……銀河鉄道の夜（宮沢賢治、[青空文庫](https://www.aozora.gr.jp/cards/000081/card456.html)）
 - 3………[The Project Gutenberg eBook of Alice’s Adventures in Wonderland, by Lewis Carroll](https://www.gutenberg.org/files/11/11-h/11-h.htm)
@@ -57,6 +57,19 @@ module.exports = {
 - [フォントの指定方法](/ja/create-and-save-documents/how-to-specify-fonts.md)
 - [クラウドにインストールされているフォント一覧](/ja/create-and-save-documents/additional-information-on-fonts.md#クラウドにインストールされているフォント一覧)
 - [クラウド上のVivliostyle CLIにおける代替フォントルール](/ja/create-and-save-documents/additional-information-on-fonts.md#クラウド上のvivliostyle-cliにおける代替フォントルール)
+
+
+- **補足情報**
+    - ゼロからCustom themeを書くには不安がある方は、Vivliostyle公式themeを元に、自分なりにカスタマイズすることをおすすめします
+    - 以下のVivliostyle公式themeリポジトリの[packageディレクトリ](https://github.com/vivliostyle/themes/tree/master/packages/%40vivliostyle)に各themeが格納されているので、以下の手順に従ってください
+        1. 自分のイメージに近い公式themeの`theme_common.css`というファイルを探してダウンロード
+        2. Vivliostyle Pubを使って自分のリポジトリにアップロード（→[ファイルのアップロード](/ja/file-and-folder-operations/file-list-pane-operations.md)）
+        3. Vivliostyle Pubのエディタでカスタマイズ
+        4. `vivliostyle.comfig.js`をエディタで開いて、Custom themeのpathを指定（本項を参照）
+        5. `Actionメニュー > Custom theme` を選択（本項を参照）
+    - それぞれのVivliostyle公式themeについては下記をご参照ください
+        - [Vivliostyle Themes > Theme ギャラリー](https://vivliostyle.github.io/themes/#/ja/gallery)
+
 
 ## Book theme for latin font
 
