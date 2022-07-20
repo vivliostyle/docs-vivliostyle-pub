@@ -1,5 +1,3 @@
-<script src="https://kit.fontawesome.com/1c2fd6189a.js" crossorigin="anonymous"></script>
-
 #  クイックスタートガイド 
 
 ## 必要環境 
@@ -106,5 +104,5 @@ GitHubアカウントのユーザ名をクリックすると、プルダウン�
 
 ![](images/readme-first/fig-8.png)
 
-画面下端付近でマウスポインタを動かすと、形状が<i class="fa-light fa-arrows-from-line"></i>上下矢印に変化します。そのままマウスボタンを押下し、上方にドラッグするとログが現れます。
+画面下端付近でマウスポインタを動かすと、形状が 上下矢印 ↕ に変化します。そのままマウスボタンを押下し、上方にドラッグするとログが現れます。
 

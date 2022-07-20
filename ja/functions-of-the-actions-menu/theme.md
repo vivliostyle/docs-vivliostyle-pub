@@ -58,17 +58,14 @@ module.exports = {
 - [クラウドにインストールされているフォント一覧](/ja/create-and-save-documents/additional-information-on-fonts.md#クラウドにインストールされているフォント一覧)
 - [クラウド上のVivliostyle CLIにおける代替フォントルール](/ja/create-and-save-documents/additional-information-on-fonts.md#クラウド上のvivliostyle-cliにおける代替フォントルール)
 
+ゼロからCustom themeを書くには不安がある方は、Vivliostyle公式themeを元に、自分なりにカスタマイズすることをおすすめします。以下のVivliostyle公式themeリポジトリの[packageディレクトリ](https://github.com/vivliostyle/themes/tree/master/packages/%40vivliostyle)に各themeが格納されているので、以下の手順に従ってください
 
-- **補足情報**
-    - ゼロからCustom themeを書くには不安がある方は、Vivliostyle公式themeを元に、自分なりにカスタマイズすることをおすすめします
-    - 以下のVivliostyle公式themeリポジトリの[packageディレクトリ](https://github.com/vivliostyle/themes/tree/master/packages/%40vivliostyle)に各themeが格納されているので、以下の手順に従ってください
-        1. 自分のイメージに近い公式themeの`theme_common.css`というファイルを探してダウンロード
-        2. Vivliostyle Pubを使って自分のリポジトリにアップロード（→[ファイルのアップロード](/ja/file-and-folder-operations/file-list-pane-operations.md)）
-        3. Vivliostyle Pubのエディタでカスタマイズ
-        4. `vivliostyle.comfig.js`をエディタで開いて、Custom themeのpathを指定（本項を参照）
-        5. `Actionメニュー > Custom theme` を選択（本項を参照）
-    - それぞれのVivliostyle公式themeについては下記をご参照ください
-        - [Vivliostyle Themes > Theme ギャラリー](https://vivliostyle.github.io/themes/#/ja/gallery)
+
+1. 自分のイメージに近い公式themeの`theme_common.css`というファイルを探してダウンロード
+2. Vivliostyle Pubを使って自分のリポジトリにアップロード（→[ファイルのアップロード](/ja/file-and-folder-operations/file-list-pane-operations.md)）
+3. Vivliostyle Pubのエディタでカスタマイズ
+4. `vivliostyle.comfig.js`をエディタで開いて、Custom themeのpathを指定（本項を参照）
+5. `Actionメニュー > Custom theme` を選択（本項を参照）
 
 
 ## Book theme for latin font

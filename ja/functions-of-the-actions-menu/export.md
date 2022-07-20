@@ -4,7 +4,7 @@
 
 Actionメニューで「Export（出力）」を選ぶとPDFが出力されます。その際、出力されるファイルは、プレビューとは無関係に`vivliostyle.config.js`の内容にもとづき処理されます。詳細は下記をご参照ください。
 
-- [フォントの指定方法 > フォントを指定するしくみ](/ja/create-and-save-documents/how-to-specify-fonts.md#フォントを指定するしくみ)
+- [フォントの指定方法 > フォントを利用するしくみ](/ja/create-and-save-documents/how-to-specify-fonts.md#フォントを利用するしくみ)
 - [ Theme（スタイル情報の選択）> Custom theme](/ja/functions-of-the-actions-menu/theme.md#custom-theme)）
 
 複数あるファイルのうち、特定のファイルだけをPDF出力したい場合は、vivliostyle.config.jsで出力したいファイルだけを記述するか、出力しないファイルをコメントアウトしてください。詳細は下記をご参照ください。
