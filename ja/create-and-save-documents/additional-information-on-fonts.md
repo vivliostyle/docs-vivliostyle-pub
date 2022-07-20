@@ -6,10 +6,15 @@ PDF出力で使われるクラウドのフォントは、なるべく多くの�
 
 1. [Noto fonts](https://fonts.google.com/noto)
 2. [Microsoft TrueType core fonts](https://packages.ubuntu.com/focal/ttf-mscorefonts-installer)
-3. [liberation-fonts](https://github.com/liberationfonts/liberation-fonts/tree/main/src)
-4. [urw-base35-fonts](https://github.com/ArtifexSoftware/urw-base35-fonts)
 
-上記はいずれもオープンソースです（ライセンスはリンク先参照）。1は1,000以上の言語と150以上の文字体系に対応し、複数のウェイトと幅、そしてゴシック、明朝、等幅といったスタイルをもつ巨大なフォントファミリーです。2はLinuxのディストリビューションubuntuで、3は同じくRed Hatで、4はLinux等において広く利用されるフォント設定ライブラリで使われる欧文フォントセットです。
+1は1,000以上の言語と150以上の文字体系に対応し、複数のウェイトと幅、そしてゴシック、明朝、等幅といったスタイルをもつ巨大なフォントファミリーです。2はマイクロソフトによるWeb用の標準フォントのパックです。
+
+このほか、Linuxシステム上での標準的なフォントとして次のフォントがインストールされています：
+
+- [liberation-fonts](https://packages.ubuntu.com/focal/fonts-liberation)
+- [Thai Loma font](https://packages.ubuntu.com/focal/fonts-tlwg-loma-otf)
+- [Ubuntu font](https://design.ubuntu.com/font/)
+- [urw-base35-fonts](https://github.com/ArtifexSoftware/urw-base35-fonts)
 
 個々の`font-family`名は下記の通りです。これらをCustom theme（スタイル情報）の中で指定することにより、出力するPDFに埋め込むことができます（→[フォントを指定するしくみ](/ja/create-and-save-documents/how-to-specify-fonts.md#フォントを指定するしくみ)）
 
