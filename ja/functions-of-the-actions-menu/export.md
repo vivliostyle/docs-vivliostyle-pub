@@ -24,9 +24,16 @@ Actionメニューで「Export（出力）」を選ぶとPDFが出力されま�
 
 ![](images/functions-of-the-actions-menu/export/fig-3.png)
 
+この表示は一定時間が経過すると消えます。再度確認したい場合は、ログ表示から「View  PDF」のリンクを確認できます
+
+- [クイックスタートガイド >  ログの表示](/ja/readme-first/quick-start-guide-and-required-environment.md#ログの表示)
+
+
 4. ブラウザのPDF閲覧画面に遷移します。ウィンドウ左上の下向き矢印「↓」（赤丸）をクリックするとファイルダイアログが開き、PDFがダウンロードできます
 
 ![](images/functions-of-the-actions-menu/export/fig-4.png)
+
+
 
 ## 補足情報
 

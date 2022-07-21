@@ -7,7 +7,11 @@
 
 ## 初期画面
 
-[所定のURL](https://vivliostyle-pub-develop.vercel.app/)にアクセスすると、以下の初期画面が表示されます。①「Login」ボタンを押して、GitHubアカウントでログインしてください（→[GitHubアカウントの取得方法](/advance-preparation/get-an-account#github%E3%82%A2%E3%82%AB%E3%82%A6%E3%83%B3%E3%83%88%E3%81%AE%E5%8F%96%E5%BE%97%E6%96%B9%E6%B3%95)）。なお、②言語メニューから使用言語を選択することができます（English / 日本語）。
+以下のURLにアクセスすると、以下の初期画面が表示されます。
+
+https://vivliostyle-pub-develop.vercel.app/
+
+①「Login」ボタンを押して、GitHubアカウントでログインしてください（→[GitHubアカウントの取得方法](/advance-preparation/get-an-account#github%E3%82%A2%E3%82%AB%E3%82%A6%E3%83%B3%E3%83%88%E3%81%AE%E5%8F%96%E5%BE%97%E6%96%B9%E6%B3%95)）。なお、②言語メニューから使用言語を選択することができます（English / 日本語）。
 
 ![](images/readme-first/fig-1.png)
 
