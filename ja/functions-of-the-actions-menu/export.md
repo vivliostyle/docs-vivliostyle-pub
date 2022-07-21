@@ -43,7 +43,7 @@ Actionメニューで「Export（出力）> PDF」を選ぶとPDFが出力され
         - [please use CID instead of Type3 #437](https://github.com/vivliostyle/vivliostyle.js/issues/437)
         - [the reversed string is returned on Preview.app when selecting PDF contents which uses Type3 #439](https://github.com/vivliostyle/vivliostyle.js/issues/439)
 - このうち前者の問題はまだ解決策を検討中ですが、現在でも出力したPDFを以下のような外部サイトを利用してグレイスケールに変換することで解決できるでしょう
-    - [DeftPDF](https://deftpdf.com/ja/grayscale-pdf)
+    - [DeftPDF（Sictec Infotech, Inc.）](https://deftpdf.com/ja/grayscale-pdf)
     - ただし、この問題は大部数を均一な品質で印刷することを求められる商業印刷（オフセット印刷）では問題になっても、少部数の同人誌印刷（トナー印刷）ではあまり問題にはならない可能性が高いと考えています
 - 後者の問題に関して、一般に商業向けのオフセット印刷ではType 3フォントは不適とされることが多く、この問題の早い解決が望まれます
 - とはいえ、これはVivliostyle.jsそのものでなく、外部のライブラリ（Chromium）に起因する問題です
