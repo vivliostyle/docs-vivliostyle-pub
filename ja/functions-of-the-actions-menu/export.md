@@ -50,10 +50,10 @@ Actionメニューで「Export（出力）> PDF」を選ぶとPDFが出力され
 - それでも、以下のような回避方法はあります
     - アドビの有償ソフト[Adobe Acrobat Pro DC](https://www.adobe.com/jp/products/acrobat-pro-cc.html)を使ってPDF/x規格に変換する
         -  [PDF から PDF/X、PDF/A または PDF/E への変換（アドビ）](https://helpx.adobe.com/jp/acrobat/using/pdf-x-pdf-a-pdf.html)
-    - [Create Book](https://github.com/vivliostyle/create-book)で、[Vivliostyle CLI](https://github.com/vivliostyle/vivliostyle-cli)の`--press-ready`オプションを使ってPDF/x-1a準拠のPDFをビルドする
-        - なお、このオプションを利用するとフォントがアウトライン化されてテキストの属性を失うため、検索などができなくなります。PDFそのものを頒布する用途には向かないことにご注意ください
     - Type 3フォントに変換されないようTrueTypeフォントを指定する。たとえば下記リストを参照して無償のWebフォントサービス、Googleフォントを利用するのも一案
         - [GoogleフォントのうちVivliostyleのPDF出力で “Type 3” にならない日本語フォント一覧](/ja/create-and-save-documents/additional-information-on-fonts.md#googleフォントのうちvivliostyleのpdf出力で-type-3-にならない日本語フォント一覧)
+    - [Create Book](https://github.com/vivliostyle/create-book)で、[Vivliostyle CLI](https://github.com/vivliostyle/vivliostyle-cli)の`--press-ready`オプションを使ってPDF/x-1a準拠のPDFをビルドする
+        - なお、このオプションを利用するとフォントがアウトライン化されてテキストの属性を失うため、検索などができなくなります。PDFそのものを頒布する用途には向かないことにご注意ください
 - この問題も商業印刷（オフセット印刷）では問題になっても、少部数の同人誌印刷（トナー印刷）ではあまり問題にはならない可能性があります
     - 私たちのテストではVivliostyle CLIから`build`コマンド、つまりVivliostyle PubでのPDF出力と同じ環境で出力したPDF（A5判、281ページ、1.01GB）が、オンデマンド印刷機[bizhub PRESS 1085（コニカミノルタ）](https://www.konicaminolta.jp/business/products/graphic/ondemand_print/color/bizhub_press_c1100_c1085/index.html)で印刷できました
         - このPDFはType 3フォントが埋め込まれており、通常のオフセット印刷では不適とされる可能性が高いデータです
