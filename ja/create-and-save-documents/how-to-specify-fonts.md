@@ -24,9 +24,9 @@
 
 一方、PDF出力を担当するクラウド上のVivliostyle.jsは、クラウドにインストールされたフォント（図2：**フォント2**）、及びWebフォントサービスのフォント（図1、図2：**フォント3**）を使います。
 
-このようなしくみなので、プレビューで使われるフォントとPDF出力で使われるフォントが、いつでも無条件に一致するのは、Webフォントサービスのフォント（図1、図2：**フォント3**）だけです。プレビューではクラウドにインストールされたフォント（図2：**フォント2**）は使われず、PDF出力ではユーザーのPCにインストールされたローカルフォント（図1：**フォント1**）は使われないからです。
+このようなしくみなので、プレビューで使われるフォントとPDF出力で使われるフォントが、いつでも無条件に一致するのは、Webフォントサービスのフォント（図1、図2：**フォント3**）だけです。プレビューではクラウドにインストールされたフォント（図2：**フォント2**）は使えず、PDF出力ではユーザーのPCにインストールされたローカルフォント（図1：**フォント1**）は使えません。
 
-例えば、プレビューで使ったローカルフォント（図1：**フォント1**）がクラウドになかった場合、PDF出力ではクラウドにインストールされたフォントのうち、似たものに置き換えられます（→[ クラウド上のVivliostyle CLIにおける代替フォントルール](/ja/create-and-save-documents/additional-information-on-fonts.md#クラウド上のvivliostyle-cliにおける代替フォントルール)）。その結果、プレビューとPDF出力のフォントが一致しないことで、ページのズレが発生することにご注意ください。
+例えば、プレビューで使ったローカルフォント（図1：**フォント1**）がクラウドになかった場合、PDF出力ではクラウドにインストールされたフォントのうち、似たものに置き換えられます（→[ クラウド上のVivliostyle CLIにおける代替フォントルール](/ja/create-and-save-documents/additional-information-on-fonts.md#クラウド上のvivliostyle-cliにおける代替フォントルール)）。その結果、プレビューとPDF出力のフォントが不一致になり、ページのズレが発生することにご注意ください。
 
 本節ではActionメニューの項目に沿いながら、3種類のフォントを使い分ける方法について説明していきます。その中で、プレビューとPDF出力のフォントを一致させる方法についても触れます。
 
@@ -65,11 +65,11 @@ Actionメニューから、以下のthemeを選択した場合、npm package管�
 
 ## Custom theme／プレビューとPDF出力とでフォントを一致させる
 
-Custom themeを作成することで、それにもとづいたプレビューとPDF出力ができます。この時プレビューで使用されるのはユーザーのPCにあるローカルフォント（前掲図1の**フォント1**）であり、一方、PDF出力で使用されるのはクラウドにインストールされたフォント（前掲図2の**フォント2**）です。
+Custom themeを作成することで、それにもとづいたプレビューとPDF出力ができます。この時プレビューで使用されるのはユーザーのPCにあるローカルフォント（前掲図1の**フォント1**）です。一方、PDF出力で使用されるのはクラウドにインストールされたフォント（前掲図2の**フォント2**）です。
 
 ここで問題になるのは、Custom themeで指定したフォントが、ユーザーのPCかクラウドにしかインストールされていなかった時です。その場合は似たフォントが代替使用されるので、プレビューとPDF出力でフォントが不一致になります。フォントが異なるので、プレビューとPDF出力とでページのズレが発生します。
 
-しかし、クラウドにあるフォントをPCにもインストールし、これをCustom themeで指定すればプレビューとPDF出力とでフォントを一致させられ、ページのズレは発生しません。では、[クラウドにインストールされているフォント](/ja/create-and-save-documents/additional-information-on-fonts.md#クラウドにインストールされているフォント一覧)のうち、どのフォントをPCにインストールすれば間違いないのでしょう？
+しかし、クラウドにあるフォントをPCにもインストールし、これをCustom themeで指定すればプレビューとPDF出力とでフォントを一致でき、ページのズレは発生しません。では、[クラウドにインストールされているフォント](/ja/create-and-save-documents/additional-information-on-fonts.md#クラウドにインストールされているフォント一覧)のうち、どのフォントをPCにインストールすれば間違いないのでしょう？
 
 Vivliostyle Pubでは、世界中の言語や文字体系に対応し豊富なウェイトとスタイルをもつ[Noto fonts](https://fonts.google.com/noto)全てを、クラウドにインストールしています。そのうちの日本語ゴシック体フォントである[`Noto Sans CJK JP`](https://github.com/googlefonts/noto-cjk/tree/main/Sans)、および日本語明朝体フォントである[`Noto Serif CJK JP`](https://github.com/googlefonts/noto-cjk/tree/main/Serif)を、ユーザーのPCにもインストールするのが最も効率的で効果的です。以下、本項では`Noto Sans CJK JP`を使ってプレビューとPDF出力をする方法を説明します。
 
@@ -159,7 +159,7 @@ module.exports = {
 
 ![ ](images/create-and-save-documents/how-to-specify-fonts/fig-6.png)
 
-6. Actionメニューから「Export（出力） > PDF」を選択すると、Custom themeを適用したPDFが出力されます（→[Export（出力） > PDF](/ja/functions-of-the-actions-menu/export.md#pdf)）。プレビューと同じ`Noto Sans CJK JP`が、同じ文字サイズ、行長、行送りにより使用されていることを確認してください   
+6. Actionメニューから[Export（出力） > PDF](/ja/functions-of-the-actions-menu/export.md#pdf)を選択すると、Custom themeを適用したPDFが出力されます。プレビューと同じ`Noto Sans CJK JP`が、同じ文字サイズ、行長、行送りにより使用されていることを確認してください   
 
 ![ ](images/create-and-save-documents/how-to-specify-fonts/fig-7.png)
 
@@ -177,7 +177,7 @@ Custom themeについての詳細は下記をご参照ください。
 
 ## Custom theme／Googleフォントの使用
 
-Webフォント（前掲図1／図2の**フォント3**）を利用することで、どんなフォントでもプレビューとPDF出力でフォントを一致させることができます。本項では無償のWebフォントサービス、[Googleフォント](https://fonts.google.com/)をVivliostyle Pubで使用する方法を説明します。
+Webフォント（前掲図1／図2の**フォント3**）を利用すると、プレビューとPDF出力でフォントを一致させることができます。本項では無償のWebフォントサービス、[Googleフォント](https://fonts.google.com/)をVivliostyle Pubで使用する方法を説明します。
 
 1. まず[Googleフォント](https://fonts.google.com/)でフォント選択し、つぎにStylesで使いたい太さを “Select this style” 右横にある(+)　をクリックして選択します。ここでは、しっぽり明朝 Regular 400、Noto Sans Japanese Bold 700、Noto Sans Japanese Medium 900を選択しました
 
