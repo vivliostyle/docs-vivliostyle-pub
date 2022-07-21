@@ -54,7 +54,7 @@ Actionメニューで「Export（出力）> PDF」を選ぶとPDFが出力され
         - [GoogleフォントのうちVivliostyleのPDF出力で “Type 3” にならない日本語フォント一覧](/ja/create-and-save-documents/additional-information-on-fonts.md#googleフォントのうちvivliostyleのpdf出力で-type-3-にならない日本語フォント一覧)
     - Vivliostyle Pubは使わず、[Create Book](https://github.com/vivliostyle/create-book)で [Vivliostyle CLI](https://github.com/vivliostyle/vivliostyle-cli)の`--press-ready`オプションを使ってPDF/x-1a準拠のPDFをビルドする
         - なお、このオプションを利用するとフォントがアウトライン化されてテキストの属性を失うため、検索などができなくなります。PDFそのものを頒布する用途には向かないことにご注意ください
-- この問題も商業印刷（オフセット印刷）では問題になっても、少部数の同人誌印刷（トナー印刷）ではあまり問題にはならない可能性があります
+- もっとも、この問題も商業印刷（オフセット印刷）では問題になっても、少部数の同人誌印刷（トナー印刷）ではあまり問題にはならない可能性があります
     - 私たちのテストではVivliostyle CLIから`build`コマンド、つまりVivliostyle PubでのPDF出力と同じ環境で出力したPDF（A5判、281ページ、1.01GB）が、オンデマンド印刷機[bizhub PRESS 1085（コニカミノルタ）](https://www.konicaminolta.jp/business/products/graphic/ondemand_print/color/bizhub_press_c1100_c1085/index.html)で印刷できました
         - このPDFはType 3フォントが埋め込まれており、通常のオフセット印刷では不適とされる可能性が高いデータです
     - 他にも同じPDFを使って、RIPワークフロー[EQUIOS（SCREENグラフィックソリューションズ）](https://www.screen.co.jp/ga/product/category/workflow)から中間データへの変換に成功しています
