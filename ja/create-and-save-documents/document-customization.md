@@ -148,3 +148,24 @@ entry: [
     "colophon.md",
 ],
 ```
+
+## まとめ
+
+ここまでの説明をまとめると、`vivliostyle.config.js`の記述は下記のようになります。
+
+```js
+module.exports = {
+  title: '私の本',
+  author: '尾久綿次郎 <ogwata@example.com>',
+  language: 'ja',
+  size: 'JIS-B5',
+  theme: 'css/style.css',
+  entry: [
+    "index.md",
+    "Chapter-1.md",
+    "Chapter-2.md",
+    "Chapter-3.md",
+    "colophon.md",
+],
+}
+```
