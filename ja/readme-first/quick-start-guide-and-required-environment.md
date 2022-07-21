@@ -64,7 +64,28 @@ GitHubアカウントのユーザ名をクリックすると、プルダウン�
 7. ……ファイル一覧ペインの表示／非表示
 8. ……エディタ・ペインの表示／非表示
 9. ……プレビュー・ペインの表示／非表示
-10. ……Actionメニュー（プルダウンメニュー→ [Theme（スタイル情報の選択）](/ja/functions-of-the-actions-menu/theme.md)／[Export（出力）](/ja/functions-of-the-actions-menu/export.md)など）
+10. ……Actionメニュー
+
+Actionメニューをプルダウンすると、下記のような操作が可能です。
+
+- Setting（設定）
+    - [Presentation mode](/ja/functions-of-the-actions-menu/setting.md#presentation-modeプレゼンテーション・モード)
+    - [Auto reload](/ja/functions-of-the-actions-menu/setting.md#auto-reload自動再読み込み)
+- Theme（スタイル情報の選択）
+    - [Plain theme](/ja/functions-of-the-actions-menu/theme.md#plain-theme)
+    - [Custom theme](/ja/functions-of-the-actions-menu/theme.md#custom-theme)
+    - [Book theme for latin font](/ja/functions-of-the-actions-menu/theme.md#book-theme-for-latin-font)
+    - [文庫用のテーマ](/ja/functions-of-the-actions-menu/theme.md#文庫用のテーマ)
+    - [Slide theme](/ja/functions-of-the-actions-menu/theme.md#slide-theme)
+    - [ Techbook (技術同人誌) theme](/ja/functions-of-the-actions-menu/theme.md#techbook-技術同人誌-theme)
+    -[Academic theme](/ja/functions-of-the-actions-menu/theme.md#academic-theme)
+- Add files（ファイルの追加）
+    - [Add Image（画像ファイルの追加）](/ja/functions-of-the-actions-menu/add-files.md#add-image画像ファイルの追加)
+- Export（出力）
+    - [PDF](/ja/functions-of-the-actions-menu/export.md#pdf)
+- Help（ヘルプ）
+    - [ VFM Spec（Vivliostyle Flavored Markdown仕様の表示）](/ja/functions-of-the-actions-menu/help.md#vfm-specvivliostyle-flavored-markdown仕様の表示)
+
 
 ### ファイル一覧ペイン
 
@@ -88,6 +109,11 @@ GitHubアカウントのユーザ名をクリックすると、プルダウン�
   - ![](https://raw.githubusercontent.com/microsoft/vscode-codicons/main/src/icons/markdown.svg)……Markdownファイル
   - ![](https://raw.githubusercontent.com/microsoft/vscode-codicons/main/src/icons/settings-gear.svg)……vivliostyle.config.js
   - ![](https://raw.githubusercontent.com/microsoft/vscode-codicons/main/src/icons/file.svg)……その他のファイル
+
+
+各種ファイル操作の詳細は下記をご参照ください。
+
+- [ファイル一覧ペインからの操作](/ja/file-and-folder-operations/file-list-pane-operations.md)
 
 
 
