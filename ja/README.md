@@ -22,12 +22,15 @@
 - [文書作成の記法](/ja/create-and-save-documents/notation-for-document-creation.md)
 - [画像の指定とキャプション](/ja/create-and-save-documents/Image-specification-and-caption.md)
 - [文書の保存](/ja/create-and-save-documents/save-document.md)
+- [文書のカスタマイズ](/ja/create-and-save-documents/document-customization.md)
+- [フォントの指定方法](/ja/create-and-save-documents/how-to-specify-fonts.md)
+- [フォントに関する補足情報](/ja/create-and-save-documents/additional-information-on-fonts.md)
+
 
 ## 👘 Actionsメニューの機能
 
-- [Presentation Mode](/ja/functions-of-the-actions-menu/presentation-mode.md)
-- [Auto reload（自動再読み込み）](/ja/functions-of-the-actions-menu/auto-reload.md)
-- [Theme（テーマの選択）](/ja/functions-of-the-actions-menu/theme.md)
+- [Setting（設定）](/ja/functions-of-the-actions-menu/setting.md)
+- [Theme（スタイル情報の選択）](/ja/functions-of-the-actions-menu/theme.md)
 - [Add Files（ファイルの追加）](/ja/functions-of-the-actions-menu/add-files.md)
 - [Export（出力）](/ja/functions-of-the-actions-menu/export.md)
 - [Help（ヘルプ）](/ja/functions-of-the-actions-menu/help.md)
