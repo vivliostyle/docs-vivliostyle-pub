@@ -270,7 +270,7 @@ module.exports = {
 - **補足情報**
     - この記事では複数のMarkdownファイルにWebフォントを適用するためスタイルシート（Custom theme）に`@import`をペーストしましたが、特定のMarkdownファイルにだけWebフォントを適用したい場合は、当該ファイルの先頭に読み込みコード（`link`要素、及び`style`要素で囲った`@import`のどちらか）をペーストします。その際、忘れずにスタイルシートの方で`font-family`を指定してください
     - [bunny.net](https://fonts.bunny.net/)によりGoogleフォントと同じフォントが無償で利用可能です
-        - このサービスはGoogleフォントと互換性を維持した上で（つまり同じフォントをホスティングした上で）、EUの[GDPR（一般データ保護規則）](https://www.jetro.go.jp/world/europe/eu/gdpr/)をクリアするためにユーザのトラッキングをしないことを明示しています（[bunny.net > about](https://fonts.bunny.net/about)）
+        - このサービスはGoogleフォントと互換性を維持した上で（つまり同じフォントをホスティングした上で）、EUの[GDPR（一般データ保護規則）](https://www.jetro.go.jp/world/europe/eu/gdpr/)をクリアするためにユーザーのトラッキングをしないことを明示しています（[bunny.net > about](https://fonts.bunny.net/about)）
         - 使い方は簡単で、Googleフォントで取得した読み込み用コードのうち、`googleapis.com`の部分を`bunny.net`に置き換えるだけ
         - もしくは、[bunny.net](https://fonts.bunny.net/)でフォントを選択し、画面右上の「Font+」をクリックして読み込みコードを取得し、スタイルシート（Custom theme）かMarkdownにペーストします
 

@@ -1,4 +1,4 @@
-# Vivliostyle Pub アルファ版ユーザガイド
+# Vivliostyle Pub α版ユーザーガイド
     
 ## 🚀 最初にお読みください
 
@@ -32,7 +32,7 @@
 - [Export（出力）](/ja/functions-of-the-actions-menu/export.md)
 - [Help（ヘルプ）](/ja/functions-of-the-actions-menu/help.md)
 
-## 👥 複数ユーザによる文書作成
+## 👥 複数ユーザーによる文書作成
 
 - [概要](/ja/multi-user-collaborative-editing/overview.md)
 - [作業の手順（前半）](/ja/multi-user-collaborative-editing/working-procedure-first-part.md)

@@ -166,7 +166,7 @@ html {
   }
 ```
 
-上記でフォントは優先度順に、1. `Noto Sans CJK JP`、2. `游ゴシック`、3. `メイリオ` 4. `sans-serif` と指定されています。プレビューで、ユーザのPCに1〜3までのフォントがインストールされていない場合は、ブラウザ設定の「Sans Serif フォント」の指定に従います。一方、PDF出力ではすべて`Noto Sans CJK JP`に置き換えられます。
+上記でフォントは優先度順に、1. `Noto Sans CJK JP`、2. `游ゴシック`、3. `メイリオ` 4. `sans-serif` と指定されています。プレビューで、ユーザーのPCに1〜3までのフォントがインストールされていない場合は、ブラウザ設定の「Sans Serif フォント」の指定に従います。一方、PDF出力ではすべて`Noto Sans CJK JP`に置き換えられます。
 
 もしもプレビューとPDF出力とでズレが気になる場合、ユーザーのPCに[`Noto Sans CJK JP`](https://fonts.google.com/noto/specimen/Noto+Serif+JP)をインストールすることで改善する可能性があります。
 

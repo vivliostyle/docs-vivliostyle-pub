@@ -27,7 +27,7 @@ https://vivliostyle-pub-develop.vercel.app/
 
 1. ……GitHubアプリのインストール（→[最初のログインで必要な作業](/ja/advance-preparation/login.md)）
 2. ……GitHubアクセス・トークンのリフレッシュ（→[最初のログインで必要な作業](/ja/advance-preparation/login.md)）
-3. ……GitHubアカウントのユーザ名（[GitHub > Settings > Public profile](https://github.com/settings/profile)）
+3. ……GitHubアカウントのユーザー名（[GitHub > Settings > Public profile](https://github.com/settings/profile)）
 4. ……言語メニュー（English / 日本語）
 5. ……ユーザーガイド（本文書）の表示
 6. ……リポジトリ表示の更新
@@ -37,7 +37,7 @@ https://vivliostyle-pub-develop.vercel.app/
 
 ## ログアウト／利用者アンケートの送付／不具合のフィードバック
 
-GitHubアカウントのユーザ名をクリックすると、プルダウンメニューが表示されます。ログアウトはメニュー項目の一番下です。これを選択すると、ログアウトして初期画面に戻ります。また、このメニューから利用者アンケートの送付や不具合のフィードバックができます。ぜひご利用ください。
+GitHubアカウントのユーザー名をクリックすると、プルダウンメニューが表示されます。ログアウトはメニュー項目の一番下です。これを選択すると、ログアウトして初期画面に戻ります。また、このメニューから利用者アンケートの送付や不具合のフィードバックができます。ぜひご利用ください。
 
 ![](images/readme-first/fig-3.png)
 
@@ -55,10 +55,10 @@ GitHubアカウントのユーザ名をクリックすると、プルダウン�
 
 ![](images/readme-first/fig-5.png)
 
-1. ……ユーザ名 / リポジトリ名
+1. ……ユーザー名 / リポジトリ名
 2. ……ブランチ切り替えメニュー
 3. ……ファイル保存ボタン
-4. ……GitHubアカウントのユーザ名（プルダウンメニュー→アンケート送付／フィードバック／ログアウト）
+4. ……GitHubアカウントのユーザー名（プルダウンメニュー→アンケート送付／フィードバック／ログアウト）
 5. ……言語メニュー（English / 日本語）
 6. ……ユーザーガイド（本文書）の表示
 7. ……ファイル一覧ペインの表示／非表示
