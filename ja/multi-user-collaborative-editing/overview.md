@@ -8,12 +8,12 @@ Vivliostyle Pubはユーザーファイルの管理に、外部のバージョ�
 2. ファイルを以前の状態に戻せる
 3. 複数ユーザによる共同編集ができる
 
-残念ながら、現在のバージョンで上記、1、2はVivliostyle Pub上から実行できません。これらの機能は各種GitHubクライアントでご利用ください。[“Sourcetree”](https://www.sourcetreeapp.com/) など無料で使えるクライアントが各種あります。たとえば、GitHubの公式クライアントである[GitHub Desktop](https://docs.github.com/ja/desktop/installing-and-configuring-github-desktop)（無料）での操作は、下記を参照してください。
+残念ながら、上記のうち1、2は現在のバージョンのVivliostyle Pubではサポートされません。これらの機能は各種GitHubクライアントでご利用ください。[“Sourcetree”](https://www.sourcetreeapp.com/) など無料で使えるクライアントが各種あります。たとえば、GitHubの公式クライアントである[GitHub Desktop](https://docs.github.com/ja/desktop/installing-and-configuring-github-desktop)（無料）での操作は、下記を参照してください。
 
 - [ブランチ履歴の表示](https://docs.github.com/ja/desktop/contributing-and-collaborating-using-github-desktop/making-changes-in-a-branch/viewing-the-branch-history)
 - [プロジェクトへの変更のコミットやレビュー](https://docs.github.com/ja/desktop/contributing-and-collaborating-using-github-desktop/making-changes-in-a-branch/committing-and-reviewing-changes-to-your-project)
 
-ここでは上記3、複数ユーザによる共同編集を、Vivliostyle Pubでおこなう方法について説明します。
+ここでは上記のうち3、複数ユーザによる共同編集を、Vivliostyle Pubでおこなう方法について説明します。
 
 ## 共同編集の概要
 

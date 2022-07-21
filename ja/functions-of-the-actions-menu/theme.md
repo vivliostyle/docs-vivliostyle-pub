@@ -52,13 +52,13 @@ module.exports = {
 
 `Actionメニュー > Custom theme`を選択することでCustom themeに切り替えられます。
 
-なお、Vivliostyle PubではプレビューとPDF出力とで組版エンジンのある場所が違うため、Custom themeの作成に当たってなかなかイメージした通りのフォントが表示されなかったり、プレビューとPDFとでページがずれてしまうことが起こり得ます。事前に以下の記事を参照してプレビューとPDF出力とでフォントが一致するように、Custom themeを作成することをお勧めします。
+なお、Vivliostyle PubではプレビューとPDF出力とで組版エンジンのある場所が違うため、Custom themeを作成してもなかなかイメージした通りのフォントが表示／出力されなかったり、プレビューとPDFとでページがずれてしまうことが起こり得ます。事前に以下の記事を参照して、プレビューとPDF出力とでフォントが一致するようにCustom themeを作成することをお勧めします。
 
 - [フォントの指定方法](/ja/create-and-save-documents/how-to-specify-fonts.md)
 - [クラウドにインストールされているフォント一覧](/ja/create-and-save-documents/additional-information-on-fonts.md#クラウドにインストールされているフォント一覧)
 - [クラウド上のVivliostyle CLIにおける代替フォントルール](/ja/create-and-save-documents/additional-information-on-fonts.md#クラウド上のvivliostyle-cliにおける代替フォントルール)
 
-ゼロからCustom themeを書くには不安がある方は、Vivliostyle公式themeを元に、自分なりにカスタマイズすることをおすすめします。以下のVivliostyle公式themeリポジトリの[packageディレクトリ](https://github.com/vivliostyle/themes/tree/master/packages/%40vivliostyle)に各themeが格納されているので、以下の手順に従ってください
+ゼロからCustom themeを書くには不安がある方は、Vivliostyle公式themeを雛形にして、自分なりにカスタマイズすることをおすすめします。Vivliostyle公式themeリポジトリの[packageディレクトリ](https://github.com/vivliostyle/themes/tree/master/packages/%40vivliostyle)に各themeが格納されているので、以下の手順に従ってください
 
 
 1. 自分のイメージに近い公式themeの`theme_common.css`というファイルを探してダウンロード
