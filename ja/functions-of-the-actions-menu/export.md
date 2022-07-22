@@ -42,7 +42,7 @@ Actionメニューで「Export（出力）> PDF」を選ぶとPDFが出力され
     - Vivliostyle.js: PDFを出力するとフォントがType 3フォントに変換されて埋め込まれる
         - [please use CID instead of Type3 #437](https://github.com/vivliostyle/vivliostyle.js/issues/437)
         - [the reversed string is returned on Preview.app when selecting PDF contents which uses Type3 #439](https://github.com/vivliostyle/vivliostyle.js/issues/439)
-- このうちK100にならない問題は、大部数を均一な品質で印刷することを求められる商業印刷（オフセット印刷）で、版ずれやブロッキングなど印刷上のトラブルを助長する可能性があり、解決策を検討中です
+- このうちK100にならない問題は、大部数を均一な品質で印刷することを求められる商業印刷（オフセット印刷）で版ずれやブロッキングなど印刷トラブルになる可能性があり、解決策を検討中です
 - ただし、少部数の同人誌印刷（トナー印刷）では商業印刷ほどの品質を求めるケースは少なく、あまり問題にはならないと考えています。たとえば、出力したPDFを以下のような外部サイトでグレイスケールに変換することで解決できる可能性が高いでしょう
     - [DeftPDF（Sictec Infotech, Inc.）](https://deftpdf.com/ja/grayscale-pdf)  
 - つぎにType 3フォントに変換される問題ですが、一般に商業印刷ではType 3フォントは不適とされており、この問題も早い解決が望まれます
@@ -54,7 +54,7 @@ Actionメニューで「Export（出力）> PDF」を選ぶとPDFが出力され
         - [GoogleフォントのうちVivliostyleのPDF出力で “Type 3” にならない日本語フォント一覧](/ja/create-and-save-documents/additional-information-on-fonts.md#googleフォントのうちvivliostyleのpdf出力で-type-3-にならない日本語フォント一覧)
     - Vivliostyle Pubは使わず、[Create Book](https://github.com/vivliostyle/create-book)で [Vivliostyle CLI](https://github.com/vivliostyle/vivliostyle-cli)の`--press-ready`オプションを使ってPDF/x-1a準拠のPDFをビルドする
         - なお、上記オプションによりPDF/x-1aを作成した場合、フォントがアウトライン化されてテキスト属性を失い、検索などができなくなることがあります。このオプションは印刷データ作成用で、PDFを頒布する用途には向かないことにご注意ください。詳細は下記を参照してください。
-        - [Create Book > 4色印刷用PDFファイル の生成](https://docs.vivliostyle.org/#/ja/create-book#4%E8%89%B2%E5%8D%B0%E5%88%B7%E7%94%A8pdf%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB-%E3%81%AE%E7%94%9F%E6%88%90)
+            - [Create Book > 4色印刷用PDFファイル の生成](https://docs.vivliostyle.org/#/ja/create-book#4%E8%89%B2%E5%8D%B0%E5%88%B7%E7%94%A8pdf%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB-%E3%81%AE%E7%94%9F%E6%88%90)
 - もっとも、この問題も商業印刷では問題になっても、少部数の同人誌印刷ではあまり問題にはならない可能性があります
     - 私たちのテストではVivliostyle CLIから`build`コマンド、つまりVivliostyle PubでのPDF出力と同じ環境で出力したPDF（A5判、281ページ、1.01GB）が、オンデマンド印刷機[bizhub PRESS 1085（コニカミノルタ）](https://www.konicaminolta.jp/business/products/graphic/ondemand_print/color/bizhub_press_c1100_c1085/index.html)で印刷できました
         - このPDFはType 3フォントが埋め込まれており、通常のオフセット印刷では不適とされる可能性が高いデータです

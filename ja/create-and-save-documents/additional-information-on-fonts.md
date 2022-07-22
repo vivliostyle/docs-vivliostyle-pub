@@ -9,14 +9,14 @@ PDF出力で使われるクラウドのフォントは、なるべく多くの�
 
 1は1,000以上の言語と150以上の文字体系に対応し、複数のウェイトと幅、そしてゴシック、明朝、等幅といったスタイルをもつ巨大なフォントファミリーです。2はマイクロソフトによるWeb用の標準フォントのパックです。
 
-このほか、Linuxシステム上での標準的なフォントとして次のフォントがインストールされています：
+このほか、Linuxシステム上での標準的なフォントとして次のものがインストールされています。
 
 - [liberation-fonts](https://packages.ubuntu.com/focal/fonts-liberation)
 - [Thai Loma font](https://packages.ubuntu.com/focal/fonts-tlwg-loma-otf)
 - [Ubuntu font](https://design.ubuntu.com/font/)
 - [urw-base35-fonts](https://github.com/ArtifexSoftware/urw-base35-fonts)
 
-個々の`font-family`名は下記の通りです。これらをCustom theme（スタイル情報）の中で指定することにより、出力するPDFに埋め込むことができます（→[フォントを利用するしくみ](/ja/create-and-save-documents/how-to-specify-fonts.md#フォントを利用するしくみ)）
+個々の`font-family`名は下記の通りです。これらをCustom theme（スタイル情報）の中で指定することにより、出力するPDFに埋め込むことができます（→[Custom theme／プレビューとPDF出力とでフォントを一致させる](/ja/create-and-save-documents/how-to-specify-fonts.md#custom-theme／プレビューとpdf出力とでフォントを一致させる)）
 
 - `Andale Mono`
 - `Arial`
