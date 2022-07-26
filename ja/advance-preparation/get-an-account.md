@@ -10,7 +10,7 @@
 
 ![ ](images/advance-preparation/get-an-account/fig-1.png)
 
-2. メールアドレス、パスワード、ユーザネーム、GitHubからのお知らせメールを受け取るか(y)否か(n)を記入し、セキュリティ検証テストを受けた後、「Create account」（アカウント作成）をクリック
+2. メールアドレス、パスワード、ユーザーネーム、GitHubからのお知らせメールを受け取るか(y)否か(n)を記入し、セキュリティ検証テストを受けた後、「Create account」（アカウント作成）をクリック
 
 ![ ](images/advance-preparation/get-an-account/fig-2.png)
 

@@ -12,8 +12,10 @@
 
 ![ ](images/create-and-save-documents/Image-specification-and-caption/fig-3.png)
 
-- **ご注意**：現在のバージョンではアップロードできるファイル容量は700キロバイト以下に制限されているのでご注意下さい
-- **ご注意**：デコードできる画像フォーマットは、jpegとpngだけです
+- **補足情報**
+    - 現在のバージョンではアップロードできるファイル容量は700キロバイト以下に制限されているのでご注意下さい
+    - デコードできる画像フォーマットは、jpegとpngだけです
+
 
 4. 先ほどの “Upload File” ウィンドウに戻ります。選択した画像ファイルのファイル名が入っていることを確認したら、“Upload”（赤丸）ボタンをクリックします
 
@@ -35,8 +37,7 @@
 
 ![ ](images/create-and-save-documents/Image-specification-and-caption/fig-8.png)
 
-詳細な記法は下記を参照して下さい：
+詳細な記法は下記を参照して下さい。
 
 - [文書作成の記法](/ja/create-and-save-documents/notation-for-document-creation.md)＞[画像のキャプションとサイズ指定](/ja/create-and-save-documents/notation-for-document-creation.md#%E7%94%BB%E5%83%8F%E3%81%AE%E3%82%AD%E3%83%A3%E3%83%97%E3%82%B7%E3%83%A7%E3%83%B3%E3%81%A8%E3%82%B5%E3%82%A4%E3%82%BA%E6%8C%87%E5%AE%9A)
-
 - [特集企画：Create Book で同人誌を作ろう！＞画像のサイズとキャプション](https://vivliostyle.org/ja/make-books-with-create-book/#%E7%94%BB%E5%83%8F%E3%81%AE%E3%82%B5%E3%82%A4%E3%82%BA%E3%81%A8%E3%82%AD%E3%83%A3%E3%83%97%E3%82%B7%E3%83%A7%E3%83%B3)

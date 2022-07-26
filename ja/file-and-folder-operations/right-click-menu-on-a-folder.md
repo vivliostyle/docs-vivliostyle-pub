@@ -17,5 +17,4 @@
 フォルダ名の変更とフォルダの削除については、以下の文書を参照して、GitHubで操作をして下さい。
 
 - [GitHubでフォルダ名を変更する](/ja/file-and-folder-operations/directory-operations/rename-an-existing-directory.md)
-
 - [GitHubでフォルダを削除する](/ja/file-and-folder-operations/directory-operations/delete-an-existing-directory.md)

@@ -14,6 +14,10 @@
 
 ![ ](images/file-and-folder-operations/file-list-pane-operations/fig-3.png)
 
+4. 追加したファイルを`vivliostyle.config.js`にも記述することで、PDFに出力できます（逆に言えば、記述しなければPDF出力もできません）。記述の方法は下記をご参照ください
+
+    - [文書のカスタマイズ>対象となる文書の指定](/ja/create-and-save-documents/document-customization.md#対象となる文書の指定)
+
 ## 新規フォルダの追加
 
 1. ファイル一覧ペインのアイコン群の中から、中央にある 新規フォルダ追加のアイコン ![](https://github.com/microsoft/vscode-codicons/raw/main/src/icons/new-folder.svg) をクリックします
@@ -51,3 +55,7 @@
 5. ファイル一覧ペインでアップロードしたファイルを選択し、プレビューさせてみましょう
 
 ![ ](images/file-and-folder-operations/file-list-pane-operations/fig-11.png)
+
+6. アップロードしたファイルを`vivliostyle.config.js`にも記述することで、PDFに出力できます（逆に言えば、記述しなければPDF出力もできません）。記述の方法は下記をご参照ください
+
+    - [文書のカスタマイズ>対象となる文書の指定](/ja/create-and-save-documents/document-customization.md#対象となる文書の指定)
