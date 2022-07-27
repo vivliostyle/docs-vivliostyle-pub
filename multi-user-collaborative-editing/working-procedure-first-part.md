@@ -37,7 +37,7 @@
 
 Vivliostyle Pubで文書を作成／編集後、`Save document`（書類の保存）のボタンを押して保存してください
 
-- **参考：**[新規ファイルの追加](/file-and-folder-operations/file-list-pane-operations.md#新規ファイルの追加)
-- **参考：**[文書の保存](/create-and-save-documents/save-document.md)
+- **参考：**[新規ファイルの追加](/ja/file-and-folder-operations/file-list-pane-operations.md#新規ファイルの追加)
+- **参考：**[文書の保存](/ja/create-and-save-documents/save-document.md)
 
-[**→作業の手順（後半）**](/multi-user-collaborative-editing/working-procedure-latter-part.md)**につづきます**
+[**→作業の手順（後半）**](/ja/multi-user-collaborative-editing/working-procedure-latter-part.md)**につづきます**

@@ -37,4 +37,4 @@ https://vivliostyle-pub-develop.vercel.app/
 
 ![ ](images/advance-preparation/login/fig-8.png)
 
-これで事前準備は完了です。次に実際にリポジトリに書類を追加し、Vivliostyle Pubに表示させてみましょう。[新規ファイルの追加](/file-operation/adding-a-new-file.md)へ進んでください
+これで事前準備は完了です。次に実際にリポジトリに書類を追加し、Vivliostyle Pubに表示させてみましょう。[新規ファイルの追加](/ja/file-operation/adding-a-new-file.md)へ進んでください

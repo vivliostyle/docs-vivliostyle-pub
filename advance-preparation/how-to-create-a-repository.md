@@ -8,4 +8,4 @@
 
 ![ ](images/advance-preparation/how-to-create-a-repository/fig-2.png)
 
-3. その後の操作は、[GitHubアカウントの取得方法](/advance-preparation/get-an-account)「8」以降に従ってください
+3. その後の操作は、[GitHubアカウントの取得方法](/ja/advance-preparation/get-an-account)「8」以降に従ってください

@@ -2,7 +2,7 @@
 
 Vivliostyle　Pubの文書はMarkdownという記法で作成します。ここでは主な記法だけ紹介します。詳細は下記を参照してください。
 
-- [特集企画：Create Book で同人誌を作ろう！](https://vivliostyle.org/make-books-with-create-book/#vfm-%E3%81%A7%E5%8E%9F%E7%A8%BF%E3%82%92%E6%9B%B8%E3%81%84%E3%81%A6%E3%81%BF%E3%82%88%E3%81%86)
+- [特集企画：Create Book で同人誌を作ろう！](https://vivliostyle.org/ja/make-books-with-create-book/#vfm-%E3%81%A7%E5%8E%9F%E7%A8%BF%E3%82%92%E6%9B%B8%E3%81%84%E3%81%A6%E3%81%BF%E3%82%88%E3%81%86)
 - [VFM 入門 2021 夏](https://vivliostyle.github.io/vivliostyle_doc/ja/vivliostyle-user-group-vol5/content/akabeko/index.html)
 - [Vivliostyle Flavored Markdown](https://vivliostyle.github.io/vfm/#/vfm)
 
