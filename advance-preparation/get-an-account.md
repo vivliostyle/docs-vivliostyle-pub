@@ -1,16 +1,16 @@
 # GitHubアカウントの取得方法
 
 - Vivliostyle Pubプロトタイプ版を使う準備として、GitHubアカウントを取得するための詳細な手順をご説明します
-- 既にGitHubアカウントを持っている人は[最初のログインで必要な作業](/advance-preparation/login.md)にお進みください。既にアカウントを持っているがリポジトリは作成してない人は、[リポジトリの作成方法](/advance-preparation/how-to-create-a-repository.md)にお進みください
+- 既にGitHubアカウントを持っている人は[最初のログインで必要な作業](/ja/advance-preparation/login.md)にお進みください。既にアカウントを持っているがリポジトリは作成してない人は、[リポジトリの作成方法](/ja/advance-preparation/how-to-create-a-repository.md)にお進みください
 - GitHubのスクリーンショットは2021年9月時点のものです。将来変更される可能性があることをご了解ください
-- なお、GitHubの利点については [複数ユーザによる共同制作 > 概要 > GitHubを利用するメリット](/multi-user-collaborative-editing/overview.md#githubを利用するメリット) を参照してください
+- なお、GitHubの利点については [複数ユーザによる共同制作 > 概要 > GitHubを利用するメリット](/ja/multi-user-collaborative-editing/overview.md#githubを利用するメリット) を参照してください
 
 
 1. [GitHub](https://github.com/) にアクセスし、“Sign up” をクリック
 
 ![ ](images/advance-preparation/get-an-account/fig-1.png)
 
-2. メールアドレス、パスワード、ユーザネーム、GitHubからのお知らせメールを受け取るか(y)否か(n)を記入し、セキュリティ検証テストを受けた後、「Create account」（アカウント作成）をクリック
+2. メールアドレス、パスワード、ユーザーネーム、GitHubからのお知らせメールを受け取るか(y)否か(n)を記入し、セキュリティ検証テストを受けた後、「Create account」（アカウント作成）をクリック
 
 ![ ](images/advance-preparation/get-an-account/fig-2.png)
 
@@ -39,6 +39,6 @@
 
 ![ ](images/advance-preparation/get-an-account/fig-8.png)
 
-9. この画面が表示されたら、リポジトリは無事に作成できました。[最初のログインで必要な作業](/advance-preparation/login.md)に進んでください
+9. この画面が表示されたら、リポジトリは無事に作成できました。[最初のログインで必要な作業](/ja/advance-preparation/login.md)に進んでください
 
 ![ ](images/advance-preparation/get-an-account/fig-9.png)
