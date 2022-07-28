@@ -3,7 +3,7 @@
 ## 必要環境 
 
 - Chromeブラウザ（PC版）が動作する環境であること
-- GitHubアカウントを既に取得していること
+- GitHubアカウントを既に取得していること（未取得の方はこちら→[GitHubアカウントの取得方法](/ja/advance-preparation/get-an-account#github%E3%82%A2%E3%82%AB%E3%82%A6%E3%83%B3%E3%83%88%E3%81%AE%E5%8F%96%E5%BE%97%E6%96%B9%E6%B3%95)）
 
 ## 初期画面
 
