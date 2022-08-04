@@ -54,7 +54,13 @@ module.exports = {
 
 ### 補足1：トンボと塗り足し（裁ち落とし）の指定
 
-印刷物を指定通りのサイズに裁断したり、多色印刷で各版の刷り位置を合わせるための目印を「トンボ」と言います（アプリケーションによって「トリムマーク」とも）。`@page`ルールで`marks`プロパティの値として、`crop`と`cross`を指定します。`crop`はページ四隅を示すため、`cross`は上下と左右の中央を示すためのトンボで、通常は両方とも指定します。
+印刷物を指定通りのサイズに裁断したり、多色印刷で各版の刷り位置を合わせるための目印を「トンボ」と言います（アプリケーションによって「トリムマーク」とも）。
+トンボを付与するには、Custom themeの中で指定します。
+
+<img src="images/functions-of-the-actions-menu/theme/fig-4.png" alt="トンボと塗り足し（裁ち落とし）の指定" style="max-height: 500px;">
+
+
+具体的には`@page`ルールで`marks`プロパティの値として、`crop`と`cross`を指定します。`crop`はページ四隅を示すトンボ、`cross`は上下と左右の中央を示すトンボで、通常は両方とも指定します。
 
 また、ページの端まで色や図版を配置したい場合（つまり用紙の端まで印刷したい場合）、指定されたページサイズの外側まで塗り足す領域が必要になります。これを「裁ち落とし」と言い、同じく`@page`ルールで`bleed`プロパティにより指定します。領域のデフォルト幅は6pt（約2.1mm）ですが、日本の印刷業界では3mmとします。
 
@@ -93,7 +99,7 @@ Vivliostyle PubではプレビューとPDF出力とで組版エンジンのあ�
 
 英語をはじめとしたラテン文字書籍のためのtheme（CSSスタイルシート）です。横組で文字サイズは`small` （デフォルトの16pxよりも一回り小さい）、ページサイズは非定型でウィンドウサイズに追従します。
 
-![ ](images/functions-of-the-actions-menu/theme/fig-4.png)
+![ ](images/functions-of-the-actions-menu/theme/fig-5.png)
 
 これはVivliostyleが [npm packageとして公開](https://www.npmjs.com/package/@vivliostyle/theme-gutenberg)している公式Theme、[@vivliostyle/theme-gutenberg](https://vivliostyle.github.io/themes/#/ja/gallery#vivliostyletheme-gutenberg)そのものです。以下にその一部を引用します。
 
@@ -127,7 +133,7 @@ html {
 
 縦組で文字サイズは8.5ポイント、ページサイズは148×210mm（A5判タテ）、縦中横や柱にも対応しており、長文の読み物に合います。theme名の「文庫」は読み物の意味で、文庫判（B6判）とは違うことに注意してください。
 
-![ ](images/functions-of-the-actions-menu/theme/fig-5.png)
+![ ](images/functions-of-the-actions-menu/theme/fig-6.png)
 
 これはVivliostyleが [npm packageとして公開](https://www.npmjs.com/package/@vivliostyle/theme-bunko)している公式Theme、[@vivliostyle/theme-bunko](https://vivliostyle.github.io/themes/#/ja/gallery#vivliostyletheme-bunko)そのものです。以下にその一部を引用します。
 
@@ -152,7 +158,7 @@ html {
 
 一方、PDF出力では`Noto Serif CJK JP`に置き換えられます。この結果、プレビューとPDF出力とではズレが発生します（たとえば下記スクリーンショットではプレビューと比べて3行、後にずれています）。より詳細は下記をご参照ください。
 
-![ ](images/functions-of-the-actions-menu/theme/fig-6.png)
+![ ](images/functions-of-the-actions-menu/theme/fig-7.png)
 
 - [Vivliostyle公式Themeで使われるフォント](/ja/create-and-save-documents/how-to-specify-fonts.md#vivliostyle公式themeで使われるフォント)
 - [クラウド上のVivliostyle CLIにおける代替フォントルール](/ja/create-and-save-documents/additional-information-on-fonts.md#クラウド上のvivliostyle-cliにおける代替フォントルール)
@@ -161,7 +167,7 @@ html {
 
 横組で文字サイズは24ポイント（デフォルトの150%）、ページサイズは210×148mm（A5判ヨコ）、スライド資料に適しています。
 
-![ ](images/functions-of-the-actions-menu/theme/fig-7.png)
+![ ](images/functions-of-the-actions-menu/theme/fig-8.png)
 
 これはVivliostyleが [npmパッケージとして公開](https://www.npmjs.com/package/@vivliostyle/theme-slide)している公式Theme、[@vivliostyle/theme-slide](https://vivliostyle.github.io/themes/#/ja/gallery#vivliostyletheme-slide)そのものです。以下にその一部を引用します。
 
@@ -199,13 +205,13 @@ html {
 
 なお、見開きではなく、単一ページでプレビューしたい場合は、Vivliostyleのロゴからアクセスできる設定メニューを開き、“Page Spread View” のうち “Single page” のラジオボタンを選択してください。
 
-![ ](images/functions-of-the-actions-menu/theme/fig-8.png)
+![ ](images/functions-of-the-actions-menu/theme/fig-9.png)
 
 ## Techbook (技術同人誌) theme
 
 横組で文字サイズは12ポイント、ページサイズは182×257mm（B5判タテ）、コードブロックのクラス指定、[脚注の記法](https://vivliostyle.org/ja/make-books-with-create-book/#%E8%84%9A%E6%B3%A8)もサポートされており、技術同人誌に適しています。
 
-![ ](images/functions-of-the-actions-menu/theme/fig-9.png)
+![ ](images/functions-of-the-actions-menu/theme/fig-10.png)
 
 これはVivliostyleが [npmパッケージとして公開](https://www.npmjs.com/package/@vivliostyle/theme-techbook)している公式Theme、[@vivliostyle/theme-techbook](https://vivliostyle.github.io/themes/#/ja/gallery#vivliostyletheme-techbook)そのものです。以下にその一部を引用します。
 
@@ -250,7 +256,7 @@ html {
 
 横組でページサイズは210×297mm（A4判タテ）、自動で章・節番号がつき、[脚注の記法](https://vivliostyle.org/ja/make-books-with-create-book/#%E8%84%9A%E6%B3%A8)もつかえる、理系の学生レポート向けのスタイルです。
 
-![ ](images/functions-of-the-actions-menu/theme/fig-10.png)
+![ ](images/functions-of-the-actions-menu/theme/fig-11.png)
 
 これはVivliostyleが [npmパッケージとして公開](https://www.npmjs.com/package/@vivliostyle/theme-academic)している公式Theme、[@vivliostyle/theme-academic](https://vivliostyle.github.io/themes/#/ja/gallery#vivliostyletheme-academic)そのものです。以下にその一部を引用します。
 
