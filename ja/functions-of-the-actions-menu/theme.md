@@ -34,7 +34,9 @@ Plain themeは手早くプレビューを確認するためのもので出力は
 
 ## Custom theme
 
-この項目を選択すると、ユーザーが作成した任意のtheme（CSSスタイルシート）が利用でき、さらにそのthemeにもとづき、PDFの出力ができます（→[Export（出力）](/ja/functions-of-the-actions-menu/export.md#export出力)）。`vivliostyle.config.js`でthemeのpathを指定してください（スクリーンショットの赤線部）。
+### 指定方法
+
+`Actionメニュー > Custom theme`を選択することでユーザーが作成した任意のtheme（CSSスタイルシート）が利用できます。さらにそのthemeにもとづき、PDFの出力ができます（→[Export（出力）](/ja/functions-of-the-actions-menu/export.md#export出力)）。ただし、Custom themeを利用するには、あらかじめ`vivliostyle.config.js`でthemeのpathを指定する必要があります（スクリーンショットの赤線部）。
 
 ![ ](images/functions-of-the-actions-menu/theme/fig-3.png)
 
@@ -50,16 +52,31 @@ module.exports = {
 
 - [文書のカスタマイズ](/ja/create-and-save-documents/document-customization.md)
 
-`Actionメニュー > Custom theme`を選択することでCustom themeに切り替えられます。
+### 補足1：トンボと塗り足し（裁ち落とし）の指定
 
-なお、Vivliostyle PubではプレビューとPDF出力とで組版エンジンのある場所が違うため、Custom themeを作成してもなかなかイメージした通りのフォントが表示／出力されなかったり、プレビューとPDFとでページがずれてしまうことが起こり得ます。事前に以下の記事を参照して、プレビューとPDF出力とでフォントが一致するようにCustom themeを作成することをお勧めします。
+印刷物を指定通りのサイズに裁断したり、多色印刷で各版の刷り位置を合わせるための目印を「トンボ」と言います（アプリケーションによって「トリムマーク」とも）。`@page`ルールで`marks`プロパティの値として、`crop`と`cross`を指定します。`crop`はページ四隅を示すため、`cross`は上下と左右の中央を示すためのトンボで、通常は両方とも指定します。
+
+また、ページの端まで色や図版を配置したい場合（つまり用紙の端まで印刷したい場合）、指定されたページサイズの外側まで塗り足す領域が必要になります。この領域を付加するプロパティが`bleed`です。デフォルトは6pt（約2.1mm）ですが、日本の印刷業界では3mmとします。
+
+```css
+@page {
+   size: A5;
+   marks: crop cross;
+   bleed: 3mm;
+}
+```
+
+### 補足2：プレビューとPDF出力でフォントを一致させる
+
+Vivliostyle PubではプレビューとPDF出力とで組版エンジンのある場所が違うため、Custom themeを作成してもなかなかイメージした通りのフォントが表示／出力されなかったり、プレビューとPDFとでページがずれてしまうことが起こり得ます。事前に以下の記事を参照して、プレビューとPDF出力とでフォントが一致するようにCustom themeを作成することをお勧めします。
 
 - [フォントの指定方法](/ja/create-and-save-documents/how-to-specify-fonts.md)
 - [クラウドにインストールされているフォント一覧](/ja/create-and-save-documents/additional-information-on-fonts.md#クラウドにインストールされているフォント一覧)
 - [クラウド上のVivliostyle CLIにおける代替フォントルール](/ja/create-and-save-documents/additional-information-on-fonts.md#クラウド上のvivliostyle-cliにおける代替フォントルール)
 
-ゼロからCustom themeを書くには不安がある方は、Vivliostyle公式themeを雛形にして、自分なりにカスタマイズすることをおすすめします。Vivliostyle公式themeリポジトリの[packageディレクトリ](https://github.com/vivliostyle/themes/tree/master/packages/%40vivliostyle)に各themeが格納されているので、以下の手順に従ってください
+### 補足3：Vivliostyle公式themeを雛形にする
 
+ゼロからCustom themeを書くには不安がある方は、Vivliostyle公式themeを雛形にして、自分なりにカスタマイズすることをおすすめします。Vivliostyle公式themeリポジトリの[packageディレクトリ](https://github.com/vivliostyle/themes/tree/master/packages/%40vivliostyle)に各themeが格納されているので、以下の手順に従ってください
 
 1. 自分のイメージに近い公式themeの`theme_common.css`というファイルを探してダウンロード
 2. Vivliostyle Pubを使って自分のリポジトリにアップロード（→[ファイルのアップロード](/ja/file-and-folder-operations/file-list-pane-operations.md)）
