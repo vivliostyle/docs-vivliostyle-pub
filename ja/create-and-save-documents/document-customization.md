@@ -38,37 +38,9 @@ language: 'ja',
 
 ## 判型の指定
 
-`size`で判型を指定できます
+判型はvivliostyle.comfig.jsではなく、themeで指定してください。詳細は下記をご参照ください。
 
-```js
-size: 'JIS-B5',
-```
-
-[CSS Paged Media Module Level 3 (7.1. Page size)](https://drafts.csswg.org/css-page-3/#page-size-prop )に規定された下記の値が指定できます。なお、日本での一般的なB5は `JIS-B5` ですのでご注意ください (B4も同様)
-
-- `A5`
-- `A4`
-- `A3`
-- `B5`
-- `B4`
-- `JIS-B5`
-- `JIS-B4`
-- `letter`
-- `legal`
-- `ledger`
-
-## themeの指定
-
- `theme` で任意のスタイルシート（Custom theme）を指定できます
-
-```js
-theme: 'css/style.css',
-```
-
-Custom themeについては、下記もご参照ください
-
-- [Custom theme](/ja/functions-of-the-actions-menu/theme.md#custom-theme)
-- [Custom theme／プレビューとPDF出力とでフォントを一致させる](/ja/create-and-save-documents/how-to-specify-fonts.md#custom-theme／プレビューとpdf出力とでフォントを一致させる)
+- [Theme（スタイル情報の選択）> Custom theme > 判型の指定](https://vivliostyle.github.io/docs-vivliostyle-pub/#/functions-of-the-actions-menu/theme#%E5%88%A4%E5%9E%8B%E3%81%AE%E6%8C%87%E5%AE%9A)
 
 ## 対象となる文書の指定
 
@@ -158,7 +130,6 @@ module.exports = {
 	title: '私の本',
 	author: '尾久綿次郎 <ogwata@example.com>',
 	language: 'ja',
-	size: 'JIS-B5',
 	theme: 'css/style.css',
 	entry: [
 		"index.md",

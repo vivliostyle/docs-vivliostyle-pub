@@ -34,13 +34,16 @@ Plain themeは手早くプレビューを確認するためのもので出力は
 
 ## Custom theme
 
-### 指定方法
+### Custom themeの指定方法
 
-`Actionメニュー > Custom theme`を選択することでユーザーが作成した任意のtheme（CSSスタイルシート）が利用できます。さらにそのthemeにもとづき、PDFの出力ができます（→[Export（出力）](/ja/functions-of-the-actions-menu/export.md#export出力)）。ただし、Custom themeを利用するには、あらかじめ`vivliostyle.config.js`でthemeのpathを指定する必要があります（スクリーンショットの赤線部）。
+ユーザーが作成した任意のtheme（CSSスタイルシート）を利用するには、以下の手順に従います。
+
+1. `vivliostyle.config.js`でthemeのpathを指定する（スクリーンショットの赤線部）
+2. `Actionメニュー > Custom theme`を選択する
 
 ![ ](images/functions-of-the-actions-menu/theme/fig-3.png)
 
-themeのpathを指定する記法は下記の通りです。`---`の部分にpathを記述してください。
+さらにそのthemeを適用したPDFファイルを出力できます（→[Export（出力）](/ja/functions-of-the-actions-menu/export.md#export出力)）。themeのpathを指定する記法は下記の通りです。`---`の部分にpathを記述してください。
 
 ```js
 module.exports = {
@@ -48,11 +51,34 @@ module.exports = {
  }
 ```
 
-なお、`vivliostyle.config.js`についての詳細は下記をご参照ください。
+`vivliostyle.config.js`についての詳細は下記をご参照ください。
 
 - [文書のカスタマイズ](/ja/create-and-save-documents/document-customization.md)
 
-### 補足1：トンボと塗り足し（裁ち落とし）の指定
+### 判型の指定
+
+任意の判型にしたいときは、themeの中で指定します。`@page`ルールにおける`size`プロパティの値として、以下の判型が指定できます。なお、日本での一般的なB5は `JIS-B5` ですのでご注意ください（B4も同様）
+
+- `A5`
+- `A4`
+- `A3`
+- `B5`
+- `B4`
+- `JIS-B5`
+- `JIS-B4`
+- `letter`
+- `legal`
+- `ledger`
+
+記法は下記の通りです。ここではA5判を指定しています。
+
+```css
+@page {
+   size: A5;
+}
+```
+
+### トンボと塗り足し（裁ち落とし）の指定
 
 印刷物を指定通りのサイズに裁断したり、多色印刷で各版の刷り位置を合わせるための目印を「トンボ」と言います（アプリケーションによって「トリムマーク」とも）。
 トンボを付与するには、Custom themeの中で指定します。
@@ -60,7 +86,7 @@ module.exports = {
 <img src="images/functions-of-the-actions-menu/theme/fig-4.png" alt="トンボと塗り足し（裁ち落とし）の指定" style="max-height: 500px;">
 
 
-具体的には`@page`ルールで`marks`プロパティの値として、`crop`と`cross`を指定します。`crop`はページ四隅を示すトンボ、`cross`は上下と左右の中央を示すトンボで、通常は両方とも指定します。
+具体的には前述`size`と一緒に、`@page`ルールにおける`marks`プロパティの値として、`crop`と`cross`を指定します。`crop`はページ四隅の位置を示すトンボ、`cross`は上下と左右の中央の位置を示すトンボで、通常は両方とも指定します。
 
 また、ページの端まで色や図版を配置したい場合（つまり用紙の端まで印刷したい場合）、指定されたページサイズの外側を塗り足す領域が必要になります。これを「裁ち落とし」と言い、同じく`@page`ルールで`bleed`プロパティにより指定します。領域の幅を値として指定しますが、デフォルトは6pt（約2.1mm）になっています。日本の印刷業界では3mmが通常なので、これを値として指定します。
 
@@ -76,7 +102,7 @@ module.exports = {
 
 - [Vivliostyle Viewer で CSS 組版ちょっと入門 > トンボをつけるには](https://vivliostyle.github.io/vivliostyle_doc/ja/vivliostyle-user-group-vol1/shinyu/index.html#%E3%83%88%E3%83%B3%E3%83%9C%E3%82%92%E3%81%A4%E3%81%91%E3%82%8B%E3%81%AB%E3%81%AF)
 
-### 補足2：プレビューとPDF出力でフォントを一致させる
+### プレビューとPDF出力でフォントを一致させる
 
 Vivliostyle PubではプレビューとPDF出力とで組版エンジンのある場所が違うため、Custom themeを作成してもなかなかイメージした通りのフォントが表示／出力されなかったり、プレビューとPDFとでページがずれてしまうことが起こり得ます。事前に以下の記事を参照して、プレビューとPDF出力とでフォントが一致するようにCustom themeを作成することをお勧めします。
 
@@ -84,7 +110,7 @@ Vivliostyle PubではプレビューとPDF出力とで組版エンジンのあ�
 - [クラウドにインストールされているフォント一覧](/ja/create-and-save-documents/additional-information-on-fonts.md#クラウドにインストールされているフォント一覧)
 - [クラウド上のVivliostyle CLIにおける代替フォントルール](/ja/create-and-save-documents/additional-information-on-fonts.md#クラウド上のvivliostyle-cliにおける代替フォントルール)
 
-### 補足3：Vivliostyle公式themeを雛形にする
+### Vivliostyle公式themeを雛形にする
 
 ゼロからCustom themeを書くには不安がある方は、Vivliostyle公式themeを雛形にして、自分なりにカスタマイズすることをおすすめします。Vivliostyle公式themeリポジトリの[packageディレクトリ](https://github.com/vivliostyle/themes/tree/master/packages/%40vivliostyle)に各themeが格納されているので、以下の手順に従ってください
 
