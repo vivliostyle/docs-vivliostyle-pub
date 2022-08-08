@@ -43,7 +43,7 @@ Plain themeは手早くプレビューを確認するためのもので出力は
 
 ![ ](images/functions-of-the-actions-menu/theme/fig-3.png)
 
-さらにそのthemeを適用したPDFファイルを出力できます（→[Export（出力）](/ja/functions-of-the-actions-menu/export.md#export出力)）。themeのpathを指定する記法は下記の通りです。`---`の部分にpathを記述してください。
+Custom themeを選択することで、これを適用したPDFファイルが出力できるようになります（→[Export（出力）](/ja/functions-of-the-actions-menu/export.md#export出力)）。themeのpathを指定する記法は下記の通りです。`---`の部分にpathを記述してください。
 
 ```js
 module.exports = {
