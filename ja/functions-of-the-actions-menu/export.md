@@ -34,7 +34,6 @@ Actionメニューで「Export（出力）> PDF」を選ぶとPDFが出力され
 ![](images/functions-of-the-actions-menu/export/fig-4.png)
 
 
-
 ## 補足情報
 
 - VivliostyleによるPDF出力には、以下の2つの問題が指摘されています
