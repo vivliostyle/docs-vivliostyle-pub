@@ -34,11 +34,16 @@ Plain themeは手早くプレビューを確認するためのもので出力は
 
 ## Custom theme
 
-この項目を選択すると、ユーザーが作成した任意のtheme（CSSスタイルシート）が利用でき、さらにそのthemeにもとづき、PDFの出力ができます（→[Export（出力）](/ja/functions-of-the-actions-menu/export.md#export出力)）。`vivliostyle.config.js`でthemeのpathを指定してください（スクリーンショットの赤線部）。
+### Custom themeの指定方法
+
+ユーザーが作成した任意のtheme（CSSスタイルシート）を利用するには、以下の手順に従います。
+
+1. `vivliostyle.config.js`でthemeのpathを指定する（スクリーンショットの赤線部）
+2. `Actionメニュー > Custom theme`を選択する
 
 ![ ](images/functions-of-the-actions-menu/theme/fig-3.png)
 
-themeのpathを指定する記法は下記の通りです。`---`の部分にpathを記述してください。
+Custom themeを選択することで、これを適用したPDFファイルが出力できるようになります（→[Export（出力）](/ja/functions-of-the-actions-menu/export.md#export出力)）。themeのpathを指定する記法は下記の通りです。`---`の部分にpathを記述してください。
 
 ```js
 module.exports = {
@@ -46,20 +51,68 @@ module.exports = {
  }
 ```
 
-なお、`vivliostyle.config.js`についての詳細は下記をご参照ください。
+`vivliostyle.config.js`についての詳細は下記をご参照ください。
 
 - [文書のカスタマイズ](/ja/create-and-save-documents/document-customization.md)
 
-`Actionメニュー > Custom theme`を選択することでCustom themeに切り替えられます。
+### 判型の指定
 
-なお、Vivliostyle PubではプレビューとPDF出力とで組版エンジンのある場所が違うため、Custom themeを作成してもなかなかイメージした通りのフォントが表示／出力されなかったり、プレビューとPDFとでページがずれてしまうことが起こり得ます。事前に以下の記事を参照して、プレビューとPDF出力とでフォントが一致するようにCustom themeを作成することをお勧めします。
+任意の判型にしたいときは、themeの中で指定します。`@page`ルールにおける`size`プロパティの値として、以下の判型が指定できます。なお、日本での一般的なB5は `JIS-B5` ですのでご注意ください（B4も同様）
+
+- `A5`
+- `A4`
+- `A3`
+- `B5`
+- `B4`
+- `JIS-B5`
+- `JIS-B4`
+- `letter`
+- `legal`
+- `ledger`
+
+記法は下記の通りです。ここではA5判を指定しています。
+
+```css
+@page {
+   size: A5;
+}
+```
+
+### トンボと塗り足し（裁ち落とし）の指定
+
+印刷物を指定通りのサイズに裁断したり、多色印刷で各版の刷り位置を合わせるための目印を「トンボ」と言います（アプリケーションによって「トリムマーク」とも）。
+トンボを付与するには、Custom themeの中で指定します。
+
+<img src="images/functions-of-the-actions-menu/theme/fig-4.png" alt="トンボと塗り足し（裁ち落とし）の指定" style="max-height: 500px;">
+
+
+具体的には前述`size`と一緒に、`@page`ルールにおける`marks`プロパティの値として、`crop`と`cross`を指定します。`crop`はページ四隅の位置を示すトンボ、`cross`は上下と左右の中央の位置を示すトンボで、通常は両方とも指定します。
+
+また、ページの端まで色や図版を配置したい場合（つまり用紙の端まで印刷したい場合）、指定されたページサイズの外側を塗り足す領域が必要になります。これを「裁ち落とし」と言い、同じく`@page`ルールで`bleed`プロパティにより指定します。領域の幅を値として指定しますが、デフォルトは6pt（約2.1mm）になっています。日本の印刷業界では3mmが通常なので、これを値として指定します。
+
+```css
+@page {
+   size: A5;
+   marks: crop cross;
+   bleed: 3mm;
+}
+```
+
+より詳細は、下記をご参照ください。
+
+- [Vivliostyle Viewer で CSS 組版ちょっと入門 > トンボをつけるには](https://vivliostyle.github.io/vivliostyle_doc/ja/vivliostyle-user-group-vol1/shinyu/index.html#%E3%83%88%E3%83%B3%E3%83%9C%E3%82%92%E3%81%A4%E3%81%91%E3%82%8B%E3%81%AB%E3%81%AF)
+
+### プレビューとPDF出力でフォントを一致させる
+
+Vivliostyle PubではプレビューとPDF出力とで組版エンジンのある場所が違うため、Custom themeを作成してもなかなかイメージした通りのフォントが表示／出力されなかったり、プレビューとPDFとでページがずれてしまうことが起こり得ます。事前に以下の記事を参照して、プレビューとPDF出力とでフォントが一致するようにCustom themeを作成することをお勧めします。
 
 - [フォントの指定方法](/ja/create-and-save-documents/how-to-specify-fonts.md)
 - [クラウドにインストールされているフォント一覧](/ja/create-and-save-documents/additional-information-on-fonts.md#クラウドにインストールされているフォント一覧)
 - [クラウド上のVivliostyle CLIにおける代替フォントルール](/ja/create-and-save-documents/additional-information-on-fonts.md#クラウド上のvivliostyle-cliにおける代替フォントルール)
 
-ゼロからCustom themeを書くには不安がある方は、Vivliostyle公式themeを雛形にして、自分なりにカスタマイズすることをおすすめします。Vivliostyle公式themeリポジトリの[packageディレクトリ](https://github.com/vivliostyle/themes/tree/master/packages/%40vivliostyle)に各themeが格納されているので、以下の手順に従ってください
+### Vivliostyle公式themeを雛形にする
 
+ゼロからCustom themeを書くには不安がある方は、Vivliostyle公式themeを雛形にして、自分なりにカスタマイズすることをおすすめします。Vivliostyle公式themeリポジトリの[packageディレクトリ](https://github.com/vivliostyle/themes/tree/master/packages/%40vivliostyle)に各themeが格納されているので、以下の手順に従ってください
 
 1. 自分のイメージに近い公式themeの`theme_common.css`というファイルを探してダウンロード
 2. Vivliostyle Pubを使って自分のリポジトリにアップロード（→[ファイルのアップロード](/ja/file-and-folder-operations/file-list-pane-operations.md)）
@@ -72,7 +125,7 @@ module.exports = {
 
 英語をはじめとしたラテン文字書籍のためのtheme（CSSスタイルシート）です。横組で文字サイズは`small` （デフォルトの16pxよりも一回り小さい）、ページサイズは非定型でウィンドウサイズに追従します。
 
-![ ](images/functions-of-the-actions-menu/theme/fig-4.png)
+![ ](images/functions-of-the-actions-menu/theme/fig-5.png)
 
 これはVivliostyleが [npm packageとして公開](https://www.npmjs.com/package/@vivliostyle/theme-gutenberg)している公式Theme、[@vivliostyle/theme-gutenberg](https://vivliostyle.github.io/themes/#/ja/gallery#vivliostyletheme-gutenberg)そのものです。以下にその一部を引用します。
 
@@ -106,7 +159,7 @@ html {
 
 縦組で文字サイズは8.5ポイント、ページサイズは148×210mm（A5判タテ）、縦中横や柱にも対応しており、長文の読み物に合います。theme名の「文庫」は読み物の意味で、文庫判（B6判）とは違うことに注意してください。
 
-![ ](images/functions-of-the-actions-menu/theme/fig-5.png)
+![ ](images/functions-of-the-actions-menu/theme/fig-6.png)
 
 これはVivliostyleが [npm packageとして公開](https://www.npmjs.com/package/@vivliostyle/theme-bunko)している公式Theme、[@vivliostyle/theme-bunko](https://vivliostyle.github.io/themes/#/ja/gallery#vivliostyletheme-bunko)そのものです。以下にその一部を引用します。
 
@@ -131,7 +184,7 @@ html {
 
 一方、PDF出力では`Noto Serif CJK JP`に置き換えられます。この結果、プレビューとPDF出力とではズレが発生します（たとえば下記スクリーンショットではプレビューと比べて3行、後にずれています）。より詳細は下記をご参照ください。
 
-![ ](images/functions-of-the-actions-menu/theme/fig-6.png)
+![ ](images/functions-of-the-actions-menu/theme/fig-7.png)
 
 - [Vivliostyle公式Themeで使われるフォント](/ja/create-and-save-documents/how-to-specify-fonts.md#vivliostyle公式themeで使われるフォント)
 - [クラウド上のVivliostyle CLIにおける代替フォントルール](/ja/create-and-save-documents/additional-information-on-fonts.md#クラウド上のvivliostyle-cliにおける代替フォントルール)
@@ -140,7 +193,7 @@ html {
 
 横組で文字サイズは24ポイント（デフォルトの150%）、ページサイズは210×148mm（A5判ヨコ）、スライド資料に適しています。
 
-![ ](images/functions-of-the-actions-menu/theme/fig-7.png)
+![ ](images/functions-of-the-actions-menu/theme/fig-8.png)
 
 これはVivliostyleが [npmパッケージとして公開](https://www.npmjs.com/package/@vivliostyle/theme-slide)している公式Theme、[@vivliostyle/theme-slide](https://vivliostyle.github.io/themes/#/ja/gallery#vivliostyletheme-slide)そのものです。以下にその一部を引用します。
 
@@ -178,13 +231,13 @@ html {
 
 なお、見開きではなく、単一ページでプレビューしたい場合は、Vivliostyleのロゴからアクセスできる設定メニューを開き、“Page Spread View” のうち “Single page” のラジオボタンを選択してください。
 
-![ ](images/functions-of-the-actions-menu/theme/fig-8.png)
+![ ](images/functions-of-the-actions-menu/theme/fig-9.png)
 
 ## Techbook (技術同人誌) theme
 
 横組で文字サイズは12ポイント、ページサイズは182×257mm（B5判タテ）、コードブロックのクラス指定、[脚注の記法](https://vivliostyle.org/ja/make-books-with-create-book/#%E8%84%9A%E6%B3%A8)もサポートされており、技術同人誌に適しています。
 
-![ ](images/functions-of-the-actions-menu/theme/fig-9.png)
+![ ](images/functions-of-the-actions-menu/theme/fig-10.png)
 
 これはVivliostyleが [npmパッケージとして公開](https://www.npmjs.com/package/@vivliostyle/theme-techbook)している公式Theme、[@vivliostyle/theme-techbook](https://vivliostyle.github.io/themes/#/ja/gallery#vivliostyletheme-techbook)そのものです。以下にその一部を引用します。
 
@@ -229,7 +282,7 @@ html {
 
 横組でページサイズは210×297mm（A4判タテ）、自動で章・節番号がつき、[脚注の記法](https://vivliostyle.org/ja/make-books-with-create-book/#%E8%84%9A%E6%B3%A8)もつかえる、理系の学生レポート向けのスタイルです。
 
-![ ](images/functions-of-the-actions-menu/theme/fig-10.png)
+![ ](images/functions-of-the-actions-menu/theme/fig-11.png)
 
 これはVivliostyleが [npmパッケージとして公開](https://www.npmjs.com/package/@vivliostyle/theme-academic)している公式Theme、[@vivliostyle/theme-academic](https://vivliostyle.github.io/themes/#/ja/gallery#vivliostyletheme-academic)そのものです。以下にその一部を引用します。
 
