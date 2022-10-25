@@ -34,12 +34,8 @@
 
 ![ ](images/advance-preparation/get-an-account/fig-7.png)
 
-8. 作成書類を非公開にしたい場合は「Private」（私的）に、公開したい場合は「Public」（公的）にチェックをいれてください（赤矢印）。次に “Repository name”（リポジトリ名）を英数字で入力（赤丸①）。リポジトリ名が利用可能なら、緑色の✓マークが表示され “Create repository” （リポジトリの作成）ボタン（赤丸②）がアクティブになります。「Add a README file」に✓（赤丸③）が入っていることを確認して、クリックしてください
-
-**ご注意**：GitHubリポジトリにファイルがない状態でVivliostyle Pubからファイルを新規追加しようとすると、エラーになる[既知のバグ](https://github.com/vivliostyle/vivliostyle-pub/issues/217)があります。赤丸③Add a README fileに✓を入れるのは、その回避策です。
+8. 作成書類を非公開にしたい場合は「Private」（私的）に、公開したい場合は「Public」（公的）にチェックをいれてください（赤矢印）。次に “Repository name”（リポジトリ名）を英数字で入力（赤丸①）。リポジトリ名が利用可能なら、緑色の✓マークが表示され “Create repository” （リポジトリの作成）ボタン（赤丸②）がアクティブになります。「Add a README file」に✓（赤丸③）が入っていることを確認して、クリックしてください。リポジトリが作成できたら、[最初のログインで必要な作業](/ja/advance-preparation/login.md)に進んでください
 
 ![ ](images/advance-preparation/get-an-account/fig-8.png)
 
-9. この画面が表示されたら、リポジトリは無事に作成できました。[最初のログインで必要な作業](/ja/advance-preparation/login.md)に進んでください
-
-![ ](images/advance-preparation/get-an-account/fig-9.png)
+- **ご注意**：GitHubリポジトリにファイルがない状態でVivliostyle Pubからファイルを新規追加しようとすると、エラーになる[既知のバグ](https://github.com/vivliostyle/vivliostyle-pub/issues/217)があります。赤丸③Add a README fileに✓を入れるのは、その回避策です。
