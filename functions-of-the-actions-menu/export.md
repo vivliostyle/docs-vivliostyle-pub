@@ -15,6 +15,7 @@ Actionメニューで「Export（出力）> PDF」を選ぶとPDFが出力され
 
 - [文書のカスタマイズ > 対象となる文書の指定](/ja/create-and-save-documents/document-customization.md#対象となる文書の指定)
 
+
 1. 「Actionメニュー > PDF」を選択します
 
 ![](images/functions-of-the-actions-menu/export/fig-1.png)
