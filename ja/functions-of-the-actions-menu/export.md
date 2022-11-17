@@ -2,7 +2,11 @@
 
 ## PDF
 
-Actionメニューで「Export（出力）> PDF」を選ぶとPDFが出力されます。その際、出力されるファイルは、プレビューとは無関係に`vivliostyle.config.js`の内容にもとづき処理されます。詳細は下記をご参照ください。
+Actionメニューで「Export（出力）> PDF」を選ぶとPDFが出力されます。その際、出力されるファイルは、プレビューとは無関係に`vivliostyle.config.js`の内容にもとづき処理されます。このため、もし`vivliostyle.config.js`がなければPDFは出力されません。初めてPDFを出力する際は、まず以下を参考に`vivliostyle.config.js`をルートに作成し、その中で出力するファイル名を指定してください。
+
+- [文書のカスタマイズ](https://vivliostyle.github.io/docs-vivliostyle-pub/#/ja/create-and-save-documents/document-customization.md)
+
+関連情報として、下記もご参照ください。
 
 - [フォントの指定方法 > フォントを利用するしくみ](/ja/create-and-save-documents/how-to-specify-fonts.md#フォントを利用するしくみ)
 - [ Theme（スタイル情報の選択）> Custom theme](/ja/functions-of-the-actions-menu/theme.md#custom-theme)）
