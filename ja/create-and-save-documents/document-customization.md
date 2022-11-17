@@ -40,7 +40,7 @@ language: 'ja',
 
 判型はvivliostyle.comfig.jsではなく、themeで指定してください。詳細は下記をご参照ください。
 
-- [Theme（スタイル情報の選択）> Custom theme > 判型の指定](https://vivliostyle.github.io/docs-vivliostyle-pub/#/functions-of-the-actions-menu/theme#%E5%88%A4%E5%9E%8B%E3%81%AE%E6%8C%87%E5%AE%9A)
+- [Theme（スタイル情報の選択）> Custom theme > 判型の指定](/ja/functions-of-the-actions-menu/theme#%E5%88%A4%E5%9E%8B%E3%81%AE%E6%8C%87%E5%AE%9A)
 
 ## 対象となる文書の指定
 
