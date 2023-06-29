@@ -37,6 +37,20 @@ Actionメニューで「Export（出力）> PDF」を選ぶとPDFが出力され
 
 ![](images/functions-of-the-actions-menu/export/fig-4.png)
 
+## トンボをつける方法
+
+トンボ付きのPDFファイルを作成するには、カスタムスタイルシートに以下のような記述を追加してください。
+
+```css
+@page {
+  marks: crop cross;
+  bleed: 3mm;
+}
+```
+
+ただし、上記を追加すると、出力だけでなくプレビューにもトンボがつきますのでご注意ください（時期未定ながら、Actionメニューからトンボ付きPDFを出力できるよう改修する予定です）。
+
+
 ## 印刷会社への入稿
 
 Vivliostyle Pubで出力したPDFファイルを、実際に印刷・製本できるサービスがあります。
