@@ -1,11 +1,11 @@
-# ファイルとフォルダ操作の概要
+# Overview of File and Folder Operations
 
-以下の2つの方法により、ファイルとフォルダに関する操作ができます。
+There are two ways to operate on files and folders.
 
-1. [ファイル一覧ペインからの操作](/ja/file-and-folder-operations/file-list-pane-operations.md)
-1. 右クリックメニュー
+1. [Operations from the File List Pane](/file-and-folder-operations/file-list-pane-operations.md)
+1. Right-Click Menu
 
-上記2. は、マウスカーソルを置く場所によって、以下の2つの種類に分かれます
+The above 2. is divided into the following two types depending on where the mouse cursor is placed.
 
-2-1. [ファイル上からの右クリックメニュー（ファイル操作）](/ja/file-and-folder-operations/right-click-menu-on-a-file.md)<br/>
-2-2. [フォルダ上からの右クリックメニュー（フォルダ操作）](/ja/file-and-folder-operations/right-click-menu-on-a-folder.md)
+2-1. [Right-Click Menu on a File (File Operations)](/file-and-folder-operations/right-click-menu-on-a-file.md)<br/>
+2-2. [Right-Click Menu on a Folder (Folder Operations)](/file-and-folder-operations/right-click-menu-on-a-folder.md)

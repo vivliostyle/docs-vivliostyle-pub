@@ -1,77 +1,73 @@
-# 右クリックメニュー（ファイル操作）
+# Right-Click Menu (File Operations)
 
-## ファイル名を変更
+## Rename File
 
-1. 名前を変更したいファイルの上にマウスカーソルを置き右クリックすると、メニューが表示されるので「ファイル名を変更」（赤丸）を選択
+1. Place the mouse cursor over the file you want to rename and right-click to display the menu, then select "Rename File" (red circle).
 
 ![ ](images/file-and-folder-operations/right-click-menu-on-a-file/fig-1.png)
 
-2.  テキスト入力エリア（赤丸）が開きます。当該のファイル名が入っています
+2. A text input area (red circle) will open with the current file name.
 
 ![ ](images/file-and-folder-operations/right-click-menu-on-a-file/fig-2.png)
 
-3. ファイル名を変更して、enterキーを押します
+3. Change the file name and press the enter key.
 
 ![ ](images/file-and-folder-operations/right-click-menu-on-a-file/fig-3.png)
 
-4. ファイル一覧ペインに変更されたファイル名が反映されました（赤線）。表示されない場合はリロードボタン（赤丸）を押してください
+4. The changed file name is reflected in the file list pane (red line). If it is not displayed, press the reload button (red circle).
 
 ![ ](images/file-and-folder-operations/right-click-menu-on-a-file/fig-4.png)
 
-5. ファイル名の変更を`vivliostyle.config.js`に記述することで、PDFに出力できます（逆に言えば、`vivliostyle.config.js`を変更しなければPDF出力もできません）。記述の方法は下記をご参照ください
+5. By describing the changed file name in `vivliostyle.config.js`, it can be output to PDF (conversely, if you do not change `vivliostyle.config.js`, it cannot be output to PDF). Refer to the following for how to describe it.
 
-    - [文書のカスタマイズ>対象となる文書の指定](/ja/create-and-save-documents/document-customization.md#対象となる文書の指定)
+    - [Document Customization > Specify Target Document](/create-and-save-documents/document-customization.md#specifying-target-documents)
 
+## Duplicate File
 
-
-## ファイルを複製
-
-1. 複製したいファイルの上にマウスカーソルを置き右クリックすると、メニューが表示されるので「ファイルを複製」（赤丸）を選択
+1. Place the mouse cursor over the file you want to duplicate and right-click to display the menu, then select "Duplicate File" (red circle).
 
 ![ ](images/file-and-folder-operations/right-click-menu-on-a-file/fig-5.png)
 
-2. テキスト入力エリア（赤丸）が開きます。複製元のファイル名が入っています
+2. A text input area (red circle) will open with the name of the original file.
 
 ![ ](images/file-and-folder-operations/right-click-menu-on-a-file/fig-6.png)
 
-3. 複製後のファイル名に変更して、enterキーを押します
+3. Change to the name of the duplicated file and press the enter key.
 
 ![ ](images/file-and-folder-operations/right-click-menu-on-a-file/fig-7.png)
 
-4. ファイル一覧ペインに複製されたファイルが追加されました（赤線）。表示されない場合はリロードボタン（赤丸）を押してください。ファイル一覧ペインでアップロードしたファイルを選択し、プレビューさせてみましょう
+4. The duplicated file is added to the file list pane (red line). If it is not displayed, press the reload button (red circle). Select the uploaded file in the file list pane and preview it.
 
 ![ ](images/file-and-folder-operations/right-click-menu-on-a-file/fig-8.png)
 
-5. 複製したファイル名を`vivliostyle.config.js`に記述することで、PDFに出力できます（逆に言えば、`vivliostyle.config.js`を変更しなければPDF出力もできません）。記述の方法は下記をご参照ください
+5. By describing the duplicated file name in `vivliostyle.config.js`, it can be output to PDF (conversely, if you do not change `vivliostyle.config.js`, it cannot be output to PDF). Refer to the following for how to describe it.
 
-    - [文書のカスタマイズ>対象となる文書の指定](/ja/create-and-save-documents/document-customization.md#対象となる文書の指定)
+    - [Document Customization > Specify Target Document](/create-and-save-documents/document-customization.md#specifying-target-documents)
 
+## Delete File
 
-## ファイルを削除
-
-1. 削除したいファイルの上にマウスカーソルを置き右クリックすると、メニューが表示されるので「ファイルを削除」（赤丸）を選択
+1. Place the mouse cursor over the file you want to delete and right-click to display the menu, then select "Delete File" (red circle).
 
 ![ ](images/file-and-folder-operations/right-click-menu-on-a-file/fig-9.png)
 
-2. 削除してよいか確認を求めるダイアログが開くので「OK」を選択
+2. A dialog will open asking for confirmation to delete, select "OK".
 
 ![ ](images/file-and-folder-operations/right-click-menu-on-a-file/fig-10.png)
 
-3. ファイル一覧ペインから削除されました
+3. The file is deleted from the file list pane.
 
 ![ ](images/file-and-folder-operations/right-click-menu-on-a-file/fig-11.png)
 
-4. ファイルの削除を`vivliostyle.config.js`に反映します。記述の方法は下記をご参照ください
+4. Reflect the deletion of the file in `vivliostyle.config.js`. Refer to the following for how to describe it.
 
-- [文書のカスタマイズ>対象となる文書の指定](/ja/create-and-save-documents/document-customization.md#対象となる文書の指定)
+- [Document Customization > Specify Target Document](/create-and-save-documents/document-customization.md#specifying-target-documents)
 
+## Download File
 
-## ファイルをダウンロード
-
-1.  ダウンロードしたいファイルの上にマウスカーソルを置き右クリックすると、メニューが表示されるので「ファイルをダウンロード」（赤丸）を選択
+1. Place the mouse cursor over the file you want to download and right-click to display the menu, then select "Download File" (red circle).
 
 ![ ](images/file-and-folder-operations/right-click-menu-on-a-file/fig-12.png)
 
-2. 当該のファイルがダウンロードされました（赤丸）。ダウンロードされる場所はブラウザの設定に従います
+2. The file is downloaded (red circle). The download location depends on the browser settings.
 
 ![ ](images/file-and-folder-operations/right-click-menu-on-a-file/fig-13.png)

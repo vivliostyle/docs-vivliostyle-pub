@@ -1,7 +1,7 @@
-# Help（ヘルプ）
+# Help
 
-## VFM Spec（Vivliostyle Flavored Markdown仕様の表示）
+## VFM Spec (Vivliostyle Flavored Markdown Specification)
 
 ![](images/functions-of-the-actions-menu/help/fig-1.png)
 
-別ウィンドウが開き、[Vivliostyle Flavored Markdownの仕様ページ](https://vivliostyle.github.io/vfm/#/vfm)が表示されます。
+A new window will open displaying the [Vivliostyle Flavored Markdown specification page](https://vivliostyle.github.io/vfm/#/vfm).

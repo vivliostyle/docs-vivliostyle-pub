@@ -1,43 +1,42 @@
-# 作業の手順（前半）
+# Working Procedure (First Part)
 
-## コミッターがGitHubのリポジトリでブランチを新規作成
+## Committer Creates a New Branch in the GitHub Repository
 
-
-1. GitHubリポジトリのトップページで、画面左上のブランチ名（赤丸）をクリック
+1. On the top page of the GitHub repository, click the branch name at the top left of the screen (red circle)
 
 ![](images/multi-user-collaborative-editing/working-procedure-first-part/fig-1.png)
 
-2. “Find or create a branch...” というテキスト入力エリアが開く（赤丸）
+2. A text input area labeled "Find or create a branch..." opens (red circle)
 
 ![](images/multi-user-collaborative-editing/working-procedure-first-part/fig-2.png)
 
-3. 新規作成するブランチ名を半角英数字で入力し、太字で表示された “Create branch: xxxxxx”（赤丸）をクリック
+3. Enter the name of the new branch in alphanumeric characters and click the bold "Create branch: xxxxxx" (red circle)
 
 ![](images/multi-user-collaborative-editing/working-procedure-first-part/fig-3.png)
 
-4. 作成したブランチに切り替わった（赤丸）
+4. The branch has been switched to the newly created one (red circle)
 
 ![](images/multi-user-collaborative-editing/working-procedure-first-part/fig-4.png)
 
-## コミッターがVivliostyle Pubでブランチを選択
+## Committer Selects the Branch in Vivliostyle Pub
 
-1. 新しいブランチを反映させるために、いったんLogoutして、再度 “Login” ボタンから入り直します。
+1. To reflect the new branch, log out once and log back in from the "Login" button
 
 ![](images/multi-user-collaborative-editing/working-procedure-first-part/fig-5.png)
 
-2. 画面左上のブランチ切り替えメニュー（赤丸）をクリック
+2. Click the branch switch menu at the top left of the screen (red circle)
 
 ![](images/multi-user-collaborative-editing/working-procedure-first-part/fig-6.png)
 
-3. さきほど作成したブランチ名が表示されるので、選択するとそのブランチに変更されます
+3. The name of the branch you just created will be displayed, so select it to switch to that branch
 
 ![](images/multi-user-collaborative-editing/working-procedure-first-part/fig-7.png)
 
-## コミッターがVivliostyle Pubで文書を編集／保存
+## Committer Edits/Saves the Document in Vivliostyle Pub
 
-Vivliostyle Pubで文書を作成／編集後、`Save document`（書類の保存）のボタンを押して保存してください
+After creating/editing the document in Vivliostyle Pub, save it by pressing the `Save document` button
 
-- **参考：**[新規ファイルの追加](/ja/file-and-folder-operations/file-list-pane-operations.md#新規ファイルの追加)
-- **参考：**[文書の保存](/ja/create-and-save-documents/save-document.md)
+- **Reference:** [Adding a new file](/file-and-folder-operations/file-list-pane-operations.md#adding-a-new-file)
+- **Reference:** [Saving a document](/create-and-save-documents/save-document.md)
 
-[**→作業の手順（後半）**](/ja/multi-user-collaborative-editing/working-procedure-latter-part.md)**につづきます**
+[**→ Continue to Working Procedure (Latter Part)**](/multi-user-collaborative-editing/working-procedure-latter-part.md)

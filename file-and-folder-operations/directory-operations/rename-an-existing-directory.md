@@ -1,66 +1,65 @@
-# GitHubでフォルダ名を変更する
+# Rename a Folder on GitHub
 
-1. リポジトリのトップページで「Code」タブが選択されていることを確認します。変更したいフォルダ名をクリックしてください（赤丸）。ここでは`chapter-3`を変更することにします
+1. Make sure the "Code" tab is selected on the repository's main page. Click on the folder name you want to change (red circle). Here, we will change `chapter-3`.
 
 ![ ](images/file-and-folder-operations/directory-operations/rename-an-existing-directory/fig-1.png)
 
-2. フォルダ内のファイル一覧画面に遷移しました。フォルダ名の変更は、リポジトリからファイルまでのパス名（経路名）を変更する方法でおこないます。ここでは`section-1.md`（赤丸）をクリックします
+2. You have navigated to the file list screen within the folder. To change the folder name, you will modify the path name from the repository to the file. Here, click on `section-1.md` (red circle).
 
 ![ ](images/file-and-folder-operations/directory-operations/rename-an-existing-directory/fig-2.png)
 
-3. `section-1.md`のファイル操作画面に遷移しました。画面右側の鉛筆アイコン（赤丸）をクリックしてください
+3. You have navigated to the file operation screen for `section-1.md`. Click the pencil icon on the right side of the screen (red circle).
 
 ![ ](images/file-and-folder-operations/directory-operations/rename-an-existing-directory/fig-3.png)
 
-4. エディタ画面に遷移します。ファイル名のカラム（赤丸①）をクリックし、写真のようにカーソルをカラム左端まで移動させてください
+4. You will be taken to the editor screen. Click on the file name column (red circle ①) and move the cursor to the left end of the column as shown in the picture.
 
 ![ ](images/file-and-folder-operations/directory-operations/rename-an-existing-directory/fig-4-1.png)
 
 ![ ](images/file-and-folder-operations/directory-operations/rename-an-existing-directory/fig-4-2.png)
 
-5. その状態でバックスペースキーを押してみてください。するとフォルダのカラムとファイル名のカラムが1つに合体し、カーソルはフォルダ名とファイル名の間に表示され、フォルダ名`chapter-3`が編集可能になります
+5. Press the backspace key in this state. The folder column and file name column will merge into one, and the cursor will be displayed between the folder name and file name, making the folder name `chapter-3` editable.
 
 ![ ](images/file-and-folder-operations/directory-operations/rename-an-existing-directory/fig-4-3.png)
 
-
-6. `-3`の部分をバックスペースキーで削除して、代わりに`-100`と入力しましょう
+6. Delete the `-3` part with the backspace key and enter `-100` instead.
 
 ![ ](images/file-and-folder-operations/directory-operations/rename-an-existing-directory/fig-4-4.png)
 
-7. この状態で`/`を入力してください。すると今変更した`chapter-100`がフォルダ名になりました
+7. Enter `/` in this state. The folder name has now been changed to `chapter-100`.
 
 ![ ](images/file-and-folder-operations/directory-operations/rename-an-existing-directory/fig-4-5.png)
 
-8. “Commit Changes” （コミットの変更）ボタン（「4」赤丸②）を押下して、変更を確定してください。以下のような`section-1.md`のファイル操作画面に戻ります。画面左上のリポジトリ名（赤丸）をクリックしてください
+8. Click the "Commit Changes" button (red circle ②) to confirm the changes. You will return to the file operation screen for `section-1.md`. Click the repository name in the upper left corner of the screen (red circle).
 
 ![ ](images/file-and-folder-operations/directory-operations/rename-an-existing-directory/fig-5.png)
 
-9. リポジトリのトップページに戻りました。今おこなったフォルダ名の変更を`vivliostyle.config.js`に反映させましょう。赤丸をクリックします
+9. You have returned to the repository's main page. Let's reflect the folder name change in `vivliostyle.config.js`. Click the red circle.
 
 ![ ](images/file-and-folder-operations/directory-operations/rename-an-existing-directory/fig-6.png)
 
-10. `vivliostyle.config.js`のファイル操作画面に遷移します。画面右側の鉛筆アイコン（赤丸）をクリックしてください
+10. You will navigate to the file operation screen for `vivliostyle.config.js`. Click the pencil icon on the right side of the screen (red circle).
 
 ![ ](images/file-and-folder-operations/directory-operations/rename-an-existing-directory/fig-7.png)
 
-11. エディタ画面に遷移しました。以前のフォルダ名`chapter-3`を、変更したフォルダ名`chapter-100`に書き換えましょう（赤矢印）。終わったら、“Commit Changes” （コミットの変更）ボタンを押下して、変更を確定してください
+11. You have navigated to the editor screen. Change the previous folder name `chapter-3` to the new folder name `chapter-100` (red arrow). When finished, click the "Commit Changes" button to confirm the changes.
 
 ![ ](images/file-and-folder-operations/directory-operations/rename-an-existing-directory/fig-8.png)
 
-**変更前**
+**Before Change**
 ```js
 'chapter-3/section-1.md',
 ```
 
-**変更後**
+**After Change**
 ```js
 'chapter-100/section-1.md',
 ```
 
-12. リポジトリのトップ画面にもどると、`chapter-100`が追加され、フォルダが2つに増えてていることが分かります（赤丸）
+12. Return to the repository's main page, and you will see that `chapter-100` has been added, and there are now two folders (red circle).
 
 ![ ](images/file-and-folder-operations/directory-operations/rename-an-existing-directory/fig-9.png)
 
-13. Vivliostyle Pubを再読み込みさせて、追加した`chapter-100/section-1`（赤矢印）が表示されるか確認します
+13. Reload Vivliostyle Pub and check if the added `chapter-100/section-1` (red arrow) is displayed.
 
 ![ ](images/file-and-folder-operations/directory-operations/rename-an-existing-directory/fig-10.png)

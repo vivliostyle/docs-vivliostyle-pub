@@ -1,61 +1,56 @@
-# 作業の手順（後半）
+# Working Procedure (Latter Part)
 
-## コミッターがGitHubでプルリクエストを作成
+## Committer Creates a Pull Request on GitHub
 
-1. GitHubリポジトリのトップページに移動し、ブランチ名を確認してから “Contribute”（赤丸／貢献する）をクリック
+1. Move to the top page of the GitHub repository, confirm the branch name, and click "Contribute" (red circle)
 
 ![](images/multi-user-collaborative-editing/working-procedure-latter-part/fig-1.png)
 
-2. “Open pull request”（赤丸／プルリクエストを開く）をクリック
+2. Click "Open pull request" (red circle)
 
 ![](images/multi-user-collaborative-editing/working-procedure-latter-part/fig-2.png)
 
-3. タイトルとコメントを記入して “Create pull request”（赤丸／プルリクエストの作成）をクリック
+3. Enter the title and comment, then click "Create pull request" (red circle)
 
 ![](images/multi-user-collaborative-editing/working-procedure-latter-part/fig-3.png)
 
-4. プルリクエストが作成されます。この画面で左上 “Reviewer” のギアマーク（赤丸）をクリックすると、管理者やメンバーにレビュー依頼ができます
+4. The pull request is created. On this screen, click the gear icon (red circle) at the top left "Reviewer" to request a review from administrators or members
 
-
-- **参考：**[Pull Request レビューをリクエストする](https://docs.github.com/ja/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/requesting-a-pull-request-review)
+- **Reference:** [Requesting a pull request review](https://docs.github.com/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/requesting-a-pull-request-review)
 
 ![](images/multi-user-collaborative-editing/working-procedure-latter-part/fig-4.png)
 
-## 管理者がGitHubでプルリクエストをレビュー、承認、マージ
+## Administrator Reviews, Approves, and Merges the Pull Request on GitHub
 
-ここからは、レビューを依頼された管理者の操作です。
+From here, the operations are performed by the administrator who was requested to review.
 
-1. メールでコミッターからのレビュー依頼を受信したら、プルリクエストの番号をクリック
+1. When you receive a review request from the committer via email, click the pull request number
 
-2. プルリクエストの画面が開きます。自分の名前が “Reviewer”（赤丸）にあることを確認したら、“Files changed”（赤四角／ファイルの変更）をクリック
+2. The pull request screen opens. Confirm that your name is in the "Reviewer" (red circle), then click "Files changed" (red square)
 
 ![](images/multi-user-collaborative-editing/working-procedure-latter-part/fig-6.png)
 
-3. レビュー対象となる変更箇所の一覧画面に遷移するのでレビューを開始しましょう。レビューの方法などは下記を参照してください
+3. Move to the list screen of the changes to be reviewed and start the review. Refer to the following for review methods, etc.
 
-
-- **参考：**[プルリクエストのレビューについて](https://docs.github.com/ja/pull-requests/collaborating-with-pull-requests/reviewing-changes-in-pull-requests/about-pull-request-reviews)
-- **参考：**[プルリクエストへコメントする](https://docs.github.com/ja/pull-requests/collaborating-with-pull-requests/reviewing-changes-in-pull-requests/commenting-on-a-pull-request)
-
+- **Reference:** [About pull request reviews](https://docs.github.com/pull-requests/collaborating-with-pull-requests/reviewing-changes-in-pull-requests/about-pull-request-reviews)
+- **Reference:** [Commenting on a pull request](https://docs.github.com/pull-requests/collaborating-with-pull-requests/reviewing-changes-in-pull-requests/commenting-on-a-pull-request)
 
 ![](images/multi-user-collaborative-editing/working-procedure-latter-part/fig-7.png)
 
-4. “Review changes”（赤丸）をクリックすると、コメントの記入、そして ①Comment（コメント）、②Approve（承認）、③Request changes（変更の要請）のどれかがが選択できます。ここでは “Approve” を選びました。“Submit review”（赤丸／レビューを送る）を押すと、コミッターにレビューが届きます
+4. Click "Review changes" (red circle), enter a comment, and select either ①Comment, ②Approve, or ③Request changes. Here, select "Approve". Click "Submit review" (red circle) to send the review to the committer
 
 ![](images/multi-user-collaborative-editing/working-procedure-latter-part/fig-8.png)
 
+- **Reference:** [Approving a pull request with required reviews](https://docs.github.com/pull-requests/collaborating-with-pull-requests/reviewing-changes-in-pull-requests/approving-a-pull-request-with-required-reviews)
 
-- **参考：**[必須レビューでのプルリクエストの承認](https://docs.github.com/ja/pull-requests/collaborating-with-pull-requests/reviewing-changes-in-pull-requests/approving-a-pull-request-with-required-reviews)
-
-
-5. Approve（承認）を押したので、さきほどのプルリクエストの画面に戻りました。 “Reviewer” のカラムにある自分の名前の横に「✓」（赤丸）が入って、変更を承認したことが示されています。
+5. Since "Approve" was clicked, the screen returns to the previous pull request screen. A check mark (red circle) appears next to your name in the "Reviewer" column, indicating that the changes have been approved
 
 ![](images/multi-user-collaborative-editing/working-procedure-latter-part/fig-9.png)
 
-6. 問題がないことが確認できたので、デフォルトブランチにマージしましょう。“Conform merge”（赤丸／統合）をクリック
+6. Confirm that there are no issues, then merge into the default branch. Click "Confirm merge" (red circle)
 
 ![](images/multi-user-collaborative-editing/working-procedure-latter-part/fig-10.png)
 
-7. ごくろうさまでした。デフォルトブランチへのマージが成功しました。“Pull request successfully merged and closed”（プルリクエストは正常にマージされ、クローズされました）。ついでに “Delete branch”（赤丸）を押して、不要になったブランチを削除しておきましょう
+7. Well done. The merge into the default branch was successful. "Pull request successfully merged and closed". Additionally, click "Delete branch" (red circle) to delete the unnecessary branch
 
 ![](images/multi-user-collaborative-editing/working-procedure-latter-part/fig-11.png)

@@ -1,40 +1,40 @@
-# 概要
+# Overview
 
-## GitHubを利用するメリット
+## Benefits of Using GitHub
 
-Vivliostyle Pubはユーザーファイルの管理に、外部のバージョン管理システム、[GitHub](https://github.co.jp/)を利用しています。ユーザーにとってバージョン管理システムは、以下のようなメリットがあります。
+Vivliostyle Pub uses an external version control system, [GitHub](https://github.co.jp/), to manage user files. For users, version control systems offer the following benefits:
 
-1. ファイルの変更履歴が記録できる
-2. ファイルを以前の状態に戻せる
-3. 複数ユーザーによる共同編集ができる
+1. Record file change history
+2. Revert files to previous states
+3. Enable collaborative editing by multiple users
 
-残念ながら、上記のうち1、2は現在のバージョンのVivliostyle Pubではサポートされません。これらの機能は各種GitHubクライアントでご利用ください。[“Sourcetree”](https://www.sourcetreeapp.com/) など無料で使えるクライアントが各種あります。たとえば、GitHubの公式クライアントである[GitHub Desktop](https://docs.github.com/ja/desktop/installing-and-configuring-github-desktop)（無料）での操作は、下記を参照してください。
+Unfortunately, the current version of Vivliostyle Pub does not support the above features 1 and 2. These features can be used with various GitHub clients. There are various free clients available, such as [Sourcetree](https://www.sourcetreeapp.com/). For example, refer to the following for operations using the official GitHub client, [GitHub Desktop](https://docs.github.com/desktop/installing-and-configuring-github-desktop) (free).
 
-- [ブランチ履歴の表示](https://docs.github.com/ja/desktop/contributing-and-collaborating-using-github-desktop/making-changes-in-a-branch/viewing-the-branch-history)
-- [プロジェクトへの変更のコミットやレビュー](https://docs.github.com/ja/desktop/contributing-and-collaborating-using-github-desktop/making-changes-in-a-branch/committing-and-reviewing-changes-to-your-project)
+- [Viewing the branch history](https://docs.github.com/desktop/contributing-and-collaborating-using-github-desktop/making-changes-in-a-branch/viewing-the-branch-history)
+- [Committing and reviewing changes to your project](https://docs.github.com/desktop/contributing-and-collaborating-using-github-desktop/making-changes-in-a-branch/committing-and-reviewing-changes-to-your-project)
 
-ここでは上記のうち3、複数ユーザーによる共同編集を、Vivliostyle Pubでおこなう方法について説明します。
+Here, we will explain how to perform collaborative editing by multiple users using Vivliostyle Pub.
 
-## 共同編集の概要
+## Overview of Collaborative Editing
 
-（この文書では、個々の作業者を「コミッター」、プロジェクトを統括する者を「管理者」とよびます）
+(In this document, individual workers are referred to as "committers" and those who oversee the project are referred to as "administrators")
 
-共同編集では、GitHubの[「保護されたブランチ」](https://docs.github.com/ja/repositories/configuring-branches-and-merges-in-your-repository/defining-the-mergeability-of-pull-requests/about-protected-branches)機能を使います。この機能により、本流であるデフォルトブランチで直接編集することが禁止され、作業者は傍流である自分の作業ブランチで編集し、これを管理者のレビューを介してデフォルトブランチへ合流させることが徹底されます。こうした共同作業の結果、間違いの少ない文書を効率的に制作できます。
+In collaborative editing, we use GitHub's [Protected Branches](https://docs.github.com/repositories/configuring-branches-and-merges-in-your-repository/defining-the-mergeability-of-pull-requests/about-protected-branches) feature. This feature prohibits direct editing in the default branch, which is the main branch, and enforces that workers edit in their own working branches, which are merged into the default branch through administrator reviews. As a result of such collaborative work, documents with fewer errors can be efficiently produced.
 
-共同編集は、おおむね以下のような手順ですすめます（次節以降で説明します）。
+Collaborative editing generally proceeds as follows (explained in the following sections).
 
-1. [コミッターがGitHubのリポジトリでブランチを新規作成する](/ja/multi-user-collaborative-editing/working-procedure-first-part.md#コミッターがgithubのリポジトリでブランチを新規作成)
-1. [コミッターがVivliostyle Pubでそのブランチを選択する](/ja/multi-user-collaborative-editing/working-procedure-first-part.md#コミッターがvivliostyle-pubでブランチを選択)
-1. [コミッターがVivliostyle Pubで文書を編集し、保存する](/ja/multi-user-collaborative-editing/working-procedure-first-part.md#コミッターがvivliostyle-pubで文書を編集／保存)
-1. [コミッターがGitHubでプルリクエストを作成する](/ja/multi-user-collaborative-editing/working-procedure-latter-part.md#コミッターがgithubでプルリクエストを作成)
-1. [ 管理者がGitHubでプルリクエストをレビューし、承認とマージをする](/ja/multi-user-collaborative-editing/working-procedure-latter-part.md#%E7%AE%A1%E7%90%86%E8%80%85%E3%81%8Cgithub%E3%81%A7%E3%83%97%E3%83%AB%E3%83%AA%E3%82%AF%E3%82%A8%E3%82%B9%E3%83%88%E3%82%92%E3%83%AC%E3%83%93%E3%83%A5%E3%83%BC%E3%80%81%E6%89%BF%E8%AA%8D%E3%80%81%E3%83%9E%E3%83%BC%E3%82%B8)
+1. [Committer creates a new branch in the GitHub repository](/multi-user-collaborative-editing/working-procedure-first-part.md#committer-creates-a-new-branch-in-the-github-repository)
+1. [Committer selects the branch in Vivliostyle Pub](/multi-user-collaborative-editing/working-procedure-first-part.md#committer-selects-the-branch-in-vivliostyle-pub)
+1. [Committer edits and saves the document in Vivliostyle Pub](/multi-user-collaborative-editing/working-procedure-first-part.md#committer-edits-saves-the-document-in-vivliostyle-pub)
+1. [Committer creates a pull request on GitHub](/multi-user-collaborative-editing/working-procedure-latter-part.md#committer-creates-a-pull-request-on-github)
+1. [Administrator reviews, approves, and merges the pull request on GitHub](/multi-user-collaborative-editing/working-procedure-latter-part.md#administrator-reviews-approves-and-merges-the-pull-request-on-github)
 
-## 共同編集に必要な条件
+## Conditions Required for Collaborative Editing
 
-上に述べた[「保護されたブランチ」](https://docs.github.com/ja/repositories/configuring-branches-and-merges-in-your-repository/defining-the-mergeability-of-pull-requests/about-protected-branches)機能を自分のリポジトリで使うには、GitHubの有償アカウントを取得するか、無償アカウント（Free）の場合はリポジトリを公開（Public）する必要があります。詳細は下記を参照してください。
+To use the [Protected Branches](https://docs.github.com/repositories/configuring-branches-and-merges-in-your-repository/defining-the-mergeability-of-pull-requests/about-protected-branches) feature mentioned above in your repository, you need to obtain a paid GitHub account or make the repository public if you have a free account. For details, refer to the following.
 
-- [GitHub の商品と価格プランの概要](https://docs.github.com/ja/get-started/learning-about-github/githubs-products)
+- [Overview of GitHub's products and pricing plans](https://docs.github.com/get-started/learning-about-github/githubs-products)
 
-ただし、無償アカウントであっても、有資格者からリポジトリに招待されれば共同編集に参加できます。以下を参考にして下さい。
+However, even with a free account, you can participate in collaborative editing if you are invited to the repository by an eligible person. Refer to the following.
 
-- **参考：**[コラボレーターを個人リポジトリに招待する](https://docs.github.com/ja/account-and-profile/setting-up-and-managing-your-github-user-account/managing-access-to-your-personal-repositories/inviting-collaborators-to-a-personal-repository)
+- **Reference:** [Inviting collaborators to a personal repository](https://docs.github.com/account-and-profile/setting-up-and-managing-your-github-user-account/managing-access-to-your-personal-repositories/inviting-collaborators-to-a-personal-repository)

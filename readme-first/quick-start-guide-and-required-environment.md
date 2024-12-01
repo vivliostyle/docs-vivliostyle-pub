@@ -1,135 +1,128 @@
-#  クイックスタートガイド 
+# Quick Start Guide
 
-## 必要環境 
+## Required Environment
 
-- Chromeブラウザ（PC版）が動作する環境であること
-- GitHubアカウントを既に取得していること（未取得の方はこちら→[GitHubアカウントの取得方法](/ja/advance-preparation/get-an-account#github%E3%82%A2%E3%82%AB%E3%82%A6%E3%83%B3%E3%83%88%E3%81%AE%E5%8F%96%E5%BE%97%E6%96%B9%E6%B3%95)）
+- An environment where the Chrome browser (PC version) can run
+- A GitHub account already obtained (If you haven't obtained one yet, click here → [How to get a GitHub account](/advance-preparation/get-an-account#how-to-get-a-github-account))
 
-## 初期画面
+## Initial Screen
 
-以下のURLにアクセスすると、初期画面が表示されます。
+Access the following URL to display the initial screen.
 
 https://vivliostyle-pub-develop.vercel.app/
 
 ![](images/readme-first/fig-1.png)
 
-1. ……「Login」ボタンを押して、GitHubアカウントでログインしてください（→[GitHubアカウントの取得方法](/ja/advance-preparation/get-an-account#github%E3%82%A2%E3%82%AB%E3%82%A6%E3%83%B3%E3%83%88%E3%81%AE%E5%8F%96%E5%BE%97%E6%96%B9%E6%B3%95)）
-2. ……言語メニューから使用言語を選択することができます（English / 日本語）
-3. ……ユーザーガイド（本文書）を表示します
+1. ……Press the "Login" button and log in with your GitHub account (→[How to get a GitHub account](/advance-preparation/get-an-account#how-to-get-a-github-account))
+2. ……You can select the language from the language menu (English / 日本語)
+3. ……Displays the user guide (this document)
 
+## Selecting a Repository and Branch
 
-
-## リポジトリとブランチの選択
-
-ログインしたら、以下の画面でリポジトリを選択してください。リポジトリに複数のブランチがある場合はブランチも選択できます。公開リポジトリは“Public”、非公開は“Private” と表示されます。
+After logging in, select a repository on the following screen. If the repository has multiple branches, you can also select a branch. Public repositories are displayed as "Public" and private ones as "Private".
 
 ![](images/readme-first/fig-2.png)
 
-1. ……GitHubアプリのインストール（→[最初のログインで必要な作業](/ja/advance-preparation/login.md)）
-2. ……GitHubアクセス・トークンのリフレッシュ（→[最初のログインで必要な作業](/ja/advance-preparation/login.md)）
-3. ……GitHubアカウントのユーザー名（[GitHub > Settings > Public profile](https://github.com/settings/profile)）
-4. ……言語メニュー（English / 日本語）
-5. ……ユーザーガイド（本文書）の表示
-6. ……リポジトリ表示の更新
-7. ……リポジトリの選択
+1. ……Install the GitHub app (→[Tasks required for the first login](/advance-preparation/login.md))
+2. ……Refresh the GitHub access token (→[Tasks required for the first login](/advance-preparation/login.md))
+3. ……GitHub account username ([GitHub > Settings > Public profile](https://github.com/settings/profile))
+4. ……Language menu (English / 日本語)
+5. ……Displays the user guide (this document)
+6. ……Refresh repository display
+7. ……Select a repository
 
-いずれかのリポジトリ（ 7 ）をクリックすると、自動的にエディタ／プレビュー画面に遷移します。
+Click on any repository (7) to automatically transition to the editor/preview screen.
 
-## ログアウト／利用者アンケートの送付／不具合のフィードバック
+## Logout / Send User Survey / Feedback on Issues
 
-GitHubアカウントのユーザー名をクリックすると、プルダウンメニューが表示されます。ログアウトはメニュー項目の一番下です。これを選択すると、ログアウトして初期画面に戻ります。また、このメニューから利用者アンケートの送付や不具合のフィードバックができます。ぜひご利用ください。
+Click on the GitHub account username to display a pull-down menu. Logout is at the bottom of the menu items. Selecting this will log you out and return to the initial screen. You can also send user surveys and feedback on issues from this menu. Please make use of it.
 
 ![](images/readme-first/fig-3.png)
 
-1. ……利用者アンケートの送付
-2. ……不具合のフィードバック
-3. ……ログアウト
+1. ……Send user survey
+2. ……Feedback on issues
+3. ……Logout
 
-## エディタ／プレビュー画面
+## Editor / Preview Screen
 
 ![](images/readme-first/fig-4.png)
 
-**ペイン境界線の移動**：ファイル一覧ペイン、エディタ・ペイン、プレビュー・ペインの境界線は変更できます。それぞれの区画の境界線上にマウスカーソルを置いてください。左右矢印「↔」の形状に変わったところでマウスボタンをプレスしたまま右か左にドラッグすると、境界線が左右に移動します。
+**Moving the pane boundaries**: You can change the boundaries of the file list pane, editor pane, and preview pane. Place the mouse cursor on the boundary line of each section. When the cursor changes to a left-right arrow "↔", press the mouse button and drag it left or right to move the boundary line.
 
-### メニュー・エリア
+### Menu Area
 
 ![](images/readme-first/fig-5.png)
 
-1. ……ユーザー名 / リポジトリ名
-2. ……ブランチ切り替えメニュー
-3. ……ファイル保存ボタン
-4. ……GitHubアカウントのユーザー名（プルダウンメニュー→アンケート送付／フィードバック／ログアウト）
-5. ……言語メニュー（English / 日本語）
-6. ……ユーザーガイド（本文書）の表示
-7. ……ファイル一覧ペインの表示／非表示
-8. ……エディタ・ペインの表示／非表示
-9. ……プレビュー・ペインの表示／非表示
-10. ……Actionメニュー
+1. ……Username / Repository name
+2. ……Branch switch menu
+3. ……File save button
+4. ……GitHub account username (pull-down menu → send survey / feedback / logout)
+5. ……Language menu (English / 日本語)
+6. ……Displays the user guide (this document)
+7. ……Show/Hide file list pane
+8. ……Show/Hide editor pane
+9. ……Show/Hide preview pane
+10. ……Action menu
 
-Actionメニューをプルダウンすると、下記のような操作が可能です。
+When you pull down the Action menu, you can perform the following operations.
 
-- Setting（設定）
-    - [Presentation mode](/ja/functions-of-the-actions-menu/setting.md#presentation-modeプレゼンテーション・モード)
-    - [Auto reload](/ja/functions-of-the-actions-menu/setting.md#auto-reload自動再読み込み)
-- Theme（スタイル情報の選択）
-    - [Plain theme](/ja/functions-of-the-actions-menu/theme.md#plain-theme)
-    - [Custom theme](/ja/functions-of-the-actions-menu/theme.md#custom-theme)
-    - [Book theme for latin font](/ja/functions-of-the-actions-menu/theme.md#book-theme-for-latin-font)
-    - [文庫用のテーマ](/ja/functions-of-the-actions-menu/theme.md#文庫用のテーマ)
-    - [Slide theme](/ja/functions-of-the-actions-menu/theme.md#slide-theme)
-    - [ Techbook (技術同人誌) theme](/ja/functions-of-the-actions-menu/theme.md#techbook-技術同人誌-theme)
-    -[Academic theme](/ja/functions-of-the-actions-menu/theme.md#academic-theme)
-- Add files（ファイルの追加）
-    - [Add Image（画像ファイルの追加）](/ja/functions-of-the-actions-menu/add-files.md#add-image画像ファイルの追加)
-- Export（出力）
-    - [PDF](/ja/functions-of-the-actions-menu/export.md#pdf)
-- Help（ヘルプ）
-    - [ VFM Spec（Vivliostyle Flavored Markdown仕様の表示）](/ja/functions-of-the-actions-menu/help.md#vfm-specvivliostyle-flavored-markdown仕様の表示)
+- Setting
+    - [Presentation mode](/functions-of-the-actions-menu/setting.md#presentation-mode)
+    - [Auto reload](/functions-of-the-actions-menu/setting.md#auto-reload)
+- Theme (Select style information)
+    - [Plain theme](/functions-of-the-actions-menu/theme.md#plain-theme)
+    - [Custom theme](/functions-of-the-actions-menu/theme.md#custom-theme)
+    - [Book theme for latin font](/functions-of-the-actions-menu/theme.md#book-theme-for-latin-font)
+    - [Theme for Japanese paperback](/functions-of-the-actions-menu/theme.md#theme-for-japanese-paperback)
+    - [Slide theme](/functions-of-the-actions-menu/theme.md#slide-theme)
+    - [Techbook theme](/functions-of-the-actions-menu/theme.md#techbook-theme)
+    - [Academic theme](/functions-of-the-actions-menu/theme.md#academic-theme)
+- Add files
+    - [Add Image](/functions-of-the-actions-menu/add-files.md#add-image)
+- Export
+    - [PDF](/functions-of-the-actions-menu/export.md#pdf)
+- Help
+    - [VFM Spec (Vivliostyle Flavored Markdown specification)](/functions-of-the-actions-menu/help.md#vfm-spec)
 
-
-### ファイル一覧ペイン
+### File List Pane
 
 ![](images/readme-first/fig-6.png)
 
-1. ……リポジトリ内のファイル名を検索
-2. ……リポジトリのファイル一覧を再取得
-3. ……![](https://github.com/microsoft/vscode-codicons/raw/main/src/icons/arrow-up.svg) リポジトリにファイルをアップロード
-4. ……![](https://github.com/microsoft/vscode-codicons/raw/main/src/icons/new-folder.svg) リポジトリにフォルダを新規作成
-5. ……![](https://raw.githubusercontent.com/microsoft/vscode-codicons/main/src/icons/new-file.svg) リポジトリにファイルを新規作成
-6. ……現在編集中のファイル（**太字**）
-7. ……リポジトリ内のファイル一覧
+1. ……Search for file names in the repository
+2. ……Retrieve the file list of the repository again
+3. ……![](https://github.com/microsoft/vscode-codicons/raw/main/src/icons/arrow-up.svg) Upload files to the repository
+4. ……![](https://github.com/microsoft/vscode-codicons/raw/main/src/icons/new-folder.svg) Create a new folder in the repository
+5. ……![](https://raw.githubusercontent.com/microsoft/vscode-codicons/main/src/icons/new-file.svg) Create a new file in the repository
+6. ……Currently editing file (**bold**)
+7. ……File list in the repository
 
-
-- **アイコン種別一覧**
-  - ![](https://raw.githubusercontent.com/astrit/css.gg/master/icons/svg/corner-left-up.svg)……上位フォルダへ移動
-  - ![](https://raw.githubusercontent.com/microsoft/vscode-codicons/main/src/icons/folder.svg)……フォルダ
-  - ![](https://raw.githubusercontent.com/microsoft/vscode-codicons/main/src/icons/file-media.svg)……画像ファイル
-  - ![](https://raw.githubusercontent.com/microsoft/vscode-codicons/main/src/icons/code.svg)……HTMLファイル
-  - ![](https://raw.githubusercontent.com/microsoft/vscode-codicons/main/src/icons/symbol-namespace.svg)……CSSファイル
-  - ![](https://raw.githubusercontent.com/microsoft/vscode-codicons/main/src/icons/markdown.svg)……Markdownファイル
+- **Icon types**
+  - ![](https://raw.githubusercontent.com/astrit/css.gg/master/icons/svg/corner-left-up.svg)……Move to the upper folder
+  - ![](https://raw.githubusercontent.com/microsoft/vscode-codicons/main/src/icons/folder.svg)……Folder
+  - ![](https://raw.githubusercontent.com/microsoft/vscode-codicons/main/src/icons/file-media.svg)……Image file
+  - ![](https://raw.githubusercontent.com/microsoft/vscode-codicons/main/src/icons/code.svg)……HTML file
+  - ![](https://raw.githubusercontent.com/microsoft/vscode-codicons/main/src/icons/symbol-namespace.svg)……CSS file
+  - ![](https://raw.githubusercontent.com/microsoft/vscode-codicons/main/src/icons/markdown.svg)……Markdown file
   - ![](https://raw.githubusercontent.com/microsoft/vscode-codicons/main/src/icons/settings-gear.svg)……vivliostyle.config.js
-  - ![](https://raw.githubusercontent.com/microsoft/vscode-codicons/main/src/icons/file.svg)……その他のファイル
+  - ![](https://raw.githubusercontent.com/microsoft/vscode-codicons/main/src/icons/file.svg)……Other files
 
+For details on various file operations, please refer to the following.
 
-各種ファイル操作の詳細は下記をご参照ください。
+- [Operations from the file list pane](/ja/file-and-folder-operations/file-list-pane-operations.md)
 
-- [ファイル一覧ペインからの操作](/ja/file-and-folder-operations/file-list-pane-operations.md)
-
-
-
-### プレビュー・ペイン
+### Preview Pane
 
 ![](images/readme-first/fig-7.png)
 
-1. ……ファイル内の文字列を検索
-2. ……ページ移動ボタン（左から先頭ページへ移動、前のページへ移動、後のページへ移動、末尾ページへ移動／単一ページの場合はグレイアウト）
-3. ……ページカウンター（現在のページ／総ページ）
-4. ……文字サイズ変更（左から小さく、大きく、デフォルト）
-5. ……ズーム（左から縮小、拡大、等倍、フィットページ）
-6. ……ページ移動スライドバー
+1. ……Search for strings in the file
+2. ……Page navigation buttons (from left to move to the first page, move to the previous page, move to the next page, move to the last page / grayed out for single page)
+3. ……Page counter (current page / total pages)
+4. ……Change text size (from left to smaller, larger, default)
+5. ……Zoom (from left to reduce, enlarge, actual size, fit page)
+6. ……Page navigation slider
 
-## ログの表示 
+## Displaying Logs
 
 ![](images/readme-first/fig-8.png)
 
-画面下端付近でマウスポインタを動かし、ポインタの形状が上下矢印「↕」に変わったところで、マウスボタンをプレスしたまま上方にドラッグするとログが現れます。
+Move the mouse pointer near the bottom of the screen, and when the pointer changes to an up-down arrow "↕", press the mouse button and drag it upward to reveal the logs.
