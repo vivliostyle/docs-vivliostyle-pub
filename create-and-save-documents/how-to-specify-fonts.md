@@ -1,83 +1,83 @@
-# フォントの指定方法
+# How to Specify Fonts
 
-## フォントを利用するしくみ
+## Mechanism of Using Fonts
 
-フォントは themeの中で指定されます（→[ Theme（スタイル情報の選択）](/ja/functions-of-the-actions-menu/theme.md)）。組版エンジンであるVivliostyle.jsは、themeにしたがってフォントを操作し、レイアウトや組版をします。以下の図1はプレビューのしくみを図式化したものです。
+Fonts are specified within the theme (→[Theme (Selecting Style Information)](/functions-of-the-actions-menu/theme.md)). The typesetting engine Vivliostyle.js operates fonts according to the theme and performs layout and typesetting. Figure 1 below illustrates the mechanism of the preview.
 
-<img src="images/create-and-save-documents/how-to-specify-fonts/fig-1.jpg" alt="図1 プレビューにおけるフォントの利用" style="max-height: 500px;">
+<img src="images/create-and-save-documents/how-to-specify-fonts/fig-1.jpg" alt="Figure 1: Using Fonts in Preview" style="max-height: 500px;">
 
-ここで注意してほしいのは、プレビューのために組版をおこなうVivliostyle.js（赤い四角）は、ユーザーのPC上のフロントエンドにあるということです。したがってVivliostyle.jsと同じユーザーのPCにある**フォント1**、及びWebフォントサービスの**フォント3**がプレビューで利用できるわけです。
+It is important to note that the typesetting for the preview performed by Vivliostyle.js (red square) is on the user's PC frontend. Therefore, **Font 1** on the same user's PC as Vivliostyle.js and **Font 3** from the web font service can be used in the preview.
 
-次に、PDF出力のしくみを図式化したのが図2です。PDF出力のために組版をおこなうVivliostyle.js（赤い四角）はクラウド上のバックエンドにあります。
+Next, Figure 2 illustrates the mechanism of PDF output. The typesetting for PDF output performed by Vivliostyle.js (red square) is on the cloud backend.
 
-<img src="images/create-and-save-documents/how-to-specify-fonts/fig-2.jpg" alt="図2 PDF出力におけるフォントの利用" style="max-height: 500px;">
+<img src="images/create-and-save-documents/how-to-specify-fonts/fig-2.jpg" alt="Figure 2: Using Fonts in PDF Output" style="max-height: 500px;">
 
-したがってVivliostyle.jsと同じクラウドにある**フォント2**、及びWebフォントサービスの**フォント3**がPDF出力で利用できるわけです。
+Therefore, **Font 2** installed in the cloud and **Font 3** from the web font service can be used for PDF output.
 
-ここまでの説明をまとめてみましょう。プレビューとPDF出力は、それぞれ別の組版エンジン、Vivliostyle.js（図1、図2の赤い四角）が担当します。その際、それぞれの組版エンジンは以下の3つの場所にあるフォントを使用します。
+Let's summarize the explanation so far. Preview and PDF output are handled by separate typesetting engines, Vivliostyle.js (red squares in Figures 1 and 2). Each typesetting engine uses fonts from the following three locations:
 
-- ユーザーのPCにあるローカルフォント（図1：**フォント1**）
-- クラウドにインストールされたフォント（図2：**フォント2**）
-- Webフォントサービスのフォント（図1、図2：**フォント3**）
+- Local fonts on the user's PC (Figure 1: **Font 1**)
+- Fonts installed in the cloud (Figure 2: **Font 2**)
+- Fonts from the web font service (Figures 1 and 2: **Font 3**)
 
-プレビューを担当するユーザーのPC上のVivliostyle.jsは、ローカルフォント（図1：**フォント1**）、及びWebフォントサービスのフォント（図1、図2：**フォント3**）を使います。
+The Vivliostyle.js on the user's PC for preview uses local fonts (Figure 1: **Font 1**) and web font service fonts (Figures 1 and 2: **Font 3**).
 
-一方、PDF出力を担当するクラウド上のVivliostyle.jsは、クラウドにインストールされたフォント（図2：**フォント2**）、及びWebフォントサービスのフォント（図1、図2：**フォント3**）を使います。
+On the other hand, the Vivliostyle.js on the cloud for PDF output uses fonts installed in the cloud (Figure 2: **Font 2**) and web font service fonts (Figures 1 and 2: **Font 3**).
 
-このようなしくみなので、プレビューで使われるフォントとPDF出力で使われるフォントが、いつでも無条件に一致するのは、Webフォントサービスのフォント（図1、図2：**フォント3**）だけです。プレビューではクラウドにインストールされたフォント（図2：**フォント2**）は使えず、PDF出力ではユーザーのPCにインストールされたローカルフォント（図1：**フォント1**）は使えません。
+Due to this mechanism, the only fonts that always match between preview and PDF output are the web font service fonts (Figures 1 and 2: **Font 3**). Local fonts installed on the user's PC (Figure 1: **Font 1**) cannot be used for PDF output, and fonts installed in the cloud (Figure 2: **Font 2**) cannot be used for preview.
 
-例えば、プレビューで使ったローカルフォント（図1：**フォント1**）がクラウドになかった場合、PDF出力ではクラウドにインストールされたフォントのうち、似たものに置き換えられます（→[ クラウド上のVivliostyle CLIにおける代替フォントルール](/ja/create-and-save-documents/additional-information-on-fonts.md#クラウド上のvivliostyle-cliにおける代替フォントルール)）。その結果、プレビューとPDF出力のフォントが不一致になり、ページのズレが発生することにご注意ください。
+For example, if the local font used in the preview (Figure 1: **Font 1**) is not available in the cloud, it will be replaced with a similar font from the fonts installed in the cloud for PDF output (→[Substitute Font Rules in Vivliostyle CLI on the Cloud](/create-and-save-documents/additional-information-on-fonts.md#substitute-font-rules-in-vivliostyle-cli-on-the-cloud)). As a result, the fonts between preview and PDF output will not match, causing page misalignment.
 
-本節ではActionメニューの項目に沿いながら、3種類のフォントを使い分ける方法について説明していきます。その中で、プレビューとPDF出力のフォントを一致させる方法についても触れます。
+In this section, we will explain how to use the three types of fonts along with the items in the Action menu. We will also touch on how to match the fonts between preview and PDF output.
 
-## Plain themeで使われるフォント
+## Fonts Used in the Plain Theme
 
 ![ ](images/create-and-save-documents/how-to-specify-fonts/fig-3.png)
 
-Plain themeは最小の手間で素早くプレビューを確認するためのものです。他と違って特定のtheme（スタイル情報）があるのではなく、ブラウザのデフォルト設定にしたがいます。たとえばフォントはブラウザ設定の「標準フォント」が参照されます。これは、前掲図1の分類では**フォント1**（ユーザーのPCにあるローカルフォント）に当たります。
+The Plain theme is for quickly checking the preview with minimal effort. Unlike others, it does not have a specific theme (style information) but follows the browser's default settings. For example, the font refers to the "standard font" set in the browser. This corresponds to **Font 1** (local fonts on the user's PC) in Figure 1.
 
-このthemeの目的上、出力は想定されていません。PDF出力そのものは可能ですが、Plain themeで使われたブラウザのデフォルト設定は[クラウド上のVivliostyle CLIにおける代替フォントルール](/ja/create-and-save-documents/additional-information-on-fonts.md#クラウド上のvivliostyle-cliにおける代替フォントルール)に従って置き換えられます。イメージ通りのスタイルでプレビューやPDF出力をしたい場合は、後述のVivliostyle公式themeの中から選択するか、Custom themeを作成してください。
+The purpose of this theme is not for output. PDF output is possible, but the browser's default settings used in the Plain theme will be replaced according to the [Substitute Font Rules in Vivliostyle CLI on the Cloud](/create-and-save-documents/additional-information-on-fonts.md#substitute-font-rules-in-vivliostyle-cli-on-the-cloud). If you want to preview or output PDF with the intended style, choose from the official Vivliostyle themes described later or create a Custom theme.
 
-Plain themeについては、以下もご参照ください。
+For more information on the Plain theme, please refer to the following:
 
-- [ Theme（スタイル情報の選択） >  Plain theme](/ja/functions-of-the-actions-menu/theme.md#plain-theme)
+- [Theme (Selecting Style Information) > Plain Theme](/functions-of-the-actions-menu/theme.md#plain-theme)
 
-## Vivliostyle公式Themeで使われるフォント
+## Fonts Used in Official Vivliostyle Themes
 
 ![ ](images/create-and-save-documents/how-to-specify-fonts/fig-4.png)
 
-Actionメニューから、以下のthemeを選択した場合、npm package管理システム上のVivliostyle公式Themeが使用されます。ぞれぞれのthemeの詳細は、リンク先を参照してください。
+When selecting the following themes from the Action menu, the official Vivliostyle themes on the npm package management system will be used. For details on each theme, refer to the links.
 
-- [Book theme for latin font](/ja/functions-of-the-actions-menu/theme.md#book-theme-for-latin-font)
-- [文庫用のテーマ](/ja/functions-of-the-actions-menu/theme.md#文庫用のテーマ)
-- [Slide theme](/ja/functions-of-the-actions-menu/theme.md#slide-theme)
-- [Techbook (技術同人誌) theme](/ja/functions-of-the-actions-menu/theme.md#techbook-技術同人誌-theme)
-- [Academic theme](/ja/functions-of-the-actions-menu/theme.md#academic-theme) 
+- [Book theme for Latin font](/functions-of-the-actions-menu/theme.md#book-theme-for-latin-font)
+- [Theme for paperback books](/functions-of-the-actions-menu/theme.md#theme-for-paperback-books)
+- [Slide theme](/functions-of-the-actions-menu/theme.md#slide-theme)
+- [Techbook (Technical Doujinshi) theme](/functions-of-the-actions-menu/theme.md#techbook-technical-doujinshi-theme)
+- [Academic theme](/functions-of-the-actions-menu/theme.md#academic-theme)
 
-プレビューにおいて、これらのthemeで使用されるのはユーザーのPCにあるローカルフォント（前掲図1の**フォント1**）です。したがってthemeで指定されたフォントがユーザーのPCにインストールされている必要があります。もしそれらのフォントがインストールされていなければ、`font-family:`の設定に従って`sans-serif`ないしは`serif`に代替されます。
+In the preview, these themes use local fonts on the user's PC (Figure 1: **Font 1**). Therefore, the fonts specified in the theme need to be installed on the user's PC. If those fonts are not installed, they will be substituted with `sans-serif` or `serif` according to the `font-family:` setting.
 
-一方、PDF出力ではクラウドにインストールされたフォント（前掲図2の**フォント2**）が使用されます。もし公式themeで指定されているフォントがクラウドになければ、[クラウド上のVivliostyle CLIにおける代替フォントルール](/ja/create-and-save-documents/additional-information-on-fonts.md#クラウド上のvivliostyle-cliにおける代替フォントルール)に従って別のフォントで代替されます。それぞれの公式themeでどのようなフォントが指定されているか、そしてクラウド上にどのようなフォントがインストールされているのかは下記をご参照ください。
+For PDF output, fonts installed in the cloud (Figure 2: **Font 2**) are used. If the fonts specified in the official theme are not available in the cloud, they will be replaced according to the [Substitute Font Rules in Vivliostyle CLI on the Cloud](/create-and-save-documents/additional-information-on-fonts.md#substitute-font-rules-in-vivliostyle-cli-on-the-cloud). For details on the fonts specified in each official theme and the fonts installed in the cloud, refer to the following:
 
-- [ Theme（スタイル情報の選択）](/ja/functions-of-the-actions-menu/theme.md)
-- [クラウドにインストールされているフォント一覧](/ja/create-and-save-documents/additional-information-on-fonts.md#クラウドにインストールされているフォント一覧)
+- [Theme (Selecting Style Information)](/functions-of-the-actions-menu/theme.md)
+- [List of Fonts Installed in the Cloud](/create-and-save-documents/additional-information-on-fonts.md#list-of-fonts-installed-in-the-cloud)
 
-こうした代替処理によりフォントが不一致になった場合、プレビューとPDFとでページがずれることにご注意ください。（→[Custom theme／プレビューとPDF出力とでフォントを一致させる](/ja/create-and-save-documents/how-to-specify-fonts.md#custom-theme／プレビューとpdf出力とでフォントを一致させる)）
+Please note that if fonts are substituted due to these replacement processes, the pages may misalign between the preview and PDF.
 
-## Custom theme／プレビューとPDF出力とでフォントを一致させる
+## Custom Theme / Matching Fonts Between Preview and PDF Output
 
-Custom themeを作成することで、それにもとづいたプレビューとPDF出力ができます。この時プレビューで使用されるのはユーザーのPCにあるローカルフォント（前掲図1の**フォント1**）です。一方、PDF出力で使用されるのはクラウドにインストールされたフォント（前掲図2の**フォント2**）です。
+By creating a Custom theme, you can perform preview and PDF output based on it. In this case, the local fonts on the user's PC (Figure 1: **Font 1**) are used for the preview, and the fonts installed in the cloud (Figure 2: **Font 2**) are used for PDF output.
 
-ここで問題になるのは、Custom themeで指定したフォントが、ユーザーのPCかクラウドにしかインストールされていなかった時です。その場合は似たフォントが代替使用されるので、プレビューとPDF出力でフォントが不一致になります。フォントが異なるので、プレビューとPDF出力とでページのズレが発生します。
+The problem arises when the font specified in the Custom theme is only installed on the user's PC or the cloud. In such cases, a similar font will be used as a substitute, causing font mismatches between the preview and PDF output, leading to page misalignment.
 
-しかし、クラウドにあるフォントをPCにもインストールし、これをCustom themeで指定すればプレビューとPDF出力とでフォントを一致でき、ページのズレは発生しません。では、[クラウドにインストールされているフォント](/ja/create-and-save-documents/additional-information-on-fonts.md#クラウドにインストールされているフォント一覧)のうち、どのフォントをPCにインストールすれば間違いないのでしょう？
+However, if you install the fonts available in the cloud on your PC and specify them in the Custom theme, you can match the fonts between the preview and PDF output, preventing page misalignment. So, which fonts installed in the cloud should you install on your PC?
 
-Vivliostyle Pubでは、世界中の言語や文字体系に対応し豊富なウェイトとスタイルをもつ[Noto fonts](https://fonts.google.com/noto)全てを、クラウドにインストールしています。そのうちの日本語ゴシック体フォントである[`Noto Sans CJK JP`](https://github.com/googlefonts/noto-cjk/tree/main/Sans)、および日本語明朝体フォントである[`Noto Serif CJK JP`](https://github.com/googlefonts/noto-cjk/tree/main/Serif)を、ユーザーのPCにもインストールするのが最も効率的で効果的です。以下、本項では`Noto Sans CJK JP`を使ってプレビューとPDF出力をする方法を説明します。
+Vivliostyle Pub has installed all [Noto fonts](https://fonts.google.com/noto), which support a wide range of languages and scripts with rich weights and styles, in the cloud. The most efficient and effective way is to install the Japanese Gothic font [`Noto Sans CJK JP`](https://github.com/googlefonts/noto-cjk/tree/main/Sans) and the Japanese Mincho font [`Noto Serif CJK JP`](https://github.com/googlefonts/noto-cjk/tree/main/Serif) on your PC. Below, we will explain how to use `Noto Sans CJK JP` for preview and PDF output.
 
 ------------------------
 
-1. あらかじめPCに`Noto Sans CJK JP`をインストールしておきます。
+1. Install `Noto Sans CJK JP` on your PC in advance.
 
-2. Vivliostyle Pubで、以下のような内容のスタイルシート（Custom theme）をアップロードします（→[ファイルのアップロード](/ja/file-and-folder-operations/file-list-pane-operations.md)）。すでにある場合は下記を参考に書き換えてください
+2. Upload a stylesheet (Custom theme) with the following content to Vivliostyle Pub (→[File Upload](/file-and-folder-operations/file-list-pane-operations.md)). If you already have one, rewrite it with the following as a reference.
 
 ```css
 @charset "UTF-8";
@@ -131,14 +131,14 @@ h2 {
 }
 ```
 
-上記はCustom themeの一例です。ルート要素の`font-family`として`Noto Sans CJK JP`を指定し、本文（`p`）に`font-weight: 300;`、大見出し（`h1`）に`font-weight: 900;`、小見出し（`h2`）に`font-weight: 700;`と、同じデザインで複数の太さを指定し分けています。またページ設定（`@page`）として判型はA5判タテ、幅360pt、高さ468pt、フォントサイズ8.5ptを指定しています。
+The above is an example of a Custom theme. The root element specifies `Noto Sans CJK JP` as the `font-family`, with `font-weight: 300;` for the body text (`p`), `font-weight: 900;` for the main heading (`h1`), and `font-weight: 700;` for the subheading (`h2`), specifying different weights with the same design. The page settings (`@page`) specify A5 portrait size, width 360pt, height 468pt, and font size 8.5pt.
 
-3. 設定ファイル`vivliostyle.config.js`の中で、Custom themeのあるpathを指定します（→[Custom theme](/ja/functions-of-the-actions-menu/theme.md#custom-theme)）。`entry: `にはPDF出力するファイル名を記述します。
+3. In the configuration file `vivliostyle.config.js`, specify the path to the Custom theme (→[Custom theme](/functions-of-the-actions-menu/theme.md#custom-theme)). Describe the file name to be output as PDF in `entry:`.
 
 ```js
 module.exports = {
-  title: '私の本',
-  author: '尾久綿次郎',
+  title: 'My Book',
+  author: 'Jiro Ogumawata',
   theme: 'css/style.css',
   entry: [
     'chapter-2.md',
@@ -146,46 +146,45 @@ module.exports = {
 }
 ```
 
-`vivliostyle.config.js`についての詳細は下記をご参照ください。
+For more details on `vivliostyle.config.js`, refer to the following:
 
-- [文書のカスタマイズ](/ja/create-and-save-documents/document-customization.md)
+- [Document Customization](/create-and-save-documents/document-customization.md)
 
-
-4. Actionメニューから「Custom theme」を選択します。themeが切り替わらない場合は、ブラウザをリロードさせてください
+4. Select "Custom theme" from the Action menu. If the theme does not switch, reload the browser.
 
 ![ ](images/create-and-save-documents/how-to-specify-fonts/fig-5.png)
 
-5. プレビューで`Noto Sans CJK JP`が使用されるようになりました
+5. `Noto Sans CJK JP` is now used in the preview.
 
 ![ ](images/create-and-save-documents/how-to-specify-fonts/fig-6.png)
 
-6. Actionメニューから[Export（出力） > PDF](/ja/functions-of-the-actions-menu/export.md#pdf)を選択すると、Custom themeを適用したPDFが出力されます。プレビューと同じ`Noto Sans CJK JP`が、同じ文字サイズ、行長、行送りにより使用されていることを確認してください   
+6. Select [Export > PDF](/functions-of-the-actions-menu/export.md#pdf) from the Action menu to output a PDF with the Custom theme applied. Confirm that the same `Noto Sans CJK JP` is used with the same font size, line length, and line spacing as in the preview.
 
 ![ ](images/create-and-save-documents/how-to-specify-fonts/fig-7.png)
 
-Custom themeについての詳細は下記をご参照ください。
+For more details on Custom themes, refer to the following:
 
-- [Custom theme](/ja/functions-of-the-actions-menu/theme.md#custom-theme)
+- [Custom theme](/functions-of-the-actions-menu/theme.md#custom-theme)
 
-- **補足情報**
-    - Noto fontsは多種多様なバリエーションがあり、なかなか目的のフォントが見つからない可能性があります。 下記リポジトリにあるリンクのうち **“Variable OTC”** をダウンロードするとよいでしょう。
+- **Supplementary Information**
+    - Noto fonts have a wide variety of variations, and it may be difficult to find the desired font. It is recommended to download the **"Variable OTC"** link in the repository below.
         - [`Noto Sans CJK JP`](https://github.com/googlefonts/noto-cjk/tree/main/Sans)
         - [`Noto Serif CJK JP`](https://github.com/googlefonts/noto-cjk/tree/main/Serif)
-    - リンクは “OTC”（54.3MB）と “TTF”（57.1MB）の2つあります。どちらも単一フォントパッケージに複数のフォントファイルを内蔵させる「フォントコレクション」と呼ばれる形式であり、Vivliostyle Pubで使う場合は “OTC”と “TTF” のどちらを使っても同じです。
-    - “Variable OTC” をインストールすることで、日本語（JP）、繁体字（TC）、簡体字（SC）、香港（HK）、韓国語（KR）の5つの言語用フォントがインストールされます。
-    - 本項で説明した方法以外にも、Webフォントサービス（図1、図2：**フォント3**）を利用することで、同様にプレビューとPDF出力とでフォントを一致させることができます（次項以降参照）
+    - There are two links: "OTC" (54.3MB) and "TTF" (57.1MB). Both are in a format called "font collection," which contains multiple font files in a single font package. When used in Vivliostyle Pub, either "OTC" or "TTF" can be used.
+    - By installing the "Variable OTC," fonts for five languages (Japanese (JP), Traditional Chinese (TC), Simplified Chinese (SC), Hong Kong (HK), Korean (KR)) will be installed.
+    - In addition to the method explained in this section, you can also match the fonts between preview and PDF output by using a web font service (Figures 1 and 2: **Font 3**) (refer to the following sections).
 
-## Custom theme／Googleフォントの使用
+## Custom Theme / Using Google Fonts
 
-Webフォント（前掲図1／図2の**フォント3**）を利用すると、プレビューとPDF出力でフォントを一致させることができます。本項では無償のWebフォントサービス、[Googleフォント](https://fonts.google.com/)をVivliostyle Pubで使用する方法を説明します。
+By using web fonts (Figures 1 and 2: **Font 3**), you can match the fonts between preview and PDF output. This section explains how to use the free web font service [Google Fonts](https://fonts.google.com/) with Vivliostyle Pub.
 
-1. まず[Googleフォント](https://fonts.google.com/)でフォント選択し、つぎにStylesで使いたい太さを “Select this style” 右横にある(+)　をクリックして選択します。ここでは、しっぽり明朝 Regular 400、Noto Sans Japanese Bold 700、Noto Sans Japanese Medium 900を選択しました
+1. First, select a font on [Google Fonts](https://fonts.google.com/), then click the (+) next to "Select this style" in Styles to choose the desired weight. Here, we selected Shippori Mincho Regular 400, Noto Sans Japanese Bold 700, and Noto Sans Japanese Medium 900.
 
-すると、画面右ペインに選択したフォント／スタイルの読み込み用コードが表示されるので、これをコピーします。また、「CSS rules to specify families」から`font-family`のコードもコピーします
+The loading code for the selected font/style will be displayed in the right pane of the screen, so copy it. Also, copy the `font-family` code from "CSS rules to specify families."
 
 ![ ](images/create-and-save-documents/how-to-specify-fonts/fig-8.png)
 
-2. 下記のようにGoogleフォントの読み込み用コードや`font-family`のコードを記入したCustom themeをアップロードします（→[ファイルのアップロード](/ja/file-and-folder-operations/file-list-pane-operations.md)）。すでにスタイルシート（Custom theme）がある場合は下記を参考に書き換えてください
+2. Upload a Custom theme with the Google Fonts loading code and `font-family` code as shown below (→[File Upload](/file-and-folder-operations/file-list-pane-operations.md)). If you already have a stylesheet (Custom theme), rewrite it with the following as a reference.
 
 ```css
 @charset "UTF-8";
@@ -242,16 +241,16 @@ font-weight: 700;
 }
 ```
 
-Googleフォントでは、読み込みコードとして`link`要素と`@import`の2種類を用意していますが、どちらも外部スタイルシートを読み込むもので機能的には同一です。ここでは複数のMarkdownファイルにWebフォントを適用できるメリットを重視し、スタイルシート（Custom theme）に`@import`の読み込みコードをペーストすることにします（HTMLファイルで使うため前後に`style`要素が入っていますが、それらは取り除いてください）
+Google Fonts provides two types of loading codes: `link` element and `@import`. Both load external stylesheets and function the same. Here, we prioritize the benefit of applying web fonts to multiple Markdown files and paste the `@import` loading code into the stylesheet (Custom theme) (remove the `style` elements used for HTML files).
 
-それから、具体的なフォント名を指定する`font-family`のコードもCustom themeにペーストします。ここではルート要素にしっぽり明朝 Regular 400を、`h1`にNoto Sans Japanese Bold 900を、`h2`にNoto Sans Japanese Medium 700を指定しました
+Then, paste the specific font name specified in the `font-family` code into the Custom theme. Here, we specified Shippori Mincho Regular 400 for the root element, Noto Sans Japanese Bold 900 for `h1`, and Noto Sans Japanese Medium 700 for `h2`.
 
-3. 設定ファイル`vivliostyle.config.js`の中で、Custom themeのpathを指定します（→[Custom theme](/ja/functions-of-the-actions-menu/theme.md#custom-theme)）。`entry: `にはPDF出力するファイル名を記述します
+3. In the configuration file `vivliostyle.config.js`, specify the path to the Custom theme (→[Custom theme](/functions-of-the-actions-menu/theme.md#custom-theme)). Describe the file name to be output as PDF in `entry:`.
 
 ```js
 module.exports = {
-  title: '私の本',
-  author: '尾久綿次郎',
+  title: 'My Book',
+  author: 'Jiro Ogumawata',
   theme: 'css/style.css',
   entry: [
     'chapter-2.md',
@@ -259,36 +258,36 @@ module.exports = {
 }
 ```
 
-4. ActionメニューでCustom themeを選択し、プレビューにWebフォントが適用されたことを確認します。themeが切り替わらない場合は、ブラウザをリロードさせてください
+4. Select the Custom theme from the Action menu and confirm that the web font is applied in the preview. If the theme does not switch, reload the browser.
 
 ![ ](images/create-and-save-documents/how-to-specify-fonts/fig-9.png)
 
-5. Actionメニューで「Export（出力） > PDF」を選択すると、WebフォントでPDF出力ができます（→[Export（出力）> PDF](/ja/functions-of-the-actions-menu/export.md#pdf)）。プレビューと同じフォントが、同じ文字サイズ、行長、行送りでPDF出力されたことを確認します
+5. Select [Export > PDF](/functions-of-the-actions-menu/export.md#pdf) from the Action menu to output a PDF with the web font applied. Confirm that the same font is used with the same font size, line length, and line spacing as in the preview.
 
 ![ ](images/create-and-save-documents/how-to-specify-fonts/fig-10.png)
 
-- **補足情報**
-    - この記事では複数のMarkdownファイルにWebフォントを適用するためスタイルシート（Custom theme）に`@import`をペーストしましたが、特定のMarkdownファイルにだけWebフォントを適用したい場合は、当該ファイルの先頭に読み込みコード（`link`要素、及び`style`要素で囲った`@import`のどちらか）をペーストします。その際、忘れずにスタイルシートの方で`font-family`を指定してください
-    - [bunny.net](https://fonts.bunny.net/)によりGoogleフォントと同じフォントが無償で利用可能です
-        - このサービスはGoogleフォントと互換性を維持した上で（つまり同じフォントをホスティングした上で）、EUの[GDPR（一般データ保護規則）](https://www.jetro.go.jp/world/europe/eu/gdpr/)をクリアするためにユーザーのトラッキングをしないことを明示しています（[bunny.net > about](https://fonts.bunny.net/about)）
-        - 使い方は簡単で、Googleフォントで取得した読み込み用コードのうち、`googleapis.com`の部分を`bunny.net`に置き換えるだけ
-        - もしくは、[bunny.net](https://fonts.bunny.net/)でフォントを選択し、画面右上の「Font+」をクリックして読み込みコードを取得し、スタイルシート（Custom theme）かMarkdownにペーストします
+- **Supplementary Information**
+    - In this article, we pasted the `@import` code into the stylesheet (Custom theme) to apply web fonts to multiple Markdown files. If you want to apply web fonts to specific Markdown files only, paste the loading code (`link` element or `@import` wrapped in `style` elements) at the beginning of the file. Be sure to specify the `font-family` in the stylesheet.
+    - [bunny.net](https://fonts.bunny.net/) offers the same fonts as Google Fonts for free.
+        - This service maintains compatibility with Google Fonts (i.e., hosting the same fonts) and explicitly states that it does not track users to comply with the EU's [GDPR (General Data Protection Regulation)](https://www.jetro.go.jp/world/europe/eu/gdpr/) (→[bunny.net > about](https://fonts.bunny.net/about)).
+        - It is easy to use; simply replace the `googleapis.com` part of the loading code obtained from Google Fonts with `bunny.net`.
+        - Alternatively, select a font on [bunny.net](https://fonts.bunny.net/), click "Font+" in the upper right corner of the screen to obtain the loading code, and paste it into the stylesheet (Custom theme) or Markdown file.
 
-## Custom theme／有償Webフォントサービスの使用      
+## Custom Theme / Using Paid Web Font Services
 
-Googleフォントは無償で利用できるメリットがありますが、デメリットは読み込みスピードが多少落ちることです。短い文章なら問題なくとも、原稿がとても長い場合は遅さが気になるかもしれません。そうした場合は、有償Webフォントサービスの利用を検討するとよいでしょう。本項ではダイナコムウェア社の[DynaSmart V](https://www.dynacw.co.jp/product/product_dynasmart_detail.aspx?sid=25)を例にとり、これをVivliostyle Pubで利用する方法を説明します。なお、以下ではすでに同社のアカウントを取得している前提ですすめます。
+Google Fonts has the advantage of being free, but the disadvantage is that the loading speed may be slightly slower. While it may not be a problem for short texts, the slowness may be noticeable for very long manuscripts. In such cases, consider using a paid web font service. This section explains how to use [DynaSmart V](https://www.dynacw.co.jp/product/product_dynasmart_detail.aspx?sid=25) by DynaComware with Vivliostyle Pub. The following assumes that you have already obtained an account with the company.
 
-1. DynaFont OnlineのマイページからVivliostyle Pubのドメイン名`vivliostyle-pub-develop.vercel.app`を登録した上で、利用したいフォントのJavaScriptコード（script要素）と`font-family`を取得します。詳細は下記ページが参考になるでしょう
+1. Register the domain name `vivliostyle-pub-develop.vercel.app` of Vivliostyle Pub from the DynaFont Online My Page, and then obtain the JavaScript code (script element) and `font-family` for the desired font. The following page may be helpful for details:
 
-    - [DFO JavaScript Generator（ダイナコムウェア）](https://dfo.dynacw.co.jp/service/JS_Gen.aspx)
+    - [DFO JavaScript Generator (DynaComware)](https://dfo.dynacw.co.jp/service/JS_Gen.aspx)
 
-ここでは本文書体としてＤＦ華康明朝体 StdN W3 OpenType、`h1`にＤＦ金剛黒体 Pro-6N Semibold OpenType、`h2`にＤＦ金剛黒体 Pro-6N Ultrabold OpenTypeを利用することにします
+Here, we will use DF Kaku Mincho StdN W3 OpenType as the body text font, DF King Gothic Pro-6N Semibold OpenType for `h1`, and DF King Gothic Pro-6N Ultrabold OpenType for `h2`.
 
-2. Markdownファイルの先頭に取得したJavaScriptコードをペーストします（この段階ではまだフォントは変更されていません）
+2. Paste the obtained JavaScript code at the beginning of the Markdown file (the font has not changed at this stage).
 
 ![ ](images/create-and-save-documents/how-to-specify-fonts/fig-11.png)
 
-3. 取得した`font-family`を記入した以下のようなスタイルシート（Custom theme）をアップロードします（→[ファイルのアップロード](/ja/file-and-folder-operations/file-list-pane-operations.md)）。すでにCustom themeがある場合は、下記を参考に書き換えてください
+3. Upload a Custom theme with the obtained `font-family` as shown below (→[File Upload](/file-and-folder-operations/file-list-pane-operations.md)). If you already have a Custom theme, rewrite it with the following as a reference.
 
 ```css
 @charset "UTF-8";
@@ -341,12 +340,12 @@ font-family: 'DFKingGothicJP16N-Semibold', sans-serif;
 }
 ```
 
-4. 設定ファイル`vivliostyle.config.js`の中で、Custom themeのあるpathを指定します（→[Custom theme](/ja/functions-of-the-actions-menu/theme.md#custom-theme)）。`entry: `にはPDF出力するファイル名を記述します
+4. In the configuration file `vivliostyle.config.js`, specify the path to the Custom theme (→[Custom theme](/functions-of-the-actions-menu/theme.md#custom-theme)). Describe the file name to be output as PDF in `entry:`.
 
 ```js
 module.exports = {
-  title: '私の本',
-  author: '尾久綿次郎',
+  title: 'My Book',
+  author: 'Jiro Ogumawata',
   theme: 'css/style.css',
   entry: [
     'chapter-2.md',
@@ -354,20 +353,20 @@ module.exports = {
 }
 ```
 
-5. Actionメニューから「Custom theme」を選択します。themeが切り替わらない場合は、ブラウザをリロードさせてください
+5. Select "Custom theme" from the Action menu. If the theme does not switch, reload the browser.
 
-6. プレビューでＤＦ華康明朝体、ＤＦ金剛黒体が使用されるようになりました
+6. DF Kaku Mincho and DF King Gothic are now used in the preview.
 
 ![ ](images/create-and-save-documents/how-to-specify-fonts/fig-12.png)
 
-7.  Actionメニューから「Export（出力）> PDF」を選択すると、Custom themeを適用したPDFが出力されます（→[Export（出力）> PDF](/ja/functions-of-the-actions-menu/export.md#pdf)）。プレビューと同じＤＦ華康明朝体、ＤＦ金剛黒体が、同じ文字サイズ、行長、行送りにより使用されていることを確認してください   
+7. Select [Export > PDF](/functions-of-the-actions-menu/export.md#pdf) from the Action menu to output a PDF with the Custom theme applied. Confirm that the same DF Kaku Mincho and DF King Gothic are used with the same font size, line length, and line spacing as in the preview.
 
 ![ ](images/create-and-save-documents/how-to-specify-fonts/fig-13.png)
 
-- **補足情報**
-    - 有償Webフォントサービスの読み込みスピードが速いのは、**動的サブセッティング**という方式を採用しているからです。これは収容文字数が膨大になる東アジア言語のWebフォントで有効性を発揮する技術です
-    - 大容量のフォントファイルはネットワークに依存するWebフォントに不向きです。そこでレンダリング前にコンテンツをパースし、そこに含まれている文字だけからなる小容量のサブセット・フォントを作成し、これをWebサーバに送ってレンダリングします。常にサブセットの内容が異なるのでこの名前があります
-    - これに対してGoogleフォントが採用しているのは**静的サブセッティング**です。この方式ではコンテンツとは無関係に、使用頻度ごとに小容量のサブセット・フォントに分割しておきます。Webサーバーから文字を要求されると、その文字が含まれたサブセット・フォントを送ってレンダリングします。サブセットの内容は固定されているのでこの名前があります。前者と比べれば効率は悪くなりがちで、読み込みスピードは前者に軍配が上がります
-    - このように使い勝手に優れる有償Webフォントサービスですが、利用規約によって用途を制限されている点に注意が必要です。Vivliostyle Pubで無条件にこれらのサービスが利用できるわけではないのです
-    - こうした状況をうけ、Vivliostyle Pubで安心して有償Webフォントサービスを利用してもらうために、サービスごとに推奨する用途を選定しました。どうかご参照ください
-       - [推奨する有償Webフォントサービスの用途](/ja/create-and-save-documents/additional-information-on-fonts.md#推奨する有償webフォントサービスの用途)
+- **Supplementary Information**
+    - The fast loading speed of paid web font services is due to the **dynamic subsetting** method. This technology is effective for East Asian language web fonts with a large number of characters.
+    - Large font files are not suitable for web fonts that depend on the network. Therefore, before rendering, the content is parsed, and a small subset font containing only the characters in the content is created and sent to the web server for rendering. Since the subset content is always different, it is called dynamic subsetting.
+    - In contrast, Google Fonts uses **static subsetting**. This method divides the font into small subsets based on usage frequency, regardless of the content. When a character is requested from the web server, the subset font containing that character is sent for rendering. The subset content is fixed, so it is called static subsetting. Compared to the former, it tends to be less efficient, and the loading speed is slower.
+    - While paid web font services are convenient, it is important to note that their usage may be restricted by terms of use. These services cannot be used unconditionally with Vivliostyle Pub.
+    - To ensure that paid web font services can be used safely with Vivliostyle Pub, we have selected recommended uses for each service. Please refer to the following:
+       - [Recommended Uses for Paid Web Font Services](/create-and-save-documents/additional-information-on-fonts.md#recommended-uses-for-paid-web-font-services)

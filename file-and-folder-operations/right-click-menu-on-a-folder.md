@@ -1,20 +1,20 @@
-# 右クリックメニュー（フォルダ操作）
+# Right-Click Menu (Folder Operations)
 
-- 新規フォルダの追加は、[ファイル一覧ペインの操作 > 新規フォルダの追加](/ja/file-and-folder-operations/file-list-pane-operations.md#%E6%96%B0%E8%A6%8F%E3%83%95%E3%82%A9%E3%83%AB%E3%83%80%E3%81%AE%E8%BF%BD%E5%8A%A0) を参照してください
+- For adding a new folder, refer to [File List Pane Operations > Add New Folder](/file-and-folder-operations/file-list-pane-operations.md#add-new-folder).
 
-## フォルダ名を変更
+## Rename Folder
 
-現在のバージョンでは、この機能はサポートされていません
+This feature is not supported in the current version.
 
-## フォルダを複製
+## Duplicate Folder
 
-現在のバージョンでは、この機能はサポートされていません
+This feature is not supported in the current version.
 
-## フォルダを削除
+## Delete Folder
 
-現在のバージョンでは、この機能はサポートされていません
+This feature is not supported in the current version.
 
-フォルダ名の変更とフォルダの削除については、以下の文書を参照して、GitHubで操作をして下さい。
+For renaming and deleting folders, please refer to the following documents and perform the operations on GitHub.
 
-- [GitHubでフォルダ名を変更する](/ja/file-and-folder-operations/directory-operations/rename-an-existing-directory.md)
-- [GitHubでフォルダを削除する](/ja/file-and-folder-operations/directory-operations/delete-an-existing-directory.md)
+- [Rename a Folder on GitHub](/file-and-folder-operations/directory-operations/rename-an-existing-directory.md)
+- [Delete a Folder on GitHub](/file-and-folder-operations/directory-operations/delete-an-existing-directory.md)

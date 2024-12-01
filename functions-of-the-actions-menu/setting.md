@@ -1,20 +1,20 @@
-# Setting（設定）
+# Setting
 
-## Presentation Mode（プレゼンテーション・モード）
+## Presentation Mode
 
 ![ ](images/functions-of-the-actions-menu/setting/fig-1.png)
 
-Actionメニューから「Presentation Mode」を選択すると、ファイル一覧ペイン、エディタペインが消えて、プレビューペインだけが見開き（spread）で表示されます。
+Selecting "Presentation Mode" from the Action menu will hide the file list pane and editor pane, displaying only the preview pane in spread mode.
 
 ![ ](images/functions-of-the-actions-menu/setting/fig-2.png)
 
-## Auto Reload（自動再読み込み）
+## Auto Reload
 
 ![ ](images/functions-of-the-actions-menu/setting/fig-3.png)
 
-デフォルトでActionメニューの「Auto Reload」に「✓」が入っています。これにより、ファイルを変更すると自動的に再読み込み（リロード）されて、プレビューが再描画されます。
+By default, "Auto Reload" in the Action menu is checked. This automatically reloads the file and redraws the preview when the file is changed.
 
-原稿の執筆等、作業に集中したい際は、「Auto Reload」を再選択することで「✓」が外れ、自動でリロードされなくなります。なお、リロードが必要になったら「Auto Reload」を再々選択して「✓」を入れてください（トグルスイッチになっています）。
+If you want to focus on writing or other tasks, you can uncheck "Auto Reload" by selecting it again. If reloading is needed, select "Auto Reload" again to check it (it acts as a toggle switch).
 
 ![ ](images/functions-of-the-actions-menu/setting/fig-4.png)
 

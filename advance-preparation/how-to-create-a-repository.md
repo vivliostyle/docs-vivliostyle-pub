@@ -1,11 +1,11 @@
-#  リポジトリの作成方法
+# How to Create a Repository
 
-1. 自分のGitHubアカウントのトップページ（URLは https://github.com/ の後にあなたのユーザー名を加えたものです）にアクセスし、「Repository」タブ（赤丸）をクリック
+1. Access the top page of your GitHub account (the URL is https://github.com/ followed by your username) and click the "Repository" tab (red circle)
 
 ![ ](images/advance-preparation/how-to-create-a-repository/fig-1.png)
 
-2. リポジトリを新規作成します。“New” （赤丸）をクリック
+2. Create a new repository. Click "New" (red circle)
 
 ![ ](images/advance-preparation/how-to-create-a-repository/fig-2.png)
 
-3. その後の操作は、[GitHubアカウントの取得方法](/ja/advance-preparation/get-an-account)「8」以降に従ってください
+3. Follow the steps from "8" onwards in [How to Get a GitHub Account](/advance-preparation/get-an-account)

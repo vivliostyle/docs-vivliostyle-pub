@@ -1,22 +1,22 @@
-# フォントに関する補足情報
+# Additional Information on Fonts
 
-## クラウドにインストールされているフォント一覧
+## List of Fonts Installed in the Cloud
 
-PDF出力で使われるクラウドのフォントは、なるべく多くの環境との互換性を確保する目的で、下記のフォントセットをインストールしています。
+The cloud fonts used for PDF output are installed to ensure compatibility with as many environments as possible. The following font sets are installed:
 
 1. [Noto fonts](https://fonts.google.com/noto)
 2. [Microsoft TrueType core fonts](https://packages.ubuntu.com/focal/ttf-mscorefonts-installer)
 
-1は1,000以上の言語と150以上の文字体系に対応し、複数のウェイトと幅、そしてゴシック、明朝、等幅といったスタイルをもつ巨大なフォントファミリーです。2はマイクロソフトによるWeb用の標準フォントのパックです。
+1 supports over 1,000 languages and more than 150 writing systems, with multiple weights and widths, and styles such as Gothic, Ming, and Monospaced. 2 is a standard font pack for the web provided by Microsoft.
 
-このほか、Linuxシステム上での標準的なフォントとして次のものがインストールされています。
+Additionally, the following standard fonts are installed on Linux systems:
 
 - [liberation-fonts](https://packages.ubuntu.com/focal/fonts-liberation)
 - [Thai Loma font](https://packages.ubuntu.com/focal/fonts-tlwg-loma-otf)
 - [Ubuntu font](https://design.ubuntu.com/font/)
 - [urw-base35-fonts](https://github.com/ArtifexSoftware/urw-base35-fonts)
 
-個々の`font-family`名は下記の通りです。これらをCustom theme（スタイル情報）の中で指定することにより、出力するPDFに埋め込むことができます（→[Custom theme／プレビューとPDF出力とでフォントを一致させる](/ja/create-and-save-documents/how-to-specify-fonts.md#custom-theme／プレビューとpdf出力とでフォントを一致させる)）
+The individual `font-family` names are as follows. By specifying these in the Custom theme (style information), they can be embedded in the output PDF (→[Custom theme / Matching fonts in preview and PDF output](/create-and-save-documents/how-to-specify-fonts.md#custom-theme-matching-fonts-in-preview-and-pdf-output))
 
 - `Andale Mono`
 - `Arial`
@@ -249,13 +249,13 @@ PDF出力で使われるクラウドのフォントは、なるべく多くの�
 - `Webdings`
 - `Z003`
 
-なお、 各フォントがサポートするウェイトを含む詳細なリストは、こちらをご参照ください（→[fc-list.sorted](/ja/create-and-save-documents/fc-list.sorted.md)）
+For a detailed list of the weights supported by each font, please refer to [fc-list.sorted](/create-and-save-documents/fc-list.sorted.md).
 
-## クラウド上のVivliostyle CLIにおける代替フォントルール
+## Substitute Font Rules in Vivliostyle CLI on the Cloud
 
-PDF出力に際して、前項のリストにないフォントが指定された場合、以下のように代替されます。
+When a font not listed in the previous section is specified for PDF output, it will be substituted as follows:
 
-| 指定されたフォント                                                                                                                                            | 代替されるフォント      |     | 
+| Specified Font                                                                                                                                            | Substitute Font      |     | 
 | ------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------- | --- | 
 |  Times  |  Times New Roman  |
 |  Helvetica  |  Arial  |
@@ -265,46 +265,46 @@ PDF出力に際して、前項のリストにないフォントが指定され�
 |  `font-family: monospace;`  |  Andale Mono  |
 | Source Han Serif<br>Hiragino Mincho ProN<br>Hiragino Mincho Pro<br>YuMincho<br>Yu Mincho<br>MS Mincho<br>MS PMincho                                     | Noto Serif CJK JP |     | 
 | Source Han Sans<br>Hiragino Sans<br>Hiragino Kaku Gothic ProN<br>Hiragino Kaku Gothic Pro<br>YuGothic<br>Yu Gothic<br>Meiryo<br>MS Gothic<br>MS PGothic | Noto Sans CJK JP  | 
-|  上記以外の欧文フォント  |  Times New Roman  |
-|  上記以外の日本語フォント  |  Noto Sans CJK JP  |
+|  Other Western fonts  |  Times New Roman  |
+|  Other Japanese fonts  |  Noto Sans CJK JP  |
 
-- **ご注意**
-    - たとえばtheme（スタイルシート）で`font-family: "IPA明朝", serif;`と指定されていた場合、IPA明朝は前項のリストにも上の表にもありませんから、PDF出力ではブラウザ設定「Serif」のフォント（日本語環境では明朝体）が使用されるはずです。しかし、実際にはNoto Sans CJK JPが使用されてしまいます。
-    - 上の表で`Noto Serif CJK JP`に代替されるフォント以外の明朝体フォント全てにこの問題が発生します（逆の言い方をすれば、上の表で`Noto Serif CJK JP`に代替されるフォントはこの問題は発生しません）。私たちはこの問題の解決に努めています。詳細は下記をご参照ください。
-        - [font-family: serif を指定しても明朝体にならない問題と対策](https://github.com/vivliostyle/vivliostyle-cli/issues/303#issuecomment-1169786479)
+- **Note**
+    - For example, if `font-family: "IPA明朝", serif;` is specified in the theme (stylesheet), IPA明朝 is not in the previous list or the table above, so the browser's "Serif" font (Ming style in Japanese environments) should be used for PDF output. However, Noto Sans CJK JP will actually be used.
+    - This issue occurs with all Ming style fonts except those substituted with `Noto Serif CJK JP` in the table above. We are working to resolve this issue. For more details, please refer to the following.
+        - [Issue with specifying font-family: serif not resulting in Ming style and countermeasures](https://github.com/vivliostyle/vivliostyle-cli/issues/303#issuecomment-1169786479)
 
-## 推奨する有償Webフォントサービスの用途
+## Recommended Uses for Paid Web Font Services
 
-有償Webフォントサービスは利用規約によって用途を制限しており、Vivliostyle Pubで無条件にこれらのサービスを利用できるわけではありません。
+Paid web font services restrict usage according to their terms of service, and cannot be used unconditionally with Vivliostyle Pub.
 
-本来、利用規約の解釈は契約者間で解決すべきであり、第三者である私たちが判断できるものではありません。とはいえ、このままではユーザーが安心してVivliostyle PubでWebフォントを使うことはできないでしょう。そこで、各社とコミュニケーションをとりながら、以下の用途を利用規約が許容しているか調査しました。
+The interpretation of terms of service should be resolved between the contracting parties, and we, as a third party, cannot make judgments. However, users may not be able to use web fonts with Vivliostyle Pub with peace of mind. Therefore, we have communicated with each company to investigate whether the following uses are permitted by their terms of service.
 
-- Webフォントを使ってプレビューができる
-- Webフォントを使ってPDF出力、及びオフセット／オンデマンド印刷ができる
-- Webフォントを使って成果物の有償販売ができる
+- Preview using web fonts
+- PDF output and offset/on-demand printing using web fonts
+- Paid sales of products using web fonts
 
-その結果を踏まえ、Webフォントサービスごとに推奨できる用途を選定したのが下記のものです。
+Based on the results, we have selected the recommended uses for each web font service as follows.
 
-|              | [DynaSmart V](https://www.dynacw.co.jp/product/product_dynasmart_detail.aspx?sid=25)           | [DynaSmart T](https://www.dynacw.co.jp/product/product_dynasmart_detail.aspx?sid=43)  | [TypeSquare](https://typesquare.com/ja/)    |[fonts.com](https://www.fonts.com/ja)  | [FONTPLUS](https://fontplus.jp/)※  | [Adobe Fonts](https://fonts.adobe.com/)     |
+|              | [DynaSmart V](https://www.dynacw.co.jp/product/product_dynasmart_detail.aspx?sid=25)           | [DynaSmart T](https://www.dynacw.co.jp/product/product_dynasmart_detail.aspx?sid=43)  | [TypeSquare](https://typesquare.com/)    |[fonts.com](https://www.fonts.com/ja)  | [FONTPLUS](https://fontplus.jp/)※  | [Adobe Fonts](https://fonts.adobe.com/)     |
 | ------------ | -------------- | ---------------- | --------------- |  -------------- | ---------------- | --------------- |
-| プレビュー | ○                    | ×                      | ×                     | ×                      | ○                   |    ×                 | 
-| PDF出力／印刷 |  ○             | ×                      | ×                    | ×                      | ×                   |    ×               | 
-| 有償販売     |  ○                    | ×                      | ×                    | ×                      | ×                   |    ×               | 
+| Preview | ○                    | ×                      | ×                     | ×                      | ○                   |    ×                 | 
+| PDF Output/Printing |  ○             | ×                      | ×                    | ×                      | ×                   |    ×               | 
+| Paid Sales     |  ○                    | ×                      | ×                    | ×                      | ×                   |    ×               | 
 
-※……FONTPLUSはプレビューのみ○（ブログでの使用と同じと解釈）。ただし、PDF出力等については個別判断になるので要問い合わせ
+※……FONTPLUS allows preview only (interpreted as the same as using it on a blog). However, for PDF output, etc., individual judgment is required, so please inquire.
 
-より詳細については、以下をご参照ください。
+For more details, please refer to the following.
 
-- [VivliostyleでWebフォントを使う 調査編：小形克宏（YouTube）](https://www.youtube.com/watch?v=czVRSsekLjc)
-- [VivliostyleでWebフォントを使う：調査編（スライド）](https://vivliostyle.org/viewer/#src=https://github.com/ogwata/slide-20220423-2/blob/main/myslide.html&bookMode=true&spread=false)
+- [Using Web Fonts with Vivliostyle: Investigation by Katsuhiro Ogata (YouTube)](https://www.youtube.com/watch?v=czVRSsekLjc)
+- [Using Web Fonts with Vivliostyle: Investigation (Slides)](https://vivliostyle.org/viewer/#src=https://github.com/ogwata/slide-20220423-2/blob/main/myslide.html&bookMode=true&spread=false)
 
-## GoogleフォントのうちVivliostyleのPDF出力で “Type 3” にならない日本語フォント一覧
+## List of Japanese Fonts in Google Fonts that Do Not Become "Type 3" in Vivliostyle PDF Output
 
-以下は、[Googleフォント](https://fonts.google.com/?subset=japanese)に収録されている日本語フォント50書体のうち、私たちのテストの結果、VivliostyleによるPDF出力で “Type 3” ではなく “TrueType (CID)” として埋め込まれたフォントです。結果として、Noto Sans JapaneseとNoto Serif Japanese を除くすべての日本語フォントでもあります。
+The following are the Japanese fonts included in [Google Fonts](https://fonts.google.com/?subset=japanese) that, according to our tests, were embedded as "TrueType (CID)" rather than "Type 3" in PDF output by Vivliostyle. As a result, they are all Japanese fonts except for Noto Sans Japanese and Noto Serif Japanese.
 
-一般に “Type 3” としてフォントが埋め込まれたPDFファイルは印刷に不適とされています。一方で “TrueType (CID)” として埋め込まれていれば問題はないとされています。詳細は下記をご参照ください。
+Generally, PDF files with fonts embedded as "Type 3" are considered unsuitable for printing. On the other hand, if they are embedded as "TrueType (CID)", there should be no problem. For more details, please refer to the following.
 
-- [Actionメニューの機能 > Export（出力）> 補足情報](/ja/functions-of-the-actions-menu/export.md#補足情報)
+- [Action Menu Functions > Export > Additional Information](/functions-of-the-actions-menu/export.md#supplementary-information)
 
 ----------------------------
 

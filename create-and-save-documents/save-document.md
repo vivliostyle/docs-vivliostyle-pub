@@ -1,13 +1,13 @@
-# 文書の編集と保存
+# Editing and Saving Documents
 
-1. これは編集前の状態です。プレビューをよく見ると分かるとおり、`|`を不適切な場所に入れたり、全角の`｛｝`を使うなど、ルビの記法が間違っています。修正しましょう
+1. This is the state before editing. As you can see from the preview, the notation for ruby is incorrect, such as placing `|` in inappropriate places and using full-width `｛｝`. Let's fix it.
 
 ![ ](images/create-and-save-documents/save-document/fig-1.png)
 
-2. 編集が終わりました。プレビューを確認すると、ルビが適切に組まれています。`Save document`（書類の保存）のボタン（赤丸）を押して保存しましょう。保存前はボタン内の文字が黒く、押下できることを表しています
+2. Editing is complete. When you check the preview, the ruby is properly formatted. Press the `Save document` button (red circle) to save. Before saving, the text inside the button is black, indicating that it can be pressed.
 
 ![ ](images/create-and-save-documents/save-document/fig-2.png)
 
-3. 文書を変更すると、自動的に`Save document`（書類の保存）のボタン（赤丸）内の文字がグレイアウトされ、押下できない状態になりました。また、画面下端に保存を知らせるメッセージが表示されます
+3. When you change the document, the text inside the `Save document` button (red circle) automatically grays out, indicating that it cannot be pressed. Additionally, a message notifying you of the save appears at the bottom of the screen.
 
 ![ ](images/create-and-save-documents/save-document/fig-3.png)

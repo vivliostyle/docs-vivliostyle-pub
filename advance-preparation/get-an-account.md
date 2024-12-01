@@ -1,44 +1,42 @@
-# GitHubアカウントの取得方法
+# How to Get a GitHub Account
 
-- Vivliostyle Pub α版を使う準備として、GitHubアカウントを取得するための詳細な手順をご説明します
-- 既にGitHubアカウントを持っている人は[最初のログインで必要な作業](/ja/advance-preparation/login.md)にお進みください。既にアカウントを持っているがリポジトリは作成してない人は、[リポジトリの作成方法](/ja/advance-preparation/how-to-create-a-repository.md)にお進みください
-- GitHubのスクリーンショットは2021年9月時点のものです。将来変更される可能性があることをご了解ください
-- なお、GitHubの利点については [複数ユーザによる共同制作 > 概要 > GitHubを利用するメリット](/ja/multi-user-collaborative-editing/overview.md#githubを利用するメリット) を参照してください
+- As preparation for using Vivliostyle Pub α version, we will explain the detailed steps to obtain a GitHub account
+- If you already have a GitHub account, proceed to [Tasks Required for the First Login](/advance-preparation/login.md). If you already have an account but have not created a repository, proceed to [How to Create a Repository](/advance-preparation/how-to-create-a-repository.md)
+- The GitHub screenshots are as of September 2021. Please note that they may change in the future
+- For the benefits of using GitHub, refer to [Collaborative Editing by Multiple Users > Overview > Benefits of Using GitHub](/multi-user-collaborative-editing/overview.md#benefits-of-using-github)
 
-
-1. [GitHub](https://github.com/) にアクセスし、“Sign up” をクリック
+1. Access [GitHub](https://github.com/) and click "Sign up"
 
 ![ ](images/advance-preparation/get-an-account/fig-1.png)
 
-2. メールアドレス、パスワード、ユーザーネーム、GitHubからのお知らせメールを受け取るか(y)否か(n)を記入し、セキュリティ検証テストを受けた後、「Create account」（アカウント作成）をクリック
+2. Enter your email address, password, username, whether to receive emails from GitHub (y/n), and complete the security verification test, then click "Create account"
 
 ![ ](images/advance-preparation/get-an-account/fig-2.png)
 
-3. 入力したアドレス宛てに送られてくる、“🚀 Your GitHub launch code” という標題のメールを確認し、そこにある6桁の認証コードを画面に入力してください
+3. Check the email sent to the address you entered, titled "🚀 Your GitHub launch code", and enter the 6-digit verification code on the screen
 
 ![ ](images/advance-preparation/get-an-account/fig-3.png)
 
-4. ここからはGitHubによるアンケートです。“How many team member will be working with you?”（何人のチームメンバーがあなたと一緒に働きますか？）、Are you a student or teacher?（あなたは学生ですか、教師ですか？）いずれも必ずしも回答する必要はありません。その後、「Continue」（続ける）をクリック
+4. This is a survey by GitHub. "How many team members will be working with you?", "Are you a student or teacher?" You do not necessarily have to answer these questions. Then click "Continue"
 
 ![ ](images/advance-preparation/get-an-account/fig-4.png)
 
-5. “What specific features are you interested in using?”（具体的にどのような機能を使いたいとお考えですか？）これも必ず回答する必要はありません。その後、「Continue」（続ける）をクリック
+5. "What specific features are you interested in using?" You do not necessarily have to answer this either. Then click "Continue"
 
 ![ ](images/advance-preparation/get-an-account/fig-5.png)
 
-
-6. GitHubアカウントのプランを選択。Free（無料）、Team（チーム）の2つのプランのうち、自分に合ったプランを選択し（初めて利用するなら “Free” で十分です）、決定ボタンをクリックしてください
+6. Select the plan for your GitHub account. Choose the plan that suits you (if you are using it for the first time, "Free" is sufficient), and click the decision button
 
 ![ ](images/advance-preparation/get-an-account/fig-6.png)
 
-7. つづいて表示されるダッシュボード画面で、“Create repository” （リポジトリの作成）をクリック
+7. On the dashboard screen that appears next, click "Create repository"
 
 ![ ](images/advance-preparation/get-an-account/fig-7.png)
 
-8. 作成書類を非公開にしたい場合は「Private」（私的）に、公開したい場合は「Public」（公的）にチェックをいれてください（赤矢印）。次に “Repository name”（リポジトリ名）を英数字で入力（赤丸①）。リポジトリ名が利用可能なら、緑色の✓マークが表示され “Create repository” （リポジトリの作成）ボタン（赤丸②）がアクティブになるのでクリックしてください
+8. If you want to make the document private, check "Private", if you want to make it public, check "Public" (red arrow). Next, enter the "Repository name" in alphanumeric characters (red circle ①). If the repository name is available, a green ✓ mark will be displayed and the "Create repository" button (red circle ②) will become active, click it
 
 ![ ](images/advance-preparation/get-an-account/fig-8.png)
 
-9. この画面が表示されたら、リポジトリは無事に作成できました。[最初のログインで必要な作業](/ja/advance-preparation/login.md)に進んでください
+9. If this screen is displayed, the repository has been successfully created. Proceed to [Tasks Required for the First Login](/advance-preparation/login.md)
 
 ![ ](images/advance-preparation/get-an-account/fig-9.png)

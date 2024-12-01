@@ -1,10 +1,10 @@
-# 文書のカスタマイズ
+# Document Customization
 
-文書全体の設定ファイルが`vivliostyle.config.js`です。 pathはリポジトリのルートです
+The configuration file for the entire document is `vivliostyle.config.js`. The path is the root of the repository.
 
 ![](/images/create-and-save-documents/document-customization/fig-1.png)
 
-`vivliostyle.config.js`はVivliostyle Pub自身を使って編集でき、編集後に保存すれば文書全体に反映されます。記法は下記`{  }` の内部に次項のような値を記入していくものです
+`vivliostyle.config.js` can be edited using Vivliostyle Pub itself, and once saved, the changes will be reflected in the entire document. The syntax involves filling in values inside the `{ }` as shown below.
 
 ```js
 module.exports = {
@@ -12,39 +12,39 @@ module.exports = {
 }
 ```
 
-## 書名の指定
+## Specifying the Title
 
- `title` で書名を指定できます（値をシングルクォートで括る。以下同じ）
-
-```js
-title: '私の本',
-```
-
-## 著者名とメールアドレスの指定
-
- `author`  で著者名を指定できます
+You can specify the title with `title` (enclose the value in single quotes. The same applies below).
 
 ```js
-author: '尾久綿次郎 <ogwata@example.com>',
+title: 'My Book',
 ```
 
-## 使用言語の指定
+## Specifying the Author Name and Email Address
 
-`language`で文書で使用する言語を指定できます。英語は  `en`、日本語は `ja`、その他 [ISO 639-1](https://www.loc.gov/standards/iso639-2/php/code_list.php )に規定された2文字コードが指定できます
+You can specify the author's name with `author`.
+
+```js
+author: 'Jiro Ogwata <ogwata@example.com>',
+```
+
+## Specifying the Language
+
+You can specify the language used in the document with `language`. English is `en`, Japanese is `ja`, and other languages can be specified with the two-letter codes defined in [ISO 639-1](https://www.loc.gov/standards/iso639-2/php/code_list.php).
 
 ```js
 language: 'ja',
 ```
 
-## 判型の指定
+## Specifying the Format
 
-判型はvivliostyle.comfig.jsではなく、themeで指定してください。詳細は下記をご参照ください。
+The format should be specified in the theme, not in `vivliostyle.config.js`. For details, please refer to the following.
 
-- [Theme（スタイル情報の選択）> Custom theme > 判型の指定](/ja/functions-of-the-actions-menu/theme#%E5%88%A4%E5%9E%8B%E3%81%AE%E6%8C%87%E5%AE%9A)
+- [Theme (Selecting Style Information) > Custom theme > Specifying the Format](/functions-of-the-actions-menu/theme.md#specifying-the-format)
 
-## 対象となる文書の指定
+## Specifying the Target Document
 
-`entry: [  ]` の記法により処理の対象となる文書を指定します。複数文書を指定可能で、下記のように指定することで、複数のmarkdownファイルをまとめて1冊の本として出力できるようになります
+You can specify the target document for processing with the syntax `entry: [ ]`. Multiple documents can be specified, and by specifying them as shown below, you can output multiple markdown files as a single book.
 
 ```js
 entry: [
@@ -54,31 +54,31 @@ entry: [
 ],
 ```
 
-出力したくないファイルがあれば、行頭に`//`を記入すればコメントアウトになります
+If there are files you do not want to output, you can comment them out by adding `//` at the beginning of the line.
 
-## 目次の追加
+## Adding a Table of Contents
 
-以下の手順で目次を追加することができます
+You can add a table of contents by following these steps:
 
-1. あらかじめ以下のような目次用の markdown ファイルを用意し、ファイル名を `index.md` としてアップロードします（→[ファイルのアップロード](/ja/file-and-folder-operations/file-list-pane-operations.md#ファイルのアップロード)）。他と違って以下はHTML構文なので、指定するのもHTMLファイルであることにご注意ください
+1. Prepare a markdown file for the table of contents as shown below, and upload it with the filename `index.md` (→[Uploading Files](/file-and-folder-operations/file-list-pane-operations.md#upload-file)). Note that the following is HTML syntax, so the file to be specified should also be an HTML file.
 
 ```md
-# 本のタイトル
+# Book Title
 
 <nav id="toc" role="doc-toc">
 
-## 目次
+## Table of Contents
 
-- [記事タイトル1](Chapter-1.html)
-- [記事タイトル2](Chapter-2.html)
-- [記事タイトル3](Chapter-3.html)
+- [Article Title 1](Chapter-1.html)
+- [Article Title 2](Chapter-2.html)
+- [Article Title 3](Chapter-3.html)
 
 </nav>
 ```
 
-なお、HTMLのタグがある行とmarkdownの行の間は、必ず空行をいれるよう注意してください。そうしないとエラーになります
+Note that there must be a blank line between lines with HTML tags and markdown lines. Otherwise, it will result in an error.
 
-2. `vivliostyle.config.js` の `entry` の先頭行に、用意した `index.md` を指定します
+2. Specify the prepared `index.md` at the top line of `entry` in `vivliostyle.config.js`.
 
 ```js
 entry: [
@@ -89,27 +89,27 @@ entry: [
 ],
 ```
 
-## 奥付の追加
+## Adding a Colophon
 
-以下の手順で奥付を追加することができます
+You can add a colophon by following these steps:
 
-1. あらかじめ以下のような markdownファイルを用意し、ファイル名を `colophon.md` としてアップロードします（→[ファイルのアップロード](/ja/file-and-folder-operations/file-list-pane-operations.md#ファイルのアップロード)）
+1. Prepare a markdown file for the colophon as shown below, and upload it with the filename `colophon.md` (→[Uploading Files](/file-and-folder-operations/file-list-pane-operations.md#uploading-files)).
 
 ```md
 <section id="colophon" role="doc-colophon">
 
-## 私が書いた本
-20xx年x月x日　初版発行
-- 発行　私が書いた本刊行会
-- 著者　尾久綿次郎
-- 印刷　Sample Printing
+## The Book I Wrote
+First Edition Published on xx xx, 20xx
+- Publisher: The Book I Wrote Publishing Association
+- Author: Jiro Ogwata
+- Printing: Sample Printing
 
 © My Book Publishing, 20xx
 
 </section>
 ```
 
-2. `vivliostyle.config.js` の `entry` の末尾行に、用意した `colophon.md` を指定します
+2. Specify the prepared `colophon.md` at the last line of `entry` in `vivliostyle.config.js`.
 
 ```js
 entry: [
@@ -121,14 +121,14 @@ entry: [
 ],
 ```
 
-## まとめ
+## Summary
 
-ここまでの説明をまとめると、`vivliostyle.config.js`の記述は下記のようになります
+To summarize the explanation so far, the description of `vivliostyle.config.js` will be as follows:
 
 ```js
 module.exports = {
-	title: '私の本',
-	author: '尾久綿次郎 <ogwata@example.com>',
+	title: 'My Book',
+	author: 'Jiro Ogwata <ogwata@example.com>',
 	language: 'ja',
 	theme: 'css/style.css',
 	entry: [
@@ -140,3 +140,5 @@ module.exports = {
 	],
 }
 ```
+
+- [Action Menu Functions > Export > Additional Information](/functions-of-the-actions-menu/export.md#supplementary-information)
